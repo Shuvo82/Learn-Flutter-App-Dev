@@ -8,6 +8,18 @@ It started on 21 Nov 2026 as a copy of an exam-prep book written for one job app
 
 The main learner is a working Flutter developer who wants to fill gaps and practise for interviews and exams. Answers and notes are in **English**. Keep personal details (CV, ID numbers, phone numbers, addresses) out of this project and never send them to outside services.
 
+## Learn to understand, not to memorize (the learner's main rule)
+
+The learner says they are bad at memorizing. They want to **understand** each topic well enough to **use it in real work**, not to cram facts for one exam. Everything in this project follows from that:
+
+- **Start from the problem.** Before naming a tool or term, show the real problem it solves ("the network drops mid-upload, what now?"). The name comes after the need is clear.
+- **Explain the why.** Every rule, step or formula comes with the reason it exists, so the learner could rebuild it from scratch instead of recalling it. Derive formulas (for example, why nCr = nPr ÷ r!) rather than just stating them.
+- **Build up from what they already know.** Link new ideas to Flutter work they have done (state, APIs, local databases, offline sync) and to the running example app.
+- **Learn by doing.** Prefer small hands-on tasks: write a snippet, trace a flow, debug a broken example, design a small feature, draw the diagram from understanding. Run code where possible.
+- **Practise applying, not recalling.** Questions should be scenarios ("a field officer's token expires offline, what should the app do and why?") and "what goes wrong if…" questions. Avoid pure recall ("list the 7 layers") unless a recall question is explicitly asked for exam practice; even then, teach the reasoning so the list rebuilds itself.
+- **Few facts to hold, many ideas to understand.** Keep "must remember" items to the true minimum. A **Remember** line should be a reasoning rule ("never trust the client; check on the server"), not a list to cram. No mnemonic tricks as the main method.
+- **When marking**, check whether the learner understood *why*, not only whether they wrote the right words. If an answer is right but shows no reasoning, ask a follow-up "why" or "what if" question.
+
 ## Folder contents
 
 | Folder / file | What it is |
@@ -42,7 +54,7 @@ Anchors are the heading ids the VS Code preview makes (lower case, spaces to hyp
 
 ## How to work here
 
-- **Learn, then practise:** short notes, exam-style questions, the learner answers (often as photos of handwritten pages), Claude marks strictly with part marks, writes model answers in the format above, and adds every miss to `Practice/Mistakes Log.md`.
+- **Understand, then apply** (see the rule above): short notes that explain the why, hands-on tasks and scenario questions, the learner answers (often as photos of handwritten pages), Claude marks strictly with part marks, writes model answers in the format above, and adds every miss to `Practice/Mistakes Log.md`.
 - Written exams for IT posts in Bangladesh often mix descriptive questions, short questions and MCQs, and may add core CS (OOP, DSA, DBMS/SQL, OS, networking, SDLC) and maths/aptitude (probability, permutation and combination) even when the job description does not mention them. Cover those too.
 - **New job applications:** when the learner shares a job advert or ToR, make a folder `Jobs/<Employer> - <Post>/` with the advert (as Markdown), a mapping of each requirement to the book's chapters, and job-specific mocks. Do not edit the general book for one employer.
 - New topics the book lacks become new chapters (next letter: `G`), written in the book's style, added to the Contents table and to the `book-nav` links.
