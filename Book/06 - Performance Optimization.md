@@ -1,5 +1,5 @@
 <div class="chapter-head">
-<div class="chapter-kicker"><b>B3</b>Part B · API Integration, Security and Performance</div>
+<div class="chapter-kicker"><b>Chapter 6</b>API Integration, Security and Performance</div>
 
 # Performance Optimization
 
@@ -43,7 +43,7 @@ Three things: **memory**, **rendering speed**, **battery**. Structure every answ
 | **App size** | Smaller download = more installs, less storage |
 | **Battery, data** | Low use of CPU, GPS, radio and wake time |
 
-![The frame budget: 16.67 ms per frame at 60 fps](images/b3-frame-budget.svg)
+![The frame budget: 16.67 ms per frame at 60 fps](images/ch06-frame-budget.svg)
 
 **The method (say this first in any answer):** <mark>*measure → find the bottleneck → fix → measure again.*</mark> Always profile in <mark>**profile mode on a real, low-end device**</mark>, never in debug mode or only on an emulator.
 
@@ -69,7 +69,7 @@ Debug mode is slow on purpose: it carries extra checks and uses JIT. An emulator
 
 </div>
 
-![How Flutter renders one frame](images/b3-render-pipeline.svg)
+![How Flutter renders one frame](images/ch06-render-pipeline.svg)
 
 ![The steps of the Flutter rendering pipeline](images/web/flutter-render-pipeline.png)<br>*The full pipeline from the official documentation: user input, animation, build, layout, paint, composition, rasterize. Source: Flutter documentation.*
 
@@ -141,7 +141,7 @@ Debug mode is slow on purpose: it carries extra checks and uses JIT. An emulator
 | **Heavy work in an isolate** | JSON parsing, image compression, encryption, ML inference: `Isolate.run()` / `compute()` |
 | **Impeller** | Flutter's renderer pre-compiles shaders, removing first-run animation jank |
 
-![Why ListView.builder is faster for long lists](images/b3-lazy-list.svg)
+![Why ListView.builder is faster for long lists](images/ch06-lazy-list.svg)
 
 **Process vs thread vs isolate (theory link):** <mark>a **process** has its own memory. **Threads** share the memory of their process. A Dart **isolate** has its own memory and event loop and talks by messages.</mark> The UI runs on the main isolate, so long work there freezes the screen.
 
@@ -197,7 +197,7 @@ Debug mode is slow on purpose: it carries extra checks and uses JIT. An emulator
 
 <mark>**Memory leak:** memory that is no longer needed but cannot be freed because something still references it.</mark>
 
-![What a memory leak looks like](images/b3-memory-leak.svg)
+![What a memory leak looks like](images/ch06-memory-leak.svg)
 
 | Common cause | Fix |
 |---|---|
@@ -269,7 +269,7 @@ class _FormState extends State<VisitForm> {
 | **Compress uploads** | Smaller photos = less radio time |
 | **Exponential backoff** | Do not hammer a failing connection |
 
-![Batch network calls: wake the radio once, not ten times](images/b3-batching.svg)
+![Batch network calls: wake the radio once, not ten times](images/ch06-batching.svg)
 
 **OS limits you must design for:** <mark>Android **Doze** and **App Standby** delay background work</mark> and network when the phone is idle; Android restricts background location and background services; iOS decides when background tasks run. Some manufacturers kill background apps aggressively. Design sync so that it also runs when the app is opened.
 
@@ -517,7 +517,7 @@ Write your own answer first. Then open the model answer and compare.
 
 </div>
 
-![The frame budget: 16.67 ms per frame at 60 fps](images/b3-frame-budget.svg)
+![The frame budget: 16.67 ms per frame at 60 fps](images/ch06-frame-budget.svg)
 
 | Screen refresh rate | Frames per second | Budget for one frame |
 |---|---|---|
@@ -557,7 +557,7 @@ Write your own answer first. Then open the model answer and compare.
 
 </div>
 
-![Why ListView.builder is faster for long lists](images/b3-lazy-list.svg)
+![Why ListView.builder is faster for long lists](images/ch06-lazy-list.svg)
 
 | Point | `ListView(children: [...])` | `ListView.builder` |
 |---|---|---|
@@ -651,7 +651,7 @@ const Padding(padding: EdgeInsets.all(16), child: Text('Save'))
 
 </div>
 
-![What a memory leak looks like](images/b3-memory-leak.svg)
+![What a memory leak looks like](images/ch06-memory-leak.svg)
 
 | Cause | Fix |
 |---|---|
@@ -794,7 +794,7 @@ class _VisitFormState extends State<VisitForm> {
 
 </div>
 
-![Batch network calls: wake the radio once, not ten times](images/b3-batching.svg)
+![Batch network calls: wake the radio once, not ten times](images/ch06-batching.svg)
 
 The big battery users are the **radio** (mobile data, Wi-Fi), **GPS**, the **CPU** kept awake, and the **screen**.
 
@@ -821,7 +821,7 @@ The big battery users are the **radio** (mobile data, Wi-Fi), **GPS**, the **CPU
 
 <div class="ref">
 
-**From the book:** [5. Battery consumption](#5-battery-consumption) [Doze and App Standby (Android's two battery savers)](#doze-and-app-standby-androids-two-battery-savers) [A3 · 6. Background sync](A3%20-%20Offline%20Storage%20and%20Data%20Sync.md#6-background-sync)
+**From the book:** [5. Battery consumption](#5-battery-consumption) [Doze and App Standby (Android's two battery savers)](#doze-and-app-standby-androids-two-battery-savers) [Ch 3 · 6. Background sync](03%20-%20Offline%20Storage%20and%20Data%20Sync.md#6-background-sync)
 
 </div>
 
@@ -1038,7 +1038,7 @@ Out-of-memory kills are common on 2 GB phones, so this also reduces crashes.
 
 </div>
 
-![How Flutter renders one frame](images/b3-render-pipeline.svg)
+![How Flutter renders one frame](images/ch06-render-pipeline.svg)
 
 #### 1. The pipeline
 
@@ -1109,7 +1109,7 @@ Your Dart code runs on the UI thread. You never write code for the raster thread
 
 </div>
 
-![What a memory leak looks like](images/b3-memory-leak.svg)
+![What a memory leak looks like](images/ch06-memory-leak.svg)
 
 #### 1. Why it matters
 
@@ -1167,10 +1167,10 @@ void dispose() {
 
 <div class="ref">
 
-**From the book:** [4. Memory usage](#4-memory-usage) [9. Tools](#9-tools) [A1 · 10. Native iOS basics](A1%20-%20Flutter,%20Dart%20and%20Native.md#10-native-ios-basics)
+**From the book:** [4. Memory usage](#4-memory-usage) [9. Tools](#9-tools) [Ch 1 · 10. Native iOS basics](01%20-%20Flutter,%20Dart%20and%20Native.md#10-native-ios-basics)
 
 </div>
 
 </details>
 
-<div class="book-nav"><span>← <a href="B2%20-%20Mobile%20Security%20and%20Identity.md">B2 - Mobile Security and Identity</a></span><span><a href="00%20-%20Contents%20and%20How%20to%20Use.md">Contents</a></span><span><a href="B4%20-%20Push%20Notifications%20and%20Crash%20Monitoring.md">B4 - Push Notifications and Crash Monitoring</a> →</span></div>
+<div class="book-nav"><span>← <a href="05%20-%20Mobile%20Security%20and%20Identity.md">05 - Mobile Security and Identity</a></span><span><a href="00%20-%20Contents%20and%20How%20to%20Use.md">Contents</a></span><span><a href="07%20-%20Push%20Notifications%20and%20Crash%20Monitoring.md">07 - Push Notifications and Crash Monitoring</a> →</span></div>

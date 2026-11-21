@@ -5,7 +5,7 @@ from lib import D, C, INK, INK2, MUTED, SURF, EDGE, GRID, tw
 
 # ------------------------------------------------------------------ A1
 def a1_app_approaches():
-    d = D('a1-app-approaches', 298, 'Three ways to build a mobile app',
+    d = D('ch01-app-approaches', 298, 'Three ways to build a mobile app',
           'What sits between your code and the screen')
     cols = [
         ('Native', 'Kotlin / Swift code', 'Platform UI widgets', 'green',
@@ -28,7 +28,7 @@ def a1_app_approaches():
 
 
 def a1_flutter_architecture():
-    d = D('a1-flutter-architecture', 330, "Flutter's three layers")
+    d = D('ch01-flutter-architecture', 330, "Flutter's three layers")
     x, w = 200, 420
     d.box(x, 58, w, 62, 'Framework (Dart)', 'blue', sub='widgets · rendering · animation · gestures', size=13.5)
     d.box(x, 132, w, 62, 'Engine (C++)', 'violet', sub='Impeller / Skia graphics · Dart runtime · text layout', size=13.5)
@@ -41,7 +41,7 @@ def a1_flutter_architecture():
 
 
 def a1_event_loop():
-    d = D('a1-event-loop', 424, 'Dart runs one thing at a time: the event loop')
+    d = D('ch01-event-loop', 424, 'Dart runs one thing at a time: the event loop')
     d.box(30, 62, 190, 64, 'Synchronous code', 'blue', sub='runs first, to the end')
     d.box(285, 62, 190, 64, 'Microtask queue', 'yellow', sub='scheduleMicrotask, .then()')
     d.box(540, 62, 190, 64, 'Event queue', 'green', sub='I/O, timers, taps, Future()')
@@ -67,7 +67,7 @@ def a1_event_loop():
 
 
 def a1_three_trees():
-    d = D('a1-three-trees', 322, 'The three trees behind every Flutter screen')
+    d = D('ch01-three-trees', 322, 'The three trees behind every Flutter screen')
     cols = [
         (30, 'Widget tree', 'blue', ['Padding', 'Row', 'Text'], 'configuration\nimmutable, cheap\nrebuilt often'),
         (285, 'Element tree', 'yellow', ['Element', 'Element', 'Element'], 'the live instance, holds State\n= BuildContext\nlong-lived'),
@@ -89,7 +89,7 @@ def a1_three_trees():
 
 
 def a1_state_lifecycle():
-    d = D('a1-state-lifecycle', 224, 'State lifecycle of a StatefulWidget')
+    d = D('ch01-state-lifecycle', 224, 'State lifecycle of a StatefulWidget')
     items = [('createState', 104, 'green'), ('initState', 90, 'green'), ('didChangeDependencies', 176, 'blue'),
              ('build', 64, 'blue'), ('deactivate', 96, 'red'), ('dispose', 80, 'red')]
     gap = (712 - sum(w for _, w, _ in items)) / 5.0
@@ -117,7 +117,7 @@ def a1_state_lifecycle():
 
 
 def a1_platform_channel():
-    d = D('a1-platform-channel', 296, 'Platform channel: how Flutter calls native code')
+    d = D('ch01-platform-channel', 296, 'Platform channel: how Flutter calls native code')
     d.box(40, 62, 250, 78, 'Dart (Flutter)', 'blue', sub="MethodChannel('fieldapp/device')", submono=True, size=13.5)
     d.box(470, 62, 250, 78, 'Native (Kotlin / Swift)', 'green', sub='MethodCallHandler', submono=True, size=13.5)
     d.arrow(290, 86, 470, 86, "invokeMethod('getBatteryLevel')", lsize=11)
@@ -131,7 +131,7 @@ def a1_platform_channel():
 
 
 def a1_activity_lifecycle():
-    d = D('a1-activity-lifecycle', 434, 'Android Activity lifecycle')
+    d = D('ch01-activity-lifecycle', 434, 'Android Activity lifecycle')
     rows = [('onCreate', 64, 'created: build the UI, initialise'),
             ('onStart', 114, 'becoming visible'),
             ('onResume', 164, 'in front, takes input: start camera, sensors'),
@@ -193,7 +193,7 @@ def _screen(d, x, y, w, h, style, alt=False):
 
 
 def a2_wireframe_mockup_prototype():
-    d = D('a2-wireframe-mockup-prototype', 344, 'Wireframe, mockup, prototype')
+    d = D('ch02-wireframe-mockup-prototype', 344, 'Wireframe, mockup, prototype')
     y, h = 62, 212
     _screen(d, 50, y, 140, h, 'wire')
     _screen(d, 258, y, 140, h, 'color')
@@ -210,7 +210,7 @@ def a2_wireframe_mockup_prototype():
 
 
 def a2_material_vs_hig():
-    d = D('a2-material-vs-hig', 412, 'Material Design and iOS Human Interface Guidelines')
+    d = D('ch02-material-vs-hig', 412, 'Material Design and iOS Human Interface Guidelines')
     y, w, h = 84, 170, 290
     for x, ios in [(150, False), (440, True)]:
         d.text(x + w / 2, 72, 'iOS (HIG, Apple)' if ios else 'Android (Material, Google)', size=13.5, weight='700')
@@ -273,7 +273,7 @@ def a2_material_vs_hig():
 
 
 def a2_layout_rule():
-    d = D('a2-layout-rule', 262, 'The Flutter layout rule', 'Constraints go down. Sizes go up. Parent sets position.')
+    d = D('ch02-layout-rule', 262, 'The Flutter layout rule', 'Constraints go down. Sizes go up. Parent sets position.')
     d.box(50, 78, 190, 46, 'Parent', 'blue', size=13.5)
     d.box(50, 196, 190, 46, 'Child', 'green', size=13.5)
     d.arrow(100, 124, 100, 196, color=C['blue'][1], lw=2)
@@ -292,7 +292,7 @@ def a2_layout_rule():
 
 
 def a2_expanded_flexible():
-    d = D('a2-expanded-flexible', 214, 'Expanded and Flexible inside a Row')
+    d = D('ch02-expanded-flexible', 214, 'Expanded and Flexible inside a Row')
     x0, w = 190, 540
     for y, name, hint in [(64, 'Expanded', 'must fill'), (136, 'Flexible', 'may fill')]:
         d.text(24, y + 22, name, size=13.5, anchor='start', weight='700')
@@ -307,7 +307,7 @@ def a2_expanded_flexible():
 
 
 def a2_breakpoints():
-    d = D('a2-breakpoints', 312, 'Responsive breakpoints: one app, three layouts')
+    d = D('ch02-breakpoints', 312, 'Responsive breakpoints: one app, three layouts')
     base = 232
     edge = '#55544f'
     # phone
@@ -340,7 +340,7 @@ def a2_breakpoints():
 
 # ------------------------------------------------------------------ A3
 def a3_offline_first():
-    d = D('a3-offline-first', 326, 'Offline-first: the local database is the source of truth')
+    d = D('ch03-offline-first', 326, 'Offline-first: the local database is the source of truth')
     d.group(20, 58, 548, 250, 'On the phone: always works')
     d.box(44, 98, 120, 56, 'UI', 'blue', size=13.5)
     d.box(224, 98, 140, 56, 'Repository', 'violet', size=13.5)
@@ -359,7 +359,7 @@ def a3_offline_first():
 
 
 def a3_caching_strategies():
-    d = D('a3-caching-strategies', 322, 'Three caching strategies: which source comes first?')
+    d = D('ch03-caching-strategies', 322, 'Three caching strategies: which source comes first?')
     rows = [
         (66, 'Cache-first', 'rarely changing data:\ndistrict list, templates',
          ('green', 'Read the cache', 'found: show it and stop'), 'only if missing',
@@ -387,7 +387,7 @@ def a3_caching_strategies():
 
 
 def a3_sync_cycle():
-    d = D('a3-sync-cycle', 470, 'The sync cycle: push first, then pull',
+    d = D('ch03-sync-cycle', 470, 'The sync cycle: push first, then pull',
           'Push steps in blue, pull steps in green')
     d.seq([(96, 'UI', 'blue'), (286, 'Local DB + outbox', 'green'), (476, 'Sync engine', 'yellow'),
            (666, 'Server', 'orange')], top=66, bottom=452, hw=156)
@@ -408,7 +408,7 @@ def a3_sync_cycle():
 
 
 def a3_backoff():
-    d = D('a3-exponential-backoff', 244, 'Exponential backoff: the wait doubles after each failure',
+    d = D('ch03-exponential-backoff', 244, 'Exponential backoff: the wait doubles after each failure',
           'Seconds to wait before each retry, plus a small random jitter')
     base, top = 196, 80
     vals = [1, 2, 4, 8, 16]
@@ -429,7 +429,7 @@ def a3_backoff():
 
 
 def a3_conflict():
-    d = D('a3-sync-conflict', 318, 'How a sync conflict happens',
+    d = D('ch03-sync-conflict', 318, 'How a sync conflict happens',
           'The same record changes in two places between two syncs')
     ys, yp = 112, 226
     d.text(24, ys + 4, 'Server', size=13, anchor='start', weight='700')

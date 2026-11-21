@@ -7,7 +7,7 @@ from lib import D, C, INK, INK2, MUTED, SURF, EDGE, GRID, tw
 
 # ------------------------------------------------------------------ D1
 def d1_mvc_mvp_mvvm():
-    d = D('d1-mvc-mvp-mvvm', 330, 'MVC, MVP and MVVM')
+    d = D('ch10-mvc-mvp-mvvm', 330, 'MVC, MVP and MVVM')
     # MVC
     x0 = 24
     d.group(x0, 58, 224, 254)
@@ -52,7 +52,7 @@ def d1_mvc_mvp_mvvm():
 
 
 def d1_bloc():
-    d = D('d1-bloc', 232, 'BLoC: events go in, states come out')
+    d = D('ch10-bloc', 232, 'BLoC: events go in, states come out')
     d.box(30, 86, 120, 66, 'UI', 'blue', sub='widgets', size=14)
     d.box(340, 86, 150, 66, 'BLoC / Cubit', 'yellow', sub='business logic', size=14)
     d.box(540, 86, 110, 66, 'Repository', 'violet')
@@ -66,7 +66,7 @@ def d1_bloc():
 
 
 def d1_clean_architecture():
-    d = D('d1-clean-architecture', 386, 'Clean Architecture: dependencies point inward, to the domain')
+    d = D('ch10-clean-architecture', 386, 'Clean Architecture: dependencies point inward, to the domain')
     bands = [(62, 'PRESENTATION', 'blue', ['Pages / Widgets', 'BLoC / Cubit'], None),
              (168, 'DOMAIN', 'yellow', ['Use cases', 'Entities', 'Repository interfaces'],
               'pure Dart: knows nothing about Flutter, Dio or the database'),
@@ -88,7 +88,7 @@ def d1_clean_architecture():
 
 
 def d1_test_pyramid():
-    d = D('d1-test-pyramid', 284, 'The test pyramid')
+    d = D('ch10-test-pyramid', 284, 'The test pyramid')
     ax, top, base, half = 290, 64, 250, 190
 
     def hw(y):
@@ -114,7 +114,7 @@ def d1_test_pyramid():
 
 
 def d1_tdd():
-    d = D('d1-tdd-cycle', 238, 'TDD: red, green, refactor')
+    d = D('ch10-tdd-cycle', 238, 'TDD: red, green, refactor')
     items = [(190, 'RED', 'red', 'write a failing test'), (380, 'GREEN', 'green', 'minimum code to pass'),
              (570, 'REFACTOR', 'blue', 'clean up, tests still pass')]
     for cx, t, col, cap in items:
@@ -130,7 +130,7 @@ def d1_tdd():
 
 # ------------------------------------------------------------------ D2
 def d2_bug_lifecycle():
-    d = D('d2-bug-lifecycle', 282, 'Bug life cycle')
+    d = D('ch11-bug-lifecycle', 282, 'Bug life cycle')
     items = [('New', 60, 'grey'), ('Assigned', 84, 'blue'), ('Open', 64, 'blue'), ('Fixed', 64, 'yellow'),
              ('Retest', 70, 'yellow'), ('Verified', 82, 'green'), ('Closed', 70, 'green')]
     gap = (712 - sum(w for _, w, _ in items)) / 6.0
@@ -157,7 +157,7 @@ def d2_bug_lifecycle():
 
 
 def d2_severity_priority():
-    d = D('d2-severity-priority', 346, 'Severity and priority are two different things')
+    d = D('ch11-severity-priority', 346, 'Severity and priority are two different things')
     x0, y0, cw, ch = 200, 86, 262, 96
     cells = [(0, 0, 'orange', 'Crash in a report that is\nused once a year'),
              (1, 0, 'red', 'The app crashes on login\nfor everyone'),
@@ -177,7 +177,7 @@ def d2_severity_priority():
 
 
 def d2_backward_compat():
-    d = D('d2-backward-compatibility', 300, 'Backward compatibility has four sides')
+    d = D('ch11-backward-compatibility', 300, 'Backward compatibility has four sides')
     c = d.box(290, 142, 180, 62, 'New app version', 'blue', sub='must still work with…', size=13.5)
     boxes = [d.box(30, 62, 236, 60, '(a) Older OS and devices', 'orange', sub='minSdk, version checks, fallbacks'),
              d.box(494, 62, 236, 60, '(b) Older app versions', 'violet', sub='keep API /v1 alive, additive changes'),
@@ -192,7 +192,7 @@ def d2_backward_compat():
 
 # ------------------------------------------------------------------ D3
 def d3_sdlc():
-    d = D('d3-sdlc', 338, 'SDLC: the software development life cycle')
+    d = D('ch12-sdlc', 338, 'SDLC: the software development life cycle')
     names = ['1. Planning', '2. Requirements', '3. Design', '4. Implementation', '5. Testing', '6. Deployment',
              '7. Maintenance']
     cols = ['grey', 'blue', 'blue', 'violet', 'yellow', 'green', 'green']
@@ -210,7 +210,7 @@ def d3_sdlc():
 
 
 def d3_waterfall_vs_agile():
-    d = D('d3-waterfall-vs-agile', 330, 'Waterfall and Agile')
+    d = D('ch12-waterfall-vs-agile', 330, 'Waterfall and Agile')
     d.text(190, 72, 'Waterfall', size=14, weight='700')
     steps = ['Requirements', 'Design', 'Coding', 'Testing', 'Deployment']
     for i, s in enumerate(steps):
@@ -237,7 +237,7 @@ def d3_waterfall_vs_agile():
 
 
 def d3_v_model():
-    d = D('d3-v-model', 314, 'The V-model: every development phase has a matching test phase')
+    d = D('ch12-v-model', 314, 'The V-model: every development phase has a matching test phase')
     L = [d.box(30, 66, 176, 40, 'Requirements', 'blue'), d.box(86, 130, 176, 40, 'System design', 'blue'),
          d.box(142, 194, 176, 40, 'Module design', 'blue')]
     code = d.box(292, 258, 176, 40, 'Coding', 'yellow')
@@ -257,7 +257,7 @@ def d3_v_model():
 
 
 def d3_scrum():
-    d = D('d3-scrum', 372, 'Scrum in one picture', 'Events in blue · artifacts in violet · roles at the bottom')
+    d = D('ch12-scrum', 372, 'Scrum in one picture', 'Events in blue · artifacts in violet · roles at the bottom')
     d.box(24, 104, 120, 72, 'Product\nBacklog', 'violet', sub='ordered wish list')
     d.box(178, 118, 110, 44, 'Sprint\nPlanning', 'blue')
     d.box(322, 104, 120, 72, 'Sprint\nBacklog', 'violet', sub='items for this sprint')
@@ -286,7 +286,7 @@ def d3_scrum():
 
 
 def d3_burndown():
-    d = D('d3-burndown', 296, 'A sprint burndown chart', 'Example sprint: 40 story points, 10 working days')
+    d = D('ch12-burndown', 296, 'A sprint burndown chart', 'Example sprint: 40 story points, 10 working days')
     x0, x1, base, top = 80, 540, 240, 90
     sy = (base - top) / 40.0
     sx = (x1 - x0) / 10.0
@@ -316,7 +316,7 @@ def d3_burndown():
 
 
 def d3_kanban():
-    d = D('d3-kanban', 290, 'A Kanban board with work-in-progress limits')
+    d = D('ch12-kanban', 290, 'A Kanban board with work-in-progress limits')
     cols = [('To Do', None, ['Bangla labels', 'Photo upload', 'Pagination']),
             ('In Progress', 'max 3', ['Fix sync crash', 'Visit form', 'Push setup']),
             ('Review', 'max 2', ['Login screen']),
@@ -336,7 +336,7 @@ def d3_kanban():
 
 # ------------------------------------------------------------------ E
 def e_system_design():
-    d = D('e-system-design', 398, 'Template: a field app, end to end')
+    d = D('ch14-system-design', 398, 'Template: a field app, end to end')
     d.group(20, 58, 470, 252, 'Flutter app, on the phone')
     xs = [(36, 56, 'UI', 'blue'), (112, 70, 'BLoC', 'blue'), (202, 96, 'Use cases', 'blue'), (318, 100, 'Repository', 'violet')]
     for x, w, t, col in xs:

@@ -5,7 +5,7 @@ from lib import D, C, INK, INK2, MUTED, SURF, EDGE, GRID, LIFE, tw
 
 # ------------------------------------------------------------------ B1
 def b1_status_codes():
-    d = D('b1-status-codes', 300, 'HTTP status codes by family', 'The first digit tells you who has to act')
+    d = D('ch04-status-codes', 300, 'HTTP status codes by family', 'The first digit tells you who has to act')
     fams = [
         ('1xx', 'Info', 'grey', 100, ['rare in apps'], '—'),
         ('2xx', 'Success', 'green', 136, ['200 OK', '201 Created', '204 No Content'], 'continue'),
@@ -29,7 +29,7 @@ def b1_status_codes():
 
 
 def b1_rest_anatomy():
-    d = D('b1-rest-anatomy', 224, 'Anatomy of a REST request')
+    d = D('ch04-rest-anatomy', 224, 'Anatomy of a REST request')
     parts = [('GET', 'red', 'method:\nthe action', 12), ('https://api.example.org', 'grey', 'host', 2),
              ('/api/v1', 'yellow', 'version', 2), ('/branches', 'blue', 'resource:\na plural noun', 2),
              ('/102', 'violet', 'id of one\nresource', 2), ('/members', 'blue', 'sub-resource', 2),
@@ -50,7 +50,7 @@ def b1_rest_anatomy():
 
 
 def b1_layers():
-    d = D('b1-layers', 232, 'Where the API call lives: clean layers')
+    d = D('ch04-layers', 232, 'Where the API call lives: clean layers')
     d.box(24, 96, 80, 48, 'UI', 'blue', size=13)
     d.box(134, 96, 140, 48, 'BLoC / ViewModel', 'yellow', size=13)
     d.box(304, 96, 120, 48, 'Repository', 'violet', size=13)
@@ -69,7 +69,7 @@ def b1_layers():
 
 
 def b1_sdk_vs_api():
-    d = D('b1-sdk-vs-api', 206, 'SDK and API are not the same thing')
+    d = D('ch04-sdk-vs-api', 206, 'SDK and API are not the same thing')
     d.group(20, 58, 404, 100, 'Inside your app')
     d.box(36, 86, 150, 58, 'Your code', 'blue')
     d.box(250, 86, 158, 58, 'SDK', 'violet', sub='ready-made library,\ntools and docs', size=13.5)
@@ -84,7 +84,7 @@ def b1_sdk_vs_api():
 
 # ------------------------------------------------------------------ B2
 def b2_encoding_hashing_encryption():
-    d = D('b2-encoding-hashing-encryption', 322, 'Encoding, hashing and encryption')
+    d = D('ch05-encoding-hashing-encryption', 322, 'Encoding, hashing and encryption')
     rows = [
         (66, 'Encoding', 'grey', 'two-way, no key', 'Base64 encode', 'Rmx1dHRlcjE=', True,
          'Anyone can reverse it. It only changes the format, it hides nothing.'),
@@ -106,7 +106,7 @@ def b2_encoding_hashing_encryption():
 
 
 def b2_symmetric_asymmetric():
-    d = D('b2-symmetric-asymmetric', 366, 'Symmetric and asymmetric encryption')
+    d = D('ch05-symmetric-asymmetric', 366, 'Symmetric and asymmetric encryption')
 
     def row(y):
         xs = [(30, 100, 'Plain text', 'white'), (176, 100, 'Encrypt', 'blue'), (322, 116, 'Cipher text', 'grey'),
@@ -135,7 +135,7 @@ def b2_symmetric_asymmetric():
 
 
 def b2_jwt():
-    d = D('b2-jwt', 292, 'A JWT has three parts, joined by dots')
+    d = D('ch05-jwt', 292, 'A JWT has three parts, joined by dots')
     segs = [(40, 190, 'red', 'eyJhbGciOiJSUzI1NiJ9', 'HEADER', '{"alg":"RS256",\n "typ":"JWT"}'),
             (250, 270, 'violet', 'eyJzdWIiOiJ1MTIzIiwicm9sZXMi…', 'PAYLOAD (claims)',
              '{"sub":"u123","exp":1795000000,\n "roles":["FIELD_OFFICER"]}'),
@@ -158,7 +158,7 @@ def b2_jwt():
 
 
 def b2_token_refresh():
-    d = D('b2-token-refresh', 362, 'Silent token refresh: what the app does on a 401')
+    d = D('ch05-token-refresh', 362, 'Silent token refresh: what the app does on a 401')
     d.seq([(110, 'Mobile app', 'blue'), (380, 'Backend API', 'orange'), (650, 'Keycloak', 'yellow')], top=62, bottom=316)
     d.msg(0, 1, 132, 'GET /visits (expired access token)', n='1')
     d.msg(1, 0, 164, '401 Unauthorized', n='2', ncolor='red', dash=True)
@@ -171,7 +171,7 @@ def b2_token_refresh():
 
 
 def b2_pkce_flow():
-    d = D('b2-pkce-flow', 768, 'Login with OAuth 2.0 Authorization Code + PKCE',
+    d = D('ch05-pkce-flow', 768, 'Login with OAuth 2.0 Authorization Code + PKCE',
           'Green = the PKCE secret  ·  blue = normal login  ·  orange = using the token')
     APP, BRW, KC, API = 90, 290, 490, 680
     top, hh, hw, bottom = 66, 46, 150, 680
@@ -235,7 +235,7 @@ def b2_pkce_flow():
 
 
 def b2_google_oidc():
-    d = D('b2-google-oidc', 560, '"Sign in with Google": OAuth 2.0 and OIDC working together')
+    d = D('ch05-google-oidc', 560, '"Sign in with Google": OAuth 2.0 and OIDC working together')
     d.seq([(110, 'Flutter app', 'blue'), (380, 'Google (OIDC provider)', 'yellow'), (650, 'Your backend', 'orange')],
           top=62, bottom=372, hw=184)
     d.msg(0, 1, 132, 'login: scope = openid email profile', n='1')
@@ -259,7 +259,7 @@ def b2_google_oidc():
 
 
 def b2_sso():
-    d = D('b2-sso', 290, 'Single Sign-On: log in once, use many apps')
+    d = D('ch05-sso', 290, 'Single Sign-On: log in once, use many apps')
     d.box(24, 126, 86, 58, 'User', 'white', sub='one login')
     d.box(228, 114, 176, 82, 'Keycloak', 'yellow', sub='identity provider (IdP)\nusers · roles · MFA', size=14)
     apps = [(66, 'Field app (mobile)'), (133, 'Reporting app (mobile)'), (200, 'Web portal')]
@@ -273,7 +273,7 @@ def b2_sso():
 
 
 def b2_biometric_flow():
-    d = D('b2-biometric-flow', 500, 'Biometric login: a quick unlock, not a replacement for server login')
+    d = D('ch05-biometric-flow', 500, 'Biometric login: a quick unlock, not a replacement for server login')
     d.box(300, 58, 160, 36, 'App opens', 'grey')
     d.arrow(380, 94, 380, 112)
     d.diamond(380, 150, 200, 76, 'Fingerprint login\nenabled?', 'yellow')
@@ -302,7 +302,7 @@ def b2_biometric_flow():
 
 
 def b2_db_encryption():
-    d = D('b2-db-encryption', 196, 'How the local database is encrypted')
+    d = D('ch05-db-encryption', 196, 'How the local database is encrypted')
     d.box(30, 66, 190, 64, 'Random 256-bit key', 'yellow', sub='created on first run')
     d.box(285, 66, 190, 64, 'Keystore / Keychain', 'violet', sub='hardware-backed,\nkey cannot be extracted')
     d.box(540, 66, 190, 64, 'SQLCipher database', 'green', sub='AES-256 encrypted file')
@@ -313,7 +313,7 @@ def b2_db_encryption():
 
 
 def b2_defence_in_depth():
-    d = D('b2-defence-in-depth', 284, 'Defence in depth: an attacker must pass every layer')
+    d = D('ch05-defence-in-depth', 284, 'Defence in depth: an attacker must pass every layer')
     d.box(20, 124, 74, 50, 'Attacker', 'red')
     layers = [('Device', 'orange', 'screen lock\nbiometrics\nencrypted storage'),
               ('App', 'blue', 'obfuscation\ninput validation\nroot detection'),
@@ -334,7 +334,7 @@ def b2_defence_in_depth():
 
 # ------------------------------------------------------------------ B3
 def b3_frame_budget():
-    d = D('b3-frame-budget', 286, 'The frame budget: 16.67 ms per frame at 60 fps',
+    d = D('ch06-frame-budget', 286, 'The frame budget: 16.67 ms per frame at 60 fps',
           'Example frame times. A frame that takes longer is dropped, and the user sees jank.')
     base, top, x0, x1 = 236, 86, 70, 734
     sc = (base - top) / 40.0
@@ -365,7 +365,7 @@ def b3_frame_budget():
 
 
 def b3_render_pipeline():
-    d = D('b3-render-pipeline', 290, 'How Flutter renders one frame')
+    d = D('ch06-render-pipeline', 290, 'How Flutter renders one frame')
     d.box(24, 104, 116, 50, 'User input', 'grey', sub='or setState()')
     d.group(166, 62, 338, 114, 'UI thread (Dart)')
     d.box(182, 104, 92, 50, 'BUILD', 'blue')
@@ -384,7 +384,7 @@ def b3_render_pipeline():
 
 
 def b3_lazy_list():
-    d = D('b3-lazy-list', 392, 'Why ListView.builder is faster for long lists')
+    d = D('ch06-lazy-list', 392, 'Why ListView.builder is faster for long lists')
     blue = C['blue']
     for cx, title, sub in [(200, 'ListView(children: [...])', 'builds all 1,000 items at once'),
                            (560, 'ListView.builder', 'builds only what is visible')]:
@@ -410,7 +410,7 @@ def b3_lazy_list():
 
 
 def b3_memory_leak():
-    d = D('b3-memory-leak', 270, 'What a memory leak looks like', 'Shape only, not measured data')
+    d = D('ch06-memory-leak', 270, 'What a memory leak looks like', 'Shape only, not measured data')
     blue, org = C['blue'][1], C['orange'][1]
     x0, x1, base = 60, 540, 226
     d.line(x0, base, x1, base, '#b9b7b0', 1)
@@ -436,7 +436,7 @@ def b3_memory_leak():
 
 
 def b3_batching():
-    d = D('b3-batching', 244, 'Batch network calls: wake the radio once, not ten times')
+    d = D('ch06-batching', 244, 'Batch network calls: wake the radio once, not ten times')
     strong, soft = C['orange'][1], '#f6c9b3'
     for y, name, hint, n in [(72, 'One request per record', 'the radio wakes 10 times', 10),
                              (150, 'One batched sync', 'the radio wakes once', 1)]:
@@ -457,7 +457,7 @@ def b3_batching():
 
 # ------------------------------------------------------------------ B4
 def b4_push_flow():
-    d = D('b4-push-flow', 392, 'How a push notification reaches the phone')
+    d = D('ch07-push-flow', 392, 'How a push notification reaches the phone')
     d.box(30, 162, 150, 64, 'Your app', 'blue', sub='on the phone', size=13.5)
     d.box(300, 62, 170, 60, 'FCM', 'yellow', sub='Firebase Cloud Messaging', size=13.5)
     d.box(300, 258, 170, 60, 'Your backend', 'violet', sub='stores token + user ID', size=13.5)
@@ -486,7 +486,7 @@ def b4_push_flow():
 
 
 def b4_crash_free():
-    d = D('b4-crash-free', 240, 'Crash-free users', 'Each dot is one active user in the period')
+    d = D('ch07-crash-free', 240, 'Crash-free users', 'Each dot is one active user in the period')
     blue, red = C['blue'][1], C['red'][1]
     for r in range(5):
         for c in range(20):
@@ -503,7 +503,7 @@ def b4_crash_free():
 
 
 def b4_monitoring_loop():
-    d = D('b4-monitoring-loop', 326, 'The monitoring loop after every release')
+    d = D('ch07-monitoring-loop', 326, 'The monitoring loop after every release')
     B = [d.box(295, 62, 170, 46, 'Staged rollout', 'green'),
          d.box(511, 112, 190, 50, 'Watch crash-free users', 'blue', sub='and new issues'),
          d.box(511, 208, 190, 50, 'Triage', 'blue', sub='sort by users affected'),

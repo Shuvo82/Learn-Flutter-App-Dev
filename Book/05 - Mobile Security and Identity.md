@@ -1,5 +1,5 @@
 <div class="chapter-head">
-<div class="chapter-kicker"><b>B2</b>Part B · API Integration, Security and Performance · ★ likely long question</div>
+<div class="chapter-kicker"><b>Chapter 5</b>API Integration, Security and Performance · ★ likely long question</div>
 
 # Mobile Security and Identity
 
@@ -80,7 +80,7 @@ Order of this chapter: basics (1–3) → tokens and JWT (4–5) → OAuth2, OID
 | Examples | Base64, URL encoding | SHA-256; **bcrypt, Argon2** for passwords | **AES**, **RSA** |
 | Use | Send binary as text | Password storage, file integrity | Data at rest and in transit |
 
-![Encoding, hashing and encryption](images/b2-encoding-hashing-encryption.svg)
+![Encoding, hashing and encryption](images/ch05-encoding-hashing-encryption.svg)
 
 <mark>**Passwords are hashed with a salt, never encrypted and never stored as plain text.**</mark> <mark>A **salt** is a random value added before hashing</mark> so equal passwords give different hashes.
 
@@ -129,7 +129,7 @@ Encrypted data can be unlocked by anyone who steals the key, and then every pass
 | Problem | How to share the key safely | Too slow for large data |
 | Use | Encrypting the database and files | Key exchange, **digital signatures** |
 
-![Symmetric and asymmetric encryption](images/b2-symmetric-asymmetric.svg)
+![Symmetric and asymmetric encryption](images/ch05-symmetric-asymmetric.svg)
 
 **Digital signature:** <mark>the sender signs a hash with the **private key**; anyone checks it with the **public key**</mark>. It proves who sent it and that it was not changed. JWTs and app code signing both use this.
 
@@ -211,7 +211,7 @@ It is the padlock trick in reverse. You lock a fingerprint (hash) of the documen
 
 A compact, signed token with three Base64URL parts joined by dots:
 
-![A JWT has three parts, joined by dots](images/b2-jwt.svg)
+![A JWT has three parts, joined by dots](images/ch05-jwt.svg)
 
 | Part | Holds |
 |---|---|
@@ -233,7 +233,7 @@ A compact, signed token with three Base64URL parts joined by dots:
 
 **Refresh flow in the app:** API returns **401** → the interceptor calls the token endpoint with the refresh token → saves the new tokens → <mark>**repeats the original request**</mark>. If the refresh also fails, clear the tokens and go to login.
 
-![Silent token refresh: what the app does on a 401](images/b2-token-refresh.svg)
+![Silent token refresh: what the app does on a 401](images/ch05-token-refresh.svg)
 
 <div class="box q">
 
@@ -343,7 +343,7 @@ class AuthInterceptor extends QueuedInterceptor {     // queued: only one refres
 
 <mark>A mobile app is a **public client**: it cannot keep a client secret</mark>, because the app can be decompiled. <mark>**PKCE** (Proof Key for Code Exchange, said "pixy")</mark> replaces the secret with a one-time proof.
 
-![OAuth 2.0 Authorization Code flow with PKCE](images/b2-pkce-flow.svg)
+![OAuth 2.0 Authorization Code flow with PKCE](images/ch05-pkce-flow.svg)
 
 **Why PKCE works:** if a malicious app steals the authorization **code** from the redirect, <mark>it still cannot exchange it, because it does not have the **code_verifier**</mark>.
 
@@ -393,7 +393,7 @@ When a user taps **Sign in with Google**, OAuth 2.0 and OIDC work **together in 
 | Meant for | **The app** (and your own backend, to verify the login) | **An API** (sent as `Authorization: Bearer …`), such as Google Drive |
 | Inside | Claims: `sub` (Google user ID), `email`, `name`, `picture`, `iss`, `aud`, `exp` | Scopes: what the app is allowed to do |
 
-![Sign in with Google: OAuth 2.0 and OIDC working together](images/b2-google-oidc.svg)
+![Sign in with Google: OAuth 2.0 and OIDC working together](images/ch05-google-oidc.svg)
 
 **Who makes the JWT?** <mark>Google's **authorization server** creates and signs the ID token</mark>. OIDC is the **standard** that defines the ID token and says it must be a JWT. So "OIDC makes the JWT" is close but not exact. Write it as "**the OIDC provider issues an ID token, which is a JWT**".
 
@@ -450,7 +450,7 @@ When a user taps **Sign in with Google**, OAuth 2.0 and OIDC work **together in 
 
 <mark>The user logs in **once** and gets access to **many applications** without logging in again</mark>. Each app trusts one central <mark>**identity provider (IdP)**</mark>.
 
-![Single Sign-On: log in once, use many apps](images/b2-sso.svg)
+![Single Sign-On: log in once, use many apps](images/ch05-sso.svg)
 
 - Benefits: one password, central control of users and MFA, one place to disable a staff member who leaves, consistent audit logs.
 - Risk: <mark>the IdP is a single point of failure</mark> and a high-value target, so it needs MFA and high availability.
@@ -580,7 +580,7 @@ When a user taps **Sign in with Google**, OAuth 2.0 and OIDC work **together in 
 4. **Fallback:** device PIN, or full login again. After several failures, or when a new fingerprint is enrolled, require the password.
 5. The server can still revoke the session at any time.
 
-![Biometric login: a quick unlock, not a replacement for server login](images/b2-biometric-flow.svg)
+![Biometric login: a quick unlock, not a replacement for server login](images/ch05-biometric-flow.svg)
 
 ```dart
 final auth = LocalAuthentication();
@@ -642,7 +642,7 @@ After a few wrong tries the system stops the prompt. The app then offers the dev
 
 **How database encryption works:** generate a random 256-bit key on first run → store the key in Keystore/Keychain (hardware-backed, not extractable) → open the SQLCipher database with that key. <mark>A copied database file is useless without the key.</mark>
 
-![How the local database is encrypted](images/b2-db-encryption.svg)
+![How the local database is encrypted](images/ch05-db-encryption.svg)
 
 **Keystore and Keychain:** system services that keep cryptographic keys in secure hardware. The key material is not exposed to the app's memory; the app asks the system to use it.
 
@@ -674,7 +674,7 @@ After a few wrong tries the system stops the prompt. The app then offers the dev
 
 <mark>**Defence in depth:** no single control is enough.</mark> Layers: device (biometric, encryption) → app (obfuscation, validation) → network (TLS, pinning) → server (auth, RBAC, rate limiting, audit).
 
-![Defence in depth: an attacker must pass every layer](images/b2-defence-in-depth.svg)
+![Defence in depth: an attacker must pass every layer](images/ch05-defence-in-depth.svg)
 
 ## Link it to your own projects
 
@@ -770,7 +770,7 @@ Write your own answer first. Then open the model answer and compare.
 
 </div>
 
-![Encoding, hashing and encryption](images/b2-encoding-hashing-encryption.svg)
+![Encoding, hashing and encryption](images/ch05-encoding-hashing-encryption.svg)
 
 | Point | Encoding | Hashing | Encryption |
 |---|---|---|---|
@@ -816,7 +816,7 @@ Write your own answer first. Then open the model answer and compare.
 
 </div>
 
-![Symmetric and asymmetric encryption](images/b2-symmetric-asymmetric.svg)
+![Symmetric and asymmetric encryption](images/ch05-symmetric-asymmetric.svg)
 
 | Point | Symmetric | Asymmetric |
 |---|---|---|
@@ -854,7 +854,7 @@ Write your own answer first. Then open the model answer and compare.
 
 </div>
 
-![A JWT has three parts, joined by dots](images/b2-jwt.svg)
+![A JWT has three parts, joined by dots](images/ch05-jwt.svg)
 
 | Part | Contains | Example |
 |---|---|---|
@@ -911,7 +911,7 @@ Write your own answer first. Then open the model answer and compare.
 | **If stolen** | Useful for a few minutes only | Dangerous, so it is **rotated** and can be **revoked** |
 | **Where the app keeps it** | Memory, or secure storage | <mark>Secure storage only (Keystore / Keychain)</mark> |
 
-![Silent token refresh: what the app does on a 401](images/b2-token-refresh.svg)
+![Silent token refresh: what the app does on a 401](images/ch05-token-refresh.svg)
 
 **Silent refresh, step by step**
 
@@ -1025,7 +1025,7 @@ Write your own answer first. Then open the model answer and compare.
 
 </div>
 
-![Single Sign-On: log in once, use many apps](images/b2-sso.svg)
+![Single Sign-On: log in once, use many apps](images/ch05-sso.svg)
 
 | Benefit | For whom | Explanation |
 |---|---|---|
@@ -1209,7 +1209,7 @@ await storage.deleteAll();                    // on logout
 
 #### 2. The login flow
 
-![OAuth 2.0 Authorization Code flow with PKCE](images/b2-pkce-flow.svg)
+![OAuth 2.0 Authorization Code flow with PKCE](images/ch05-pkce-flow.svg)
 
 | # | Step |
 |---|---|
@@ -1242,7 +1242,7 @@ await storage.write(key: 'refresh_token', value: result.refreshToken);
 
 #### 4. Refreshing the token
 
-![Silent token refresh: what the app does on a 401](images/b2-token-refresh.svg)
+![Silent token refresh: what the app does on a 401](images/ch05-token-refresh.svg)
 
 1. The access token expires. The API answers **401**.
 2. The interceptor calls `/token` with `grant_type=refresh_token`.
@@ -1304,7 +1304,7 @@ await storage.write(key: 'refresh_token', value: result.refreshToken);
 
 #### 2. The flow
 
-![Biometric login: a quick unlock, not a replacement for server login](images/b2-biometric-flow.svg)
+![Biometric login: a quick unlock, not a replacement for server login](images/ch05-biometric-flow.svg)
 
 | # | Step |
 |---|---|
@@ -1389,7 +1389,7 @@ if (await auth.canCheckBiometrics && await auth.isDeviceSupported()) {
 
 </div>
 
-![Defence in depth: an attacker must pass every layer](images/b2-defence-in-depth.svg)
+![Defence in depth: an attacker must pass every layer](images/ch05-defence-in-depth.svg)
 
 #### 1. Who gets in (authentication)
 
@@ -1400,7 +1400,7 @@ if (await auth.canCheckBiometrics && await auth.isDeviceSupported()) {
 
 #### 2. Data on the device (at rest)
 
-![How the local database is encrypted](images/b2-db-encryption.svg)
+![How the local database is encrypted](images/ch05-db-encryption.svg)
 
 | What | How it is protected |
 |---|---|
@@ -1467,4 +1467,4 @@ if (await auth.canCheckBiometrics && await auth.isDeviceSupported()) {
 
 </details>
 
-<div class="book-nav"><span>← <a href="B1%20-%20Backend%20API%20Integration.md">B1 - Backend API Integration</a></span><span><a href="00%20-%20Contents%20and%20How%20to%20Use.md">Contents</a></span><span><a href="B3%20-%20Performance%20Optimization.md">B3 - Performance Optimization</a> →</span></div>
+<div class="book-nav"><span>← <a href="04%20-%20Backend%20API%20Integration.md">04 - Backend API Integration</a></span><span><a href="00%20-%20Contents%20and%20How%20to%20Use.md">Contents</a></span><span><a href="06%20-%20Performance%20Optimization.md">06 - Performance Optimization</a> →</span></div>

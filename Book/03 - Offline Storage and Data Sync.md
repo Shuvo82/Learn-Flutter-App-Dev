@@ -1,5 +1,5 @@
 <div class="chapter-head">
-<div class="chapter-kicker"><b>A3</b>Part A · Mobile Application Feature Development · ★ likely long question</div>
+<div class="chapter-kicker"><b>Chapter 3</b>Mobile Application Feature Development · ★ likely long question</div>
 
 # Offline Storage and Data Sync
 
@@ -44,7 +44,7 @@ Three parts: **offline storage** (sections 1–3), **local caching** (section 4)
 
 > Golden rule: <mark>**the local database is the single source of truth for the UI.** The UI never waits for the network.</mark>
 
-![Offline-first: the local database is the source of truth](images/a3-offline-first.svg)
+![Offline-first: the local database is the source of truth](images/ch03-offline-first.svg)
 
 **Why field apps need it:** field offices have an intermittent network. Field staff must still record visits and photos when the network drops. Data is sent when the network returns.
 
@@ -92,7 +92,7 @@ No. A cache only keeps a copy of server data for **reading**. An offline-first a
 | **Hive** | Flutter (pure Dart) | <mark>**NoSQL key-value**</mark> | <mark>Data in **boxes**; custom objects need a **TypeAdapter**</mark>; very fast for simple data; <mark>built-in **AES-256** encryption. No relations or joins</mark> |
 | **Realm** | Android, iOS, Flutter | <mark>**NoSQL object database** with its own engine (not SQLite)</mark> | Store objects directly, live auto-updating objects, fast. Owned by MongoDB; its cloud sync service has been deprecated, so treat it as a local database |
 
-Others to mention: **Isar** and **ObjectBox** (fast NoSQL for Flutter), **SharedPreferences / DataStore / UserDefaults** (small key-value settings, <mark>**not** for secrets or large data</mark>), **flutter_secure_storage** (tokens and keys, see B2), **files** (photos, documents).
+Others to mention: **Isar** and **ObjectBox** (fast NoSQL for Flutter), **SharedPreferences / DataStore / UserDefaults** (small key-value settings, <mark>**not** for secrets or large data</mark>), **flutter_secure_storage** (tokens and keys, see Ch 5), **files** (photos, documents).
 
 **Choosing**
 | Need | Choice |
@@ -237,7 +237,7 @@ When a new app version changes the tables, existing users already have the old d
 | **Stale-while-revalidate** | <mark>Show the cache at once, fetch in the background, then update the UI</mark> | Most list screens |
 | **Cache-only / network-only** | Extremes | Offline packs / payments |
 
-![Three caching strategies: which source comes first?](images/a3-caching-strategies.svg)
+![Three caching strategies: which source comes first?](images/ch03-caching-strategies.svg)
 
 **Invalidation (when to throw the cache away):**
 - <mark>**TTL** (time to live)</mark>: the entry expires after a set time.
@@ -298,7 +298,7 @@ If the app pulled first, the server's older copy could overwrite a change that t
 
 <mark>**The sync cycle: push first, then pull**</mark>
 
-![The sync cycle: push first, then pull](images/a3-sync-cycle.svg)
+![The sync cycle: push first, then pull](images/ch03-sync-cycle.svg)
 
 The same cycle as pseudocode:
 
@@ -334,7 +334,7 @@ sync():
 - **Media separately:** sync the small JSON record first, then upload photos by **multipart** or **chunked/resumable** upload, compressed, preferably on Wi-Fi. The record stores the file's upload status.
 - **Sync status in the UI:** a badge on each record, a pending count and the last sync time.
 
-![Exponential backoff: the wait doubles after each failure](images/a3-exponential-backoff.svg)
+![Exponential backoff: the wait doubles after each failure](images/ch03-exponential-backoff.svg)
 
 <div class="box rule">
 
@@ -397,7 +397,7 @@ Because background runs are not guaranteed (especially on iOS and on phones with
 
 **Why does my WorkManager job sometimes run late?**
 
-Because of Android's battery savers, **Doze** and **App Standby**. When the phone lies still with the screen off, Android delays background jobs and runs them together in short "maintenance windows". WorkManager works with these rules, it does not break them. See chapter B3, section 5.
+Because of Android's battery savers, **Doze** and **App Standby**. When the phone lies still with the screen off, Android delays background jobs and runs them together in short "maintenance windows". WorkManager works with these rules, it does not break them. See Ch 6, section 5.
 
 </div>
 
@@ -437,7 +437,7 @@ Because of Android's battery savers, **Doze** and **App Standby**. When the phon
 
 **Detecting it:** the client sends the `version` (or `updated_at`) it started from. If the server's version is newer, <mark>it answers **409 Conflict**. This is **optimistic locking**.</mark>
 
-![How a sync conflict happens](images/a3-sync-conflict.svg)
+![How a sync conflict happens](images/ch03-sync-conflict.svg)
 
 | Strategy | Rule | Good | Bad |
 |---|---|---|---|
@@ -510,7 +510,7 @@ If the app hard-deletes a row offline, the server never learns about it, and the
 - **Validate before saving** so the outbox does not fill with records the server will reject.
 - **Storage limits:** compress photos; clean up synced media; warn when space is low.
 - <mark>**Never log the user out or wipe data while unsynced records exist**</mark> without a clear warning.
-- **Security of offline data:** <mark>encrypted database (SQLCipher)</mark>, tokens in secure storage (B2).
+- **Security of offline data:** <mark>encrypted database (SQLCipher)</mark>, tokens in secure storage (Ch 5).
 
 ## 10. Testing offline sync
 
@@ -593,7 +593,7 @@ Write your own answer first. Then open the model answer and compare.
 
 </div>
 
-![Offline-first: the local database is the source of truth](images/a3-offline-first.svg)
+![Offline-first: the local database is the source of truth](images/ch03-offline-first.svg)
 
 | | Online-first app | Offline-first app |
 |---|---|---|
@@ -839,7 +839,7 @@ abstract class AppDb : RoomDatabase() { abstract fun visitDao(): VisitDao }
 
 </div>
 
-![Exponential backoff: the wait doubles after each failure](images/a3-exponential-backoff.svg)
+![Exponential backoff: the wait doubles after each failure](images/ch03-exponential-backoff.svg)
 
 | Attempt | Wait before it | Formula |
 |---|---|---|
@@ -969,7 +969,7 @@ Workmanager().registerPeriodicTask(
 
 <div class="ref">
 
-**From the book:** [6. Background sync](#6-background-sync) [B3 · Doze and App Standby (Android's two battery savers)](B3%20-%20Performance%20Optimization.md#doze-and-app-standby-androids-two-battery-savers)
+**From the book:** [6. Background sync](#6-background-sync) [Ch 6 · Doze and App Standby (Android's two battery savers)](06%20-%20Performance%20Optimization.md#doze-and-app-standby-androids-two-battery-savers)
 
 </div>
 
@@ -984,7 +984,7 @@ Workmanager().registerPeriodicTask(
 
 </div>
 
-![Three caching strategies: which source comes first?](images/a3-caching-strategies.svg)
+![Three caching strategies: which source comes first?](images/ch03-caching-strategies.svg)
 
 | Strategy | How it works | Good for | Risk |
 |---|---|---|---|
@@ -1022,7 +1022,7 @@ Workmanager().registerPeriodicTask(
 
 </div>
 
-![Offline-first: the local database is the source of truth](images/a3-offline-first.svg)
+![Offline-first: the local database is the source of truth](images/ch03-offline-first.svg)
 
 #### 1. Local storage
 
@@ -1043,7 +1043,7 @@ Every synced table carries these extra columns:
 
 #### 2. The sync process
 
-![The sync cycle: push first, then pull](images/a3-sync-cycle.svg)
+![The sync cycle: push first, then pull](images/ch03-sync-cycle.svg)
 
 1. **Push first.** Send the outbox operations in order, each with an **idempotency key**. When the server confirms one, remove it from the outbox and mark the row `synced`.
 2. **Then pull.** Ask the server for "everything changed since my last **cursor**". This is **delta sync**. It comes in pages.
@@ -1107,7 +1107,7 @@ The app sends the `version` it started from. If the server has a newer one, it a
 
 <div class="ref">
 
-**From the book:** [1. Offline-first: the idea](#1-offline-first-the-idea) [5. Sync design: the outbox pattern](#5-sync-design-the-outbox-pattern) [6. Background sync](#6-background-sync) [7. Conflict resolution](#7-conflict-resolution) [9. Reliability under intermittent network](#9-reliability-under-intermittent-network) [B2 · 11. Secure storage and local data encryption](B2%20-%20Mobile%20Security%20and%20Identity.md#11-secure-storage-and-local-data-encryption)
+**From the book:** [1. Offline-first: the idea](#1-offline-first-the-idea) [5. Sync design: the outbox pattern](#5-sync-design-the-outbox-pattern) [6. Background sync](#6-background-sync) [7. Conflict resolution](#7-conflict-resolution) [9. Reliability under intermittent network](#9-reliability-under-intermittent-network) [Ch 5 · 11. Secure storage and local data encryption](05%20-%20Mobile%20Security%20and%20Identity.md#11-secure-storage-and-local-data-encryption)
 
 </div>
 
@@ -1134,7 +1134,7 @@ Her copy says "I started from version 3". The server is already at version 4. Th
 
 </div>
 
-![How a sync conflict happens](images/a3-sync-conflict.svg)
+![How a sync conflict happens](images/ch03-sync-conflict.svg)
 
 #### How a conflict is detected
 
@@ -1225,4 +1225,4 @@ For LWW, always use **server time or version numbers**, never the phone's clock.
 
 </details>
 
-<div class="book-nav"><span>← <a href="A2%20-%20UI-UX%20Implementation.md">A2 - UI-UX Implementation</a></span><span><a href="00%20-%20Contents%20and%20How%20to%20Use.md">Contents</a></span><span><a href="B1%20-%20Backend%20API%20Integration.md">B1 - Backend API Integration</a> →</span></div>
+<div class="book-nav"><span>← <a href="02%20-%20UI-UX%20Implementation.md">02 - UI-UX Implementation</a></span><span><a href="00%20-%20Contents%20and%20How%20to%20Use.md">Contents</a></span><span><a href="04%20-%20Backend%20API%20Integration.md">04 - Backend API Integration</a> →</span></div>

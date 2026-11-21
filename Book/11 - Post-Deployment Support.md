@@ -1,5 +1,5 @@
 <div class="chapter-head">
-<div class="chapter-kicker"><b>D2</b>Part D · Testing, Maintenance and Collaboration</div>
+<div class="chapter-kicker"><b>Chapter 11</b>Testing, Maintenance and Collaboration</div>
 
 # Post-Deployment Support
 
@@ -76,7 +76,7 @@ Affected: 14 users · Android 9 · app 1.4.2
 
 | Source | Shows |
 |---|---|
-| **Firebase Crashlytics / Sentry** | Crashes and non-fatal errors grouped into issues, with stack trace, device, OS, app version, logs (B4) |
+| **Firebase Crashlytics / Sentry** | Crashes and non-fatal errors grouped into issues, with stack trace, device, OS, app version, logs (Ch 7) |
 | **Android vitals** (Play Console) | Crash rate, ANR rate, by device and OS |
 | **Xcode Organizer / App Store Connect** | iOS crashes, hangs, energy |
 | **Store reviews and ratings** | What users complain about |
@@ -94,7 +94,7 @@ Affected: 14 users · Android 9 · app 1.4.2
 | `setState()` called after `dispose()` | Check `mounted` after `await` |
 | Index out of range, bad cast | Validate list length and types |
 | API response changed shape | Tolerant parsing, API versioning |
-| Out of memory | Resize images, paginate (B3) |
+| Out of memory | Resize images, paginate (Ch 6) |
 | Database migration failed after an update | Test migrations from every old version |
 | Missing permission or a changed OS rule | Handle denied permissions; check OS version |
 | Main thread blocked (ANR) | Move work off the main thread |
@@ -137,11 +137,11 @@ Affected: 14 users · Android 9 · app 1.4.2
 | The app's name misspelled on the home screen | Low | High |
 | Slight misalignment on a settings page | Low | Low |
 
-![Severity and priority are two different things](images/d2-severity-priority.svg)
+![Severity and priority are two different things](images/ch11-severity-priority.svg)
 
 **Bug life cycle**
 
-![Bug life cycle](images/d2-bug-lifecycle.svg)
+![Bug life cycle](images/ch11-bug-lifecycle.svg)
 
 <div class="box rule">
 
@@ -283,7 +283,7 @@ A full rewrite takes months with no releases, and the old code contains years of
 
 It has **four** sides in mobile:
 
-![Backward compatibility has four sides](images/d2-backward-compatibility.svg)
+![Backward compatibility has four sides](images/ch11-backward-compatibility.svg)
 
 <mark>**(a) Older OS versions and devices**</mark>
 - `minSdkVersion` (Android) and the iOS deployment target define the oldest supported OS.
@@ -342,7 +342,7 @@ A user upgrades the app and already has a local database, cached files and saved
 
 </div>
 
-## 7. Release safety after deployment (links to C1)
+## 7. Release safety after deployment (links to Ch 8)
 
 <div class="box def">
 
@@ -446,7 +446,7 @@ Write your own answer first. Then open the model answer and compare.
 
 </div>
 
-![Severity and priority are two different things](images/d2-severity-priority.svg)
+![Severity and priority are two different things](images/ch11-severity-priority.svg)
 
 | Point | Severity | Priority |
 |---|---|---|
@@ -486,7 +486,7 @@ Write your own answer first. Then open the model answer and compare.
 
 </div>
 
-![Bug life cycle](images/d2-bug-lifecycle.svg)
+![Bug life cycle](images/ch11-bug-lifecycle.svg)
 
 | State | Who | Meaning |
 |---|---|---|
@@ -712,7 +712,7 @@ New → Assigned → Open → Fixed → Retest → Verified → Closed
 
 </div>
 
-![Backward compatibility has four sides](images/d2-backward-compatibility.svg)
+![Backward compatibility has four sides](images/ch11-backward-compatibility.svg)
 
 | Side | The question | How it is kept |
 |---|---|---|
@@ -847,7 +847,7 @@ if (Platform.isAndroid) {
 
 <div class="ref">
 
-**From the book:** [4. Troubleshooting: a fixed method](#4-troubleshooting-a-fixed-method) [D1 · 14. General testing vocabulary (typical exam terms)](D1%20-%20Architecture%20Patterns%20and%20Testing.md#14-general-testing-vocabulary-typical-exam-terms)
+**From the book:** [4. Troubleshooting: a fixed method](#4-troubleshooting-a-fixed-method) [Ch 10 · 14. General testing vocabulary (typical exam terms)](10%20-%20Architecture%20Patterns%20and%20Testing.md#14-general-testing-vocabulary-typical-exam-terms)
 
 </div>
 
@@ -862,7 +862,7 @@ if (Platform.isAndroid) {
 
 </div>
 
-![Backward compatibility has four sides](images/d2-backward-compatibility.svg)
+![Backward compatibility has four sides](images/ch11-backward-compatibility.svg)
 
 #### 1. The local database
 
@@ -928,7 +928,7 @@ MigrationStrategy get migration => MigrationStrategy(
 
 <div class="ref">
 
-**From the book:** [6. Backward compatibility](#6-backward-compatibility) [A3 · 3. Schema changes: migrations](A3%20-%20Offline%20Storage%20and%20Data%20Sync.md#3-schema-changes-migrations) [B1 · 6. API documentation and contract](B1%20-%20Backend%20API%20Integration.md#6-api-documentation-and-contract)
+**From the book:** [6. Backward compatibility](#6-backward-compatibility) [Ch 3 · 3. Schema changes: migrations](03%20-%20Offline%20Storage%20and%20Data%20Sync.md#3-schema-changes-migrations) [Ch 4 · 6. API documentation and contract](04%20-%20Backend%20API%20Integration.md#6-api-documentation-and-contract)
 
 </div>
 
@@ -1054,10 +1054,10 @@ For this to work, the **symbol files** must be uploaded, or the stack trace is u
 
 <div class="ref">
 
-**From the book:** [2. Monitoring crash logs](#2-monitoring-crash-logs) [4. Troubleshooting: a fixed method](#4-troubleshooting-a-fixed-method) [7. Release safety after deployment (links to C1)](#7-release-safety-after-deployment-links-to-c1) [B4 · 12. Monitoring workflow](B4%20-%20Push%20Notifications%20and%20Crash%20Monitoring.md#12-monitoring-workflow)
+**From the book:** [2. Monitoring crash logs](#2-monitoring-crash-logs) [4. Troubleshooting: a fixed method](#4-troubleshooting-a-fixed-method) [7. Release safety after deployment (links to Ch 8)](#7-release-safety-after-deployment-links-to-ch-8) [Ch 7 · 12. Monitoring workflow](07%20-%20Push%20Notifications%20and%20Crash%20Monitoring.md#12-monitoring-workflow)
 
 </div>
 
 </details>
 
-<div class="book-nav"><span>← <a href="D1%20-%20Architecture%20Patterns%20and%20Testing.md">D1 - Architecture Patterns and Testing</a></span><span><a href="00%20-%20Contents%20and%20How%20to%20Use.md">Contents</a></span><span><a href="D3%20-%20Documentation%20and%20Agile%20Teamwork.md">D3 - Documentation and Agile Teamwork</a> →</span></div>
+<div class="book-nav"><span>← <a href="10%20-%20Architecture%20Patterns%20and%20Testing.md">10 - Architecture Patterns and Testing</a></span><span><a href="00%20-%20Contents%20and%20How%20to%20Use.md">Contents</a></span><span><a href="12%20-%20Documentation%20and%20Agile%20Teamwork.md">12 - Documentation and Agile Teamwork</a> →</span></div>

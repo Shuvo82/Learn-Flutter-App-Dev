@@ -21,24 +21,24 @@
 
 | Part | Chapter | What you learn | Size |
 |---|---|---|---|
-| **A. Mobile Application Feature Development** | [A1 — Flutter, Dart and Native](A1%20-%20Flutter,%20Dart%20and%20Native.md) | Cross-Platform & Native Coding | Large |
-| | [A2 — UI-UX Implementation](A2%20-%20UI-UX%20Implementation.md) | Material Design, iOS HIG, responsive UI | Medium |
-| | [A3 — Offline Storage and Data Sync](A3%20-%20Offline%20Storage%20and%20Data%20Sync.md) | SQLite, Room, Core Data, Hive, Realm, background sync | Large ⭐ |
-| **B. API Integration, Security & Performance** | [B1 — Backend API Integration](B1%20-%20Backend%20API%20Integration.md) | REST, JSON/XML, third-party SDKs | Medium |
-| | [B2 — Mobile Security and Identity](B2%20-%20Mobile%20Security%20and%20Identity.md) | OAuth2, JWT, Keycloak SSO, biometrics, encryption | Large ⭐ |
-| | [B3 — Performance Optimization](B3%20-%20Performance%20Optimization.md) | Memory, rendering speed, battery, Doze and App Standby | Medium |
-| | [B4 — Push Notifications and Crash Monitoring](B4%20-%20Push%20Notifications%20and%20Crash%20Monitoring.md) | FCM, APNs, Crashlytics, Sentry | Medium |
-| **C. App Store Deployment & DevOps** | [C1 — Store Publishing and Code Signing](C1%20-%20Store%20Publishing%20and%20Code%20Signing.md) | Play Store, App Store, versioning, signing, ASO | Medium |
-| | [C2 — CI-CD and Build Automation](C2%20-%20CI-CD%20and%20Build%20Automation.md) | Fastlane, GitHub Actions, GitLab CI, Bitrise, cloud | Medium |
-| **D. Testing, Maintenance & Collaboration** | [D1 — Architecture Patterns and Testing](D1%20-%20Architecture%20Patterns%20and%20Testing.md) | BLoC, MVVM, MVP, Clean Architecture, unit and widget tests | Large ⭐ |
-| | [D2 — Post-Deployment Support](D2%20-%20Post-Deployment%20Support.md) | Crash logs, bug fixing, refactoring, backward compatibility | Small |
-| | [D3 — Documentation and Agile Teamwork](D3%20-%20Documentation%20and%20Agile%20Teamwork.md) | Technical docs, Agile/Scrum, SDLC, collaboration | Medium |
-| **E. Revision** | [E — Revision Sheet and Long-Answer Templates](E%20-%20Revision%20Sheet%20and%20Long-Answer%20Templates.md) | Everything on a few pages, all the diagrams, and 6 ready long answers | Read last |
-| **F. Core maths** | [F — Probability](F%20-%20Probability.md) | Probability and counting: often asked in written exams for IT posts | Medium |
+| **Mobile Application Feature Development** | [1 — Flutter, Dart and Native](01%20-%20Flutter,%20Dart%20and%20Native.md) | Cross-Platform & Native Coding | Large |
+| | [2 — UI-UX Implementation](02%20-%20UI-UX%20Implementation.md) | Material Design, iOS HIG, responsive UI | Medium |
+| | [3 — Offline Storage and Data Sync](03%20-%20Offline%20Storage%20and%20Data%20Sync.md) | SQLite, Room, Core Data, Hive, Realm, background sync | Large ⭐ |
+| **API Integration, Security & Performance** | [4 — Backend API Integration](04%20-%20Backend%20API%20Integration.md) | REST, JSON/XML, third-party SDKs | Medium |
+| | [5 — Mobile Security and Identity](05%20-%20Mobile%20Security%20and%20Identity.md) | OAuth2, JWT, Keycloak SSO, biometrics, encryption | Large ⭐ |
+| | [6 — Performance Optimization](06%20-%20Performance%20Optimization.md) | Memory, rendering speed, battery, Doze and App Standby | Medium |
+| | [7 — Push Notifications and Crash Monitoring](07%20-%20Push%20Notifications%20and%20Crash%20Monitoring.md) | FCM, APNs, Crashlytics, Sentry | Medium |
+| **App Store Deployment & DevOps** | [8 — Store Publishing and Code Signing](08%20-%20Store%20Publishing%20and%20Code%20Signing.md) | Play Store, App Store, versioning, signing, ASO | Medium |
+| | [9 — CI-CD and Build Automation](09%20-%20CI-CD%20and%20Build%20Automation.md) | Fastlane, GitHub Actions, GitLab CI, Bitrise, cloud | Medium |
+| **Testing, Maintenance & Collaboration** | [10 — Architecture Patterns and Testing](10%20-%20Architecture%20Patterns%20and%20Testing.md) | BLoC, MVVM, MVP, Clean Architecture, unit and widget tests | Large ⭐ |
+| | [11 — Post-Deployment Support](11%20-%20Post-Deployment%20Support.md) | Crash logs, bug fixing, refactoring, backward compatibility | Small |
+| | [12 — Documentation and Agile Teamwork](12%20-%20Documentation%20and%20Agile%20Teamwork.md) | Technical docs, Agile/Scrum, SDLC, collaboration | Medium |
+| **Core maths** | [13 — Probability](13%20-%20Probability.md) | Probability and counting: often asked in written exams for IT posts | Medium |
+| **Revision** | [14 — Revision Sheet and Long-Answer Templates](14%20-%20Revision%20Sheet%20and%20Long-Answer%20Templates.md) | Everything on a few pages, all the diagrams, and 6 ready long answers | Read last |
 
 ⭐ = the three chapters most likely to carry a long interview or exam question. Give them the most time.
 
-**Foundations:** [OOP and DSA](../Notes/Foundations%201%20-%20OOP%20and%20DSA.md) and [Database and SQL](../Notes/Foundations%202%20-%20Database%20and%20SQL.md). Interviews and written exams often add a few core CS questions, so read these too. SDLC, testing and Git theory are inside D1, D3 and C2. Networking and security theory is inside B1 and B2.
+**Foundations:** [OOP and DSA](../Notes/Foundations%201%20-%20OOP%20and%20DSA.md) and [Database and SQL](../Notes/Foundations%202%20-%20Database%20and%20SQL.md). Interviews and written exams often add a few core CS questions, so read these too. SDLC, testing and Git theory are inside Ch 9, Ch 10 and Ch 12. Networking and security theory is inside Ch 4 and Ch 5.
 
 ## How each topic is taught
 
@@ -142,4 +142,4 @@ This folder is a Claude Code project. Ask Claude to:
 - **explain a topic again** in the book's style, with a diagram;
 - **add a new chapter** when you meet a topic the book does not cover.
 
-<div class="book-nav"><span></span><span></span><span><a href="A1%20-%20Flutter,%20Dart%20and%20Native.md">A1 - Flutter, Dart and Native</a> →</span></div>
+<div class="book-nav"><span></span><span></span><span><a href="01%20-%20Flutter,%20Dart%20and%20Native.md">01 - Flutter, Dart and Native</a> →</span></div>

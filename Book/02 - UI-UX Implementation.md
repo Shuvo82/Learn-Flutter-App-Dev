@@ -1,5 +1,5 @@
 <div class="chapter-head">
-<div class="chapter-kicker"><b>A2</b>Part A · Mobile Application Feature Development</div>
+<div class="chapter-kicker"><b>Chapter 2</b>Mobile Application Feature Development</div>
 
 # UI/UX Implementation
 
@@ -43,7 +43,7 @@ Four ideas: **requirements and wireframes**, **responsive layout**, **Material D
 | **Design system** | Shared rules and reusable components: colours, typography, spacing, buttons |
 | **Design handoff** | The designer gives developers the specs (Figma: sizes, colours, assets) |
 
-![Wireframe, mockup, prototype](images/a2-wireframe-mockup-prototype.svg)
+![Wireframe, mockup, prototype](images/ch02-wireframe-mockup-prototype.svg)
 
 **From requirement to screen (your working steps):**
 1. Read the user requirement or user story. Who is the user and what is the task?
@@ -114,7 +114,7 @@ Both dialogs ask the same thing. But an Android user expects the first one and a
 | Switches, pickers | Material switch, dropdown menu, calendar picker | iOS switch, wheel picker |
 | Units | <mark>dp (density-independent pixels)</mark> | pt (points) |
 
-![Material Design and iOS Human Interface Guidelines](images/a2-material-vs-hig.svg)
+![Material Design and iOS Human Interface Guidelines](images/ch02-material-vs-hig.svg)
 
 **How one Flutter codebase follows both:**
 - Use adaptive constructors: `Switch.adaptive`, `CircularProgressIndicator.adaptive`, `showAdaptiveDialog`.
@@ -183,7 +183,7 @@ No. One codebase is enough. Flutter gives two widget sets (`Material` and `Cuper
 
 A parent gives its child min/max width and height. The child chooses a size inside those limits. The parent then places the child.
 
-![The Flutter layout rule](images/a2-layout-rule.svg)
+![The Flutter layout rule](images/ch02-layout-rule.svg)
 
 | Widget | Use |
 |---|---|
@@ -197,7 +197,7 @@ A parent gives its child min/max width and height. The child chooses a size insi
 | `Wrap` | Moves children to the next line when space runs out |
 | `ListView.builder`, `GridView.builder` | Long scrolling lists, built lazily |
 
-![Expanded and Flexible inside a Row](images/a2-expanded-flexible.svg)
+![Expanded and Flexible inside a Row](images/ch02-expanded-flexible.svg)
 
 - **Main axis**: the direction of the Row/Column (`mainAxisAlignment`). **Cross axis**: the other direction (`crossAxisAlignment`).
 - <mark>Common error: "RenderFlex overflowed"</mark>. Fix with `Expanded`, `Flexible`, `Wrap`, or scrolling.
@@ -254,7 +254,7 @@ LayoutBuilder(
 ```
 Typical **breakpoints**: <mark>under 600 = phone (compact), 600–839 = small tablet (medium), 840 and above = tablet/desktop (expanded)</mark>.
 
-![Responsive breakpoints: one app, three layouts](images/a2-breakpoints.svg)
+![Responsive breakpoints: one app, three layouts](images/ch02-breakpoints.svg)
 
 **Rules:** no fixed pixel widths for whole screens; use **logical pixels** (Flutter's unit is independent of screen density); let text wrap; make every long screen scrollable (a keyboard or a small phone will cover part of it); support the user's **text scale** setting; test in landscape.
 
@@ -511,7 +511,7 @@ Write your own answer first. Then open the model answer and compare.
 
 </div>
 
-![Wireframe, mockup, prototype](images/a2-wireframe-mockup-prototype.svg)
+![Wireframe, mockup, prototype](images/ch02-wireframe-mockup-prototype.svg)
 
 | Point | Wireframe | Mockup | Prototype |
 |---|---|---|---|
@@ -579,7 +579,7 @@ Write your own answer first. Then open the model answer and compare.
 
 </div>
 
-![Expanded and Flexible inside a Row](images/a2-expanded-flexible.svg)
+![Expanded and Flexible inside a Row](images/ch02-expanded-flexible.svg)
 
 | Point | `Expanded` | `Flexible` |
 |---|---|---|
@@ -699,7 +699,7 @@ Scaffold(body: SafeArea(child: VisitForm()))
 
 </div>
 
-![The Flutter layout rule](images/a2-layout-rule.svg)
+![The Flutter layout rule](images/ch02-layout-rule.svg)
 
 **The three steps**
 
@@ -789,7 +789,7 @@ Scaffold(body: SafeArea(child: VisitForm()))
 
 </div>
 
-![Material Design and iOS Human Interface Guidelines](images/a2-material-vs-hig.svg)
+![Material Design and iOS Human Interface Guidelines](images/ch02-material-vs-hig.svg)
 
 #### 1. The comparison
 
@@ -862,7 +862,7 @@ Scaffold(body: SafeArea(child: VisitForm()))
 
 </div>
 
-![Responsive breakpoints: one app, three layouts](images/a2-breakpoints.svg)
+![Responsive breakpoints: one app, three layouts](images/ch02-breakpoints.svg)
 
 #### Step 1. Understand the requirement
 
@@ -1034,4 +1034,4 @@ await expectLater(tester, meetsGuideline(labeledTapTargetGuideline));
 
 </details>
 
-<div class="book-nav"><span>← <a href="A1%20-%20Flutter,%20Dart%20and%20Native.md">A1 - Flutter, Dart and Native</a></span><span><a href="00%20-%20Contents%20and%20How%20to%20Use.md">Contents</a></span><span><a href="A3%20-%20Offline%20Storage%20and%20Data%20Sync.md">A3 - Offline Storage and Data Sync</a> →</span></div>
+<div class="book-nav"><span>← <a href="01%20-%20Flutter,%20Dart%20and%20Native.md">01 - Flutter, Dart and Native</a></span><span><a href="00%20-%20Contents%20and%20How%20to%20Use.md">Contents</a></span><span><a href="03%20-%20Offline%20Storage%20and%20Data%20Sync.md">03 - Offline Storage and Data Sync</a> →</span></div>

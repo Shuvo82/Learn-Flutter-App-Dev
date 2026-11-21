@@ -1,5 +1,5 @@
 <div class="chapter-head">
-<div class="chapter-kicker"><b>B4</b>Part B · API Integration, Security and Performance</div>
+<div class="chapter-kicker"><b>Chapter 7</b>API Integration, Security and Performance</div>
 
 # Push Notifications and Crash Monitoring
 
@@ -64,7 +64,7 @@ Why the OS runs this: one shared, battery-efficient connection per phone (Google
 
 </div>
 
-![How a push notification reaches the phone](images/b4-push-flow.svg)
+![How a push notification reaches the phone](images/ch07-push-flow.svg)
 
 ![The four parts of FCM, from the official documentation](images/web/firebase-fcm-architecture.png)<br>*The official picture: (1) something creates the message, (2) the FCM backend takes it, (3) a transport layer for each platform carries it (APNs for iOS), (4) the SDK on the device receives it. Source: Firebase documentation.*
 
@@ -283,7 +283,7 @@ You cannot attach a debugger to a field officer's phone. **Crash reporting** too
 | **Breadcrumbs / logs** | The trail of events before the crash |
 | **Instrumentation** | Adding code that records how the app behaves |
 
-![Crash-free users](images/b4-crash-free.svg)
+![Crash-free users](images/ch07-crash-free.svg)
 
 <div class="box q">
 
@@ -406,14 +406,14 @@ For the NGO, which holds sensitive financial data and may prefer its own infrast
 
 </div>
 
-1. <mark>Release with **staged rollout**</mark> (C1).
+1. <mark>Release with **staged rollout**</mark> (Ch 8).
 2. Watch crash-free users and new issues for the new version.
 3. Triage: sort by users affected; set priority.
 4. Reproduce with the device, OS, version, breadcrumbs and custom keys.
 5. Fix, add a regression test, release a hotfix.
 6. Confirm the issue stops in the new version; close it.
 
-![The monitoring loop after every release](images/b4-monitoring-loop.svg)
+![The monitoring loop after every release](images/ch07-monitoring-loop.svg)
 
 **Privacy:** <mark>never send names, NIDs, phone numbers, tokens or financial values in logs or crash reports</mark>. Use internal IDs.
 
@@ -477,7 +477,7 @@ Write your own answer first. Then open the model answer and compare.
 
 </div>
 
-![How a push notification reaches the phone](images/b4-push-flow.svg)
+![How a push notification reaches the phone](images/ch07-push-flow.svg)
 
 | Point | FCM | APNs |
 |---|---|---|
@@ -731,7 +731,7 @@ if (settings.authorizationStatus == AuthorizationStatus.authorized) { /* ok */ }
 
 </div>
 
-![Crash-free users](images/b4-crash-free.svg)
+![Crash-free users](images/ch07-crash-free.svg)
 
 **A worked example**
 
@@ -900,7 +900,7 @@ try {
 
 </div>
 
-![How a push notification reaches the phone](images/b4-push-flow.svg)
+![How a push notification reaches the phone](images/ch07-push-flow.svg)
 
 #### 1. The delivery, in five steps
 
@@ -1037,7 +1037,7 @@ Future<void> main() async {
 
 #### 4. The workflow after every release
 
-![The monitoring loop after every release](images/b4-monitoring-loop.svg)
+![The monitoring loop after every release](images/ch07-monitoring-loop.svg)
 
 1. Release with a **staged rollout**.
 2. Watch **crash-free users** and new issues for the new version.
@@ -1072,7 +1072,7 @@ Future<void> main() async {
 
 <div class="ref">
 
-**From the book:** [9. Firebase Crashlytics](#9-firebase-crashlytics) [10. Sentry](#10-sentry) [11. Application performance tracking (APM)](#11-application-performance-tracking-apm) [12. Monitoring workflow](#12-monitoring-workflow) [C1 · 10. After release](C1%20-%20Store%20Publishing%20and%20Code%20Signing.md#10-after-release)
+**From the book:** [9. Firebase Crashlytics](#9-firebase-crashlytics) [10. Sentry](#10-sentry) [11. Application performance tracking (APM)](#11-application-performance-tracking-apm) [12. Monitoring workflow](#12-monitoring-workflow) [Ch 8 · 10. After release](08%20-%20Store%20Publishing%20and%20Code%20Signing.md#10-after-release)
 
 </div>
 
@@ -1087,7 +1087,7 @@ Future<void> main() async {
 
 </div>
 
-![How a push notification reaches the phone](images/b4-push-flow.svg)
+![How a push notification reaches the phone](images/ch07-push-flow.svg)
 
 #### 1. The flow
 
@@ -1174,4 +1174,4 @@ Future<void> main() async {
 
 </details>
 
-<div class="book-nav"><span>← <a href="B3%20-%20Performance%20Optimization.md">B3 - Performance Optimization</a></span><span><a href="00%20-%20Contents%20and%20How%20to%20Use.md">Contents</a></span><span><a href="C1%20-%20Store%20Publishing%20and%20Code%20Signing.md">C1 - Store Publishing and Code Signing</a> →</span></div>
+<div class="book-nav"><span>← <a href="06%20-%20Performance%20Optimization.md">06 - Performance Optimization</a></span><span><a href="00%20-%20Contents%20and%20How%20to%20Use.md">Contents</a></span><span><a href="08%20-%20Store%20Publishing%20and%20Code%20Signing.md">08 - Store Publishing and Code Signing</a> →</span></div>

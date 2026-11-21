@@ -5,7 +5,7 @@ from lib import D, C, INK, INK2, MUTED, SURF, EDGE, GRID, tw
 
 # ------------------------------------------------------------------ C1
 def c1_release_path():
-    d = D('c1-release-path', 246, 'Release management: the whole path of one version')
+    d = D('ch08-release-path', 246, 'Release management: the whole path of one version')
     row1 = [('Code freeze', 'blue'), ('Version bump', 'blue'), ('Release build', 'blue'), ('Sign', 'yellow'),
             ('Test\ninternal / beta', 'yellow')]
     row2 = [('Store listing +\npolicy forms', 'violet'), ('Submit for\nreview', 'violet'), ('Staged rollout', 'green'),
@@ -26,7 +26,7 @@ def c1_release_path():
 
 
 def c1_version():
-    d = D('c1-version-number', 262, 'Reading a version number', 'pubspec.yaml    version: 1.4.2+37')
+    d = D('ch08-version-number', 262, 'Reading a version number', 'pubspec.yaml    version: 1.4.2+37')
     parts = [(176, 72, '1', 'violet', 'MAJOR', 'breaking change'), (286, 72, '4', 'blue', 'MINOR', 'new feature'),
              (396, 72, '2', 'green', 'PATCH', 'bug fix'), (522, 96, '37', 'yellow', 'BUILD', 'goes up on every upload')]
     for x, w, t, col, name, hint in parts:
@@ -48,7 +48,7 @@ def c1_version():
 
 
 def c1_android_signing():
-    d = D('c1-android-signing', 236, 'Android: Play App Signing uses two keys')
+    d = D('ch08-android-signing', 236, 'Android: Play App Signing uses two keys')
     d.group(20, 58, 330, 150, 'You')
     d.group(386, 58, 354, 150, 'Google Play')
     d.box(36, 96, 124, 52, 'Build the AAB', 'blue')
@@ -68,7 +68,7 @@ def c1_android_signing():
 
 
 def c1_ios_signing():
-    d = D('c1-ios-signing', 284, 'iOS: what a provisioning profile ties together')
+    d = D('ch08-ios-signing', 284, 'iOS: what a provisioning profile ties together')
     a = d.box(24, 62, 190, 46, 'Certificate', 'violet', sub='WHO: the developer')
     b = d.box(24, 122, 190, 46, 'App ID (Bundle ID)', 'blue', sub='WHAT: which app')
     c = d.box(24, 182, 190, 46, 'Devices + entitlements', 'grey', sub='WHERE, and what it may do')
@@ -89,7 +89,7 @@ def c1_ios_signing():
 
 
 def c1_staged_rollout():
-    d = D('c1-staged-rollout', 270, 'Staged rollout: release to a small share of users first',
+    d = D('ch08-staged-rollout', 270, 'Staged rollout: release to a small share of users first',
           'Share of users who receive the new version')
     base, top = 220, 92
     sc = (base - top) / 100.0
@@ -118,7 +118,7 @@ def c1_staged_rollout():
 
 # ------------------------------------------------------------------ C2
 def c2_ci_cd():
-    d = D('c2-ci-cd', 308, 'CI, Continuous Delivery and Continuous Deployment')
+    d = D('ch09-ci-cd', 308, 'CI, Continuous Delivery and Continuous Deployment')
     stages = [('Commit', 150), ('Build', 262), ('Test', 374), ('Package', 486), ('Production', 672)]
     rows = [(74, 'Continuous\nIntegration', 3), (150, 'Continuous\nDelivery', 5), (226, 'Continuous\nDeployment', 5)]
     for y, name, n in rows:
@@ -144,7 +144,7 @@ def c2_ci_cd():
 
 
 def c2_pipeline():
-    d = D('c2-pipeline', 330, 'A mobile CI/CD pipeline')
+    d = D('ch09-pipeline', 330, 'A mobile CI/CD pipeline')
     xs = [40, 216, 392, 568]
     row1 = [('1', 'Checkout', 'source code', 'grey'), ('2', 'Setup', 'Flutter, pub get (cached)', 'grey'),
             ('3', 'Analyze', 'format, lint', 'blue'), ('4', 'Test', 'unit + widget tests', 'blue')]
@@ -170,7 +170,7 @@ def c2_pipeline():
 
 
 def c2_tools():
-    d = D('c2-ci-and-fastlane', 270, 'The CI service and Fastlane do different jobs')
+    d = D('ch09-ci-and-fastlane', 270, 'The CI service and Fastlane do different jobs')
     d.group(30, 58, 460, 190, 'CI service: GitHub Actions / GitLab CI / Bitrise')
     d.text(42, 96, 'Decides WHEN to run (push, pull request, tag) and gives the machine.', size=11.5, anchor='start', fill=INK2)
     d.box(48, 118, 150, 62, 'Analyze + test', 'blue', sub='flutter analyze\nflutter test', submono=True, subsize=10.5)
@@ -185,7 +185,7 @@ def c2_tools():
 
 
 def c2_git_flow():
-    d = D('c2-git-flow', 338, 'Git Flow: branches for a team that releases to the stores')
+    d = D('ch09-git-flow', 338, 'Git Flow: branches for a team that releases to the stores')
     lanes = [('main', 86, 'blue'), ('hotfix/*', 136, 'red'), ('release/*', 186, 'yellow'), ('develop', 236, 'violet'),
              ('feature/*', 286, 'green')]
     Y = {n: y for n, y, _ in lanes}
@@ -227,7 +227,7 @@ def c2_git_flow():
 
 
 def c2_merge_vs_rebase():
-    d = D('c2-merge-vs-rebase', 282, 'git merge and git rebase')
+    d = D('ch09-merge-vs-rebase', 282, 'git merge and git rebase')
     blue, green, yel = C['blue'], C['green'], C['yellow']
 
     def dot(x, y, t, col, dash=False):
@@ -274,7 +274,7 @@ def c2_merge_vs_rebase():
 
 
 def c2_cloud_models():
-    d = D('c2-cloud-models', 316, 'Cloud service models: who manages what')
+    d = D('ch09-cloud-models', 316, 'Cloud service models: who manages what')
     you, prov = C['blue'], C['grey']
     std = ['Application', 'Data', 'Runtime', 'Operating system', 'Servers, network']
     cols = [('IaaS', 'e.g. AWS EC2', std, 4), ('PaaS', 'e.g. Google App Engine', std, 2), ('SaaS', 'e.g. Gmail', std, 0),
@@ -295,7 +295,7 @@ def c2_cloud_models():
 
 
 def c2_container_vs_vm():
-    d = D('c2-container-vs-vm', 318, 'Virtual machines and containers')
+    d = D('ch09-container-vs-vm', 318, 'Virtual machines and containers')
     # VMs
     x = 40
     d.text(x + 160, 74, 'Virtual machines', size=13.5, weight='700')

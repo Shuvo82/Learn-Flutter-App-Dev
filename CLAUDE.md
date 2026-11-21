@@ -24,8 +24,8 @@ The learner says they are bad at memorizing. They want to **understand** each to
 
 | Folder / file | What it is |
 |---|---|
-| `Book/` | **The book.** `00 - Contents and How to Use.md` is the cover and index. Chapters `A1`–`A3`, `B1`–`B4`, `C1`–`C2`, `D1`–`D3` teach one skill each (feature development · APIs, security, performance, push · publishing and CI/CD · architecture, testing, support, teamwork). `E - Revision Sheet and Long-Answer Templates.md` is the revision sheet (importance tags, top lines, common mistakes, all diagrams with short explanations, six long-answer templates with model answers). `F - Probability.md` is core maths for written exams |
-| `Book/images/` | 73 SVG diagrams named by chapter (`a3-sync-cycle.svg`, `b2-pkce-flow.svg`, `f-tree-diagram.svg`, …). To change or add one, edit the Python files in `images/_generator/` (`part_a.py` … `part_f.py`, helpers in `lib.py`) and run `python3 build.py` there; never hand-edit the SVGs. Check new pictures visually (for example `qlmanage -t -s 1000 -o <dir> file.svg` on macOS) |
+| `Book/` | **The book.** `00 - Contents and How to Use.md` is the cover and index. Chapters are numbered in reading order, and the file names start with the number so they sort in that order. `01`–`12` teach one skill each, in four parts: feature development (1–3) · APIs, security, performance, push (4–7) · publishing and CI/CD (8–9) · architecture, testing, support, teamwork (10–12). `13 - Probability.md` is core maths for written exams. `14 - Revision Sheet and Long-Answer Templates.md` is the revision sheet (importance tags, top lines, common mistakes, all diagrams with short explanations, six long-answer templates with model answers) and is always the **last** chapter. In the text, other chapters are called `Ch 5` (not letters) |
+| `Book/images/` | 73 SVG diagrams named by chapter number (`ch03-sync-cycle.svg`, `ch05-pkce-flow.svg`, `ch13-tree-diagram.svg`, …). To change or add one, edit the Python files in `images/_generator/` (`part_a.py` = Ch 1–3, `part_b.py` = Ch 4–7, `part_c.py` = Ch 8–9, `part_d.py` = Ch 10–12 and 14, `part_f.py` = Ch 13; helpers in `lib.py`) and run `python3 build.py` there; never hand-edit the SVGs. Check new pictures visually (for example `qlmanage -t -s 1000 -o <dir> file.svg` on macOS) |
 | `Book/images/web/` | 42 pictures from official documentation (Android, Flutter, Dart, Firebase, GitHub, MDN) and a few well-known sources, for **private study only**; `SOURCES.md` lists them. Keep this repository private |
 | `Notes/` | Foundations: `Foundations 1 - OOP and DSA.md`, `Foundations 2 - Database and SQL.md` |
 | `Practice/` | `Mistakes Log.md` (every miss, with the correct answer). Put practice sets, mock papers and marking files here |
@@ -46,7 +46,7 @@ Keep this table up to date when files are added.
 2. a **table** for every comparison, **points** or numbered steps for everything else, a picture where a flow or structure is explained, code where it is asked;
 3. a yellow **Example** box (`box story`);
 4. for long questions, numbered `####` parts and a brown **In the exam** box (`box exam`: how to shorten it on paper and what to draw);
-5. a **From the book** block (`<div class="ref">`) with links to the sections it comes from: same chapter `[5. Title](#5-title)`, other chapter `[B2 · 11. Title](B2%20-%20….md#11-title)`.
+5. a **From the book** block (`<div class="ref">`) with links to the sections it comes from: same chapter `[5. Title](#5-title)`, other chapter `[Ch 5 · 11. Title](05%20-%20….md#11-title)`.
 
 Anchors are the heading ids the VS Code preview makes (lower case, spaces to hyphens, punctuation removed), so renaming a `## N.` heading breaks its links; keep `<mark>` and HTML out of numbered headings. After big edits, run a link check over `Book/` and `Notes/`.
 
@@ -57,7 +57,7 @@ Anchors are the heading ids the VS Code preview makes (lower case, spaces to hyp
 - **Understand, then apply** (see the rule above): short notes that explain the why, hands-on tasks and scenario questions, the learner answers (often as photos of handwritten pages), Claude marks strictly with part marks, writes model answers in the format above, and adds every miss to `Practice/Mistakes Log.md`.
 - Written exams for IT posts in Bangladesh often mix descriptive questions, short questions and MCQs, and may add core CS (OOP, DSA, DBMS/SQL, OS, networking, SDLC) and maths/aptitude (probability, permutation and combination) even when the job description does not mention them. Cover those too.
 - **New job applications:** when the learner shares a job advert or ToR, make a folder `Jobs/<Employer> - <Post>/` with the advert (as Markdown), a mapping of each requirement to the book's chapters, and job-specific mocks. Do not edit the general book for one employer.
-- New topics the book lacks become new chapters (next letter: `G`), written in the book's style, added to the Contents table and to the `book-nav` links.
+- New topics the book lacks become new chapters, written in the book's style, added to the Contents table and to the `book-nav` links. The Revision chapter must stay last: a new chapter takes its number (now `14`), Revision moves up by one, and every link, `Ch N` mention, chapter-kicker number and diagram prefix that changes is updated. Then run a link check.
 
 ## Git
 

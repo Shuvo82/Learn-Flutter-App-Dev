@@ -1,5 +1,5 @@
 <div class="chapter-head">
-<div class="chapter-kicker"><b>E</b>Read this last</div>
+<div class="chapter-kicker"><b>Chapter 14</b>Read this last</div>
 
 # Revision Sheet and Long-Answer Templates
 
@@ -213,169 +213,169 @@ The <mark>highlighted</mark> ones are the most likely to be asked ("write the fu
 
 **All the book's diagrams, chapter by chapter.** ⭐ = the 14 to redraw by hand before the exam: look at it, close the book, and draw it from memory in 2 minutes. Under each picture there is a short explanation.
 
-### Diagrams · A1 · Flutter, Dart and Native
+### Diagrams · Ch 1 · Flutter, Dart and Native
 
 #### 1. Three ways to build an app
 
-![Three ways to build a mobile app](images/a1-app-approaches.svg)
+![Three ways to build a mobile app](images/ch01-app-approaches.svg)
 
 <span class="imp know">Good to know</span>**Native** (Kotlin / Swift) uses the platform's own widgets: best performance, but two codebases and two teams. **Flutter** uses one Dart codebase, and its engine **draws every pixel itself**: near-native speed, one team. **Hybrid** runs HTML/JS inside a **WebView**: cheapest, but slowest.
 
 #### 2. Flutter's three layers
 
-![Flutter's three layers](images/a1-flutter-architecture.svg)
+![Flutter's three layers](images/ch01-flutter-architecture.svg)
 
 <span class="imp know">Good to know</span>**Framework** (Dart): widgets, animation, gestures. You write code here. **Engine** (C++): draws the pixels with Impeller/Skia and runs Dart. **Embedder**: a thin native part for each platform (Kotlin/Java, Swift/Obj-C) that talks to the OS.
 
 #### 3. The three trees
 
-![The three trees behind every Flutter screen](images/a1-three-trees.svg)
+![The three trees behind every Flutter screen](images/ch01-three-trees.svg)
 
 <span class="imp likely">Likely</span>**Widget** = a cheap, immutable description that is rebuilt often. **Element** = the live instance that holds the State; it *is* the `BuildContext`. **RenderObject** = does layout and paint; it is expensive, so it is reused. That is why a rebuild is cheap: only the widgets are new.
 
 #### 4. StatefulWidget lifecycle
 
-![State lifecycle of a StatefulWidget](images/a1-state-lifecycle.svg)
+![State lifecycle of a StatefulWidget](images/ch01-state-lifecycle.svg)
 
 <span class="imp likely">Likely</span>`createState` → `initState` (once: create controllers and listeners) → `didChangeDependencies` → `build` (many times, after `setState` or `didUpdateWidget`, so keep it fast) → `deactivate` → `dispose` (once: cancel timers, close streams). If you forget `dispose`, you get a memory leak.
 
 #### 5. Dart event loop and isolates
 
-![Dart runs one thing at a time: the event loop](images/a1-event-loop.svg)
+![Dart runs one thing at a time: the event loop](images/ch01-event-loop.svg)
 
 <span class="imp likely">Likely</span>Dart runs one thing at a time. First the **sync code**, then **all microtasks**, then **one event** (I/O, timer, tap), then all microtasks again. So the example prints **1 4 3 2**. For heavy work (big JSON, images), use an **isolate**: it has its own memory and talks by messages, so there are no locks.
 
 #### 6. Platform channel
 
-![Platform channel: how Flutter calls native code](images/a1-platform-channel.svg)
+![Platform channel: how Flutter calls native code](images/ch01-platform-channel.svg)
 
 <span class="imp likely">Likely</span>Dart calls `invokeMethod('getBatteryLevel')` on `MethodChannel('fieldapp/device')`. The Kotlin/Swift handler runs the native code and replies with `result.success(value)` or an error. The name is the same on both sides, and the call is always **async**. **MethodChannel** = one call, one reply. **EventChannel** = a stream from native to Dart. **BasicMessageChannel** = free messages both ways.
 
 #### 7. Activity lifecycle ⭐
 
-![Android Activity lifecycle](images/a1-activity-lifecycle.svg)
+![Android Activity lifecycle](images/ch01-activity-lifecycle.svg)
 
 <span class="imp must">Must</span>`onCreate` (build the UI) → `onStart` (becoming visible) → `onResume` (in front, takes input). Then on the way out: `onPause` (losing focus, **partly visible**: pause the camera) → `onStop` (**not visible**: free heavy resources) → `onDestroy` (finish, or rotation). Coming back from `onStop`: `onRestart` → `onStart`.
 
-### Diagrams · A2 · UI/UX Implementation
+### Diagrams · Ch 2 · UI/UX Implementation
 
 #### 8. Wireframe, mockup, prototype
 
-![Wireframe, mockup, prototype](images/a2-wireframe-mockup-prototype.svg)
+![Wireframe, mockup, prototype](images/ch02-wireframe-mockup-prototype.svg)
 
 <span class="imp know">Good to know</span>**Wireframe** = boxes only: what goes where, no colour. **Mockup** = the final look, a still picture. **Prototype** = clickable: you tap *Save* and see *Saved*, so it shows the flow. They come in this order.
 
 #### 9. Material vs iOS HIG
 
-![Material Design and iOS Human Interface Guidelines](images/a2-material-vs-hig.svg)
+![Material Design and iOS Human Interface Guidelines](images/ch02-material-vs-hig.svg)
 
 <span class="imp know">Good to know</span>**Android (Material):** left-aligned title, a **FAB** for the main action, the system back button, touch targets **≥ 48 × 48 dp**, Roboto. **iOS (HIG):** centred title, action in the navigation bar, **swipe from the left edge** to go back, a tab bar, touch targets **≥ 44 × 44 pt**, San Francisco.
 
 #### 10. The Flutter layout rule
 
-![The Flutter layout rule](images/a2-layout-rule.svg)
+![The Flutter layout rule](images/ch02-layout-rule.svg)
 
 <span class="imp know">Good to know</span>**Constraints go down:** the parent gives a min and max size. **Sizes go up:** the child picks a size inside those limits. **The parent sets the position.** This rule explains most layout errors, such as "unbounded height".
 
 #### 11. Expanded vs Flexible
 
-![Expanded and Flexible inside a Row](images/a2-expanded-flexible.svg)
+![Expanded and Flexible inside a Row](images/ch02-expanded-flexible.svg)
 
 <span class="imp know">Good to know</span>Both share the free space in a Row or Column by `flex`. **Expanded** (`FlexFit.tight`) **must fill** its share. **Flexible** (`FlexFit.loose`) takes **only what it needs**, so some space can stay empty.
 
 #### 12. Responsive breakpoints
 
-![Responsive breakpoints: one app, three layouts](images/a2-breakpoints.svg)
+![Responsive breakpoints: one app, three layouts](images/ch02-breakpoints.svg)
 
 <span class="imp know">Good to know</span>**Compact** (width < 600): one column, for phones. **Medium** (600–839): two columns. **Expanded** (≥ 840): list and detail side by side, for tablets. Choose the layout with `LayoutBuilder` or `MediaQuery`.
 
-### Diagrams · A3 · Offline Storage and Data Sync
+### Diagrams · Ch 3 · Offline Storage and Data Sync
 
 #### 13. Offline-first ⭐
 
-![Offline-first: the local database is the source of truth](images/a3-offline-first.svg)
+![Offline-first: the local database is the source of truth](images/ch03-offline-first.svg)
 
 <span class="imp must">Must</span>The **local DB is the source of truth**. The UI talks to the **Repository**. The repository reads and writes **SQLite** and gives the UI a **stream**. It also puts each change in the outbox for the **sync engine**. When online, the sync engine pushes and pulls with the server and upserts the pulled rows. The UI **never waits for the network**.
 
 #### 14. Three caching strategies
 
-![Three caching strategies: which source comes first?](images/a3-caching-strategies.svg)
+![Three caching strategies: which source comes first?](images/ch03-caching-strategies.svg)
 
 <span class="imp likely">Likely</span>**Cache-first:** read the cache and go to the network only if it is missing (district list). **Network-first:** try the network and fall back to the cache if it fails (approval status). **Stale-while-revalidate:** show the cache at once and refresh it in the background (most list screens).
 
 #### 15. Sync cycle ⭐
 
-![The sync cycle: push first, then pull](images/a3-sync-cycle.svg)
+![The sync cycle: push first, then pull](images/ch03-sync-cycle.svg)
 
 <span class="imp must">Must</span>**1–2:** save the record **and** an outbox row; the UI shows "pending" at once. When the network comes back, **push** first (**3–6**): read the outbox oldest first, send each item with an **Idempotency-Key**, get 200 (or 409), and mark it synced. Then **pull** (**7–9**): ask for changes since the cursor, receive them in pages, and upsert them in one transaction. The stream updates the screen.
 
 #### 16. Exponential backoff
 
-![Exponential backoff: the wait doubles after each failure](images/a3-exponential-backoff.svg)
+![Exponential backoff: the wait doubles after each failure](images/ch03-exponential-backoff.svg)
 
 <span class="imp likely">Likely</span>After each failure the wait **doubles**: 1, 2, 4, 8, 16 s, up to a cap. A small random **jitter** is added so that thousands of phones do not retry in the same second. A weak network or a busy server is not flooded.
 
 #### 17. How a conflict happens
 
-![How a sync conflict happens](images/a3-sync-conflict.svg)
+![How a sync conflict happens](images/ch03-sync-conflict.svg)
 
 <span class="imp likely">Likely</span>Phone and server both have **v3**. The office edits the record, so the server is now **v4**. The offline officer edits the same record, still based on v3. On push the server sees "from v3" and returns **409 Conflict**. Then apply the rule: **server wins, merge the fields, or ask the user**. The version number is what detects the conflict (optimistic locking).
 
-### Diagrams · B1 · Backend API Integration
+### Diagrams · Ch 4 · Backend API Integration
 
 #### 18. Anatomy of a REST request
 
-![Anatomy of a REST request](images/b1-rest-anatomy.svg)
+![Anatomy of a REST request](images/ch04-rest-anatomy.svg)
 
 <span class="imp know">Good to know</span>`GET` (the method: the action) + `https://api.example.org` (host) + `/api/v1` (version) + `/branches` (resource: a plural noun) + `/102` (the id) + `/members` (sub-resource) + `?status=active&page=2` (query: filter and pagination).
 
 #### 19. HTTP status codes
 
-![HTTP status codes by family](images/b1-status-codes.svg)
+![HTTP status codes by family](images/ch04-status-codes.svg)
 
 <span class="imp likely">Likely</span>The first digit says who must act. **2xx** success (200, 201 Created, 204). **3xx** redirect (304 = use the cache). **4xx** = your request is wrong, so fix it and do not blindly retry: 400, **401** not logged in or token expired, **403** no permission, 404, **409** conflict, 422, 429. **5xx** = server error: **retry later with backoff**.
 
 #### 20. Where the API call lives
 
-![Where the API call lives: clean layers](images/b1-layers.svg)
+![Where the API call lives: clean layers](images/ch04-layers.svg)
 
 <span class="imp likely">Likely</span>UI → BLoC → **Repository** → remote data source (**Dio** → REST API) and local data source (**Drift** → SQLite). The repository decides: local DB first, network in the background. The UI never calls Dio directly.
 
 #### 21. SDK vs API
 
-![SDK and API are not the same thing](images/b1-sdk-vs-api.svg)
+![SDK and API are not the same thing](images/ch04-sdk-vs-api.svg)
 
 <span class="imp know">Good to know</span>The **API** is the interface you call (HTTP requests). The **SDK** is a ready-made library, with tools and docs, that sits **inside your app** and calls the API for you (for example, the Google Maps SDK).
 
-### Diagrams · B2 · Mobile Security and Identity
+### Diagrams · Ch 5 · Mobile Security and Identity
 
 #### 22. Encoding, hashing, encryption
 
-![Encoding, hashing and encryption](images/b2-encoding-hashing-encryption.svg)
+![Encoding, hashing and encryption](images/ch05-encoding-hashing-encryption.svg)
 
 <span class="imp likely">Likely</span>**Encoding** (Base64): two-way, no key, **hides nothing**. **Hashing** (SHA-256): **one-way** fingerprint; the same input always gives the same hash; used for passwords, with a salt. **Encryption** (AES): two-way **with a key**; only the key holder can read it.
 
 #### 23. Symmetric vs asymmetric
 
-![Symmetric and asymmetric encryption](images/b2-symmetric-asymmetric.svg)
+![Symmetric and asymmetric encryption](images/ch05-symmetric-asymmetric.svg)
 
 <span class="imp likely">Likely</span>**Symmetric (AES):** the **same secret key** locks and unlocks. It is fast. **Asymmetric (RSA):** lock with the receiver's **public** key and unlock with their **private** key. It is slow. A **signature** is the reverse: sign with the private key, and anyone verifies with the public key. **TLS uses both.**
 
 #### 24. JWT ⭐
 
-![A JWT has three parts, joined by dots](images/b2-jwt.svg)
+![A JWT has three parts, joined by dots](images/ch05-jwt.svg)
 
 <span class="imp must">Must</span>`header.payload.signature`. **Header:** the algorithm (RS256). **Payload:** claims such as `sub`, `exp` and `roles`. **Signature:** header + payload signed with Keycloak's **private key**. It is Base64URL, **not encrypted**: anyone can read it, so never put secrets in it. It is **tamper-proof**: change one character and the check fails.
 
 #### 25. Silent token refresh
 
-![Silent token refresh: what the app does on a 401](images/b2-token-refresh.svg)
+![Silent token refresh: what the app does on a 401](images/ch05-token-refresh.svg)
 
 <span class="imp likely">Likely</span>**1** call with an expired token → **2** 401 → **3** `POST /token` with the **refresh token** to Keycloak → **4** new access and refresh tokens → **5** repeat the call → **6** 200 OK. A Dio interceptor does this, so the user sees nothing. If step 3 fails: clear the tokens and go to login.
 
 #### 26. PKCE login ⭐
 
-![Login with OAuth 2.0 Authorization Code + PKCE](images/b2-pkce-flow.svg)
+![Login with OAuth 2.0 Authorization Code + PKCE](images/ch05-pkce-flow.svg)
 
 <span class="imp must">Must</span>
 
@@ -402,257 +402,257 @@ The <mark>highlighted</mark> ones are the most likely to be asked ("write the fu
 
 #### 27. Sign in with Google (OIDC)
 
-!["Sign in with Google": OAuth 2.0 and OIDC working together](images/b2-google-oidc.svg)
+!["Sign in with Google": OAuth 2.0 and OIDC working together](images/ch05-google-oidc.svg)
 
 <span class="imp likely">Likely</span>**1** The app asks Google with `scope = openid email profile`; the user agrees. **2** Google sends a one-time **code**. **3** The app sends the code + verifier to `/token`. **4** Google returns an **ID token** (JWT) + an **access token**. **5** The app sends the ID token to **your backend**, which checks Google's key, `iss`, `aud` and `exp`. **6** The backend gives your own session tokens. **ID token = WHO** (OIDC). **Access token = WHAT the app may access** (OAuth).
 
 #### 28. Single Sign-On
 
-![Single Sign-On: log in once, use many apps](images/b2-sso.svg)
+![Single Sign-On: log in once, use many apps](images/ch05-sso.svg)
 
 <span class="imp likely">Likely</span>The user logs in **once at Keycloak** (password + OTP). The field app, the reporting app and the web portal all get tokens **with no second login**. Disable the user once in Keycloak, and every app is closed to them.
 
 #### 29. Biometric login ⭐
 
-![Biometric login: a quick unlock, not a replacement for server login](images/b2-biometric-flow.svg)
+![Biometric login: a quick unlock, not a replacement for server login](images/ch05-biometric-flow.svg)
 
 <span class="imp must">Must</span>**First time:** a full Keycloak login, then the app asks "enable fingerprint?" and stores the **refresh token in Keystore/Keychain, locked by biometrics**. **Next time:** the **OS** shows the prompt. If it matches, the OS releases the refresh token, the app gets a new access token, and the user goes to Home. After too many failures, or if a new fingerprint was added, the user must do a full login. **The app never sees the fingerprint**; the OS only says yes or no.
 
 #### 30. Local database encryption
 
-![How the local database is encrypted](images/b2-db-encryption.svg)
+![How the local database is encrypted](images/ch05-db-encryption.svg)
 
 <span class="imp likely">Likely</span>On the first run the app makes a **random 256-bit key** and stores it in **Keystore/Keychain** (hardware-backed, the key cannot be extracted). The key opens the **SQLCipher** database (an AES-256 encrypted file). A copied DB file is useless without the key.
 
 #### 31. Defence in depth
 
-![Defence in depth: an attacker must pass every layer](images/b2-defence-in-depth.svg)
+![Defence in depth: an attacker must pass every layer](images/ch05-defence-in-depth.svg)
 
 <span class="imp likely">Likely</span>An attacker must pass **every layer** to reach the data. **Device:** screen lock, biometrics, encrypted storage. **App:** obfuscation, input validation, root detection. **Network:** TLS, certificate pinning, short-lived tokens. **Server:** authentication, **RBAC on every call**, rate limits, audit log. If one layer fails, the others still protect.
 
-### Diagrams · B3 · Performance Optimization
+### Diagrams · Ch 6 · Performance Optimization
 
 #### 32. Frame budget
 
-![The frame budget: 16.67 ms per frame at 60 fps](images/b3-frame-budget.svg)
+![The frame budget: 16.67 ms per frame at 60 fps](images/ch06-frame-budget.svg)
 
 <span class="imp likely">Likely</span>At 60 fps each frame has **1000 ÷ 60 = 16.67 ms**. The bars above the line (28 ms, 35 ms) miss the frame, it is dropped, and the user sees **jank**. At 90 Hz the budget is 11.1 ms; at 120 Hz it is 8.33 ms.
 
 #### 33. How Flutter renders a frame
 
-![How Flutter renders one frame](images/b3-render-pipeline.svg)
+![How Flutter renders one frame](images/ch06-render-pipeline.svg)
 
 <span class="imp likely">Likely</span>Input or `setState` → **UI thread**: build → layout → paint → **raster thread**: rasterize → screen. All of it must fit in 16.67 ms. **UI jank** comes from heavy `build()`, big rebuilds and long Dart work. **Raster jank** comes from blur, clips, opacity layers and huge images.
 
 #### 34. ListView vs ListView.builder
 
-![Why ListView.builder is faster for long lists](images/b3-lazy-list.svg)
+![Why ListView.builder is faster for long lists](images/ch06-lazy-list.svg)
 
 <span class="imp likely">Likely</span>`ListView(children: [...])` builds **all 1,000 items** at once: more memory and a slow first frame. `ListView.builder` builds **only the visible rows** plus a small buffer, and recycles them while you scroll.
 
 #### 35. Memory leak
 
-![What a memory leak looks like](images/b3-memory-leak.svg)
+![What a memory leak looks like](images/ch06-memory-leak.svg)
 
 <span class="imp know">Good to know</span>**Healthy app:** memory goes up and **comes back down** after garbage collection (a saw-tooth). **Leak:** memory **only grows** until the OS kills the app (OOM). Common causes: controllers that are not disposed, and streams or timers that are not cancelled.
 
 #### 36. Batching network calls
 
-![Batch network calls: wake the radio once, not ten times](images/b3-batching.svg)
+![Batch network calls: wake the radio once, not ten times](images/ch06-batching.svg)
 
 <span class="imp know">Good to know</span>Each request **wakes the radio**, and the radio stays awake for a while afterwards. Ten separate requests = ten wake-ups = a drained battery. **One batched sync** wakes it once.
 
-### Diagrams · B4 · Push Notifications and Crash Monitoring
+### Diagrams · Ch 7 · Push Notifications and Crash Monitoring
 
 #### 37. Push notification flow ⭐
 
-![How a push notification reaches the phone](images/b4-push-flow.svg)
+![How a push notification reaches the phone](images/ch07-push-flow.svg)
 
 <span class="imp must">Must</span>**1** The app registers with **FCM** → **2** it gets a **device token** → **3** it sends the token + user ID to **your backend** (HTTPS) → **4** when an event happens, the backend calls the **FCM HTTP v1 API** → **5** FCM delivers to the Android phone, or to the iPhone **through APNs**. The app never sends pushes itself; the server key stays on the backend.
 
 #### 38. Crash-free users
 
-![Crash-free users](images/b4-crash-free.svg)
+![Crash-free users](images/ch07-crash-free.svg)
 
 <span class="imp likely">Likely</span>**Crash-free users = (1 − crashed users ÷ total users) × 100.** 1 user crashed out of 100 → **99%**. It counts **users**, not sessions; a user who crashes 5 times still counts once.
 
 #### 39. Monitoring loop after a release
 
-![The monitoring loop after every release](images/b4-monitoring-loop.svg)
+![The monitoring loop after every release](images/ch07-monitoring-loop.svg)
 
 <span class="imp know">Good to know</span>Staged rollout → watch **crash-free users** and new issues → **triage** by users affected → **reproduce** (device, OS, breadcrumbs) → **fix + regression test** → **hotfix** with a higher build number → repeat for every release.
 
-### Diagrams · C1 · Store Publishing and Code Signing
+### Diagrams · Ch 8 · Store Publishing and Code Signing
 
 #### 40. Release path of one version
 
-![Release management: the whole path of one version](images/c1-release-path.svg)
+![Release management: the whole path of one version](images/ch08-release-path.svg)
 
 <span class="imp know">Good to know</span>Code freeze → version bump → release build → **sign** → test (internal / beta) → store listing + policy forms → **submit for review** → **staged rollout** → monitor crashes and reviews → 100% → the next release, or a hotfix.
 
 #### 41. Reading a version number
 
-![Reading a version number](images/c1-version-number.svg)
+![Reading a version number](images/ch08-version-number.svg)
 
 <span class="imp likely">Likely</span>`version: 1.4.2+37` = **MAJOR.MINOR.PATCH+BUILD**. 1 = breaking change, 4 = new feature, 2 = bug fix. Users see this part (Android `versionName`, iOS `CFBundleShortVersionString`). **37** is the build number; it **goes up on every upload** (Android `versionCode`, iOS `CFBundleVersion`).
 
 #### 42. Android signing (Play App Signing) ⭐
 
-![Android: Play App Signing uses two keys](images/c1-android-signing.svg)
+![Android: Play App Signing uses two keys](images/ch08-android-signing.svg)
 
 <span class="imp must">Must</span>**You** build the AAB and sign it with the **upload key**. **Google Play** checks the upload key, **re-signs with the app signing key** (which Google keeps safe), and sends small APKs to users' phones. If you lose the upload key, Google can reset it.
 
 #### 43. iOS signing ⭐
 
-![iOS: what a provisioning profile ties together](images/c1-ios-signing.svg)
+![iOS: what a provisioning profile ties together](images/ch08-ios-signing.svg)
 
 <span class="imp must">Must</span>A **provisioning profile** ties together the **certificate** (WHO: the developer), the **App ID / Bundle ID** (WHAT: which app) and the **devices + entitlements** (WHERE, and what the app may do). The signed IPA goes to **App Store Connect**, then to **TestFlight** testers, or through **App Review** to the App Store. Profile types: development, ad hoc, App Store.
 
 #### 44. Staged rollout
 
-![Staged rollout: release to a small share of users first](images/c1-staged-rollout.svg)
+![Staged rollout: release to a small share of users first](images/ch08-staged-rollout.svg)
 
 <span class="imp likely">Likely</span>**5% → 20% → 50% → 100%** of users. At every stage, watch crash-free users and new issues. If there is a problem, **halt** the rollout. There is no rollback: you ship a fix with a **higher version**.
 
-### Diagrams · C2 · CI/CD and Build Automation
+### Diagrams · Ch 9 · CI/CD and Build Automation
 
 #### 45. CI vs Delivery vs Deployment
 
-![CI, Continuous Delivery and Continuous Deployment](images/c2-ci-cd.svg)
+![CI, Continuous Delivery and Continuous Deployment](images/ch09-ci-cd.svg)
 
 <span class="imp likely">Likely</span>**Continuous Integration:** every push is built and tested automatically. **Continuous Delivery:** the build is always ready, and **a person approves** the release. **Continuous Deployment:** it goes to production **automatically**. Mobile apps use **Delivery**, because the stores review every release.
 
 #### 46. Mobile CI/CD pipeline ⭐
 
-![A mobile CI/CD pipeline](images/c2-pipeline.svg)
+![A mobile CI/CD pipeline](images/ch09-pipeline.svg)
 
 <span class="imp must">Must</span>**1** checkout → **2** setup (Flutter, `pub get`, cached) → **3** analyze → **4** test → **5** build AAB/IPA → **6** sign → **7** distribute (Firebase, TestFlight, Play internal track) → **8** notify. A **pull request** runs steps 1–4, which must pass before the merge. A **merge to main** runs 1–7. A **version tag** builds the store release.
 
 #### 47. CI service vs Fastlane
 
-![The CI service and Fastlane do different jobs](images/c2-ci-and-fastlane.svg)
+![The CI service and Fastlane do different jobs](images/ch09-ci-and-fastlane.svg)
 
 <span class="imp likely">Likely</span>The **CI service** (GitHub Actions, GitLab CI, Bitrise) decides **when** to run (push, PR, tag), gives the machine, and runs analyze + test. **Fastlane** lanes do the mobile jobs: **sign, build, upload** to the stores. Fastlane is not a CI server; it runs inside one, or on your laptop.
 
 #### 48. Git Flow
 
-![Git Flow: branches for a team that releases to the stores](images/c2-git-flow.svg)
+![Git Flow: branches for a team that releases to the stores](images/ch09-git-flow.svg)
 
 <span class="imp know">Good to know</span>**main** = released versions (v1.4.0 …). **develop** = where work joins. **feature/*** branches come from develop and go back through a **PR + review + CI**. A **release/*** branch takes bug fixes only, then merges to main with a tag. A **hotfix/*** branch comes from main for an urgent fix. Both are merged back into develop.
 
 #### 49. Merge vs rebase
 
-![git merge and git rebase](images/c2-merge-vs-rebase.svg)
+![git merge and git rebase](images/ch09-merge-vs-rebase.svg)
 
 <span class="imp know">Good to know</span>**Merge** keeps the true history and adds a merge commit (M). **Rebase** replays your commits on top of main (D′, E′): the history is a straight line, but the commits are rewritten. **Never rebase a shared branch.**
 
 #### 50. Cloud service models
 
-![Cloud service models: who manages what](images/c2-cloud-models.svg)
+![Cloud service models: who manages what](images/ch09-cloud-models.svg)
 
 <span class="imp know">Good to know</span>**IaaS** (AWS EC2): you manage everything from the OS up. **PaaS** (App Engine): you manage only the app and the data. **SaaS** (Gmail): the provider manages everything. **BaaS** (Firebase): ready-made login, database, storage and push for your mobile app.
 
 #### 51. VM vs container
 
-![Virtual machines and containers](images/c2-container-vs-vm.svg)
+![Virtual machines and containers](images/ch09-container-vs-vm.svg)
 
 <span class="imp know">Good to know</span>Each **VM** carries a **full guest OS** on a hypervisor: heavy, slow to start, strongly isolated. **Containers** (Docker) hold only the app + its libraries and **share the host kernel**: light, and they start in seconds.
 
-### Diagrams · D1 · Architecture Patterns and Testing
+### Diagrams · Ch 10 · Architecture Patterns and Testing
 
 #### 52. MVC, MVP, MVVM
 
-![MVC, MVP and MVVM](images/d1-mvc-mvp-mvvm.svg)
+![MVC, MVP and MVVM](images/ch10-mvc-mvp-mvvm.svg)
 
 <span class="imp likely">Likely</span>**MVC:** the Controller takes input and updates the Model; the View may read the Model directly. **MVP:** the View sends events to the Presenter, which calls `view.show()` through an interface (1 Presenter : 1 View). **MVVM:** the View calls the ViewModel and listens to its **state stream**; the ViewModel does not know the View. This fits Flutter: a Cubit is like a ViewModel.
 
 #### 53. BLoC ⭐
 
-![BLoC: events go in, states come out](images/d1-bloc.svg)
+![BLoC: events go in, states come out](images/ch10-bloc.svg)
 
 <span class="imp must">Must</span>The UI sends **events** (`LoadVisits`, `SubmitVisit`) → the **BLoC** runs the logic and calls the repository (API, DB) → it emits **states** (`Loading`, `Loaded`, `Error`) → the UI rebuilds. **One direction only**: the UI never changes the state by itself. A **Cubit** uses methods instead of events.
 
 #### 54. Clean Architecture ⭐
 
-![Clean Architecture: dependencies point inward, to the domain](images/d1-clean-architecture.svg)
+![Clean Architecture: dependencies point inward, to the domain](images/ch10-clean-architecture.svg)
 
 <span class="imp must">Must</span>**Presentation** (widgets, BLoC) → **Domain** (use cases, entities, repository **interfaces**; pure Dart) ← **Data** (repository impl, DTO models, Dio, Drift). **Dependencies point inward** to the domain; the data layer implements the domain's interfaces. Call flow: UI → BLoC → use case → repository interface → impl → remote/local. So each layer can be tested and replaced on its own.
 
 #### 55. Test pyramid ⭐
 
-![The test pyramid](images/d1-test-pyramid.svg)
+![The test pyramid](images/ch10-test-pyramid.svg)
 
 <span class="imp must">Must</span>**Wide base: many unit tests** (milliseconds, one function or class). **Middle: some widget tests** (fast, no device). **Top: few integration/E2E tests** (slow, a real device). Going up, the tests are slower and costlier, but give more confidence. Draw it with the **unit tests at the bottom**.
 
 #### 56. TDD cycle
 
-![TDD: red, green, refactor](images/d1-tdd-cycle.svg)
+![TDD: red, green, refactor](images/ch10-tdd-cycle.svg)
 
 <span class="imp know">Good to know</span>**Red:** write a test that fails. **Green:** write the minimum code to make it pass. **Refactor:** clean the code while the tests still pass. Then repeat for the next small behaviour.
 
-### Diagrams · D2 · Post-Deployment Support
+### Diagrams · Ch 11 · Post-Deployment Support
 
 #### 57. Bug life cycle
 
-![Bug life cycle](images/d2-bug-lifecycle.svg)
+![Bug life cycle](images/ch11-bug-lifecycle.svg)
 
 <span class="imp know">Good to know</span>New → Assigned → Open → Fixed → Retest → Verified → Closed. Side exits: **Rejected / Duplicate**, **Deferred** (fix later), and **Reopened** if the retest fails, which sends the bug back to the developer.
 
 #### 58. Severity vs priority
 
-![Severity and priority are two different things](images/d2-severity-priority.svg)
+![Severity and priority are two different things](images/ch11-severity-priority.svg)
 
 <span class="imp likely">Likely</span>**Severity** = how much damage the bug does (set by QA). **Priority** = how soon it must be fixed (set by the PO or manager). A crash on login for everyone = high + high. The app's name misspelled on the home screen = **low severity, high priority**. A crash in a report used once a year = **high severity, low priority**.
 
 #### 59. Backward compatibility
 
-![Backward compatibility has four sides](images/d2-backward-compatibility.svg)
+![Backward compatibility has four sides](images/ch11-backward-compatibility.svg)
 
 <span class="imp know">Good to know</span>A new version must still work with: **(a)** older OS versions and devices (minSdk, version checks, fallbacks); **(b)** older app versions still in use (keep API `/v1` alive, make only additive changes); **(c)** older local data (DB migrations v1 → v2 → v3); **(d)** newer libraries (small upgrades, pinned versions, tests).
 
-### Diagrams · D3 · Documentation and Agile Teamwork
+### Diagrams · Ch 12 · Documentation and Agile Teamwork
 
 #### 60. SDLC
 
-![SDLC: the software development life cycle](images/d3-sdlc.svg)
+![SDLC: the software development life cycle](images/ch12-sdlc.svg)
 
 <span class="imp likely">Likely</span>1 Planning → 2 Requirements → 3 Design → 4 Implementation → 5 Testing → 6 Deployment → 7 Maintenance. Maintenance feeds the next plan, so it is a cycle.
 
 #### 61. Waterfall vs Agile
 
-![Waterfall and Agile](images/d3-waterfall-vs-agile.svg)
+![Waterfall and Agile](images/ch12-waterfall-vs-agile.svg)
 
 <span class="imp likely">Likely</span>**Waterfall:** the phases run once, in order, with one delivery at the end, so change is expensive. **Agile:** short **sprints**, each delivering a **working increment**, so change is expected.
 
 #### 62. V-model
 
-![The V-model: every development phase has a matching test phase](images/d3-v-model.svg)
+![The V-model: every development phase has a matching test phase](images/ch12-v-model.svg)
 
 <span class="imp know">Good to know</span>Each phase on the left has a matching test on the right: **requirements ↔ acceptance testing (UAT)**, **system design ↔ system testing**, **module design ↔ unit testing**, with coding at the bottom. The tests are planned early.
 
 #### 63. Scrum ⭐
 
-![Scrum in one picture](images/d3-scrum.svg)
+![Scrum in one picture](images/ch12-scrum.svg)
 
 <span class="imp must">Must</span>**Product Backlog** (ordered by the PO) → **Sprint Planning** → **Sprint Backlog** → the **Sprint** (1–4 weeks, with a 15-minute **Daily Scrum**) → the **Increment** → **Sprint Review** (demo the product) → **Retrospective** (improve the process) → the next sprint. Roles: **Product Owner** (what to build, and the order), **Scrum Master** (guards the process, removes blockers), **Developers** (build it).
 
 #### 64. Burndown chart
 
-![A sprint burndown chart](images/d3-burndown.svg)
+![A sprint burndown chart](images/ch12-burndown.svg)
 
 <span class="imp know">Good to know</span>Y = story points left, X = days of the sprint. The **ideal** line goes straight from 40 to 0. If the actual line is **above** the ideal, the team is behind. A **flat** part means no progress: a blocker.
 
 #### 65. Kanban board
 
-![A Kanban board with work-in-progress limits](images/d3-kanban.svg)
+![A Kanban board with work-in-progress limits](images/ch12-kanban.svg)
 
 <span class="imp know">Good to know</span>Cards move To Do → In Progress (**max 3**) → Review (**max 2**) → Done. The **WIP limit** means a full column takes no new work until a card moves on: finish work before you start new work.
 
-### Diagrams · E · The whole system
+### Diagrams · Ch 14 · The whole system
 
 #### 66. field app, end to end
 
-![Template: a field app, end to end](images/e-system-design.svg)
+![Template: a field app, end to end](images/ch14-system-design.svg)
 
 <span class="imp likely">Likely</span>**On the phone:** UI → BLoC → use cases → repository → **Drift + SQLCipher** local DB; a **sync engine** (outbox, push then pull); **Keystore/Keychain** for the tokens and the DB key; **biometric unlock**. **Outside:** **Keycloak** (OAuth2 + PKCE), **FCM/APNs**, the backend **REST API** (HTTPS, JSON/XML), **Crashlytics/Sentry**, **CI/CD** (GitHub Actions + Fastlane), and the **stores** with staged rollout. Draw this for Template 1.
 
@@ -671,7 +671,7 @@ Each template has **headings to write** and a **model answer**. On paper, write 
 
 ### Template 1 — "Design a mobile app for field officers" (system design)
 
-<span class="imp must">Must</span> The most likely big question. It joins A3 + B1 + B2 + D1.
+<span class="imp must">Must</span> The most likely big question. It joins Ch 3 + Ch 4 + Ch 5 + Ch 10.
 
 **Headings to write:** 1 Assumptions · 2 Architecture diagram · 3 Technology choices · 4 Offline storage and sync · 5 Conflicts · 6 Security · 7 Field features · 8 Quality · 9 Release and support · 10 Closing line.
 
@@ -687,7 +687,7 @@ Each template has **headings to write** and a **model answer**. On paper, write 
 
 **2. Architecture.**
 
-![Template: a field app, end to end](images/e-system-design.svg)
+![Template: a field app, end to end](images/ch14-system-design.svg)
 
 **3. Technology choices.**
 
@@ -813,7 +813,7 @@ A JWT is `header.payload.signature`. The payload (`sub`, `exp`, `roles`) is **si
 | **Access control and audit** | Roles from the JWT shape the UI, but the **server enforces RBAC (403)**; least privilege; an audit log of who did what and when |
 | **Process** | **VAPT** before release, the OWASP MASVS checklist, dependency updates, an incident plan, remote logout |
 
-![Defence in depth: an attacker must pass every layer](images/b2-defence-in-depth.svg)
+![Defence in depth: an attacker must pass every layer](images/ch05-defence-in-depth.svg)
 
 <div class="box story">
 
@@ -858,7 +858,7 @@ A JWT is `header.payload.signature`. The payload (`sub`, `exp`, `roles`) is **si
 
 **5. Verify, then monitor.** Re-measure on the same phone: frames under **16.67 ms**, memory flat, crash-free users **≥ 99.5%**. Release with a **staged rollout** and watch Crashlytics and Firebase Performance.
 
-![How Flutter renders one frame](images/b3-render-pipeline.svg)
+![How Flutter renders one frame](images/ch06-render-pipeline.svg)
 
 <div class="box story">
 
@@ -890,7 +890,7 @@ A JWT is `header.payload.signature`. The payload (`sub`, `exp`, `roles`) is **si
 
 **2. Pipeline.**
 
-![A mobile CI/CD pipeline](images/c2-pipeline.svg)
+![A mobile CI/CD pipeline](images/ch09-pipeline.svg)
 
 ```yaml
 # .github/workflows/ci.yml : runs on every pull request
@@ -948,11 +948,11 @@ jobs:
 
 **2. Layers.**
 
-![Clean Architecture: dependencies point inward, to the domain](images/d1-clean-architecture.svg)
+![Clean Architecture: dependencies point inward, to the domain](images/ch10-clean-architecture.svg)
 
 **3. BLoC.** The UI sends **events**, the BLoC emits **states**, and the UI rebuilds. One direction only.
 
-![BLoC: events go in, states come out](images/d1-bloc.svg)
+![BLoC: events go in, states come out](images/ch10-bloc.svg)
 
 **4. Comparison.**
 
@@ -1031,4 +1031,4 @@ lib/
 
 **Last check before handing in:** roll number written · every answer numbered correctly · diagrams labelled · no question skipped.
 
-<div class="book-nav"><span>← <a href="D3%20-%20Documentation%20and%20Agile%20Teamwork.md">D3 - Documentation and Agile Teamwork</a></span><span><a href="00%20-%20Contents%20and%20How%20to%20Use.md">Contents</a></span><span><a href="F%20-%20Probability.md">F - Probability</a> →</span></div>
+<div class="book-nav"><span>← <a href="13%20-%20Probability.md">13 - Probability</a></span><span><a href="00%20-%20Contents%20and%20How%20to%20Use.md">Contents</a></span><span>End of the book</span></div>

@@ -1,5 +1,5 @@
 <div class="chapter-head">
-<div class="chapter-kicker"><b>C1</b>Part C · App Store Deployment and DevOps</div>
+<div class="chapter-kicker"><b>Chapter 8</b>App Store Deployment and DevOps</div>
 
 # Store Publishing and Code Signing
 
@@ -19,7 +19,7 @@ Publishing is mostly clicks in Play Console and App Store Connect, but interview
 
 </div>
 
-![Release management: the whole path of one version](images/c1-release-path.svg)
+![Release management: the whole path of one version](images/ch08-release-path.svg)
 
 **Release management** means planning, building, testing, approving, publishing and monitoring each version in a controlled, repeatable way, with a record of what changed (release notes, Git tag).
 
@@ -54,7 +54,7 @@ Publishing is mostly clicks in Play Console and App Store Connect, but interview
 
 Every app has **two** version values:
 
-![Reading a version number](images/c1-version-number.svg)
+![Reading a version number](images/ch08-version-number.svg)
 
 | | Shown to users | <mark>Internal counter (**must increase on every upload**)</mark> |
 |---|---|---|
@@ -135,7 +135,7 @@ Unsigned apps cannot be installed from the stores.
 | <mark>**AAB** (Android App Bundle)</mark> | <mark>**Publishing format required by Google Play for new apps.**</mark> Google generates small, device-specific APKs from it |
 | **R8 / ProGuard** | Shrinks and obfuscates code in release builds |
 
-![Android: Play App Signing uses two keys](images/c1-android-signing.svg)
+![Android: Play App Signing uses two keys](images/ch08-android-signing.svg)
 
 ![Play App Signing, from the official documentation](images/web/android-play-app-signing.png)<br>*The official picture: the developer signs with the upload key, Google signs again with the app signing key, and the user receives that version. Source: Android Developers.*
 
@@ -224,7 +224,7 @@ An **AAB** (Android App Bundle). It is a publishing package, not an installable 
 | **TestFlight** | Apple's beta testing: <mark>up to 100 **internal** testers; up to 10,000 **external** testers</mark> (first build needs Beta App Review); <mark>builds expire after 90 days</mark> |
 | **IPA** | The iOS app package |
 
-![iOS: what a provisioning profile ties together](images/c1-ios-signing.svg)
+![iOS: what a provisioning profile ties together](images/ch08-ios-signing.svg)
 
 **Steps**
 1. In the Apple Developer portal: register the Bundle ID, create a distribution certificate and an App Store provisioning profile (or let Xcode's **automatic signing** do it).
@@ -357,7 +357,7 @@ Two groups: <mark>**on-metadata** factors you control directly (text, icon, scre
 
 </div>
 
-![Staged rollout: release to a small share of users first](images/c1-staged-rollout.svg)
+![Staged rollout: release to a small share of users first](images/ch08-staged-rollout.svg)
 
 - **Staged rollout:** <mark>5% → 20% → 50% → 100%</mark>, watching crash-free users. **Halt** the rollout if there is a problem.
 - <mark>**There is no true rollback on the stores.**</mark> You stop the rollout and publish a fixed build with <mark>a **higher version code**</mark>.
@@ -484,7 +484,7 @@ Write your own answer first. Then open the model answer and compare.
 
 </div>
 
-![Reading a version number](images/c1-version-number.svg)
+![Reading a version number](images/ch08-version-number.svg)
 
 | Point | `versionCode` | `versionName` |
 |---|---|---|
@@ -565,7 +565,7 @@ version: 1.4.2+37      # versionName + versionCode
 
 </div>
 
-![Android: Play App Signing uses two keys](images/c1-android-signing.svg)
+![Android: Play App Signing uses two keys](images/ch08-android-signing.svg)
 
 | Point | Upload key | App signing key |
 |---|---|---|
@@ -607,7 +607,7 @@ version: 1.4.2+37      # versionName + versionCode
 
 </div>
 
-![iOS: what a provisioning profile ties together](images/c1-ios-signing.svg)
+![iOS: what a provisioning profile ties together](images/ch08-ios-signing.svg)
 
 | Part | Answers | Example |
 |---|---|---|
@@ -694,7 +694,7 @@ version: 1.4.2+37      # versionName + versionCode
 
 </div>
 
-![Staged rollout: release to a small share of users first](images/c1-staged-rollout.svg)
+![Staged rollout: release to a small share of users first](images/ch08-staged-rollout.svg)
 
 | Step | Share of users | What you watch |
 |---|---|---|
@@ -740,7 +740,7 @@ version: 1.4.2+37      # versionName + versionCode
 
 </div>
 
-![Reading a version number](images/c1-version-number.svg)
+![Reading a version number](images/ch08-version-number.svg)
 
 | Part | In 2.3.1 | Increase it when | Example |
 |---|---|---|---|
@@ -855,7 +855,7 @@ ASO is to app stores what SEO is to Google search.
 
 </div>
 
-![Release management: the whole path of one version](images/c1-release-path.svg)
+![Release management: the whole path of one version](images/ch08-release-path.svg)
 
 #### Step 1. Prepare the app
 
@@ -898,7 +898,7 @@ buildTypes { release { signingConfig = signingConfigs.getByName("release") } }
 
 4. Enrol in **Play App Signing**: you sign with the **upload key**, and Google signs for users with the **app signing key**.
 
-![Android: Play App Signing uses two keys](images/c1-android-signing.svg)
+![Android: Play App Signing uses two keys](images/ch08-android-signing.svg)
 
 5. Back up the keystore in a safe place.
 
@@ -976,7 +976,7 @@ A new personal developer account must run a closed test with real testers before
 
 </div>
 
-![iOS: what a provisioning profile ties together](images/c1-ios-signing.svg)
+![iOS: what a provisioning profile ties together](images/ch08-ios-signing.svg)
 
 #### 1. The parts of iOS signing
 
@@ -1163,7 +1163,7 @@ For an **internal staff app**, such as a field officer tool, discovery matters l
 
 #### 4. Practices that reduce the risk
 
-![Release management: the whole path of one version](images/c1-release-path.svg)
+![Release management: the whole path of one version](images/ch08-release-path.svg)
 
 | Practice | How it helps |
 |---|---|
@@ -1192,10 +1192,10 @@ For an **internal staff app**, such as a field officer tool, discovery matters l
 
 <div class="ref">
 
-**From the book:** [10. After release](#10-after-release) [D2 · 7. Release safety after deployment (links to C1)](D2%20-%20Post-Deployment%20Support.md#7-release-safety-after-deployment-links-to-c1) [B4 · 12. Monitoring workflow](B4%20-%20Push%20Notifications%20and%20Crash%20Monitoring.md#12-monitoring-workflow)
+**From the book:** [10. After release](#10-after-release) [Ch 11 · 7. Release safety after deployment (links to Ch 8)](11%20-%20Post-Deployment%20Support.md#7-release-safety-after-deployment-links-to-ch-8) [Ch 7 · 12. Monitoring workflow](07%20-%20Push%20Notifications%20and%20Crash%20Monitoring.md#12-monitoring-workflow)
 
 </div>
 
 </details>
 
-<div class="book-nav"><span>← <a href="B4%20-%20Push%20Notifications%20and%20Crash%20Monitoring.md">B4 - Push Notifications and Crash Monitoring</a></span><span><a href="00%20-%20Contents%20and%20How%20to%20Use.md">Contents</a></span><span><a href="C2%20-%20CI-CD%20and%20Build%20Automation.md">C2 - CI-CD and Build Automation</a> →</span></div>
+<div class="book-nav"><span>← <a href="07%20-%20Push%20Notifications%20and%20Crash%20Monitoring.md">07 - Push Notifications and Crash Monitoring</a></span><span><a href="00%20-%20Contents%20and%20How%20to%20Use.md">Contents</a></span><span><a href="09%20-%20CI-CD%20and%20Build%20Automation.md">09 - CI-CD and Build Automation</a> →</span></div>

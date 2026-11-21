@@ -1,5 +1,5 @@
 <div class="chapter-head">
-<div class="chapter-kicker"><b>A1</b>Part A · Mobile Application Feature Development</div>
+<div class="chapter-kicker"><b>Chapter 1</b>Mobile Application Feature Development</div>
 
 # Flutter, Dart and Native Development
 
@@ -44,7 +44,7 @@ Sections 1–7 cover Flutter and Dart. Sections 8–10 (platform channels, nativ
 | Device features | Full, first day | Through plugins or platform channels | Through plugins |
 | Cost and speed | Two teams, slower | One team, faster | Cheapest |
 
-![Three ways to build a mobile app](images/a1-app-approaches.svg)
+![Three ways to build a mobile app](images/ch01-app-approaches.svg)
 
 **When to choose native:** heavy use of new OS features, very small app size, widgets, watch apps, or an existing native codebase.
 **When to choose Flutter:** the same app on Android and iOS, one small team, custom UI, fast delivery. This is the case for most business and field apps.
@@ -88,7 +88,7 @@ No. A Flutter app still lives inside a normal Android project and a normal iOS p
 
 </div>
 
-![Flutter's three layers](images/a1-flutter-architecture.svg)
+![Flutter's three layers](images/ch01-flutter-architecture.svg)
 
 ![The layers of Flutter, from the official documentation](images/web/flutter-layercake.png)<br>*The same three layers in the official picture. Each layer only talks to the layer below it. Source: Flutter documentation.*
 
@@ -206,7 +206,7 @@ Hire a second worker: an **isolate**. An isolate has its own memory and its own 
 - **Event loop**: Dart runs one thing at a time. It takes work from two queues. <mark>The **microtask queue** always empties first, then the **event queue**</mark> (I/O, timers, taps).
 - <mark>**Isolate**: a separate worker with its **own memory**</mark>. Isolates share nothing and talk by **message passing** (`SendPort`/`ReceivePort`). Use `Isolate.run()` or `compute()` for heavy CPU work such as parsing a large JSON or processing an image. *(This is in your Mistakes Log: <mark>an isolate is like a process, not a thread</mark>.)*
 
-![Dart runs one thing at a time: the event loop](images/a1-event-loop.svg)
+![Dart runs one thing at a time: the event loop](images/ch01-event-loop.svg)
 
 ```dart
 void main() {
@@ -294,7 +294,7 @@ Future<List<Visit>> fetchVisits() async {
 | **Element** tree | The live instance that links a widget to its render object; holds state | Long-lived |
 | **RenderObject** tree | Does layout and painting | Long-lived |
 
-![The three trees behind every Flutter screen](images/a1-three-trees.svg)
+![The three trees behind every Flutter screen](images/ch01-three-trees.svg)
 
 ![Widget tree, element tree and render tree](images/web/flutter-trees.png)<br>*The official picture of the three trees for a small screen. Source: Flutter documentation.*
 
@@ -310,7 +310,7 @@ Because a widget is only a cheap description. The expensive objects, the **eleme
 
 **State lifecycle** (memorise in order):
 
-![State lifecycle of a StatefulWidget](images/a1-state-lifecycle.svg)
+![State lifecycle of a StatefulWidget](images/ch01-state-lifecycle.svg)
 
 - `initState`: runs once. Create controllers, start listeners.
 - `didChangeDependencies`: after `initState`, and when an inherited widget changes.
@@ -348,7 +348,7 @@ Because a widget is only a cheap description. The expensive objects, the **eleme
 
 Use: lock the app or clear sensitive screens on `paused`, refresh data or check session timeout on `resumed`.
 
-## 6. State management (overview; BLoC in depth is in D1)
+## 6. State management (overview; BLoC in depth is in Ch 10)
 
 <div class="box def">
 
@@ -405,7 +405,7 @@ Use: lock the app or clear sensitive screens on `paused`, refresh data or check 
 
 Used when no plugin exists, or to reuse existing native code or a vendor's native SDK.
 
-![Platform channel: how Flutter calls native code](images/a1-platform-channel.svg)
+![Platform channel: how Flutter calls native code](images/ch01-platform-channel.svg)
 
 ![Platform channels in the official architecture picture](images/web/flutter-platform-channels.png)<br>*The same idea in the official picture: the message goes from your Dart code, through the engine, to your Android or iOS code. Source: Flutter documentation.*
 
@@ -496,7 +496,7 @@ Rules: <mark>the channel **name must match** on both sides</mark>; calls are **a
 
 **Activity lifecycle** (classic exam question; draw it):
 
-![Android Activity lifecycle](images/a1-activity-lifecycle.svg)
+![Android Activity lifecycle](images/ch01-activity-lifecycle.svg)
 
 ![The official Android Activity lifecycle diagram](images/web/android-activity-lifecycle.png)<br>*The official diagram. Examiners usually expect this shape. Source: Android Developers.*
 
@@ -516,7 +516,7 @@ Rules: <mark>the channel **name must match** on both sides</mark>; calls are **a
 |---|---|
 | **ViewModel** | Holds UI state across rotation |
 | **LiveData / StateFlow** | Observable data for the UI |
-| **Room** | SQLite with compile-time checked queries (see A3) |
+| **Room** | SQLite with compile-time checked queries (see Ch 3) |
 | **WorkManager** | Guaranteed background work (sync) |
 | **Jetpack Compose** | Modern **declarative** UI in Kotlin (older style: XML layouts, imperative) |
 | **DataStore** | Key-value storage (replaces SharedPreferences) |
@@ -616,7 +616,7 @@ class VisitViewModel(private val repo: VisitRepository) : ViewModel() {
 
 **iOS app states:** <mark>Not Running → **Inactive** → **Active** → **Background** → **Suspended**</mark>.
 
-**Tools and files:** Xcode (IDE, needs a Mac), `Info.plist` (app settings and permission texts such as `NSCameraUsageDescription`), **CocoaPods** / **Swift Package Manager** (dependencies), **Core Data** (local persistence, see A3), Bundle Identifier.
+**Tools and files:** Xcode (IDE, needs a Mac), `Info.plist` (app settings and permission texts such as `NSCameraUsageDescription`), **CocoaPods** / **Swift Package Manager** (dependencies), **Core Data** (local persistence, see Ch 3), Bundle Identifier.
 
 ```swift
 struct Visit: Codable { let id: String; let memberName: String; var note: String? }
@@ -852,7 +852,7 @@ final visits = await Isolate.run(() => parseVisits(bigJsonString));
 
 </div>
 
-![Dart runs one thing at a time: the event loop](images/a1-event-loop.svg)
+![Dart runs one thing at a time: the event loop](images/ch01-event-loop.svg)
 
 **Follow the code line by line**
 
@@ -952,7 +952,7 @@ class _CounterState extends State<Counter> {
 
 </div>
 
-![State lifecycle of a StatefulWidget](images/a1-state-lifecycle.svg)
+![State lifecycle of a StatefulWidget](images/ch01-state-lifecycle.svg)
 
 | Order | Method | Called | What you do there |
 |---|---|---|---|
@@ -1168,7 +1168,7 @@ suspend fun loadVisits(): List<Visit> = api.getVisits()   // a coroutine
 
 </div>
 
-![Three ways to build a mobile app](images/a1-app-approaches.svg)
+![Three ways to build a mobile app](images/ch01-app-approaches.svg)
 
 #### 1. The three approaches
 
@@ -1229,7 +1229,7 @@ suspend fun loadVisits(): List<Visit> = api.getVisits()   // a coroutine
 
 </div>
 
-![Android Activity lifecycle](images/a1-activity-lifecycle.svg)
+![Android Activity lifecycle](images/ch01-activity-lifecycle.svg)
 
 #### 1. The callbacks
 
@@ -1297,7 +1297,7 @@ Flutter reports it through `AppLifecycleState`: `resumed`, `inactive`, `hidden`,
 
 </div>
 
-![Platform channel: how Flutter calls native code](images/a1-platform-channel.svg)
+![Platform channel: how Flutter calls native code](images/ch01-platform-channel.svg)
 
 #### 1. When you need one
 
@@ -1392,7 +1392,7 @@ override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
 
 </div>
 
-![Flutter's three layers](images/a1-flutter-architecture.svg)
+![Flutter's three layers](images/ch01-flutter-architecture.svg)
 
 #### 1. The three layers
 
@@ -1406,7 +1406,7 @@ Flutter does **not** use the platform's own buttons and text fields. It paints e
 
 #### 2. The three trees
 
-![The three trees behind every Flutter screen](images/a1-three-trees.svg)
+![The three trees behind every Flutter screen](images/ch01-three-trees.svg)
 
 | Tree | What it is | Lifetime | Cost |
 |---|---|---|---|
@@ -1451,4 +1451,4 @@ Flutter does **not** use the platform's own buttons and text fields. It paints e
 
 </details>
 
-<div class="book-nav"><span>← <a href="00%20-%20Contents%20and%20How%20to%20Use.md">Contents</a></span><span><a href="00%20-%20Contents%20and%20How%20to%20Use.md">Contents</a></span><span><a href="A2%20-%20UI-UX%20Implementation.md">A2 - UI-UX Implementation</a> →</span></div>
+<div class="book-nav"><span>← <a href="00%20-%20Contents%20and%20How%20to%20Use.md">Contents</a></span><span><a href="00%20-%20Contents%20and%20How%20to%20Use.md">Contents</a></span><span><a href="02%20-%20UI-UX%20Implementation.md">02 - UI-UX Implementation</a> →</span></div>

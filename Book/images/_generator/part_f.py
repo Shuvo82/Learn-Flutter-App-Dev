@@ -4,7 +4,7 @@ from lib import D, C, INK, INK2, MUTED, SURF, EDGE, tw
 
 
 def f_scale():
-    d = D('f-probability-scale', 330, 'The probability scale: every probability is between 0 and 1')
+    d = D('ch13-probability-scale', 330, 'The probability scale: every probability is between 0 and 1')
     x0, x1, y = 90, 670, 120
 
     def X(p):
@@ -33,7 +33,7 @@ def f_scale():
 
 
 def f_two_dice():
-    d = D('f-two-dice', 400, 'Two dice: 6 × 6 = 36 equally likely outcomes',
+    d = D('ch13-two-dice', 400, 'Two dice: 6 × 6 = 36 equally likely outcomes',
           'Each cell shows the sum. The green cells are the 6 ways to get 7.')
     x0, y0, cw, ch = 150, 112, 52, 40
     d.text(x0 + 3 * cw, 84, 'Die 2', size=12.5, weight='700', fill=INK2)
@@ -65,7 +65,7 @@ def f_two_dice():
 
 
 def f_deck():
-    d = D('f-card-deck', 330, 'A deck of 52 cards: 4 suits × 13 cards')
+    d = D('ch13-card-deck', 330, 'A deck of 52 cards: 4 suits × 13 cards')
     ranks = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']
     suits = [('♠ Spades', INK), ('♣ Clubs', INK), ('♥ Hearts', '#c62828'), ('♦ Diamonds', '#c62828')]
     x0, y0, w, h, gap = 150, 66, 40, 42, 4
@@ -85,7 +85,7 @@ def f_deck():
 
 
 def f_venn():
-    d = D('f-or-rule', 336, 'The OR rule: add, then subtract the overlap')
+    d = D('ch13-or-rule', 336, 'The OR rule: add, then subtract the overlap')
 
     def circ(cx, cy, r, color):
         f, st = C[color]
@@ -118,7 +118,7 @@ def f_venn():
 
 
 def f_tree():
-    d = D('f-tree-diagram', 392, 'A tree diagram: two balls drawn without replacement',
+    d = D('ch13-tree-diagram', 392, 'A tree diagram: two balls drawn without replacement',
           'The bag has 3 red and 2 blue balls. The first ball is not put back.')
     d.box(24, 196, 92, 44, 'Bag', 'grey', sub='3 R + 2 B', size=12.5, subsize=11)
 
@@ -151,7 +151,7 @@ def f_tree():
 
 
 def f_perm_comb():
-    d = D('f-perm-vs-comb', 318, 'Permutation or combination? Choose 2 letters from A, B, C')
+    d = D('ch13-perm-vs-comb', 318, 'Permutation or combination? Choose 2 letters from A, B, C')
     d.group(20, 60, 360, 186, 'Permutation: ORDER MATTERS')
     d.group(400, 60, 340, 186, 'Combination: order does NOT matter')
     pairs = [('AB', 'BA'), ('AC', 'CA'), ('BC', 'CB')]
@@ -175,7 +175,7 @@ def f_perm_comb():
 
 
 def f_bayes():
-    d = D('f-bayes-frequency', 384, 'Conditional probability with counts: is a flagged build really bad?',
+    d = D('ch13-bayes-frequency', 384, 'Conditional probability with counts: is a flagged build really bad?',
           '2% of builds have a bug. The test catches 95% of bad builds, but also flags 10% of good ones.')
     root = d.box(24, 172, 120, 52, '1,000 builds', 'grey', size=13)
     bad = d.box(210, 96, 170, 50, '20 have a bug', 'red', sub='2% of 1,000')

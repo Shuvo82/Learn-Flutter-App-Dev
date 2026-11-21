@@ -1,5 +1,5 @@
 <div class="chapter-head">
-<div class="chapter-kicker"><b>D3</b>Part D · Testing, Maintenance and Collaboration</div>
+<div class="chapter-kicker"><b>Chapter 12</b>Testing, Maintenance and Collaboration</div>
 
 # Documentation and Agile Teamwork
 
@@ -39,7 +39,7 @@ This chapter also carries the **software engineering theory** that written exams
 
 <mark>**SDLC is the structured process for building software**</mark>, as a series of phases:
 
-![SDLC: the software development life cycle](images/d3-sdlc.svg)
+![SDLC: the software development life cycle](images/ch12-sdlc.svg)
 
 **SDLC models**
 | Model | Idea | Good for | Weakness |
@@ -51,7 +51,7 @@ This chapter also carries the **software engineering theory** that written exams
 | **Prototype** | <mark>Build a quick model to clarify requirements</mark> | Unclear requirements, UI-heavy work | The prototype may be mistaken for the product |
 | **Agile** | Short iterations, working software early, continuous feedback | Changing requirements | Needs an involved customer and a disciplined team |
 
-![The V-model: every development phase has a matching test phase](images/d3-v-model.svg)
+![The V-model: every development phase has a matching test phase](images/ch12-v-model.svg)
 
 <div class="pair">
 
@@ -109,7 +109,7 @@ This chapter also carries the **software engineering theory** that written exams
 | Customer | At the start and end | Throughout |
 | Change | Hard | Expected |
 
-![Waterfall and Agile](images/d3-waterfall-vs-agile.svg)
+![Waterfall and Agile](images/ch12-waterfall-vs-agile.svg)
 
 <div class="box rule">
 
@@ -143,7 +143,7 @@ This chapter also carries the **software engineering theory** that written exams
 
 <mark>Remember **3 roles, 5 events, 3 artifacts**.</mark>
 
-![Scrum in one picture](images/d3-scrum.svg)
+![Scrum in one picture](images/ch12-scrum.svg)
 
 **Roles**
 | Role | Responsibility |
@@ -171,11 +171,11 @@ This chapter also carries the **software engineering theory** that written exams
 - **Burndown chart:** remaining work against time.
 - **Epic:** a large story split into smaller ones. **Backlog refinement (grooming):** preparing upcoming stories.
 
-![A sprint burndown chart](images/d3-burndown.svg)
+![A sprint burndown chart](images/ch12-burndown.svg)
 
 **Kanban:** a board (To Do → In Progress → Review → Done) with <mark>**work-in-progress (WIP) limits**</mark> and continuous flow; no fixed sprints. Good for maintenance and support work.
 
-![A Kanban board with work-in-progress limits](images/d3-kanban.svg)
+![A Kanban board with work-in-progress limits](images/ch12-kanban.svg)
 
 ![A simple Kanban board with sticky notes](images/web/wiki-kanban-board.jpg)<br>*A real Kanban board can be this simple: three columns and sticky notes. Source: Wikimedia Commons.*
 
@@ -480,7 +480,7 @@ Write your own answer first. Then open the model answer and compare.
 
 </div>
 
-![SDLC: the software development life cycle](images/d3-sdlc.svg)
+![SDLC: the software development life cycle](images/ch12-sdlc.svg)
 
 | # | Phase | The question it answers | Output | For a field app |
 |---|---|---|---|---|
@@ -513,7 +513,7 @@ Write your own answer first. Then open the model answer and compare.
 
 </div>
 
-![Waterfall and Agile](images/d3-waterfall-vs-agile.svg)
+![Waterfall and Agile](images/ch12-waterfall-vs-agile.svg)
 
 | Point | Waterfall | Agile |
 |---|---|---|
@@ -971,7 +971,7 @@ Write your own answer first. Then open the model answer and compare.
 
 </div>
 
-![Scrum in one picture](images/d3-scrum.svg)
+![Scrum in one picture](images/ch12-scrum.svg)
 
 #### 1. The three roles
 
@@ -1024,7 +1024,7 @@ Write your own answer first. Then open the model answer and compare.
 | **Velocity** | Story points finished per sprint; used for planning |
 | **Burndown chart** | Remaining work against time in the sprint |
 
-![A sprint burndown chart](images/d3-burndown.svg)
+![A sprint burndown chart](images/ch12-burndown.svg)
 
 <div class="box story">
 
@@ -1231,7 +1231,7 @@ It also lists the base URLs per environment, the API version, the request and re
 
 #### 2. The V-model in one picture
 
-![The V-model: every development phase has a matching test phase](images/d3-v-model.svg)
+![The V-model: every development phase has a matching test phase](images/ch12-v-model.svg)
 
 | Development phase (left side) | Matching test (right side) |
 |---|---|
@@ -1266,4 +1266,4 @@ It also lists the base URLs per environment, the API version, the request and re
 
 </details>
 
-<div class="book-nav"><span>← <a href="D2%20-%20Post-Deployment%20Support.md">D2 - Post-Deployment Support</a></span><span><a href="00%20-%20Contents%20and%20How%20to%20Use.md">Contents</a></span><span><a href="E%20-%20Revision%20Sheet%20and%20Long-Answer%20Templates.md">E - Revision Sheet and Long-Answer Templates</a> →</span></div>
+<div class="book-nav"><span>← <a href="11%20-%20Post-Deployment%20Support.md">11 - Post-Deployment Support</a></span><span><a href="00%20-%20Contents%20and%20How%20to%20Use.md">Contents</a></span><span><a href="13%20-%20Probability.md">13 - Probability</a> →</span></div>

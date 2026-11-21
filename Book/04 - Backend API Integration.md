@@ -1,5 +1,5 @@
 <div class="chapter-head">
-<div class="chapter-kicker"><b>B1</b>Part B · API Integration, Security and Performance</div>
+<div class="chapter-kicker"><b>Chapter 4</b>API Integration, Security and Performance</div>
 
 # Backend API Integration
 
@@ -64,7 +64,7 @@ Content-Type: application/json            { "id": "9f1c...", "status": "received
 | **PATCH** | Change part of a resource | No | Not guaranteed |
 | **DELETE** | Remove | No | Yes |
 
-*Safe* = does not change data. *Idempotent* = doing it twice gives the same result as doing it once. This matters for retries: you may safely retry GET, PUT and DELETE; a POST needs an idempotency key (A3).
+*Safe* = does not change data. *Idempotent* = doing it twice gives the same result as doing it once. This matters for retries: you may safely retry GET, PUT and DELETE; a POST needs an idempotency key (Ch 3).
 
 **Status codes (memorise)**
 
@@ -82,11 +82,11 @@ Content-Type: application/json            { "id": "9f1c...", "status": "received
 
 Groups: **1xx** information, **2xx** success, **3xx** redirect, **4xx** client error, **5xx** server error.
 
-![HTTP status codes by family](images/b1-status-codes.svg)
+![HTTP status codes by family](images/ch04-status-codes.svg)
 
 **Useful headers:** `Authorization`, `Content-Type`, `Accept`, `Accept-Language` (bn/en), `ETag` / `If-None-Match`, `Cache-Control`, `Retry-After`.
 
-**HTTPS** = HTTP over **TLS**. It gives encryption, server identity (certificate) and integrity. All API traffic must use it (details in B2).
+**HTTPS** = HTTP over **TLS**. It gives encryption, server identity (certificate) and integrity. All API traffic must use it (details in Ch 5).
 
 <div class="box q">
 
@@ -174,7 +174,7 @@ Doing it twice gives the same result as doing it once. Pressing a lift button tw
 | Filtering and sorting                     | `?status=pending&sort=-createdAt`                                                              |
 | Correct status codes and one error format | `{ "code": "VALIDATION_ERROR", "message": "...", "fields": {...} }`                            |
 
-![Anatomy of a REST request](images/b1-rest-anatomy.svg)
+![Anatomy of a REST request](images/ch04-rest-anatomy.svg)
 
 <div class="box rule">
 
@@ -231,14 +231,14 @@ Doing it twice gives the same result as doing it once. Pressing a lift button tw
 
 **A clean structure (layers):**
 
-![Where the API call lives: clean layers](images/b1-layers.svg)
+![Where the API call lives: clean layers](images/ch04-layers.svg)
 
 ```dart
 final dio = Dio(BaseOptions(
   baseUrl: 'https://api.example.org/api/v1',
   connectTimeout: const Duration(seconds: 10),
   receiveTimeout: const Duration(seconds: 20),
-))..interceptors.add(AuthInterceptor());       // adds the token, refreshes on 401 (B2)
+))..interceptors.add(AuthInterceptor());       // adds the token, refreshes on 401 (Ch 5)
 
 class VisitApi {
   Future<List<VisitDto>> getVisits({String? cursor}) async {
@@ -408,7 +408,7 @@ Because older systems still speak it. Banks, mobile financial services and many 
 
 An **SDK** (Software Development Kit) is a packaged library, with tools and documentation, for using another company's service. An **API** is the interface you call; an SDK is the ready-made code that calls it for you.
 
-![SDK and API are not the same thing](images/b1-sdk-vs-api.svg)
+![SDK and API are not the same thing](images/ch04-sdk-vs-api.svg)
 
 | Need | SDK examples |
 |---|---|
@@ -499,7 +499,7 @@ Write your own answer first. Then open the model answer and compare.
 
 </div>
 
-![Anatomy of a REST request](images/b1-rest-anatomy.svg)
+![Anatomy of a REST request](images/ch04-rest-anatomy.svg)
 
 | Constraint | Meaning | What it gives |
 |---|---|---|
@@ -609,7 +609,7 @@ PATCH /visits/42      {"note": "Borrower absent"}                → only note c
 
 <div class="ref">
 
-**From the book:** [1. HTTP in one page](#1-http-in-one-page) [A3 · 5. Sync design: the outbox pattern](A3%20-%20Offline%20Storage%20and%20Data%20Sync.md#5-sync-design-the-outbox-pattern)
+**From the book:** [1. HTTP in one page](#1-http-in-one-page) [Ch 3 · 5. Sync design: the outbox pattern](03%20-%20Offline%20Storage%20and%20Data%20Sync.md#5-sync-design-the-outbox-pattern)
 
 </div>
 
@@ -655,7 +655,7 @@ PATCH /visits/42      {"note": "Borrower absent"}                → only note c
 
 </div>
 
-![HTTP status codes by family](images/b1-status-codes.svg)
+![HTTP status codes by family](images/ch04-status-codes.svg)
 
 | Code | Name | Meaning | What the app does |
 |---|---|---|---|
@@ -802,7 +802,7 @@ final visit = Visit.fromJson(jsonDecode(text));  // JSON string → object
 
 </div>
 
-![SDK and API are not the same thing](images/b1-sdk-vs-api.svg)
+![SDK and API are not the same thing](images/ch04-sdk-vs-api.svg)
 
 | Point | API | SDK |
 |---|---|---|
@@ -928,7 +928,7 @@ With `/v1` and `/v2` side by side, app 1.0 keeps calling `/v1` and the new app c
 
 </div>
 
-![Where the API call lives: clean layers](images/b1-layers.svg)
+![Where the API call lives: clean layers](images/ch04-layers.svg)
 
 #### 1. The layers
 
@@ -1023,7 +1023,7 @@ Rule: the user never sees a raw exception or a stack trace.
 
 <div class="ref">
 
-**From the book:** [4. Calling an API from the app](#4-calling-an-api-from-the-app) [D1 · 5. Clean Architecture](D1%20-%20Architecture%20Patterns%20and%20Testing.md#5-clean-architecture)
+**From the book:** [4. Calling an API from the app](#4-calling-an-api-from-the-app) [Ch 10 · 5. Clean Architecture](10%20-%20Architecture%20Patterns%20and%20Testing.md#5-clean-architecture)
 
 </div>
 
@@ -1204,4 +1204,4 @@ With this wrapper, changing the gateway later means writing one new class. Tests
 
 </details>
 
-<div class="book-nav"><span>← <a href="A3%20-%20Offline%20Storage%20and%20Data%20Sync.md">A3 - Offline Storage and Data Sync</a></span><span><a href="00%20-%20Contents%20and%20How%20to%20Use.md">Contents</a></span><span><a href="B2%20-%20Mobile%20Security%20and%20Identity.md">B2 - Mobile Security and Identity</a> →</span></div>
+<div class="book-nav"><span>← <a href="03%20-%20Offline%20Storage%20and%20Data%20Sync.md">03 - Offline Storage and Data Sync</a></span><span><a href="00%20-%20Contents%20and%20How%20to%20Use.md">Contents</a></span><span><a href="05%20-%20Mobile%20Security%20and%20Identity.md">05 - Mobile Security and Identity</a> →</span></div>

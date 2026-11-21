@@ -1,5 +1,5 @@
 <div class="chapter-head">
-<div class="chapter-kicker"><b>D1</b>Part D · Testing, Maintenance and Collaboration · ★ likely long question</div>
+<div class="chapter-kicker"><b>Chapter 10</b>Testing, Maintenance and Collaboration · ★ likely long question</div>
 
 # Architecture Patterns and Testing
 
@@ -68,7 +68,7 @@ Without structure, UI code, business rules and database calls sit in one file. S
 
 <p class="label">Exam notes</p>
 
-![MVC, MVP and MVVM](images/d1-mvc-mvp-mvvm.svg)
+![MVC, MVP and MVVM](images/ch10-mvc-mvp-mvvm.svg)
 
 | | **MVC** | **MVP** | **MVVM** |
 |---|---|---|---|
@@ -144,7 +144,7 @@ Flutter is closest to **MVVM**. A widget does not get commands. It **watches** a
 
 A Flutter pattern (from Google) that separates **presentation** from **business logic** using **Streams**. <mark>The UI sends **Events**; the BLoC processes them and emits **States**; the UI rebuilds from the state.</mark>
 
-![BLoC: events go in, states come out](images/d1-bloc.svg)
+![BLoC: events go in, states come out](images/ch10-bloc.svg)
 
 - <mark>**Unidirectional data flow:** events go in, states come out.</mark> State is predictable and easy to trace.
 - <mark>**Event:** what happened (a tap, a page opened). **State:** what the UI should show (**immutable** objects, compared with `Equatable`)</mark>.
@@ -267,7 +267,7 @@ A **Cubit** is the simple form: the UI calls a **method** (`cubit.load()`) and t
 
 <mark>Proposed by Robert C. Martin ("Uncle Bob")</mark>. The code is split into **layers**, and the **Dependency Rule** says: <mark>**source-code dependencies point only inward**</mark>. Inner layers know nothing about outer layers.
 
-![Clean Architecture: dependencies point inward, to the domain](images/d1-clean-architecture.svg)
+![Clean Architecture: dependencies point inward, to the domain](images/ch10-clean-architecture.svg)
 
 ![Flutter's recommended layers: View, ViewModel, Repository, Service](images/web/flutter-feature-architecture.png)<br>*The Flutter team's own recommended structure has the same idea: Views and ViewModels in the UI layer, Repositories and Services in the data layer. Source: Flutter documentation.*
 
@@ -408,7 +408,7 @@ Small functions and classes with one job · meaningful names · <mark>**DRY** (D
 
 </div>
 
-![The test pyramid](images/d1-test-pyramid.svg)
+![The test pyramid](images/ch10-test-pyramid.svg)
 
 ![Martin Fowler's test pyramid](images/web/fowler-test-pyramid.png)<br>*The classic test pyramid: the higher the level, the slower and more expensive each test. Source: Martin Fowler, martinfowler.com.*
 
@@ -546,9 +546,9 @@ Run the real app on a device and drive a full flow (login → create visit → s
 - **Test first:** business rules (calculations, validation), state logic (Cubits/BLoCs), repositories and sync logic, JSON parsing, important screens and forms. Do not unit-test Flutter itself.
 - <mark>**Code coverage:** percentage of lines executed by tests.</mark> `flutter test --coverage` creates `lcov.info`. High coverage does not prove correctness, but low coverage shows untested areas.
 - <mark>**TDD (Test-Driven Development):** **Red** (write a failing test) → **Green** (write the minimum code to pass) → **Refactor** (clean up with tests still passing)</mark>.
-- Tests run **automatically in CI** on every pull request (C2).
+- Tests run **automatically in CI** on every pull request (Ch 9).
 
-![TDD: red, green, refactor](images/d1-tdd-cycle.svg)
+![TDD: red, green, refactor](images/ch10-tdd-cycle.svg)
 
 ## 14. General testing vocabulary (typical exam terms)
 
@@ -636,7 +636,7 @@ Write your own answer first. Then open the model answer and compare.
 
 </div>
 
-![BLoC: events go in, states come out](images/d1-bloc.svg)
+![BLoC: events go in, states come out](images/ch10-bloc.svg)
 
 | | Event | State |
 |---|---|---|
@@ -772,7 +772,7 @@ class CounterBloc extends Bloc<CounterEvent, int> {
 
 </div>
 
-![Clean Architecture: dependencies point inward, to the domain](images/d1-clean-architecture.svg)
+![Clean Architecture: dependencies point inward, to the domain](images/ch10-clean-architecture.svg)
 
 | Layer | May import | Must not import |
 |---|---|---|
@@ -975,7 +975,7 @@ class VisitRepositoryImpl implements VisitRepository {   // the implementation (
 
 </div>
 
-![The test pyramid](images/d1-test-pyramid.svg)
+![The test pyramid](images/ch10-test-pyramid.svg)
 
 | Point | Unit test | Widget test | Integration test |
 |---|---|---|---|
@@ -1308,7 +1308,7 @@ BlocProvider(
 
 <div class="ref">
 
-**From the book:** [3. BLoC (Business Logic Component)](#3-bloc-business-logic-component) [4. Comparing Flutter state management](#4-comparing-flutter-state-management) [A1 · 6. State management (overview; BLoC in depth is in D1)](A1%20-%20Flutter,%20Dart%20and%20Native.md#6-state-management-overview-bloc-in-depth-is-in-d1)
+**From the book:** [3. BLoC (Business Logic Component)](#3-bloc-business-logic-component) [4. Comparing Flutter state management](#4-comparing-flutter-state-management) [Ch 1 · 6. State management (overview; BLoC in depth is in Ch 10)](01%20-%20Flutter,%20Dart%20and%20Native.md#6-state-management-overview-bloc-in-depth-is-in-ch-10)
 
 </div>
 
@@ -1323,7 +1323,7 @@ BlocProvider(
 
 </div>
 
-![Clean Architecture: dependencies point inward, to the domain](images/d1-clean-architecture.svg)
+![Clean Architecture: dependencies point inward, to the domain](images/ch10-clean-architecture.svg)
 
 #### 1. The layers
 
@@ -1406,7 +1406,7 @@ lib/features/visit/
 
 </div>
 
-![MVC, MVP and MVVM](images/d1-mvc-mvp-mvvm.svg)
+![MVC, MVP and MVVM](images/ch10-mvc-mvp-mvvm.svg)
 
 #### 1. The comparison
 
@@ -1468,7 +1468,7 @@ lib/features/visit/
 
 </div>
 
-![The test pyramid](images/d1-test-pyramid.svg)
+![The test pyramid](images/ch10-test-pyramid.svg)
 
 #### 1. The three types
 
@@ -1596,4 +1596,4 @@ void main() {
 
 </details>
 
-<div class="book-nav"><span>← <a href="C2%20-%20CI-CD%20and%20Build%20Automation.md">C2 - CI-CD and Build Automation</a></span><span><a href="00%20-%20Contents%20and%20How%20to%20Use.md">Contents</a></span><span><a href="D2%20-%20Post-Deployment%20Support.md">D2 - Post-Deployment Support</a> →</span></div>
+<div class="book-nav"><span>← <a href="09%20-%20CI-CD%20and%20Build%20Automation.md">09 - CI-CD and Build Automation</a></span><span><a href="00%20-%20Contents%20and%20How%20to%20Use.md">Contents</a></span><span><a href="11%20-%20Post-Deployment%20Support.md">11 - Post-Deployment Support</a> →</span></div>

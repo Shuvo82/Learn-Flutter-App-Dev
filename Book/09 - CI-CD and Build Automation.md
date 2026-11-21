@@ -1,5 +1,5 @@
 <div class="chapter-head">
-<div class="chapter-kicker"><b>C2</b>Part C · App Store Deployment and DevOps</div>
+<div class="chapter-kicker"><b>Chapter 9</b>App Store Deployment and DevOps</div>
 
 # CI/CD and Build Automation
 
@@ -43,7 +43,7 @@ The common trap is a question like "what is Fastlane?" or "what is the differenc
 | **Runner / agent** | The machine that executes the jobs |
 | **DevOps** | <mark>A culture and set of practices joining development and operations</mark> to deliver software faster and more reliably, with automation |
 
-![CI, Continuous Delivery and Continuous Deployment](images/c2-ci-cd.svg)
+![CI, Continuous Delivery and Continuous Deployment](images/ch09-ci-cd.svg)
 
 <mark>For mobile, **Continuous Delivery** is normal: the stores review each release</mark>, so production is rarely fully automatic.
 
@@ -79,7 +79,7 @@ Usually **Continuous Delivery**. The stores review every release and developers 
 
 </div>
 
-![A mobile CI/CD pipeline](images/c2-pipeline.svg)
+![A mobile CI/CD pipeline](images/ch09-pipeline.svg)
 
 - <mark>**On every pull request:** steps 1–4</mark> (fast feedback; merging is blocked if they fail).
 - **On merge to `main`:** steps 1–7 to testers.
@@ -121,7 +121,7 @@ Others worth one mention: <mark>**Codemagic** (CI/CD focused on Flutter)</mark>,
 
 **How they combine:** *GitHub Actions (or GitLab CI, or Bitrise) <mark>decides **when** to run and provides the machine. Fastlane does the mobile-specific work of signing and uploading.</mark>*
 
-![The CI service and Fastlane do different jobs](images/c2-ci-and-fastlane.svg)
+![The CI service and Fastlane do different jobs](images/ch09-ci-and-fastlane.svg)
 
 ![A GitHub Actions workflow: an event starts jobs on runners](images/web/github-actions-overview.png)<br>*How GitHub Actions is organised: an **event** (such as a push) starts a workflow, each **job** runs on its own **runner** (a machine), and a job is a list of **steps**. Source: GitHub Docs.*
 
@@ -290,7 +290,7 @@ build_android:
 
 **Pairs asked in exams:** `fetch` vs `pull` · `merge` vs `rebase` · `revert` vs `reset` · Git (the tool) vs GitHub/GitLab (hosting services).
 
-![git merge and git rebase](images/c2-merge-vs-rebase.svg)
+![git merge and git rebase](images/ch09-merge-vs-rebase.svg)
 
 **Branching strategies**
 | | **Git Flow** | **Trunk-based / GitHub Flow** |
@@ -298,7 +298,7 @@ build_android:
 | Branches | `main`, `develop`, `feature/*`, `release/*`, `hotfix/*` | `main` + short-lived feature branches |
 | Fits | <mark>Scheduled releases (mobile apps with store review)</mark> | Continuous delivery, small teams |
 
-![Git Flow: branches for a team that releases to the stores](images/c2-git-flow.svg)
+![Git Flow: branches for a team that releases to the stores](images/ch09-git-flow.svg)
 
 ![The original Git Flow diagram](images/web/nvie-git-flow.png)<br>*The original Git Flow picture: feature branches (pink) join `develop` (yellow), release branches (green) prepare a version, and `master` (blue) holds the tagged releases. Hotfixes (red) start from `master`. Source: Vincent Driessen, nvie.com.*
 
@@ -368,7 +368,7 @@ For a mobile developer there is a fourth model: **BaaS** (Backend as a Service).
 | <mark>**SaaS** (Software)</mark> | Nothing; you use it | Gmail, Google Docs |
 | <mark>**BaaS / MBaaS** (Backend as a Service)</mark> | Only the mobile app | **Firebase**, AWS Amplify |
 
-![Cloud service models: who manages what](images/c2-cloud-models.svg)
+![Cloud service models: who manages what](images/ch09-cloud-models.svg)
 
 **The same need on each platform**
 | Need | **Firebase** | **AWS** | **GCP** |
@@ -388,7 +388,7 @@ Firebase is part of Google Cloud. A **Firestore** document database is NoSQL wit
 
 **Containers (one paragraph):** **Docker** packages an application with its dependencies into a **container** that runs the same everywhere. <mark>Containers share the host's OS kernel, so they are lighter and start faster than **virtual machines**, which each carry a full OS</mark>. <mark>**Kubernetes** runs and scales many containers</mark>. CI pipelines often run inside containers.
 
-![Virtual machines and containers](images/c2-container-vs-vm.svg)
+![Virtual machines and containers](images/ch09-container-vs-vm.svg)
 
 ![Virtual machines compared with containers](images/web/wiki-docker-vs-vm.jpg)<br>*Each virtual machine carries its own guest operating system. Containers share one operating system through the Docker engine, so they are much lighter. Source: Wikimedia Commons.*
 
@@ -501,7 +501,7 @@ Write your own answer first. Then open the model answer and compare.
 
 </div>
 
-![CI, Continuous Delivery and Continuous Deployment](images/c2-ci-cd.svg)
+![CI, Continuous Delivery and Continuous Deployment](images/ch09-ci-cd.svg)
 
 | Point | Continuous Integration | Continuous Delivery | Continuous Deployment |
 |---|---|---|---|
@@ -536,7 +536,7 @@ Write your own answer first. Then open the model answer and compare.
 
 </div>
 
-![The CI service and Fastlane do different jobs](images/c2-ci-and-fastlane.svg)
+![The CI service and Fastlane do different jobs](images/ch09-ci-and-fastlane.svg)
 
 | | CI service (GitHub Actions, GitLab CI, Bitrise) | Fastlane |
 |---|---|---|
@@ -724,7 +724,7 @@ jobs:
 
 <div class="ref">
 
-**From the book:** [5. Mobile-specific problems and how the pipeline solves them](#5-mobile-specific-problems-and-how-the-pipeline-solves-them) [C1 · 4. Android signing and publishing](C1%20-%20Store%20Publishing%20and%20Code%20Signing.md#4-android-signing-and-publishing)
+**From the book:** [5. Mobile-specific problems and how the pipeline solves them](#5-mobile-specific-problems-and-how-the-pipeline-solves-them) [Ch 8 · 4. Android signing and publishing](08%20-%20Store%20Publishing%20and%20Code%20Signing.md#4-android-signing-and-publishing)
 
 </div>
 
@@ -739,7 +739,7 @@ jobs:
 
 </div>
 
-![git merge and git rebase](images/c2-merge-vs-rebase.svg)
+![git merge and git rebase](images/ch09-merge-vs-rebase.svg)
 
 | Point | `git merge` | `git rebase` |
 |---|---|---|
@@ -871,7 +871,7 @@ git reset --hard HEAD~1       # throw away the last commit and its changes
 
 </div>
 
-![Cloud service models: who manages what](images/c2-cloud-models.svg)
+![Cloud service models: who manages what](images/ch09-cloud-models.svg)
 
 | Model | Full form | You get | You manage | Example |
 |---|---|---|---|---|
@@ -912,7 +912,7 @@ git reset --hard HEAD~1       # throw away the last commit and its changes
 
 </div>
 
-![Virtual machines and containers](images/c2-container-vs-vm.svg)
+![Virtual machines and containers](images/ch09-container-vs-vm.svg)
 
 | Point | Virtual machine | Container |
 |---|---|---|
@@ -955,7 +955,7 @@ git reset --hard HEAD~1       # throw away the last commit and its changes
 
 </div>
 
-![A mobile CI/CD pipeline](images/c2-pipeline.svg)
+![A mobile CI/CD pipeline](images/ch09-pipeline.svg)
 
 #### 1. The three terms
 
@@ -1054,7 +1054,7 @@ jobs:
 
 </div>
 
-![The CI service and Fastlane do different jobs](images/c2-ci-and-fastlane.svg)
+![The CI service and Fastlane do different jobs](images/ch09-ci-and-fastlane.svg)
 
 #### 1. The comparison
 
@@ -1115,7 +1115,7 @@ In every option **Fastlane** does the signing and the store upload, so the relea
 
 </div>
 
-![Git Flow: branches for a team that releases to the stores](images/c2-git-flow.svg)
+![Git Flow: branches for a team that releases to the stores](images/ch09-git-flow.svg)
 
 #### 1. The branches
 
@@ -1178,4 +1178,4 @@ A monthly store release with review and staged rollout needs a place to stabilis
 
 </details>
 
-<div class="book-nav"><span>← <a href="C1%20-%20Store%20Publishing%20and%20Code%20Signing.md">C1 - Store Publishing and Code Signing</a></span><span><a href="00%20-%20Contents%20and%20How%20to%20Use.md">Contents</a></span><span><a href="D1%20-%20Architecture%20Patterns%20and%20Testing.md">D1 - Architecture Patterns and Testing</a> →</span></div>
+<div class="book-nav"><span>← <a href="08%20-%20Store%20Publishing%20and%20Code%20Signing.md">08 - Store Publishing and Code Signing</a></span><span><a href="00%20-%20Contents%20and%20How%20to%20Use.md">Contents</a></span><span><a href="10%20-%20Architecture%20Patterns%20and%20Testing.md">10 - Architecture Patterns and Testing</a> →</span></div>

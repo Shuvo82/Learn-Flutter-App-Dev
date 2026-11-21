@@ -1,5 +1,5 @@
 <div class="chapter-head note">
-<div class="chapter-kicker"><b>F</b>Core maths</div>
+<div class="chapter-kicker"><b>Chapter 13</b>Core maths</div>
 
 # Probability
 
@@ -19,7 +19,7 @@ Probability questions look scary, but almost all of them use **five ideas**: cou
 
 </div>
 
-![The probability scale: every probability is between 0 and 1](images/f-probability-scale.svg)
+![The probability scale: every probability is between 0 and 1](images/ch13-probability-scale.svg)
 
 <div class="box story">
 
@@ -142,7 +142,7 @@ Each outcome has the same chance, like the faces of a fair die or the cards of a
 
 </div>
 
-![Two dice: 6 × 6 = 36 equally likely outcomes](images/f-two-dice.svg)
+![Two dice: 6 × 6 = 36 equally likely outcomes](images/ch13-two-dice.svg)
 
 <div class="box story">
 
@@ -196,7 +196,7 @@ Each outcome has the same chance, like the faces of a fair die or the cards of a
 
 </div>
 
-![A deck of 52 cards: 4 suits × 13 cards](images/f-card-deck.svg)
+![A deck of 52 cards: 4 suits × 13 cards](images/ch13-card-deck.svg)
 
 <div class="box story">
 
@@ -254,7 +254,7 @@ Each outcome has the same chance, like the faces of a fair die or the cards of a
 
 </div>
 
-![Permutation or combination? Choose 2 letters from A, B, C](images/f-perm-vs-comb.svg)
+![Permutation or combination? Choose 2 letters from A, B, C](images/ch13-perm-vs-comb.svg)
 
 <div class="box story">
 
@@ -386,7 +386,7 @@ Ask: "If I swap two chosen items, do I get a **different** result?" **Yes** → 
 
 </div>
 
-![The OR rule: add, then subtract the overlap](images/f-or-rule.svg)
+![The OR rule: add, then subtract the overlap](images/ch13-or-rule.svg)
 
 <div class="box story">
 
@@ -441,7 +441,7 @@ Ask: "If I swap two chosen items, do I get a **different** result?" **Yes** → 
 
 </div>
 
-![A tree diagram: two balls drawn without replacement](images/f-tree-diagram.svg)
+![A tree diagram: two balls drawn without replacement](images/ch13-tree-diagram.svg)
 
 <div class="box story">
 
@@ -505,7 +505,7 @@ Ask: "If I swap two chosen items, do I get a **different** result?" **Yes** → 
 
 </div>
 
-![Conditional probability with counts: is a flagged build really bad?](images/f-bayes-frequency.svg)
+![Conditional probability with counts: is a flagged build really bad?](images/ch13-bayes-frequency.svg)
 
 <div class="box q">
 
@@ -577,8 +577,8 @@ Because real bugs are **rare** (2%). Among 1,000 builds, only 20 are bad and the
 | Two servers, each up 99% of the time, **both needed** (in series) | 0.99 × 0.99 | 98.01% up |
 | Two servers, each up 99%, **either one is enough** (in parallel) | 1 − 0.01 × 0.01 | 99.99% up |
 | A crash in 10% of sessions: P(at least one crash in 3 sessions) | 1 − 0.9³ = 1 − 0.729 | 0.271 = 27.1% |
-| Crash-free users (B4) | 1 − crashed users ÷ total users | e.g. 99% |
-| Staged rollout to 5% of users (C1) | 5% of users see the new version | A bug reaches few people first |
+| Crash-free users (Ch 7) | 1 − crashed users ÷ total users | e.g. 99% |
+| Staged rollout to 5% of users (Ch 8) | 5% of users see the new version | A bug reaches few people first |
 
 **On a basic calculator:** 0.9³ = 0.9 × 0.9 × 0.9 = 0.729. Many basic calculators repeat the last operation when you press `=` again: 0.9 `×` `=` `=` gives 0.81, then 0.729.
 
@@ -825,7 +825,7 @@ Two mutually exclusive events with non-zero chances are **never** independent: i
 
 </div>
 
-![Two dice: 6 × 6 = 36 equally likely outcomes](images/f-two-dice.svg)
+![Two dice: 6 × 6 = 36 equally likely outcomes](images/ch13-two-dice.svg)
 
 | Event | Favourable outcomes | P |
 |---|---|---|
@@ -1135,7 +1135,7 @@ Series makes the system **weaker** than each part. Parallel (redundancy) makes i
 - **Exponential backoff** (1, 2, 4, 8 s …) with random **jitter** spreads the retries out and gives the network time to recover.
 - An **Idempotency-Key** makes a repeated request safe, so a retry never creates a duplicate record.
 
-![Exponential backoff: the wait doubles after each failure](images/a3-exponential-backoff.svg)
+![Exponential backoff: the wait doubles after each failure](images/ch03-exponential-backoff.svg)
 
 <div class="box story">
 
@@ -1151,7 +1151,7 @@ Series makes the system **weaker** than each part. Parallel (redundancy) makes i
 
 <div class="ref">
 
-**From the book:** [10. At least one, and probability in software](#10-at-least-one-and-probability-in-software) [8. The AND rule and tree diagrams](#8-the-and-rule-and-tree-diagrams) [A3 · Offline Storage and Data Sync](A3%20-%20Offline%20Storage%20and%20Data%20Sync.md)
+**From the book:** [10. At least one, and probability in software](#10-at-least-one-and-probability-in-software) [8. The AND rule and tree diagrams](#8-the-and-rule-and-tree-diagrams) [Ch 3 · Offline Storage and Data Sync](03%20-%20Offline%20Storage%20and%20Data%20Sync.md)
 
 </div>
 
@@ -1174,7 +1174,7 @@ Series makes the system **weaker** than each part. Parallel (redundancy) makes i
 | Correct (99%) | 9,900 | 5% → **495** | 9,405 |
 | **Total** | 10,000 | **585** | 9,415 |
 
-![Conditional probability with counts: is a flagged build really bad?](images/f-bayes-frequency.svg)
+![Conditional probability with counts: is a flagged build really bad?](images/ch13-bayes-frequency.svg)
 
 *The picture shows the same method with builds: change the numbers to 10,000 records, 1%, 90% and 5%.*
 
@@ -1264,4 +1264,4 @@ A random sample of 4 out of 10 finds **at least one** bad file 5 times out of 6.
 
 </details>
 
-<div class="book-nav"><span>← <a href="E%20-%20Revision%20Sheet%20and%20Long-Answer%20Templates.md">E - Revision Sheet and Long-Answer Templates</a></span><span><a href="00%20-%20Contents%20and%20How%20to%20Use.md">Contents</a></span><span>End of the book</span></div>
+<div class="book-nav"><span>← <a href="12%20-%20Documentation%20and%20Agile%20Teamwork.md">12 - Documentation and Agile Teamwork</a></span><span><a href="00%20-%20Contents%20and%20How%20to%20Use.md">Contents</a></span><span><a href="14%20-%20Revision%20Sheet%20and%20Long-Answer%20Templates.md">14 - Revision Sheet and Long-Answer Templates</a> →</span></div>
