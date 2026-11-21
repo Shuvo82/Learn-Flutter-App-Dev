@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="326" viewBox="0 0 760 326" role="img" aria-label="Offline-first: the local database is the source of truth">
+<rect x="0.5" y="0.5" width="759" height="325" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">Offline-first: the local database is the source of truth</text>
+<rect x="20.0" y="58.0" width="548.0" height="250.0" rx="10" fill="#f6f5f1" stroke="#d9d7d0" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="32.0" y="76.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#52514e" text-anchor="start">On the phone: always works</text>
+<rect x="44.0" y="98.0" width="120.0" height="56.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="104.0" y="130.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">UI</text>
+<rect x="224.0" y="98.0" width="140.0" height="56.0" rx="8" fill="#ebe8fb" stroke="#6250d6" stroke-width="1.5"/>
+<text x="294.0" y="130.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Repository</text>
+<rect x="440.0" y="98.0" width="112.0" height="56.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="496.0" y="121.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Local DB</text>
+<text x="496.0" y="139.6" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.0" font-weight="400" fill="#52514e" text-anchor="middle">SQLite</text>
+<rect x="224.0" y="222.0" width="140.0" height="56.0" rx="8" fill="#fdf2d3" stroke="#cf8d00" stroke-width="1.5"/>
+<text x="294.0" y="254.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Sync engine</text>
+<rect x="616.0" y="222.0" width="124.0" height="56.0" rx="8" fill="#fdeadf" stroke="#e0602c" stroke-width="1.5"/>
+<text x="678.0" y="245.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Server</text>
+<text x="678.0" y="263.6" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.0" font-weight="400" fill="#52514e" text-anchor="middle">REST API</text>
+<line x1="164.0" y1="114.0" x2="218.0" y2="114.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="224.0,114.0 215.5,118.1 215.5,109.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="194.0" y="108.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">actions</text>
+<line x1="224.0" y1="140.0" x2="170.0" y2="140.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="164.0,140.0 172.5,135.9 172.5,144.1" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="194.0" y="155.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">stream</text>
+<line x1="370.0" y1="126.0" x2="434.0" y2="126.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="440.0,126.0 431.5,130.1 431.5,121.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="364.0,126.0 372.5,121.9 372.5,130.1" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="402.0" y="120.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#52514e" text-anchor="middle">read / write</text>
+<line x1="294.0" y1="154.0" x2="294.0" y2="216.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="294.0,222.0 289.9,213.5 298.1,213.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="286.0" y="192.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="end">enqueue</text>
+<line x1="370.0" y1="250.0" x2="610.0" y2="250.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="616.0,250.0 607.5,254.1 607.5,245.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="364.0,250.0 372.5,245.9 372.5,254.1" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="526.0" y="244.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">push / pull, when online</text>
+<polyline points="340.0,222.0 340.0,190.0 496.0,190.0 496.0,160.0" fill="none" stroke="#52514e" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="496.0,154.0 500.1,162.5 491.9,162.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="420.0" y="184.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">upsert pulled rows</text>
+<text x="294.0" y="298.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="middle">The UI reads and writes the local DB only. It never waits for the network.</text>
+</svg>

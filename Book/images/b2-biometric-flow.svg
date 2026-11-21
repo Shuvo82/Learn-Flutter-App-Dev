@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="500" viewBox="0 0 760 500" role="img" aria-label="Biometric login: a quick unlock, not a replacement for server login">
+<rect x="0.5" y="0.5" width="759" height="499" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">Biometric login: a quick unlock, not a replacement for server login</text>
+<rect x="300.0" y="58.0" width="160.0" height="36.0" rx="8" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="380.0" y="80.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">App opens</text>
+<line x1="380.0" y1="94.0" x2="380.0" y2="106.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="380.0,112.0 375.9,103.5 384.1,103.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="380.0,112.0 480.0,150.0 380.0,188.0 280.0,150.0" fill="#fdf2d3" stroke="#cf8d00" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="380.0" y="146.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="middle">Fingerprint login</text>
+<text x="380.0" y="161.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="middle">enabled?</text>
+<polyline points="280.0,150.0 140.0,150.0 140.0,208.0" fill="none" stroke="#52514e" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="140.0,214.0 135.9,205.5 144.1,205.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="214.0" y="143.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#52514e" text-anchor="middle">No</text>
+<rect x="40.0" y="214.0" width="200.0" height="52.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="140.0" y="236.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Full login at Keycloak</text>
+<text x="140.0" y="252.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">password + OTP</text>
+<line x1="140.0" y1="266.0" x2="140.0" y2="290.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="140.0,296.0 135.9,287.5 144.1,287.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="40.0" y="296.0" width="200.0" height="44.0" rx="8" fill="#ffffff" stroke="#b3b1aa" stroke-width="1.5"/>
+<text x="140.0" y="322.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Ask: enable fingerprint?</text>
+<line x1="140.0" y1="340.0" x2="140.0" y2="364.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="140.0,370.0 135.9,361.5 144.1,361.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="40.0" y="370.0" width="200.0" height="62.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="140.0" y="390.1" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Store the refresh token</text>
+<text x="140.0" y="406.5" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">in Keystore / Keychain,</text>
+<text x="140.0" y="420.8" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">locked by biometrics</text>
+<polyline points="480.0,150.0 620.0,150.0 620.0,208.0" fill="none" stroke="#52514e" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="620.0,214.0 615.9,205.5 624.1,205.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="546.0" y="143.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#52514e" text-anchor="middle">Yes</text>
+<rect x="520.0" y="214.0" width="200.0" height="44.0" rx="8" fill="#ebe8fb" stroke="#6250d6" stroke-width="1.5"/>
+<text x="620.0" y="240.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">OS biometric prompt</text>
+<line x1="620.0" y1="258.0" x2="620.0" y2="276.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="620.0,282.0 615.9,273.5 624.1,273.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="620.0,282.0 685.0,316.0 620.0,350.0 555.0,316.0" fill="#fdf2d3" stroke="#cf8d00" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="620.0" y="320.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="middle">Match?</text>
+<line x1="620.0" y1="350.0" x2="620.0" y2="372.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="620.0,378.0 615.9,369.5 624.1,369.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="628.0" y="368.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#52514e" text-anchor="start">Yes</text>
+<rect x="510.0" y="378.0" width="220.0" height="44.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="620.0" y="404.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">OS releases the refresh token</text>
+<line x1="620.0" y1="422.0" x2="620.0" y2="438.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="620.0,444.0 615.9,435.5 624.1,435.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="520.0" y="444.0" width="200.0" height="40.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="620.0" y="468.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">New access token → Home</text>
+<polyline points="555.0,316.0 380.0,316.0 380.0,240.0 246.0,240.0" fill="none" stroke="#52514e" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="240.0,240.0 248.5,235.9 248.5,244.1" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="468.0" y="334.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#52514e" text-anchor="middle">No: fails several times,</text>
+<text x="468.0" y="348.3" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#52514e" text-anchor="middle">or a new fingerprint was added</text>
+<text x="140.0" y="462.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">The app never sees the fingerprint.</text>
+<text x="140.0" y="476.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">The OS only answers yes or no.</text>
+</svg>

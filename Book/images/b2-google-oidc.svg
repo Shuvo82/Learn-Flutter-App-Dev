@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="560" viewBox="0 0 760 560" role="img" aria-label="&quot;Sign in with Google&quot;: OAuth 2.0 and OIDC working together">
+<rect x="0.5" y="0.5" width="759" height="559" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">&quot;Sign in with Google&quot;: OAuth 2.0 and OIDC working together</text>
+<line x1="110.0" y1="96.0" x2="110.0" y2="372.0" stroke="#b9b7b0" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="5 4"/>
+<rect x="18.0" y="62.0" width="184.0" height="34.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="110.0" y="83.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Flutter app</text>
+<line x1="380.0" y1="96.0" x2="380.0" y2="372.0" stroke="#b9b7b0" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="5 4"/>
+<rect x="288.0" y="62.0" width="184.0" height="34.0" rx="8" fill="#fdf2d3" stroke="#cf8d00" stroke-width="1.5"/>
+<text x="380.0" y="83.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Google (OIDC provider)</text>
+<line x1="650.0" y1="96.0" x2="650.0" y2="372.0" stroke="#b9b7b0" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="5 4"/>
+<rect x="558.0" y="62.0" width="184.0" height="34.0" rx="8" fill="#fdeadf" stroke="#e0602c" stroke-width="1.5"/>
+<text x="650.0" y="83.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Your backend</text>
+<line x1="110.0" y1="132.0" x2="374.0" y2="132.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="380.0,132.0 371.5,136.1 371.5,127.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="125.3" y="111.0" width="239.3" height="17.0" rx="0" fill="#fcfcfb" stroke="none" stroke-width="1.5"/>
+<circle cx="137.3" cy="120.0" r="8.5" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="137.3" y="124.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+<text x="256.0" y="124.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">login: scope = openid email profile</text>
+<text x="392.0" y="160.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#52514e" text-anchor="start">user picks an account and agrees (consent)</text>
+<line x1="380.0" y1="190.0" x2="116.0" y2="190.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="5 4"/>
+<polygon points="110.0,190.0 118.5,185.9 118.5,194.1" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="149.3" y="169.0" width="191.5" height="17.0" rx="0" fill="#fcfcfb" stroke="none" stroke-width="1.5"/>
+<circle cx="161.3" cy="178.0" r="8.5" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="161.3" y="182.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+<text x="256.0" y="182.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">one-time authorization code</text>
+<line x1="110.0" y1="226.0" x2="374.0" y2="226.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="380.0,226.0 371.5,230.1 371.5,221.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="122.4" y="205.0" width="245.3" height="17.0" rx="0" fill="#fcfcfb" stroke="none" stroke-width="1.5"/>
+<circle cx="134.4" cy="214.0" r="8.5" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="134.4" y="218.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+<text x="256.0" y="218.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">POST /token  { code, code_verifier }</text>
+<line x1="380.0" y1="262.0" x2="116.0" y2="262.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="5 4"/>
+<polygon points="110.0,262.0 118.5,257.9 118.5,266.1" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="137.3" y="241.0" width="215.4" height="17.0" rx="0" fill="#fcfcfb" stroke="none" stroke-width="1.5"/>
+<circle cx="149.3" cy="250.0" r="8.5" fill="#16996a" stroke="none" stroke-width="1.5"/>
+<text x="149.3" y="254.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+<text x="256.0" y="254.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">ID token (JWT)  +  access token</text>
+<line x1="110.0" y1="298.0" x2="644.0" y2="298.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="650.0,298.0 641.5,302.1 641.5,293.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="272.3" y="277.0" width="215.4" height="17.0" rx="0" fill="#fcfcfb" stroke="none" stroke-width="1.5"/>
+<circle cx="284.3" cy="286.0" r="8.5" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="284.3" y="290.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+<text x="391.0" y="290.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">POST /auth/google  { id_token }</text>
+<text x="640.0" y="322.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#52514e" text-anchor="end">backend verifies: Google&#x27;s key, iss, aud, exp</text>
+<line x1="650.0" y1="356.0" x2="116.0" y2="356.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="5 4"/>
+<polygon points="110.0,356.0 118.5,351.9 118.5,360.1" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="278.3" y="335.0" width="203.4" height="17.0" rx="0" fill="#fcfcfb" stroke="none" stroke-width="1.5"/>
+<circle cx="290.3" cy="344.0" r="8.5" fill="#16996a" stroke="none" stroke-width="1.5"/>
+<text x="290.3" y="348.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">6</text>
+<text x="391.0" y="348.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">your app&#x27;s own session tokens</text>
+<rect x="24.0" y="392.0" width="350.0" height="116.0" rx="8" fill="#ebe8fb" stroke="#6250d6" stroke-width="1.5"/>
+<text x="199.0" y="431.3" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">ID token  =  OIDC  =  WHO?</text>
+<text x="199.0" y="448.5" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">always a JWT, meant for the app</text>
+<text x="199.0" y="463.5" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">claims: sub, email, name, iss, aud, exp</text>
+<text x="199.0" y="478.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">&quot;Rahim (sub 1098…) logged in at 10:02&quot;</text>
+<rect x="386.0" y="392.0" width="350.0" height="116.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="561.0" y="431.3" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Access token  =  OAuth 2.0  =  WHAT?</text>
+<text x="561.0" y="448.5" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">carries scopes: what the app may access</text>
+<text x="561.0" y="463.5" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">sent as Bearer to an API (e.g. Google Drive)</text>
+<text x="561.0" y="478.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">format not fixed: Google opaque, Keycloak JWT</text>
+<text x="380.0" y="534.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="middle">Use the ID token to know the user. Use the access token to call APIs. Never swap them.</text>
+</svg>

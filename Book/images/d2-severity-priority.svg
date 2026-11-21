@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="346" viewBox="0 0 760 346" role="img" aria-label="Severity and priority are two different things">
+<rect x="0.5" y="0.5" width="759" height="345" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">Severity and priority are two different things</text>
+<rect x="200.0" y="86.0" width="262.0" height="96.0" rx="8" fill="#fdeadf" stroke="#e0602c" stroke-width="1.5"/>
+<text x="331.0" y="130.6" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">Crash in a report that is</text>
+<text x="331.0" y="146.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">used once a year</text>
+<rect x="468.0" y="86.0" width="262.0" height="96.0" rx="8" fill="#fde6e6" stroke="#d93f3e" stroke-width="1.5"/>
+<text x="599.0" y="130.6" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">The app crashes on login</text>
+<text x="599.0" y="146.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">for everyone</text>
+<rect x="200.0" y="188.0" width="262.0" height="96.0" rx="8" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="331.0" y="232.6" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">Slight misalignment on</text>
+<text x="331.0" y="248.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">a settings page</text>
+<rect x="468.0" y="188.0" width="262.0" height="96.0" rx="8" fill="#fdf2d3" stroke="#cf8d00" stroke-width="1.5"/>
+<text x="599.0" y="232.6" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">The app&#x27;s name misspelled</text>
+<text x="599.0" y="248.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">on the home screen</text>
+<text x="331.0" y="76.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#1c1c1a" text-anchor="middle">Low priority: fix later</text>
+<text x="599.0" y="76.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#1c1c1a" text-anchor="middle">High priority: fix now</text>
+<text x="186.0" y="130.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#1c1c1a" text-anchor="end">High severity</text>
+<text x="186.0" y="147.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="end">big damage</text>
+<text x="186.0" y="232.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#1c1c1a" text-anchor="end">Low severity</text>
+<text x="186.0" y="249.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="end">small damage</text>
+<text x="380.0" y="310.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#52514e" text-anchor="middle">Severity = how badly the bug damages the system (set by QA).</text>
+<text x="380.0" y="329.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#52514e" text-anchor="middle">Priority = how soon it must be fixed (set by the product owner or manager).</text>
+</svg>

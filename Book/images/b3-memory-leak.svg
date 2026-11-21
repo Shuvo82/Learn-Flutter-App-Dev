@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="270" viewBox="0 0 760 270" role="img" aria-label="What a memory leak looks like">
+<rect x="0.5" y="0.5" width="759" height="269" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">What a memory leak looks like</text>
+<text x="24.0" y="51.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52514e" text-anchor="start">Shape only, not measured data</text>
+<line x1="60.0" y1="226.0" x2="540.0" y2="226.0" stroke="#b9b7b0" stroke-width="1" stroke-linecap="round"/>
+<line x1="60.0" y1="96.0" x2="540.0" y2="96.0" stroke="#d93f3e" stroke-width="1.2" stroke-linecap="round"/>
+<text x="60.0" y="88.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">OS memory limit: above this the app is killed (OOM)</text>
+<polyline points="60.0,200.0 120.0,178.0 180.0,198.0 240.0,176.0 300.0,199.0 360.0,177.0 420.0,198.0 480.0,178.0 540.0,196.0" fill="none" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="60.0,200.0 120.0,186.0 180.0,178.0 240.0,160.0 300.0,152.0 360.0,134.0 420.0,126.0 480.0,108.0 522.0,97.0" fill="none" stroke="#e0602c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="540.0" cy="196.0" r="5.0" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="522.0" cy="97.0" r="5.0" fill="#e0602c" stroke="#fcfcfb" stroke-width="2"/>
+<text x="554.0" y="192.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="start">Healthy app</text>
+<text x="554.0" y="208.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">memory comes back after</text>
+<text x="554.0" y="222.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">garbage collection</text>
+<text x="554.0" y="108.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="start">App with a leak</text>
+<text x="554.0" y="124.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">memory only grows until</text>
+<text x="554.0" y="138.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">the OS kills the app</text>
+<text x="300.0" y="248.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#7a7974" text-anchor="middle">time spent using the app</text>
+<text x="60.0" y="66.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="1" font-weight="400" fill="#1c1c1a" text-anchor="middle"></text>
+<line x1="250.0" y1="62.0" x2="274.0" y2="62.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<text x="280.0" y="66.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">healthy</text>
+<line x1="350.0" y1="62.0" x2="374.0" y2="62.0" stroke="#e0602c" stroke-width="2" stroke-linecap="round"/>
+<text x="380.0" y="66.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">leaking</text>
+</svg>

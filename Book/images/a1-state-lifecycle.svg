@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="224" viewBox="0 0 760 224" role="img" aria-label="State lifecycle of a StatefulWidget">
+<rect x="0.5" y="0.5" width="759" height="223" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">State lifecycle of a StatefulWidget</text>
+<rect x="24.0" y="116.0" width="104.0" height="38.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="76.0" y="139.2" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="middle">createState</text>
+<rect x="148.4" y="116.0" width="90.0" height="38.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="193.4" y="139.2" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="middle">initState</text>
+<rect x="258.8" y="116.0" width="176.0" height="38.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="346.8" y="139.2" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="middle">didChangeDependencies</text>
+<rect x="455.2" y="116.0" width="64.0" height="38.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="487.2" y="139.2" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="middle">build</text>
+<rect x="539.6" y="116.0" width="96.0" height="38.0" rx="8" fill="#fde6e6" stroke="#d93f3e" stroke-width="1.5"/>
+<text x="587.6" y="139.2" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="middle">deactivate</text>
+<rect x="656.0" y="116.0" width="80.0" height="38.0" rx="8" fill="#fde6e6" stroke="#d93f3e" stroke-width="1.5"/>
+<text x="696.0" y="139.2" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="middle">dispose</text>
+<line x1="128.0" y1="135.0" x2="142.4" y2="135.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="148.4,135.0 139.9,139.1 139.9,130.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="238.4" y1="135.0" x2="252.8" y2="135.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="258.8,135.0 250.3,139.1 250.3,130.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="434.8" y1="135.0" x2="449.2" y2="135.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="455.2,135.0 446.7,139.1 446.7,130.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="519.2" y1="135.0" x2="533.6" y2="135.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="539.6,135.0 531.1,139.1 531.1,130.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="635.6" y1="135.0" x2="650.0" y2="135.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="656.0,135.0 647.5,139.1 647.5,130.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="369.2" y="58.0" width="104.0" height="30.0" rx="8" fill="#ffffff" stroke="#b3b1aa" stroke-width="1.5"/>
+<text x="421.2" y="77.2" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="middle">setState()</text>
+<rect x="489.2" y="58.0" width="136.0" height="30.0" rx="8" fill="#ffffff" stroke="#b3b1aa" stroke-width="1.5"/>
+<text x="557.2" y="77.2" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="middle">didUpdateWidget()</text>
+<line x1="425.2" y1="88.0" x2="471.9" y2="113.2" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="477.2,116.0 467.8,115.6 471.7,108.4" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="547.2" y1="88.0" x2="502.4" y2="113.1" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="497.2,116.0 502.6,108.3 506.6,115.4" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="635.2" y="78.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">rebuild</text>
+<text x="193.4" y="176.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">once: create</text>
+<text x="193.4" y="190.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">controllers, listeners</text>
+<text x="487.2" y="176.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">many times:</text>
+<text x="487.2" y="190.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">keep it fast</text>
+<text x="690.0" y="176.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">once: cancel,</text>
+<text x="690.0" y="190.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">close, dispose</text>
+</svg>

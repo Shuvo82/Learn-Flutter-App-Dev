@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="318" viewBox="0 0 760 318" role="img" aria-label="Permutation or combination? Choose 2 letters from A, B, C">
+<rect x="0.5" y="0.5" width="759" height="317" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">Permutation or combination? Choose 2 letters from A, B, C</text>
+<rect x="20.0" y="60.0" width="360.0" height="186.0" rx="10" fill="#f6f5f1" stroke="#d9d7d0" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="32.0" y="78.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#52514e" text-anchor="start">Permutation: ORDER MATTERS</text>
+<rect x="400.0" y="60.0" width="340.0" height="186.0" rx="10" fill="#f6f5f1" stroke="#d9d7d0" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="412.0" y="78.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#52514e" text-anchor="start">Combination: order does NOT matter</text>
+<rect x="60.0" y="88.0" width="70.0" height="34.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="95.0" y="109.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#1c1c1a" text-anchor="middle">AB</text>
+<rect x="150.0" y="88.0" width="70.0" height="34.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="185.0" y="109.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#1c1c1a" text-anchor="middle">BA</text>
+<rect x="450.0" y="88.0" width="70.0" height="34.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="485.0" y="109.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#1c1c1a" text-anchor="middle">AB</text>
+<text x="536.0" y="110.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#7a7974" text-anchor="start">(BA is the same)</text>
+<rect x="60.0" y="132.0" width="70.0" height="34.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="95.0" y="153.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#1c1c1a" text-anchor="middle">AC</text>
+<rect x="150.0" y="132.0" width="70.0" height="34.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="185.0" y="153.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#1c1c1a" text-anchor="middle">CA</text>
+<rect x="450.0" y="132.0" width="70.0" height="34.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="485.0" y="153.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#1c1c1a" text-anchor="middle">AC</text>
+<text x="536.0" y="154.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#7a7974" text-anchor="start">(CA is the same)</text>
+<rect x="60.0" y="176.0" width="70.0" height="34.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="95.0" y="197.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#1c1c1a" text-anchor="middle">BC</text>
+<rect x="150.0" y="176.0" width="70.0" height="34.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="185.0" y="197.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#1c1c1a" text-anchor="middle">CB</text>
+<rect x="450.0" y="176.0" width="70.0" height="34.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="485.0" y="197.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#1c1c1a" text-anchor="middle">BC</text>
+<text x="536.0" y="198.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#7a7974" text-anchor="start">(CB is the same)</text>
+<text x="300.0" y="160.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#2a78d6" text-anchor="middle">6</text>
+<text x="300.0" y="182.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#52514e" text-anchor="middle">ways</text>
+<text x="690.0" y="160.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#16996a" text-anchor="middle">3</text>
+<text x="690.0" y="182.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#52514e" text-anchor="middle">ways</text>
+<text x="200.0" y="236.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">AB ≠ BA (e.g. president + secretary)</text>
+<text x="570.0" y="236.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">AB = BA (e.g. a team of two)</text>
+<text x="200.0" y="274.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="13.5" font-weight="700" fill="#1c1c1a" text-anchor="middle">nPr = n! ÷ (n − r)!</text>
+<text x="200.0" y="296.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12.5" font-weight="400" fill="#52514e" text-anchor="middle">3P2 = 3! ÷ 1! = 6</text>
+<text x="570.0" y="274.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="13.5" font-weight="700" fill="#1c1c1a" text-anchor="middle">nCr = n! ÷ (r! × (n − r)!)</text>
+<text x="570.0" y="296.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12.5" font-weight="400" fill="#52514e" text-anchor="middle">3C2 = 3! ÷ (2! × 1!) = 3</text>
+</svg>

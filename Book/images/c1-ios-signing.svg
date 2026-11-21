@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="284" viewBox="0 0 760 284" role="img" aria-label="iOS: what a provisioning profile ties together">
+<rect x="0.5" y="0.5" width="759" height="283" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">iOS: what a provisioning profile ties together</text>
+<rect x="24.0" y="62.0" width="190.0" height="46.0" rx="8" fill="#ebe8fb" stroke="#6250d6" stroke-width="1.5"/>
+<text x="119.0" y="81.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Certificate</text>
+<text x="119.0" y="97.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">WHO: the developer</text>
+<rect x="24.0" y="122.0" width="190.0" height="46.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="119.0" y="141.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">App ID (Bundle ID)</text>
+<text x="119.0" y="157.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">WHAT: which app</text>
+<rect x="24.0" y="182.0" width="190.0" height="46.0" rx="8" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="119.0" y="201.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Devices + entitlements</text>
+<text x="119.0" y="217.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">WHERE, and what it may do</text>
+<rect x="270.0" y="112.0" width="136.0" height="66.0" rx="8" fill="#fdf2d3" stroke="#cf8d00" stroke-width="1.5"/>
+<text x="338.0" y="141.3" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Provisioning</text>
+<text x="338.0" y="158.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">profile</text>
+<line x1="214.0" y1="85.0" x2="265.2" y2="124.3" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="270.0,128.0 260.8,126.1 265.7,119.6" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="214.0" y1="145.0" x2="264.0" y2="145.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="270.0,145.0 261.5,149.1 261.5,140.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="214.0" y1="205.0" x2="265.2" y2="165.7" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="270.0,162.0 265.7,170.4 260.8,163.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="446.0" y="122.0" width="100.0" height="46.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="496.0" y="149.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Signed IPA</text>
+<rect x="586.0" y="122.0" width="150.0" height="46.0" rx="8" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="661.0" y="149.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">App Store Connect</text>
+<line x1="406.0" y1="145.0" x2="440.0" y2="145.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="446.0,145.0 437.5,149.1 437.5,140.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="546.0" y1="145.0" x2="580.0" y2="145.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="586.0,145.0 577.5,149.1 577.5,140.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="446.0" y="216.0" width="130.0" height="44.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="511.0" y="234.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">TestFlight</text>
+<text x="511.0" y="250.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">beta testers</text>
+<rect x="606.0" y="216.0" width="130.0" height="44.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="671.0" y="234.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">App Review</text>
+<text x="671.0" y="250.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">then the App Store</text>
+<line x1="630.0" y1="168.0" x2="535.4" y2="213.4" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="530.0,216.0 535.9,208.6 539.4,216.0" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="680.0" y1="168.0" x2="680.0" y2="210.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="680.0,216.0 675.9,207.5 684.1,207.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="338.0" y="200.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#52514e" text-anchor="middle">development · ad hoc</text>
+<text x="338.0" y="214.3" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#52514e" text-anchor="middle">· App Store</text>
+</svg>

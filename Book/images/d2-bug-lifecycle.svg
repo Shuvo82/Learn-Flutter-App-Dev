@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="282" viewBox="0 0 760 282" role="img" aria-label="Bug life cycle">
+<rect x="0.5" y="0.5" width="759" height="281" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">Bug life cycle</text>
+<rect x="24.0" y="78.0" width="60.0" height="38.0" rx="8" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="54.0" y="101.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">New</text>
+<rect x="120.3" y="78.0" width="84.0" height="38.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="162.3" y="101.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Assigned</text>
+<rect x="240.7" y="78.0" width="64.0" height="38.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="272.7" y="101.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Open</text>
+<rect x="341.0" y="78.0" width="64.0" height="38.0" rx="8" fill="#fdf2d3" stroke="#cf8d00" stroke-width="1.5"/>
+<text x="373.0" y="101.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Fixed</text>
+<rect x="441.3" y="78.0" width="70.0" height="38.0" rx="8" fill="#fdf2d3" stroke="#cf8d00" stroke-width="1.5"/>
+<text x="476.3" y="101.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Retest</text>
+<rect x="547.7" y="78.0" width="82.0" height="38.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="588.7" y="101.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Verified</text>
+<rect x="666.0" y="78.0" width="70.0" height="38.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="701.0" y="101.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Closed</text>
+<line x1="84.0" y1="97.0" x2="114.3" y2="97.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="120.3,97.0 111.8,101.1 111.8,92.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="204.3" y1="97.0" x2="234.7" y2="97.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="240.7,97.0 232.2,101.1 232.2,92.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="304.7" y1="97.0" x2="335.0" y2="97.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="341.0,97.0 332.5,101.1 332.5,92.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="405.0" y1="97.0" x2="435.3" y2="97.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="441.3,97.0 432.8,101.1 432.8,92.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="511.3" y1="97.0" x2="541.7" y2="97.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="547.7,97.0 539.2,101.1 539.2,92.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="629.7" y1="97.0" x2="660.0" y2="97.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="666.0,97.0 657.5,101.1 657.5,92.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="186.0" y="172.0" width="150.0" height="36.0" rx="8" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="261.0" y="194.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">Rejected / Duplicate</text>
+<rect x="352.0" y="172.0" width="138.0" height="36.0" rx="8" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="421.0" y="194.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">Deferred (fix later)</text>
+<rect x="540.0" y="172.0" width="170.0" height="36.0" rx="8" fill="#fde6e6" stroke="#d93f3e" stroke-width="1.5"/>
+<text x="625.0" y="194.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Reopened (fix failed)</text>
+<line x1="264.7" y1="116.0" x2="262.3" y2="166.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="262.0,172.0 258.3,163.3 266.5,163.7" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="280.7" y1="116.0" x2="394.6" y2="169.5" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="400.0,172.0 390.6,172.1 394.0,164.7" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="482.3" y1="116.0" x2="594.6" y2="169.4" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="600.0,172.0 590.6,172.0 594.1,164.7" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<polyline points="625.0,208.0 625.0,244.0 162.3,244.0 162.3,122.0" fill="none" stroke="#d93f3e" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="162.3,116.0 166.4,124.5 158.3,124.5" fill="#d93f3e" stroke="#d93f3e" stroke-width="1" stroke-linejoin="round"/>
+<text x="390.0" y="262.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">the bug goes back to the developer</text>
+</svg>

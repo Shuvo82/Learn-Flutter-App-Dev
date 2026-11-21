@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="322" viewBox="0 0 760 322" role="img" aria-label="Three caching strategies: which source comes first?">
+<rect x="0.5" y="0.5" width="759" height="321" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">Three caching strategies: which source comes first?</text>
+<text x="24.0" y="86.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#1c1c1a" text-anchor="start">Cache-first</text>
+<text x="24.0" y="104.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">rarely changing data:</text>
+<text x="24.0" y="119.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">district list, templates</text>
+<rect x="210.0" y="66.0" width="200.0" height="56.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="310.0" y="90.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Read the cache</text>
+<text x="310.0" y="106.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">found: show it and stop</text>
+<circle cx="210.0" cy="66.0" r="9.5" fill="#16996a" stroke="none" stroke-width="1.5"/>
+<text x="210.0" y="70.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+<line x1="410.0" y1="94.0" x2="514.0" y2="94.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="520.0,94.0 511.5,98.1 511.5,89.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="465.0" y="88.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">only if missing</text>
+<rect x="520.0" y="66.0" width="216.0" height="56.0" rx="8" fill="#fdeadf" stroke="#e0602c" stroke-width="1.5"/>
+<text x="628.0" y="90.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Network</text>
+<text x="628.0" y="106.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">fetch, save, show</text>
+<circle cx="520.0" cy="66.0" r="9.5" fill="#e0602c" stroke="none" stroke-width="1.5"/>
+<text x="520.0" y="70.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+<text x="24.0" y="166.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#1c1c1a" text-anchor="start">Network-first</text>
+<text x="24.0" y="184.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">data that must be fresh:</text>
+<text x="24.0" y="198.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">approval status</text>
+<rect x="210.0" y="146.0" width="200.0" height="56.0" rx="8" fill="#fdeadf" stroke="#e0602c" stroke-width="1.5"/>
+<text x="310.0" y="170.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Try the network</text>
+<text x="310.0" y="186.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">success: show and save</text>
+<circle cx="210.0" cy="146.0" r="9.5" fill="#e0602c" stroke="none" stroke-width="1.5"/>
+<text x="210.0" y="150.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+<line x1="410.0" y1="174.0" x2="514.0" y2="174.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="520.0,174.0 511.5,178.1 511.5,169.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="465.0" y="168.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">only if it fails</text>
+<rect x="520.0" y="146.0" width="216.0" height="56.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="628.0" y="170.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Cache</text>
+<text x="628.0" y="186.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">show the saved copy</text>
+<circle cx="520.0" cy="146.0" r="9.5" fill="#16996a" stroke="none" stroke-width="1.5"/>
+<text x="520.0" y="150.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+<text x="24.0" y="246.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#1c1c1a" text-anchor="start">Stale-while-revalidate</text>
+<text x="24.0" y="264.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">most list screens</text>
+<rect x="210.0" y="226.0" width="200.0" height="56.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="310.0" y="250.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Show the cache at once</text>
+<text x="310.0" y="266.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">the user sees data instantly</text>
+<circle cx="210.0" cy="226.0" r="9.5" fill="#16996a" stroke="none" stroke-width="1.5"/>
+<text x="210.0" y="230.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+<line x1="410.0" y1="254.0" x2="514.0" y2="254.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="520.0,254.0 511.5,258.1 511.5,249.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="465.0" y="248.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">at the same time</text>
+<rect x="520.0" y="226.0" width="216.0" height="56.0" rx="8" fill="#fdeadf" stroke="#e0602c" stroke-width="1.5"/>
+<text x="628.0" y="250.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Network in background</text>
+<text x="628.0" y="266.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">update the cache, then the UI</text>
+<circle cx="520.0" cy="226.0" r="9.5" fill="#e0602c" stroke="none" stroke-width="1.5"/>
+<text x="520.0" y="230.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+<rect x="250.0" y="298.0" width="12.0" height="12.0" rx="3" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="268.0" y="308.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">local cache</text>
+<rect x="370.0" y="298.0" width="12.0" height="12.0" rx="3" fill="#fdeadf" stroke="#e0602c" stroke-width="1.5"/>
+<text x="388.0" y="308.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">network</text>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="392" viewBox="0 0 760 392" role="img" aria-label="How a push notification reaches the phone">
+<rect x="0.5" y="0.5" width="759" height="391" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">How a push notification reaches the phone</text>
+<rect x="30.0" y="162.0" width="150.0" height="64.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="105.0" y="189.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Your app</text>
+<text x="105.0" y="207.6" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.0" font-weight="400" fill="#52514e" text-anchor="middle">on the phone</text>
+<rect x="300.0" y="62.0" width="170.0" height="60.0" rx="8" fill="#fdf2d3" stroke="#cf8d00" stroke-width="1.5"/>
+<text x="385.0" y="87.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">FCM</text>
+<text x="385.0" y="105.6" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.0" font-weight="400" fill="#52514e" text-anchor="middle">Firebase Cloud Messaging</text>
+<rect x="300.0" y="258.0" width="170.0" height="60.0" rx="8" fill="#ebe8fb" stroke="#6250d6" stroke-width="1.5"/>
+<text x="385.0" y="283.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Your backend</text>
+<text x="385.0" y="301.6" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.0" font-weight="400" fill="#52514e" text-anchor="middle">stores token + user ID</text>
+<rect x="590.0" y="52.0" width="146.0" height="48.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="663.0" y="80.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Android phone</text>
+<rect x="590.0" y="136.0" width="146.0" height="48.0" rx="8" fill="#fdeadf" stroke="#e0602c" stroke-width="1.5"/>
+<text x="663.0" y="156.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">APNs</text>
+<text x="663.0" y="172.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">Apple</text>
+<rect x="590.0" y="226.0" width="146.0" height="48.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="663.0" y="254.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">iPhone</text>
+<polyline points="80.0,162.0 80.0,78.0 294.0,78.0" fill="none" stroke="#52514e" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="300.0,78.0 291.5,82.1 291.5,73.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<circle cx="92.0" cy="96.0" r="9.5" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="92.0" y="100.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+<text x="190.0" y="72.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">register</text>
+<polyline points="300.0,106.0 130.0,106.0 130.0,156.0" fill="none" stroke="#52514e" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="130.0,162.0 125.9,153.5 134.1,153.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<circle cx="142.0" cy="124.0" r="9.5" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="142.0" y="128.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+<text x="215.0" y="122.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">device token</text>
+<polyline points="105.0,226.0 105.0,288.0 294.0,288.0" fill="none" stroke="#52514e" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="300.0,288.0 291.5,292.1 291.5,283.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<circle cx="117.0" cy="262.0" r="9.5" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="117.0" y="266.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+<text x="204.0" y="306.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">send token + user ID (HTTPS)</text>
+<line x1="385.0" y1="258.0" x2="385.0" y2="128.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="385.0,122.0 389.1,130.5 380.9,130.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<circle cx="385.0" cy="190.0" r="9.5" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="385.0" y="194.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+<text x="402.0" y="186.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">event happens:</text>
+<text x="402.0" y="200.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">call the FCM HTTP v1 API</text>
+<line x1="470.0" y1="82.0" x2="584.0" y2="76.3" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="590.0,76.0 581.7,80.5 581.3,72.3" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<circle cx="530.0" cy="66.0" r="9.5" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="530.0" y="70.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+<line x1="470.0" y1="104.0" x2="584.5" y2="153.6" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="590.0,156.0 580.6,156.4 583.8,148.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="520.0" y="152.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#52514e" text-anchor="end">iOS goes</text>
+<text x="520.0" y="166.3" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#52514e" text-anchor="end">through APNs</text>
+<line x1="663.0" y1="184.0" x2="663.0" y2="220.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="663.0,226.0 658.9,217.5 667.1,217.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="30.0" y="340.0" width="706.0" height="36.0" rx="8" fill="#fde6e6" stroke="#d93f3e" stroke-width="1.5"/>
+<text x="383.0" y="362.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">The app never sends pushes itself. The FCM server key stays on your backend.</text>
+</svg>

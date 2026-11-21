@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="366" viewBox="0 0 760 366" role="img" aria-label="Symmetric and asymmetric encryption">
+<rect x="0.5" y="0.5" width="759" height="365" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">Symmetric and asymmetric encryption</text>
+<text x="24.0" y="76.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#1c1c1a" text-anchor="start">Symmetric: one shared secret key (AES). Fast.</text>
+<rect x="30.0" y="90.0" width="100.0" height="42.0" rx="8" fill="#ffffff" stroke="#b3b1aa" stroke-width="1.5"/>
+<text x="80.0" y="115.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">Plain text</text>
+<rect x="176.0" y="90.0" width="100.0" height="42.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="226.0" y="115.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Encrypt</text>
+<rect x="322.0" y="90.0" width="116.0" height="42.0" rx="8" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="380.0" y="115.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">Cipher text</text>
+<rect x="484.0" y="90.0" width="100.0" height="42.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="534.0" y="115.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Decrypt</text>
+<rect x="630.0" y="90.0" width="100.0" height="42.0" rx="8" fill="#ffffff" stroke="#b3b1aa" stroke-width="1.5"/>
+<text x="680.0" y="115.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">Plain text</text>
+<line x1="130.0" y1="111.0" x2="170.0" y2="111.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="176.0,111.0 167.5,115.1 167.5,106.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="276.0" y1="111.0" x2="316.0" y2="111.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="322.0,111.0 313.5,115.1 313.5,106.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="438.0" y1="111.0" x2="478.0" y2="111.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="484.0,111.0 475.5,115.1 475.5,106.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="584.0" y1="111.0" x2="624.0" y2="111.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="630.0,111.0 621.5,115.1 621.5,106.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="226.0" y1="132.0" x2="300.0" y2="158.0" stroke="#9a9892" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="534.0" y1="132.0" x2="460.0" y2="158.0" stroke="#9a9892" stroke-width="1.2" stroke-linecap="round"/>
+<rect x="307.8" y="150.0" width="144.4" height="22.5" rx="11.25" fill="#fdf2d3" stroke="#cf8d00" stroke-width="1.2"/>
+<text x="380.0" y="165.3" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">the SAME secret key</text>
+<text x="24.0" y="214.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#1c1c1a" text-anchor="start">Asymmetric: a key pair (RSA). Slow.</text>
+<rect x="30.0" y="228.0" width="100.0" height="42.0" rx="8" fill="#ffffff" stroke="#b3b1aa" stroke-width="1.5"/>
+<text x="80.0" y="253.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">Plain text</text>
+<rect x="176.0" y="228.0" width="100.0" height="42.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="226.0" y="253.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Encrypt</text>
+<rect x="322.0" y="228.0" width="116.0" height="42.0" rx="8" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="380.0" y="253.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">Cipher text</text>
+<rect x="484.0" y="228.0" width="100.0" height="42.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="534.0" y="253.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Decrypt</text>
+<rect x="630.0" y="228.0" width="100.0" height="42.0" rx="8" fill="#ffffff" stroke="#b3b1aa" stroke-width="1.5"/>
+<text x="680.0" y="253.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">Plain text</text>
+<line x1="130.0" y1="249.0" x2="170.0" y2="249.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="176.0,249.0 167.5,253.1 167.5,244.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="276.0" y1="249.0" x2="316.0" y2="249.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="322.0,249.0 313.5,253.1 313.5,244.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="438.0" y1="249.0" x2="478.0" y2="249.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="484.0,249.0 475.5,253.1 475.5,244.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="584.0" y1="249.0" x2="624.0" y2="249.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="630.0,249.0 621.5,253.1 621.5,244.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="226.0" y1="270.0" x2="226.0" y2="288.0" stroke="#9a9892" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="534.0" y1="270.0" x2="534.0" y2="288.0" stroke="#9a9892" stroke-width="1.2" stroke-linecap="round"/>
+<rect x="147.4" y="288.0" width="157.2" height="22.5" rx="11.25" fill="#e1f5ec" stroke="#16996a" stroke-width="1.2"/>
+<text x="226.0" y="303.3" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">receiver&#x27;s PUBLIC key</text>
+<rect x="452.2" y="288.0" width="163.7" height="22.5" rx="11.25" fill="#fde6e6" stroke="#d93f3e" stroke-width="1.2"/>
+<text x="534.0" y="303.3" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">receiver&#x27;s PRIVATE key</text>
+<text x="380.0" y="336.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">Digital signature is the reverse: sign with the PRIVATE key, anyone verifies with the PUBLIC key.</text>
+<text x="380.0" y="353.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">TLS uses both: asymmetric to agree on a key, then symmetric for the data.</text>
+</svg>

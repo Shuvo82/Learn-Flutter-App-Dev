@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="214" viewBox="0 0 760 214" role="img" aria-label="Expanded and Flexible inside a Row">
+<rect x="0.5" y="0.5" width="759" height="213" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">Expanded and Flexible inside a Row</text>
+<text x="24.0" y="86.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#1c1c1a" text-anchor="start">Expanded</text>
+<text x="24.0" y="104.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">must fill</text>
+<rect x="184.0" y="58.0" width="552.0" height="58.0" rx="8" fill="none" stroke="#d9d7d0" stroke-width="1.2" stroke-dasharray="5 4"/>
+<rect x="190.0" y="64.0" width="90.0" height="46.0" rx="8" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="235.0" y="91.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#1c1c1a" text-anchor="middle">fixed: 90</text>
+<text x="24.0" y="158.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#1c1c1a" text-anchor="start">Flexible</text>
+<text x="24.0" y="176.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">may fill</text>
+<rect x="184.0" y="130.0" width="552.0" height="58.0" rx="8" fill="none" stroke="#d9d7d0" stroke-width="1.2" stroke-dasharray="5 4"/>
+<rect x="190.0" y="136.0" width="90.0" height="46.0" rx="8" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="235.0" y="163.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#1c1c1a" text-anchor="middle">fixed: 90</text>
+<rect x="284.0" y="64.0" width="446.0" height="46.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="507.0" y="91.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Expanded child takes ALL the remaining space</text>
+<rect x="284.0" y="136.0" width="250.0" height="46.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="409.0" y="163.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Flexible child: only what it needs</text>
+<text x="632.0" y="164.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#7a7974" text-anchor="middle">space left unused</text>
+<text x="460.0" y="204.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">Both take a flex share. Expanded = FlexFit.tight, Flexible = FlexFit.loose.</text>
+</svg>

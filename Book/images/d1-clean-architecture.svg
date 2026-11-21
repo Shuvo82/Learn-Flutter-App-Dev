@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="386" viewBox="0 0 760 386" role="img" aria-label="Clean Architecture: dependencies point inward, to the domain">
+<rect x="0.5" y="0.5" width="759" height="385" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">Clean Architecture: dependencies point inward, to the domain</text>
+<rect x="40.0" y="62.0" width="680.0" height="76.0" rx="10" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="56.0" y="84.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#1c1c1a" text-anchor="start">PRESENTATION</text>
+<rect x="56.0" y="96.0" width="151.0" height="30.0" rx="6" fill="#ffffff" stroke="#b3b1aa" stroke-width="1.5"/>
+<text x="131.5" y="115.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#1c1c1a" text-anchor="middle">Pages / Widgets</text>
+<rect x="219.0" y="96.0" width="151.0" height="30.0" rx="6" fill="#ffffff" stroke="#b3b1aa" stroke-width="1.5"/>
+<text x="294.5" y="115.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#1c1c1a" text-anchor="middle">BLoC / Cubit</text>
+<rect x="40.0" y="168.0" width="680.0" height="76.0" rx="10" fill="#fdf2d3" stroke="#cf8d00" stroke-width="2"/>
+<text x="56.0" y="190.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#1c1c1a" text-anchor="start">DOMAIN</text>
+<text x="704.0" y="190.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="end">pure Dart: knows nothing about Flutter, Dio or the database</text>
+<rect x="56.0" y="202.0" width="151.0" height="30.0" rx="6" fill="#ffffff" stroke="#b3b1aa" stroke-width="1.5"/>
+<text x="131.5" y="221.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#1c1c1a" text-anchor="middle">Use cases</text>
+<rect x="219.0" y="202.0" width="151.0" height="30.0" rx="6" fill="#ffffff" stroke="#b3b1aa" stroke-width="1.5"/>
+<text x="294.5" y="221.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#1c1c1a" text-anchor="middle">Entities</text>
+<rect x="382.0" y="202.0" width="151.0" height="30.0" rx="6" fill="#ffffff" stroke="#b3b1aa" stroke-width="1.5"/>
+<text x="457.5" y="221.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#1c1c1a" text-anchor="middle">Repository interfaces</text>
+<rect x="40.0" y="274.0" width="680.0" height="76.0" rx="10" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="56.0" y="296.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#1c1c1a" text-anchor="start">DATA</text>
+<rect x="56.0" y="308.0" width="151.0" height="30.0" rx="6" fill="#ffffff" stroke="#b3b1aa" stroke-width="1.5"/>
+<text x="131.5" y="327.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#1c1c1a" text-anchor="middle">Repository impl</text>
+<rect x="219.0" y="308.0" width="151.0" height="30.0" rx="6" fill="#ffffff" stroke="#b3b1aa" stroke-width="1.5"/>
+<text x="294.5" y="327.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#1c1c1a" text-anchor="middle">Models (DTO)</text>
+<rect x="382.0" y="308.0" width="151.0" height="30.0" rx="6" fill="#ffffff" stroke="#b3b1aa" stroke-width="1.5"/>
+<text x="457.5" y="327.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#1c1c1a" text-anchor="middle">Remote (Dio)</text>
+<rect x="545.0" y="308.0" width="151.0" height="30.0" rx="6" fill="#ffffff" stroke="#b3b1aa" stroke-width="1.5"/>
+<text x="620.5" y="327.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#1c1c1a" text-anchor="middle">Local (Drift)</text>
+<line x1="380.0" y1="138.0" x2="380.0" y2="162.0" stroke="#1c1c1a" stroke-width="2" stroke-linecap="round"/>
+<polygon points="380.0,168.0 375.9,159.5 384.1,159.5" fill="#1c1c1a" stroke="#1c1c1a" stroke-width="1" stroke-linejoin="round"/>
+<text x="392.0" y="157.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">depends on</text>
+<line x1="380.0" y1="274.0" x2="380.0" y2="250.0" stroke="#1c1c1a" stroke-width="2" stroke-linecap="round"/>
+<polygon points="380.0,244.0 384.1,252.5 375.9,252.5" fill="#1c1c1a" stroke="#1c1c1a" stroke-width="1" stroke-linejoin="round"/>
+<text x="392.0" y="263.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">depends on (it implements the interfaces)</text>
+<text x="380.0" y="370.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="middle">Call flow:  UI → BLoC → Use case → Repository (interface) → RepositoryImpl → Remote / Local</text>
+</svg>

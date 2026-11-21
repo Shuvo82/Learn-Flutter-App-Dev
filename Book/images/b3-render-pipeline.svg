@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="290" viewBox="0 0 760 290" role="img" aria-label="How Flutter renders one frame">
+<rect x="0.5" y="0.5" width="759" height="289" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">How Flutter renders one frame</text>
+<rect x="24.0" y="104.0" width="116.0" height="50.0" rx="8" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="82.0" y="125.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">User input</text>
+<text x="82.0" y="141.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">or setState()</text>
+<rect x="166.0" y="62.0" width="338.0" height="114.0" rx="10" fill="#f6f5f1" stroke="#d9d7d0" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="178.0" y="80.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#52514e" text-anchor="start">UI thread (Dart)</text>
+<rect x="182.0" y="104.0" width="92.0" height="50.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="228.0" y="133.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">BUILD</text>
+<rect x="290.0" y="104.0" width="92.0" height="50.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="336.0" y="133.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">LAYOUT</text>
+<rect x="398.0" y="104.0" width="92.0" height="50.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="444.0" y="133.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">PAINT</text>
+<rect x="530.0" y="62.0" width="126.0" height="114.0" rx="10" fill="#f6f5f1" stroke="#d9d7d0" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="542.0" y="80.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#52514e" text-anchor="start">Raster thread</text>
+<rect x="542.0" y="104.0" width="102.0" height="50.0" rx="8" fill="#ebe8fb" stroke="#6250d6" stroke-width="1.5"/>
+<text x="593.0" y="133.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">RASTERIZE</text>
+<rect x="680.0" y="104.0" width="58.0" height="50.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="709.0" y="133.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Screen</text>
+<line x1="140.0" y1="129.0" x2="176.0" y2="129.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="182.0,129.0 173.5,133.1 173.5,124.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="274.0" y1="129.0" x2="284.0" y2="129.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="290.0,129.0 281.5,133.1 281.5,124.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="382.0" y1="129.0" x2="392.0" y2="129.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="398.0,129.0 389.5,133.1 389.5,124.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="490.0" y1="129.0" x2="536.0" y2="129.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="542.0,129.0 533.5,133.1 533.5,124.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="644.0" y1="129.0" x2="674.0" y2="129.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="680.0,129.0 671.5,133.1 671.5,124.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="335.0" y="198.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">Jank here: heavy build(), large rebuilds,</text>
+<text x="335.0" y="212.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">long Dart calculations</text>
+<text x="600.0" y="198.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">Jank here: blur, clips,</text>
+<text x="600.0" y="212.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">opacity layers, huge images</text>
+<line x1="172.0" y1="254.0" x2="650.0" y2="254.0" stroke="#9a9892" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="656.0,254.0 647.5,258.1 647.5,249.9" fill="#9a9892" stroke="#9a9892" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="166.0,254.0 174.5,249.9 174.5,258.1" fill="#9a9892" stroke="#9a9892" stroke-width="1" stroke-linejoin="round"/>
+<text x="411.0" y="274.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="middle">all of this must fit in 16.67 ms</text>
+</svg>

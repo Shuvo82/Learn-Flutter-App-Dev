@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="232" viewBox="0 0 760 232" role="img" aria-label="BLoC: events go in, states come out">
+<rect x="0.5" y="0.5" width="759" height="231" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">BLoC: events go in, states come out</text>
+<rect x="30.0" y="86.0" width="120.0" height="66.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="90.0" y="114.8" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#1c1c1a" text-anchor="middle">UI</text>
+<text x="90.0" y="133.1" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52514e" text-anchor="middle">widgets</text>
+<rect x="340.0" y="86.0" width="150.0" height="66.0" rx="8" fill="#fdf2d3" stroke="#cf8d00" stroke-width="1.5"/>
+<text x="415.0" y="114.8" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#1c1c1a" text-anchor="middle">BLoC / Cubit</text>
+<text x="415.0" y="133.1" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52514e" text-anchor="middle">business logic</text>
+<rect x="540.0" y="86.0" width="110.0" height="66.0" rx="8" fill="#ebe8fb" stroke="#6250d6" stroke-width="1.5"/>
+<text x="595.0" y="123.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Repository</text>
+<rect x="680.0" y="86.0" width="56.0" height="66.0" rx="8" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="708.0" y="115.6" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">API</text>
+<text x="708.0" y="131.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">DB</text>
+<line x1="150.0" y1="104.0" x2="334.0" y2="104.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<polygon points="340.0,104.0 331.5,108.1 331.5,99.9" fill="#2a78d6" stroke="#2a78d6" stroke-width="1" stroke-linejoin="round"/>
+<text x="245.0" y="98.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">Event: LoadVisits, SubmitVisit</text>
+<line x1="340.0" y1="134.0" x2="156.0" y2="134.0" stroke="#cf8d00" stroke-width="2" stroke-linecap="round"/>
+<polygon points="150.0,134.0 158.5,129.9 158.5,138.1" fill="#cf8d00" stroke="#cf8d00" stroke-width="1" stroke-linejoin="round"/>
+<text x="245.0" y="150.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">State: Loading, Loaded, Error</text>
+<line x1="496.0" y1="119.0" x2="534.0" y2="119.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="540.0,119.0 531.5,123.1 531.5,114.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="490.0,119.0 498.5,114.9 498.5,123.1" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="656.0" y1="119.0" x2="674.0" y2="119.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="680.0,119.0 671.5,123.1 671.5,114.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="650.0,119.0 658.5,114.9 658.5,123.1" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="380.0" y="204.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#52514e" text-anchor="middle">One direction only. The UI never changes the state by itself.</text>
+</svg>

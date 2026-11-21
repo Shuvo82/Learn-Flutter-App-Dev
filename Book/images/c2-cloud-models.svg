@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="316" viewBox="0 0 760 316" role="img" aria-label="Cloud service models: who manages what">
+<rect x="0.5" y="0.5" width="759" height="315" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">Cloud service models: who manages what</text>
+<text x="116.0" y="76.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#1c1c1a" text-anchor="middle">IaaS</text>
+<text x="116.0" y="94.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">e.g. AWS EC2</text>
+<rect x="40.0" y="106.0" width="152.0" height="30.0" rx="5" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="116.0" y="125.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Application</text>
+<rect x="40.0" y="140.0" width="152.0" height="30.0" rx="5" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="116.0" y="159.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Data</text>
+<rect x="40.0" y="174.0" width="152.0" height="30.0" rx="5" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="116.0" y="193.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Runtime</text>
+<rect x="40.0" y="208.0" width="152.0" height="30.0" rx="5" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="116.0" y="227.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Operating system</text>
+<rect x="40.0" y="242.0" width="152.0" height="30.0" rx="5" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="116.0" y="261.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">Servers, network</text>
+<text x="292.0" y="76.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#1c1c1a" text-anchor="middle">PaaS</text>
+<text x="292.0" y="94.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">e.g. Google App Engine</text>
+<rect x="216.0" y="106.0" width="152.0" height="30.0" rx="5" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="292.0" y="125.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Application</text>
+<rect x="216.0" y="140.0" width="152.0" height="30.0" rx="5" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="292.0" y="159.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Data</text>
+<rect x="216.0" y="174.0" width="152.0" height="30.0" rx="5" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="292.0" y="193.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">Runtime</text>
+<rect x="216.0" y="208.0" width="152.0" height="30.0" rx="5" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="292.0" y="227.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">Operating system</text>
+<rect x="216.0" y="242.0" width="152.0" height="30.0" rx="5" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="292.0" y="261.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">Servers, network</text>
+<text x="468.0" y="76.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#1c1c1a" text-anchor="middle">SaaS</text>
+<text x="468.0" y="94.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">e.g. Gmail</text>
+<rect x="392.0" y="106.0" width="152.0" height="30.0" rx="5" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="468.0" y="125.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">Application</text>
+<rect x="392.0" y="140.0" width="152.0" height="30.0" rx="5" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="468.0" y="159.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">Data</text>
+<rect x="392.0" y="174.0" width="152.0" height="30.0" rx="5" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="468.0" y="193.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">Runtime</text>
+<rect x="392.0" y="208.0" width="152.0" height="30.0" rx="5" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="468.0" y="227.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">Operating system</text>
+<rect x="392.0" y="242.0" width="152.0" height="30.0" rx="5" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="468.0" y="261.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">Servers, network</text>
+<text x="644.0" y="76.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#1c1c1a" text-anchor="middle">BaaS</text>
+<text x="644.0" y="94.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">e.g. Firebase</text>
+<rect x="568.0" y="106.0" width="152.0" height="30.0" rx="5" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="644.0" y="125.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Your mobile app</text>
+<rect x="568.0" y="140.0" width="152.0" height="30.0" rx="5" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="644.0" y="159.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">Login (Auth)</text>
+<rect x="568.0" y="174.0" width="152.0" height="30.0" rx="5" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="644.0" y="193.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">Database</text>
+<rect x="568.0" y="208.0" width="152.0" height="30.0" rx="5" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="644.0" y="227.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">Storage, push, functions</text>
+<rect x="568.0" y="242.0" width="152.0" height="30.0" rx="5" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="644.0" y="261.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">Servers, network</text>
+<rect x="232.0" y="290.0" width="12.0" height="12.0" rx="3" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="250.0" y="300.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">you manage</text>
+<rect x="360.0" y="290.0" width="12.0" height="12.0" rx="3" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="378.0" y="300.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">the provider manages</text>
+</svg>

@@ -1,0 +1,700 @@
+/* ==========================================================================
+   Book theme for the Markdown preview (Ctrl+Shift+V).
+   Loaded through "markdown.styles" in .vscode/settings.json.
+   It turns the preview into a paper page: serif text, coloured lesson boxes,
+   book-style tables, dark code blocks and figure captions.
+   The same look in a dark or a light editor theme.
+   ========================================================================== */
+
+:root {
+  --paper: #fffdf7;
+  --desk: #e9e2d3;
+  --ink: #2a2622;
+  --ink-soft: #5d554a;
+  --muted: #8a8172;
+  --rule: #e4dccb;
+  --accent: #0d6b5e;
+  --accent-dark: #0b4f46;
+  --accent-soft: #e2f1ed;
+  --serif: "Charter", "Georgia", "Cambria", "Noto Serif Bengali", "Nirmala UI", serif;
+  --sans: "Segoe UI", system-ui, -apple-system, "Noto Sans Bengali", "Nirmala UI", sans-serif;
+  --mono: "Cascadia Code", "Cascadia Mono", Consolas, "Courier New", monospace;
+}
+
+/* ---------- the page ---------- */
+html {
+  background: var(--desk) !important;
+  padding: 0 !important;
+}
+
+body,
+body.vscode-body {
+  background: var(--paper) !important;
+  color: var(--ink) !important;
+  font-family: var(--serif) !important;
+  font-size: 16.5px !important;
+  line-height: 1.75 !important;
+  max-width: 860px;
+  margin: 28px auto 60px !important;
+  padding: 52px 68px 64px !important;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(60, 45, 20, 0.18), 0 12px 34px rgba(60, 45, 20, 0.14);
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+a {
+  color: var(--accent) !important;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(13, 107, 94, 0.3);
+}
+
+a:hover {
+  border-bottom-color: var(--accent);
+  text-decoration: none;
+}
+
+strong {
+  color: #1a1714;
+}
+
+/* ---------- headings ---------- */
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--sans);
+  color: var(--accent-dark);
+  line-height: 1.25;
+}
+
+h1 {
+  font-family: var(--serif);
+  font-size: 2.3em;
+  font-weight: 700;
+  color: #17130f;
+  border: 0 !important;
+  margin: 0 0 0.35em;
+  padding: 0;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 2.4em 0 0.8em;
+  padding: 0 0 0.35em;
+  border-bottom: 3px solid var(--accent) !important;
+}
+
+h3 {
+  font-size: 1.16em;
+  font-weight: 700;
+  margin: 1.9em 0 0.6em;
+  color: var(--accent);
+}
+
+h4 {
+  font-size: 1em;
+  margin: 1.5em 0 0.5em;
+}
+
+hr {
+  border: 0 !important;
+  height: auto;
+  margin: 2.6em 0;
+  text-align: center;
+}
+
+hr::after {
+  content: "◆   ◆   ◆";
+  color: #c9bea8;
+  font-size: 0.72em;
+  letter-spacing: 0.4em;
+}
+
+/* ---------- chapter opening ---------- */
+.chapter-head {
+  margin: -8px 0 1.4em;
+  padding: 0 0 1.1em;
+  border-bottom: 1px solid var(--rule);
+}
+
+.chapter-kicker {
+  font-family: var(--sans);
+  font-size: 0.74em;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.9em;
+}
+
+.chapter-kicker b {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.15em 0.6em;
+  margin-right: 0.7em;
+  letter-spacing: 0.06em;
+}
+
+.chapter-head h1 {
+  margin-bottom: 0;
+}
+
+/* the skill line, quoted right under the chapter title */
+blockquote {
+  margin: 1.2em 0;
+  padding: 0.9em 1.2em;
+  background: #f6f1e4 !important;
+  border-left: 5px solid #cbbf9f !important;
+  border-radius: 0 8px 8px 0;
+  color: var(--ink-soft);
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.chapter-head + blockquote {
+  background: var(--accent-soft) !important;
+  border-left-color: var(--accent) !important;
+  color: #173f39;
+  font-size: 0.97em;
+}
+
+/* VS Code's preview draws its "current line" marker with `.code-line:hover::before`
+   and `.code-active-line::before` (on mouse hover, or when the editor cursor is on
+   this line). Those rules are more specific and would replace this label with an
+   empty bar, so the label's properties are !important to keep it visible. */
+.chapter-head + blockquote::before {
+  content: "The skill this chapter covers" !important;
+  display: block !important;
+  position: static !important;
+  height: auto !important;
+  border: 0 !important;
+  font-family: var(--sans);
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.4em;
+}
+
+/* pages that are not skill chapters: <div class="chapter-head note"> */
+.chapter-head.note + blockquote::before {
+  content: "About this page" !important;
+}
+
+/* ---------- cover page (00 - Contents) ---------- */
+.cover {
+  margin: -52px -68px 2.2em;
+  padding: 74px 68px 62px;
+  background: linear-gradient(150deg, #0b4f46 0%, #0d6b5e 55%, #128a72 100%);
+  color: #fff;
+  border-radius: 3px 3px 0 0;
+}
+
+.cover h1 {
+  color: #fff;
+  font-size: 3.5em;
+  margin: 0.15em 0 0.12em;
+}
+
+.cover-kicker,
+.cover-sub,
+.cover-line {
+  font-family: var(--sans);
+}
+
+.cover-kicker {
+  font-size: 0.78em;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #bfe6dc;
+}
+
+.cover-sub {
+  font-size: 1.45em;
+  font-weight: 600;
+  color: #fff;
+}
+
+.cover-line {
+  margin-top: 1.6em;
+  padding-top: 1.1em;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 0.95em;
+  color: #d5efe8;
+}
+
+/* ---------- lesson boxes ---------- */
+.box {
+  margin: 1.3em 0;
+  padding: 0.95em 1.25em 0.2em;
+  border-radius: 0 10px 10px 0;
+  border-left: 5px solid var(--bx, #b9ad94);
+  background: var(--bg, #f6f1e4);
+}
+
+.box > :first-child {
+  margin-top: 0;
+}
+
+.box > p:first-child > strong:first-child,
+.box > p:first-child > em:first-child {
+  font-family: var(--sans);
+  font-style: normal;
+  font-weight: 700;
+  color: var(--bx, #6b6252);
+}
+
+.box ul,
+.box ol {
+  margin-bottom: 0.9em;
+}
+
+.box.def   { --bx: #0d6b5e; --bg: #e6f3f0; }
+.box.story { --bx: #c98a00; --bg: #fdf4dc; }
+.box.q     { --bx: #6b4fd0; --bg: #f0ecfb; }
+.box.dev   { --bx: #2a6fd0; --bg: #e8f0fc; }
+.box.rule  { --bx: #cf4a3f; --bg: #fdeceb; }
+.box.you   { --bx: #3f8f2f; --bg: #eaf5e4; }
+.box.exam  { --bx: #8a6d1c; --bg: #f7f0d8; }
+.box.check { --bx: #7d7464; --bg: #f4efe3; }
+
+.box.rule {
+  font-size: 1.04em;
+}
+
+/* small label above the dense notes that follow a lesson */
+.label {
+  font-family: var(--sans);
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 2em 0 0.7em;
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+}
+
+.label::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--rule);
+}
+
+/* ---------- highlight ---------- */
+mark {
+  background: linear-gradient(transparent 12%, #ffe680 12%, #ffe680 88%, transparent 88%);
+  color: inherit;
+  padding: 0 0.15em;
+  border-radius: 2px;
+}
+
+h2 mark,
+h1 mark {
+  background: none;
+  padding: 0;
+}
+
+/* ---------- lists ---------- */
+ul,
+ol {
+  padding-left: 1.5em;
+  margin: 0 0 1em;
+}
+
+li {
+  margin: 0.25em 0;
+}
+
+li::marker {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* ---------- tables ---------- */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  margin: 1.3em 0 1.5em;
+  font-family: var(--sans);
+  font-size: 0.86em;
+  line-height: 1.5;
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+
+table > thead > tr > th,
+th {
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  font-weight: 700;
+  text-align: left;
+  padding: 9px 12px;
+  border: 0 !important;
+  border-bottom: 2px solid var(--accent) !important;
+}
+
+table > tbody > tr > td,
+td {
+  padding: 8px 12px;
+  border: 0 !important;
+  border-top: 1px solid #efe8d9 !important;
+  vertical-align: top;
+}
+
+table > tbody > tr:first-child > td {
+  border-top: 0 !important;
+}
+
+tbody tr:nth-child(even) td {
+  background: #fbf8ef;
+}
+
+td:first-child {
+  font-weight: 600;
+  color: #24201b;
+}
+
+/* ---------- code ---------- */
+code {
+  font-family: var(--mono) !important;
+  font-size: 0.86em;
+  background: #f2ebdb;
+  color: #7a3b10 !important;
+  padding: 0.12em 0.4em;
+  border-radius: 4px;
+}
+
+pre,
+pre:not(.hljs),
+pre.hljs code > div {
+  background: #1f2430 !important;
+  border: 0 !important;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin: 1.2em 0 1.4em;
+  overflow: auto;
+  line-height: 1.6;
+  box-shadow: 0 2px 8px rgba(30, 25, 15, 0.18);
+}
+
+pre.hljs {
+  padding: 0;
+}
+
+pre code,
+pre code > div {
+  display: block;
+  background: none !important;
+  color: #e7e2d6 !important;
+  font-size: 13.5px;
+  padding: 0;
+  border-radius: 0;
+}
+
+.hljs-keyword, .hljs-literal, .hljs-symbol, .hljs-name, .hljs-selector-tag { color: #c792ea !important; }
+.hljs-built_in, .hljs-type, .hljs-class, .hljs-title.class_ { color: #7fdbca !important; }
+.hljs-number { color: #f78c6c !important; }
+.hljs-string, .hljs-meta-string, .hljs-regexp { color: #c3e88d !important; }
+.hljs-subst, .hljs-params, .hljs-formula, .hljs-function { color: #e7e2d6 !important; }
+.hljs-title, .hljs-title.function_, .hljs-section { color: #82aaff !important; }
+.hljs-comment, .hljs-quote, .hljs-doctag { color: #8b949e !important; font-style: italic; }
+.hljs-meta, .hljs-meta-keyword, .hljs-tag { color: #f7c56e !important; }
+.hljs-variable, .hljs-template-variable { color: #f07178 !important; }
+.hljs-attr, .hljs-attribute, .hljs-builtin-name, .hljs-property { color: #89ddff !important; }
+.hljs-bullet, .hljs-selector-id, .hljs-selector-class { color: #f7c56e !important; }
+
+/* ---------- figures ---------- */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p > img:only-child,
+p:has(> img) {
+  text-align: center;
+}
+
+p:has(> img) {
+  margin: 1.5em 0;
+}
+
+p > img {
+  border-radius: 10px;
+}
+
+/* our own diagrams already sit on a card */
+img[src$=".svg"][src*="images/"]:not([src*="images/web/"]) {
+  box-shadow: 0 2px 10px rgba(60, 45, 20, 0.1);
+}
+
+/* pictures taken from official documentation and other sites */
+img[src*="images/web/"] {
+  max-height: 440px;
+  width: auto;
+  background: #fff;
+  padding: 14px;
+  border: 1px solid var(--rule);
+  box-shadow: 0 2px 10px rgba(60, 45, 20, 0.1);
+  box-sizing: border-box;
+}
+
+p:has(> img) br {
+  display: none;
+}
+
+p > img + br + em,
+p > img + em {
+  display: block;
+  margin-top: 0.6em;
+  font-family: var(--sans);
+  font-size: 0.8em;
+  font-style: normal;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+/* two pictures side by side */
+.pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  align-items: end;
+  margin: 1.4em 0;
+}
+
+.pair p {
+  margin: 0 !important;
+}
+
+.pair img[src*="images/web/"] {
+  max-height: 300px;
+}
+
+/* one shared caption under a pair of pictures */
+.pair + p > em:only-child {
+  display: block;
+  text-align: center;
+  font-family: var(--sans);
+  font-size: 0.8em;
+  font-style: normal;
+  color: var(--muted);
+  line-height: 1.45;
+  margin-top: -0.4em;
+}
+
+/* ---------- answers and quick checks ---------- */
+details {
+  margin: 0.7em 0;
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  background: #fff;
+  padding: 0 1.1em;
+}
+
+details > summary {
+  cursor: pointer;
+  list-style: none;
+  font-family: var(--sans);
+  font-size: 0.88em;
+  font-weight: 700;
+  color: var(--accent);
+  padding: 0.7em 0;
+  outline: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details > summary::before {
+  content: "＋";
+  display: inline-block;
+  width: 1.5em;
+  color: var(--accent);
+}
+
+details[open] > summary::before {
+  content: "－";
+}
+
+details[open] > summary {
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 0.9em;
+}
+
+details[open] {
+  padding-bottom: 0.4em;
+  box-shadow: 0 2px 10px rgba(60, 45, 20, 0.08);
+}
+
+.box details {
+  background: rgba(255, 255, 255, 0.75);
+  margin-bottom: 1em;
+}
+
+/* ---------- model answers: In short, table or points, Example, In the exam ---------- */
+details .box {
+  margin: 1em 0;
+}
+
+details > .box.def:first-of-type {
+  font-size: 1.03em;
+}
+
+details table {
+  margin: 1em 0 1.2em;
+}
+
+/* numbered parts of a long answer */
+details h4 {
+  font-size: 0.98em;
+  color: var(--accent-dark);
+  margin: 1.7em 0 0.6em;
+  padding: 0.3em 0.8em;
+  background: var(--accent-soft);
+  border-radius: 6px;
+}
+
+details > p > strong:only-child {
+  font-family: var(--sans);
+  font-size: 0.93em;
+  color: var(--accent-dark);
+}
+
+/* ---------- "From the book": links from a model answer to its lesson ---------- */
+.ref {
+  margin: 1.4em 0 0.7em;
+  padding-top: 0.8em;
+  border-top: 1px dashed var(--rule);
+  font-family: var(--sans);
+  font-size: 0.82em;
+}
+
+.ref p {
+  margin: 0;
+  line-height: 2.2;
+}
+
+.ref strong {
+  font-size: 0.86em;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-right: 0.5em;
+}
+
+.ref a {
+  display: inline-block;
+  line-height: 1.5;
+  padding: 0.12em 0.8em;
+  margin: 0 0.25em 0 0;
+  border: 1px solid #c5e0d9 !important;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-dark) !important;
+  font-weight: 600;
+}
+
+.ref a::before {
+  content: "↗ ";
+  font-weight: 400;
+}
+
+.ref a:hover {
+  background: var(--accent);
+  border-color: var(--accent) !important;
+  color: #fff !important;
+}
+
+/* the section you jumped to lights up for a moment
+   (no `scroll-behavior: smooth` here: it fights VS Code's editor/preview
+   scroll sync and makes the preview scroll by itself again and again) */
+h2,
+h3 {
+  scroll-margin-top: 14px;
+}
+
+h2:target,
+h3:target {
+  animation: arrived 2.4s ease-out 1;
+}
+
+@keyframes arrived {
+  0%,
+  35% {
+    background: #ffe680;
+    box-shadow: -10px 0 0 #ffe680, 10px 0 0 #ffe680;
+  }
+  100% {
+    background: transparent;
+    box-shadow: -10px 0 0 transparent, 10px 0 0 transparent;
+  }
+}
+
+/* ---------- running footer ---------- */
+.book-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  margin-top: 3.4em;
+  padding-top: 1.1em;
+  border-top: 1px solid var(--rule);
+  font-family: var(--sans);
+  font-size: 0.86em;
+}
+
+.book-nav a {
+  border-bottom: 0;
+  font-weight: 600;
+}
+
+/* ---------- printing (File > Print from a browser, or "Markdown PDF") ---------- */
+@media print {
+  html { background: #fff !important; }
+  body { box-shadow: none; margin: 0 auto !important; padding: 0 !important; max-width: none; }
+  .cover { margin: 0 0 2em; border-radius: 0; }
+  h2 { break-after: avoid; }
+  .box, table, pre, details, p:has(> img) { break-inside: avoid; }
+  details > summary::before { content: ""; width: 0; }
+}
+
+/* ---------- importance tags (revision sheet) ----------
+   <span class="imp must">Must</span>  very likely in the exam
+   <span class="imp likely">Likely</span>
+   <span class="imp know">Good to know</span> */
+.imp {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 0.66em;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  line-height: 1.5;
+  padding: 0 0.6em;
+  border: 1px solid;
+  border-radius: 999px;
+  vertical-align: 0.12em;
+  margin-right: 0.4em;
+  white-space: nowrap;
+}
+.imp.must   { color: #b3261e; background: #fdeceb; border-color: #e8a29c; }
+.imp.likely { color: #8a5a00; background: #fdf2d3; border-color: #e6c46a; }
+.imp.know   { color: #5f5d57; background: #f1f0ec; border-color: #cfcdc6; }

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="330" viewBox="0 0 760 330" role="img" aria-label="MVC, MVP and MVVM">
+<rect x="0.5" y="0.5" width="759" height="329" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">MVC, MVP and MVVM</text>
+<rect x="24.0" y="58.0" width="224.0" height="254.0" rx="10" fill="#f6f5f1" stroke="#d9d7d0" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="136.0" y="82.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1c1c1a" text-anchor="middle">MVC</text>
+<rect x="38.0" y="104.0" width="84.0" height="36.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="80.0" y="126.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">View</text>
+<rect x="150.0" y="104.0" width="84.0" height="36.0" rx="8" fill="#fdf2d3" stroke="#cf8d00" stroke-width="1.5"/>
+<text x="192.0" y="126.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Controller</text>
+<rect x="94.0" y="206.0" width="84.0" height="36.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="136.0" y="228.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Model</text>
+<line x1="122.0" y1="122.0" x2="144.0" y2="122.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="150.0,122.0 141.5,126.1 141.5,117.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="136.0" y="98.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#52514e" text-anchor="middle">input</text>
+<line x1="192.0" y1="140.0" x2="158.9" y2="200.7" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="156.0,206.0 156.5,196.6 163.7,200.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="184.0" y="180.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#52514e" text-anchor="start">updates</text>
+<line x1="116.0" y1="206.0" x2="82.9" y2="145.3" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="80.0,140.0 87.7,145.5 80.5,149.4" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="88.0" y="180.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#52514e" text-anchor="end">reads</text>
+<text x="136.0" y="276.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">The View may read</text>
+<text x="136.0" y="290.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">the Model directly.</text>
+<rect x="268.0" y="58.0" width="224.0" height="254.0" rx="10" fill="#f6f5f1" stroke="#d9d7d0" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="380.0" y="82.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1c1c1a" text-anchor="middle">MVP</text>
+<rect x="330.0" y="96.0" width="100.0" height="34.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="380.0" y="117.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">View</text>
+<rect x="330.0" y="166.0" width="100.0" height="34.0" rx="8" fill="#fdf2d3" stroke="#cf8d00" stroke-width="1.5"/>
+<text x="380.0" y="187.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Presenter</text>
+<rect x="330.0" y="236.0" width="100.0" height="34.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="380.0" y="257.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Model</text>
+<line x1="360.0" y1="130.0" x2="360.0" y2="160.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="360.0,166.0 355.9,157.5 364.1,157.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="400.0" y1="166.0" x2="400.0" y2="136.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="400.0,130.0 404.1,138.5 395.9,138.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="352.0" y="152.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#52514e" text-anchor="end">events</text>
+<text x="408.0" y="152.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="10.5" font-weight="400" fill="#1c1c1a" text-anchor="start">view.show()</text>
+<line x1="380.0" y1="206.0" x2="380.0" y2="230.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="380.0,236.0 375.9,227.5 384.1,227.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="380.0,200.0 384.1,208.5 375.9,208.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="380.0" y="292.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">1 Presenter : 1 View, by interface</text>
+<rect x="512.0" y="58.0" width="224.0" height="254.0" rx="10" fill="#f6f5f1" stroke="#d9d7d0" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="624.0" y="82.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1c1c1a" text-anchor="middle">MVVM</text>
+<rect x="574.0" y="96.0" width="100.0" height="34.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="624.0" y="117.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">View</text>
+<rect x="574.0" y="166.0" width="100.0" height="34.0" rx="8" fill="#fdf2d3" stroke="#cf8d00" stroke-width="1.5"/>
+<text x="624.0" y="187.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">ViewModel</text>
+<rect x="574.0" y="236.0" width="100.0" height="34.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="624.0" y="257.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Model</text>
+<line x1="604.0" y1="130.0" x2="604.0" y2="160.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="604.0,166.0 599.9,157.5 608.1,157.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="644.0" y1="166.0" x2="644.0" y2="136.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="5 4"/>
+<polygon points="644.0,130.0 648.1,138.5 639.9,138.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="596.0" y="152.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#52514e" text-anchor="end">calls</text>
+<text x="652.0" y="152.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#52514e" text-anchor="start">state stream</text>
+<line x1="624.0" y1="206.0" x2="624.0" y2="230.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="624.0,236.0 619.9,227.5 628.1,227.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="624.0,200.0 628.1,208.5 619.9,208.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="624.0" y="292.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">ViewModel does not know the View</text>
+</svg>

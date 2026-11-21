@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="296" viewBox="0 0 760 296" role="img" aria-label="Platform channel: how Flutter calls native code">
+<rect x="0.5" y="0.5" width="759" height="295" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">Platform channel: how Flutter calls native code</text>
+<rect x="40.0" y="62.0" width="250.0" height="78.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="165.0" y="96.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Dart (Flutter)</text>
+<text x="165.0" y="114.6" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12.0" font-weight="400" fill="#52514e" text-anchor="middle">MethodChannel(&#x27;fieldapp/device&#x27;)</text>
+<rect x="470.0" y="62.0" width="250.0" height="78.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="595.0" y="96.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Native (Kotlin / Swift)</text>
+<text x="595.0" y="114.6" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12.0" font-weight="400" fill="#52514e" text-anchor="middle">MethodCallHandler</text>
+<line x1="290.0" y1="86.0" x2="464.0" y2="86.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="470.0,86.0 461.5,90.1 461.5,81.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="380.0" y="80.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#52514e" text-anchor="middle">invokeMethod(&#x27;getBatteryLevel&#x27;)</text>
+<line x1="470.0" y1="116.0" x2="296.0" y2="116.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="290.0,116.0 298.5,111.9 298.5,120.1" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="380.0" y="131.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#52514e" text-anchor="middle">result.success(value) / error</text>
+<rect x="198.3" y="160.0" width="363.3" height="22.5" rx="11.25" fill="#fdf2d3" stroke="#cf8d00" stroke-width="1.2"/>
+<text x="380.0" y="175.3" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">same channel name on both sides · always asynchronous</text>
+<rect x="30.0" y="212.0" width="220.0" height="58.0" rx="8" fill="#ffffff" stroke="#b3b1aa" stroke-width="1.5"/>
+<text x="140.0" y="237.4" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="middle">MethodChannel</text>
+<text x="140.0" y="253.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#52514e" text-anchor="middle">one call, one reply</text>
+<rect x="270.0" y="212.0" width="220.0" height="58.0" rx="8" fill="#ffffff" stroke="#b3b1aa" stroke-width="1.5"/>
+<text x="380.0" y="237.4" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="middle">EventChannel</text>
+<text x="380.0" y="253.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#52514e" text-anchor="middle">a stream, native to Dart</text>
+<rect x="510.0" y="212.0" width="220.0" height="58.0" rx="8" fill="#ffffff" stroke="#b3b1aa" stroke-width="1.5"/>
+<text x="620.0" y="237.4" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="middle">BasicMessageChannel</text>
+<text x="620.0" y="253.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#52514e" text-anchor="middle">free-form messages, both ways</text>
+</svg>

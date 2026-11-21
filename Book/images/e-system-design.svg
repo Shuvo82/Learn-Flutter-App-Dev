@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="398" viewBox="0 0 760 398" role="img" aria-label="Template: a field app, end to end">
+<rect x="0.5" y="0.5" width="759" height="397" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">Template: a field app, end to end</text>
+<rect x="20.0" y="58.0" width="470.0" height="252.0" rx="10" fill="#f6f5f1" stroke="#d9d7d0" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="32.0" y="76.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#52514e" text-anchor="start">Flutter app, on the phone</text>
+<rect x="36.0" y="92.0" width="56.0" height="40.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="64.0" y="116.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">UI</text>
+<rect x="112.0" y="92.0" width="70.0" height="40.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="147.0" y="116.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">BLoC</text>
+<rect x="202.0" y="92.0" width="96.0" height="40.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="250.0" y="116.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Use cases</text>
+<rect x="318.0" y="92.0" width="100.0" height="40.0" rx="8" fill="#ebe8fb" stroke="#6250d6" stroke-width="1.5"/>
+<text x="368.0" y="116.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Repository</text>
+<line x1="92.0" y1="112.0" x2="106.0" y2="112.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="112.0,112.0 103.5,116.1 103.5,107.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="182.0" y1="112.0" x2="196.0" y2="112.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="202.0,112.0 193.5,116.1 193.5,107.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="298.0" y1="112.0" x2="312.0" y2="112.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="318.0,112.0 309.5,116.1 309.5,107.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="280.0" y="170.0" width="176.0" height="52.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="368.0" y="192.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Local DB</text>
+<text x="368.0" y="208.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">Drift + SQLCipher</text>
+<rect x="280.0" y="246.0" width="176.0" height="46.0" rx="8" fill="#fdf2d3" stroke="#cf8d00" stroke-width="1.5"/>
+<text x="368.0" y="265.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Sync engine</text>
+<text x="368.0" y="281.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">outbox, push then pull</text>
+<line x1="368.0" y1="132.0" x2="368.0" y2="164.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="368.0,170.0 363.9,161.5 372.1,161.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="368.0" y1="228.0" x2="368.0" y2="240.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="368.0,246.0 363.9,237.5 372.1,237.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="368.0,222.0 372.1,230.5 363.9,230.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="36.0" y="170.0" width="200.0" height="52.0" rx="8" fill="#ebe8fb" stroke="#6250d6" stroke-width="1.5"/>
+<text x="136.0" y="192.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Keystore / Keychain</text>
+<text x="136.0" y="208.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">tokens, database key</text>
+<rect x="36.0" y="246.0" width="200.0" height="46.0" rx="8" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="136.0" y="265.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Biometric unlock</text>
+<text x="136.0" y="281.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">local_auth</text>
+<rect x="566.0" y="86.0" width="170.0" height="52.0" rx="8" fill="#fdf2d3" stroke="#cf8d00" stroke-width="1.5"/>
+<text x="651.0" y="108.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Keycloak (SSO)</text>
+<text x="651.0" y="124.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">OAuth2 + PKCE</text>
+<rect x="566.0" y="164.0" width="170.0" height="48.0" rx="8" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="651.0" y="184.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">FCM / APNs</text>
+<text x="651.0" y="200.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">push notifications</text>
+<rect x="566.0" y="242.0" width="170.0" height="54.0" rx="8" fill="#fdeadf" stroke="#e0602c" stroke-width="1.5"/>
+<text x="651.0" y="265.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Backend REST API</text>
+<text x="651.0" y="281.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">HTTPS · JSON / XML</text>
+<line x1="418.0" y1="104.0" x2="560.0" y2="104.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="566.0,104.0 557.5,108.1 557.5,99.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="520.0" y="98.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#52514e" text-anchor="middle">login, tokens</text>
+<line x1="566.0" y1="188.0" x2="496.0" y2="188.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="490.0,188.0 498.5,183.9 498.5,192.1" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="528.0" y="182.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#52514e" text-anchor="middle">push</text>
+<line x1="462.0" y1="269.0" x2="560.0" y2="269.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="566.0,269.0 557.5,273.1 557.5,264.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="456.0,269.0 464.5,264.9 464.5,273.1" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="519.0" y="263.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#52514e" text-anchor="middle">push / pull</text>
+<rect x="20.0" y="330.0" width="230.0" height="50.0" rx="8" fill="#ffffff" stroke="#b3b1aa" stroke-width="1.5"/>
+<text x="135.0" y="351.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Crashlytics / Sentry</text>
+<text x="135.0" y="367.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">crash and performance monitoring</text>
+<rect x="265.0" y="330.0" width="230.0" height="50.0" rx="8" fill="#ffffff" stroke="#b3b1aa" stroke-width="1.5"/>
+<text x="380.0" y="351.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">CI/CD</text>
+<text x="380.0" y="367.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">GitHub Actions + Fastlane</text>
+<rect x="510.0" y="330.0" width="230.0" height="50.0" rx="8" fill="#ffffff" stroke="#b3b1aa" stroke-width="1.5"/>
+<text x="625.0" y="351.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Stores</text>
+<text x="625.0" y="367.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">Play Store, App Store, staged rollout</text>
+</svg>

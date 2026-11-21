@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="300" viewBox="0 0 760 300" role="img" aria-label="HTTP status codes by family">
+<rect x="0.5" y="0.5" width="759" height="299" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">HTTP status codes by family</text>
+<text x="24.0" y="51.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52514e" text-anchor="start">The first digit tells you who has to act</text>
+<rect x="24.0" y="66.0" width="100.0" height="176.0" rx="8" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="36.0" y="94.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#1c1c1a" text-anchor="start">1xx</text>
+<text x="36.0" y="112.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#52514e" text-anchor="start">Info</text>
+<text x="36.0" y="136.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="11" font-weight="400" fill="#1c1c1a" text-anchor="start">rare in apps</text>
+<text x="74.0" y="262.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">—</text>
+<rect x="129.0" y="66.0" width="136.0" height="176.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="141.0" y="94.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#1c1c1a" text-anchor="start">2xx</text>
+<text x="141.0" y="112.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#52514e" text-anchor="start">Success</text>
+<text x="141.0" y="136.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="11" font-weight="400" fill="#1c1c1a" text-anchor="start">200 OK</text>
+<text x="141.0" y="151.5" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="11" font-weight="400" fill="#1c1c1a" text-anchor="start">201 Created</text>
+<text x="141.0" y="167.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="11" font-weight="400" fill="#1c1c1a" text-anchor="start">204 No Content</text>
+<text x="197.0" y="262.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">continue</text>
+<rect x="270.0" y="66.0" width="128.0" height="176.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="282.0" y="94.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#1c1c1a" text-anchor="start">3xx</text>
+<text x="282.0" y="112.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#52514e" text-anchor="start">Redirect</text>
+<text x="282.0" y="136.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="11" font-weight="400" fill="#1c1c1a" text-anchor="start">304 Not Modified</text>
+<text x="334.0" y="262.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">use the cache</text>
+<rect x="403.0" y="66.0" width="186.0" height="176.0" rx="8" fill="#fdf2d3" stroke="#cf8d00" stroke-width="1.5"/>
+<text x="415.0" y="94.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#1c1c1a" text-anchor="start">4xx</text>
+<text x="415.0" y="112.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#52514e" text-anchor="start">Client error</text>
+<text x="415.0" y="136.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="11" font-weight="400" fill="#1c1c1a" text-anchor="start">400 Bad Request</text>
+<text x="415.0" y="151.5" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="11" font-weight="400" fill="#1c1c1a" text-anchor="start">401 Unauthorized</text>
+<text x="415.0" y="167.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="11" font-weight="400" fill="#1c1c1a" text-anchor="start">403 Forbidden</text>
+<text x="415.0" y="182.5" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="11" font-weight="400" fill="#1c1c1a" text-anchor="start">404 Not Found</text>
+<text x="415.0" y="198.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="11" font-weight="400" fill="#1c1c1a" text-anchor="start">409 Conflict</text>
+<text x="415.0" y="213.5" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="11" font-weight="400" fill="#1c1c1a" text-anchor="start">422 Unprocessable</text>
+<text x="415.0" y="229.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="11" font-weight="400" fill="#1c1c1a" text-anchor="start">429 Too Many Requests</text>
+<text x="496.0" y="262.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">fix the request;</text>
+<text x="496.0" y="276.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">do not blindly retry</text>
+<rect x="594.0" y="66.0" width="148.0" height="176.0" rx="8" fill="#fde6e6" stroke="#d93f3e" stroke-width="1.5"/>
+<text x="606.0" y="94.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#1c1c1a" text-anchor="start">5xx</text>
+<text x="606.0" y="112.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#52514e" text-anchor="start">Server error</text>
+<text x="606.0" y="136.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="11" font-weight="400" fill="#1c1c1a" text-anchor="start">500 Server Error</text>
+<text x="606.0" y="151.5" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="11" font-weight="400" fill="#1c1c1a" text-anchor="start">502 Bad Gateway</text>
+<text x="606.0" y="167.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="11" font-weight="400" fill="#1c1c1a" text-anchor="start">503 Unavailable</text>
+<text x="606.0" y="182.5" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="11" font-weight="400" fill="#1c1c1a" text-anchor="start">504 Gateway Timeout</text>
+<text x="668.0" y="262.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">retry later,</text>
+<text x="668.0" y="276.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">with backoff</text>
+</svg>

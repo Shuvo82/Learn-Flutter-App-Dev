@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="362" viewBox="0 0 760 362" role="img" aria-label="Silent token refresh: what the app does on a 401">
+<rect x="0.5" y="0.5" width="759" height="361" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">Silent token refresh: what the app does on a 401</text>
+<line x1="110.0" y1="96.0" x2="110.0" y2="316.0" stroke="#b9b7b0" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="5 4"/>
+<rect x="35.0" y="62.0" width="150.0" height="34.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="110.0" y="83.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Mobile app</text>
+<line x1="380.0" y1="96.0" x2="380.0" y2="316.0" stroke="#b9b7b0" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="5 4"/>
+<rect x="305.0" y="62.0" width="150.0" height="34.0" rx="8" fill="#fdeadf" stroke="#e0602c" stroke-width="1.5"/>
+<text x="380.0" y="83.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Backend API</text>
+<line x1="650.0" y1="96.0" x2="650.0" y2="316.0" stroke="#b9b7b0" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="5 4"/>
+<rect x="575.0" y="62.0" width="150.0" height="34.0" rx="8" fill="#fdf2d3" stroke="#cf8d00" stroke-width="1.5"/>
+<text x="650.0" y="83.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Keycloak</text>
+<line x1="110.0" y1="132.0" x2="374.0" y2="132.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="380.0,132.0 371.5,136.1 371.5,127.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="128.3" y="111.0" width="233.3" height="17.0" rx="0" fill="#fcfcfb" stroke="none" stroke-width="1.5"/>
+<circle cx="140.3" cy="120.0" r="8.5" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="140.3" y="124.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+<text x="256.0" y="124.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">GET /visits (expired access token)</text>
+<line x1="380.0" y1="164.0" x2="116.0" y2="164.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="5 4"/>
+<polygon points="110.0,164.0 118.5,159.9 118.5,168.1" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="182.2" y="143.0" width="125.7" height="17.0" rx="0" fill="#fcfcfb" stroke="none" stroke-width="1.5"/>
+<circle cx="194.2" cy="152.0" r="8.5" fill="#d93f3e" stroke="none" stroke-width="1.5"/>
+<text x="194.2" y="156.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+<text x="256.0" y="156.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">401 Unauthorized</text>
+<line x1="110.0" y1="204.0" x2="644.0" y2="204.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="650.0,204.0 641.5,208.1 641.5,199.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="284.3" y="183.0" width="191.5" height="17.0" rx="0" fill="#fcfcfb" stroke="none" stroke-width="1.5"/>
+<circle cx="296.3" cy="192.0" r="8.5" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="296.3" y="196.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+<text x="391.0" y="196.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">POST /token (refresh token)</text>
+<line x1="650.0" y1="236.0" x2="116.0" y2="236.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="5 4"/>
+<polygon points="110.0,236.0 118.5,231.9 118.5,240.1" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="257.4" y="215.0" width="245.3" height="17.0" rx="0" fill="#fcfcfb" stroke="none" stroke-width="1.5"/>
+<circle cx="269.4" cy="224.0" r="8.5" fill="#16996a" stroke="none" stroke-width="1.5"/>
+<text x="269.4" y="228.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+<text x="391.0" y="228.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">new access token + new refresh token</text>
+<line x1="110.0" y1="276.0" x2="374.0" y2="276.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="380.0,276.0 371.5,280.1 371.5,271.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="119.4" y="255.0" width="251.3" height="17.0" rx="0" fill="#fcfcfb" stroke="none" stroke-width="1.5"/>
+<circle cx="131.4" cy="264.0" r="8.5" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="131.4" y="268.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+<text x="256.0" y="268.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">repeat GET /visits (new access token)</text>
+<line x1="380.0" y1="308.0" x2="116.0" y2="308.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="5 4"/>
+<polygon points="110.0,308.0 118.5,303.9 118.5,312.1" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="191.1" y="287.0" width="107.7" height="17.0" rx="0" fill="#fcfcfb" stroke="none" stroke-width="1.5"/>
+<circle cx="203.1" cy="296.0" r="8.5" fill="#16996a" stroke="none" stroke-width="1.5"/>
+<text x="203.1" y="300.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">6</text>
+<text x="256.0" y="300.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">200 OK + data</text>
+<text x="380.0" y="344.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">If step 3 fails, the refresh token is no longer valid: clear the tokens and go to login.</text>
+</svg>

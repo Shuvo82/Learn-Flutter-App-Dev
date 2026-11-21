@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="392" viewBox="0 0 760 392" role="img" aria-label="Why ListView.builder is faster for long lists">
+<rect x="0.5" y="0.5" width="759" height="391" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">Why ListView.builder is faster for long lists</text>
+<text x="200.0" y="76.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="13" font-weight="700" fill="#1c1c1a" text-anchor="middle">ListView(children: [...])</text>
+<text x="200.0" y="94.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">builds all 1,000 items at once</text>
+<text x="560.0" y="76.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="13" font-weight="700" fill="#1c1c1a" text-anchor="middle">ListView.builder</text>
+<text x="560.0" y="94.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">builds only what is visible</text>
+<rect x="138.0" y="122.0" width="124.0" height="18.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5" opacity="0.85"/>
+<rect x="138.0" y="147.0" width="124.0" height="18.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5" opacity="0.85"/>
+<rect x="138.0" y="172.0" width="124.0" height="18.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5" opacity="0.85"/>
+<rect x="138.0" y="197.0" width="124.0" height="18.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5" opacity="0.85"/>
+<rect x="138.0" y="222.0" width="124.0" height="18.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5" opacity="0.85"/>
+<rect x="138.0" y="247.0" width="124.0" height="18.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5" opacity="0.85"/>
+<rect x="138.0" y="272.0" width="124.0" height="18.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5" opacity="0.85"/>
+<rect x="138.0" y="297.0" width="124.0" height="18.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5" opacity="0.85"/>
+<rect x="138.0" y="322.0" width="124.0" height="18.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5" opacity="0.85"/>
+<rect x="126.0" y="112.0" width="148.0" height="132.0" rx="12" fill="none" stroke="#1c1c1a" stroke-width="2.5"/>
+<text x="284.0" y="180.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">screen</text>
+<rect x="498.0" y="122.0" width="124.0" height="18.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5" opacity="0.85"/>
+<rect x="498.0" y="147.0" width="124.0" height="18.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5" opacity="0.85"/>
+<rect x="498.0" y="172.0" width="124.0" height="18.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5" opacity="0.85"/>
+<rect x="498.0" y="197.0" width="124.0" height="18.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5" opacity="0.85"/>
+<rect x="498.0" y="222.0" width="124.0" height="18.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5" opacity="0.85"/>
+<rect x="498.0" y="247.0" width="124.0" height="18.0" rx="4" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.2"/>
+<rect x="498.0" y="272.0" width="124.0" height="18.0" rx="4" fill="none" stroke="#b9b7b0" stroke-width="1.2" stroke-dasharray="5 4"/>
+<rect x="498.0" y="297.0" width="124.0" height="18.0" rx="4" fill="none" stroke="#b9b7b0" stroke-width="1.2" stroke-dasharray="5 4"/>
+<rect x="498.0" y="322.0" width="124.0" height="18.0" rx="4" fill="none" stroke="#b9b7b0" stroke-width="1.2" stroke-dasharray="5 4"/>
+<rect x="486.0" y="112.0" width="148.0" height="132.0" rx="12" fill="none" stroke="#1c1c1a" stroke-width="2.5"/>
+<text x="644.0" y="180.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">screen</text>
+<text x="84.0" y="300.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="end">built, but</text>
+<text x="84.0" y="314.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="end">not visible</text>
+<text x="644.0" y="258.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">small buffer</text>
+<text x="644.0" y="300.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">not built yet</text>
+<text x="200.0" y="366.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">… and 991 more: more memory, slow first frame</text>
+<text x="560.0" y="366.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">less memory, fast, rows are recycled while scrolling</text>
+</svg>

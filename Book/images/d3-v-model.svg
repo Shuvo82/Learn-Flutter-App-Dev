@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="314" viewBox="0 0 760 314" role="img" aria-label="The V-model: every development phase has a matching test phase">
+<rect x="0.5" y="0.5" width="759" height="313" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">The V-model: every development phase has a matching test phase</text>
+<rect x="30.0" y="66.0" width="176.0" height="40.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="118.0" y="90.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Requirements</text>
+<rect x="86.0" y="130.0" width="176.0" height="40.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="174.0" y="154.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">System design</text>
+<rect x="142.0" y="194.0" width="176.0" height="40.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="230.0" y="218.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Module design</text>
+<rect x="292.0" y="258.0" width="176.0" height="40.0" rx="8" fill="#fdf2d3" stroke="#cf8d00" stroke-width="1.5"/>
+<text x="380.0" y="282.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Coding</text>
+<rect x="554.0" y="66.0" width="176.0" height="40.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="642.0" y="90.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Acceptance testing (UAT)</text>
+<rect x="498.0" y="130.0" width="176.0" height="40.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="586.0" y="154.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">System testing</text>
+<rect x="442.0" y="194.0" width="176.0" height="40.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="530.0" y="218.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Unit testing</text>
+<line x1="150.0" y1="106.0" x2="162.7" y2="125.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="166.0,130.0 157.9,125.2 164.7,120.7" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="206.0" y1="170.0" x2="218.7" y2="189.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="222.0,194.0 213.9,189.2 220.7,184.7" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="262.0" y1="234.0" x2="314.5" y2="255.7" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="320.0,258.0 310.6,258.5 313.7,251.0" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="440.0" y1="258.0" x2="492.5" y2="236.3" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="498.0,234.0 491.7,241.0 488.6,233.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="538.0" y1="194.0" x2="550.7" y2="175.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="554.0,170.0 552.7,179.3 545.9,174.8" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="594.0" y1="130.0" x2="606.7" y2="111.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="610.0,106.0 608.7,115.3 601.9,110.8" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="212.0" y1="86.0" x2="548.0" y2="86.0" stroke="#9a9892" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="5 4"/>
+<polygon points="554.0,86.0 545.5,90.1 545.5,81.9" fill="#9a9892" stroke="#9a9892" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="206.0,86.0 214.5,81.9 214.5,90.1" fill="#9a9892" stroke="#9a9892" stroke-width="1" stroke-linejoin="round"/>
+<line x1="268.0" y1="150.0" x2="492.0" y2="150.0" stroke="#9a9892" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="5 4"/>
+<polygon points="498.0,150.0 489.5,154.1 489.5,145.9" fill="#9a9892" stroke="#9a9892" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="262.0,150.0 270.5,145.9 270.5,154.1" fill="#9a9892" stroke="#9a9892" stroke-width="1" stroke-linejoin="round"/>
+<line x1="324.0" y1="214.0" x2="436.0" y2="214.0" stroke="#9a9892" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="5 4"/>
+<polygon points="442.0,214.0 433.5,218.1 433.5,209.9" fill="#9a9892" stroke="#9a9892" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="318.0,214.0 326.5,209.9 326.5,218.1" fill="#9a9892" stroke="#9a9892" stroke-width="1" stroke-linejoin="round"/>
+<text x="380.0" y="80.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">tested by</text>
+</svg>

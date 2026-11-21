@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="330" viewBox="0 0 760 330" role="img" aria-label="A mobile CI/CD pipeline">
+<rect x="0.5" y="0.5" width="759" height="329" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">A mobile CI/CD pipeline</text>
+<text x="40.0" y="70.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">Every pull request runs steps 1 to 4. They must pass before the merge.</text>
+<line x1="40.0" y1="78.0" x2="720.0" y2="78.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<rect x="40.0" y="92.0" width="152.0" height="62.0" rx="8" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="116.0" y="119.1" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#1c1c1a" text-anchor="middle">Checkout</text>
+<text x="116.0" y="136.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">source code</text>
+<circle cx="40.0" cy="92.0" r="9.5" fill="#8a8984" stroke="none" stroke-width="1.5"/>
+<text x="40.0" y="96.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+<line x1="192.0" y1="123.0" x2="210.0" y2="123.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="216.0,123.0 207.5,127.1 207.5,118.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="216.0" y="92.0" width="152.0" height="62.0" rx="8" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="292.0" y="119.1" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#1c1c1a" text-anchor="middle">Setup</text>
+<text x="292.0" y="136.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">Flutter, pub get (cached)</text>
+<circle cx="216.0" cy="92.0" r="9.5" fill="#8a8984" stroke="none" stroke-width="1.5"/>
+<text x="216.0" y="96.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+<line x1="368.0" y1="123.0" x2="386.0" y2="123.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="392.0,123.0 383.5,127.1 383.5,118.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="392.0" y="92.0" width="152.0" height="62.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="468.0" y="119.1" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#1c1c1a" text-anchor="middle">Analyze</text>
+<text x="468.0" y="136.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">format, lint</text>
+<circle cx="392.0" cy="92.0" r="9.5" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="392.0" y="96.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+<line x1="544.0" y1="123.0" x2="562.0" y2="123.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="568.0,123.0 559.5,127.1 559.5,118.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="568.0" y="92.0" width="152.0" height="62.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="644.0" y="119.1" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#1c1c1a" text-anchor="middle">Test</text>
+<text x="644.0" y="136.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">unit + widget tests</text>
+<circle cx="568.0" cy="92.0" r="9.5" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="568.0" y="96.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+<line x1="644.0" y1="154.0" x2="644.0" y2="194.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="644.0,200.0 639.9,191.5 648.1,191.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="568.0" y="200.0" width="152.0" height="62.0" rx="8" fill="#ebe8fb" stroke="#6250d6" stroke-width="1.5"/>
+<text x="644.0" y="227.1" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#1c1c1a" text-anchor="middle">Build</text>
+<text x="644.0" y="244.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">AAB / IPA</text>
+<circle cx="568.0" cy="200.0" r="9.5" fill="#6250d6" stroke="none" stroke-width="1.5"/>
+<text x="568.0" y="204.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+<line x1="568.0" y1="231.0" x2="550.0" y2="231.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="544.0,231.0 552.5,226.9 552.5,235.1" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="392.0" y="200.0" width="152.0" height="62.0" rx="8" fill="#fdf2d3" stroke="#cf8d00" stroke-width="1.5"/>
+<text x="468.0" y="227.1" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#1c1c1a" text-anchor="middle">Sign</text>
+<text x="468.0" y="244.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">keystore / certificate</text>
+<circle cx="392.0" cy="200.0" r="9.5" fill="#cf8d00" stroke="none" stroke-width="1.5"/>
+<text x="392.0" y="204.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">6</text>
+<line x1="392.0" y1="231.0" x2="374.0" y2="231.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="368.0,231.0 376.5,226.9 376.5,235.1" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="216.0" y="200.0" width="152.0" height="62.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="292.0" y="219.6" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#1c1c1a" text-anchor="middle">Distribute</text>
+<text x="292.0" y="236.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">Firebase, TestFlight,</text>
+<text x="292.0" y="251.6" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">Play internal track</text>
+<circle cx="216.0" cy="200.0" r="9.5" fill="#16996a" stroke="none" stroke-width="1.5"/>
+<text x="216.0" y="204.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">7</text>
+<line x1="216.0" y1="231.0" x2="198.0" y2="231.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="192.0,231.0 200.5,226.9 200.5,235.1" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="40.0" y="200.0" width="152.0" height="62.0" rx="8" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="116.0" y="227.1" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#1c1c1a" text-anchor="middle">Notify</text>
+<text x="116.0" y="244.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">Slack / email</text>
+<circle cx="40.0" cy="200.0" r="9.5" fill="#8a8984" stroke="none" stroke-width="1.5"/>
+<text x="40.0" y="204.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">8</text>
+<text x="40.0" y="290.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">Merge to main: steps 1 to 7, the build goes to testers.</text>
+<text x="40.0" y="308.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">Version tag (v1.4.2): build the store release and upload it for a staged rollout.</text>
+</svg>

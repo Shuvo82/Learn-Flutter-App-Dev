@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="236" viewBox="0 0 760 236" role="img" aria-label="Android: Play App Signing uses two keys">
+<rect x="0.5" y="0.5" width="759" height="235" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">Android: Play App Signing uses two keys</text>
+<rect x="20.0" y="58.0" width="330.0" height="150.0" rx="10" fill="#f6f5f1" stroke="#d9d7d0" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="32.0" y="76.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#52514e" text-anchor="start">You</text>
+<rect x="386.0" y="58.0" width="354.0" height="150.0" rx="10" fill="#f6f5f1" stroke="#d9d7d0" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="398.0" y="76.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#52514e" text-anchor="start">Google Play</text>
+<rect x="36.0" y="96.0" width="124.0" height="52.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="98.0" y="126.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Build the AAB</text>
+<rect x="196.0" y="96.0" width="138.0" height="52.0" rx="8" fill="#fdf2d3" stroke="#cf8d00" stroke-width="1.5"/>
+<text x="265.0" y="117.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Sign with the</text>
+<text x="265.0" y="135.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">UPLOAD key</text>
+<rect x="400.0" y="96.0" width="96.0" height="52.0" rx="8" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="448.0" y="117.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">Verify the</text>
+<text x="448.0" y="135.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">upload key</text>
+<rect x="512.0" y="96.0" width="130.0" height="52.0" rx="8" fill="#fdf2d3" stroke="#cf8d00" stroke-width="1.5"/>
+<text x="577.0" y="117.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Re-sign with the</text>
+<text x="577.0" y="135.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">APP SIGNING key</text>
+<rect x="658.0" y="96.0" width="70.0" height="52.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="693.0" y="117.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Small</text>
+<text x="693.0" y="135.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">APKs</text>
+<line x1="160.0" y1="122.0" x2="190.0" y2="122.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="196.0,122.0 187.5,126.1 187.5,117.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="334.0" y1="122.0" x2="394.0" y2="122.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="400.0,122.0 391.5,126.1 391.5,117.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="367.0" y="116.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#52514e" text-anchor="middle">upload</text>
+<line x1="496.0" y1="122.0" x2="506.0" y2="122.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="512.0,122.0 503.5,126.1 503.5,117.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="642.0" y1="122.0" x2="652.0" y2="122.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="658.0,122.0 649.5,126.1 649.5,117.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="693.0" y1="148.0" x2="693.0" y2="166.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="693.0,172.0 688.9,163.5 697.1,163.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="693.0" y="190.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">users&#x27; phones</text>
+<text x="36.0" y="184.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">Lost or leaked upload key? Google can reset it.</text>
+<text x="400.0" y="184.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">Google keeps the app signing key safe.</text>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="232" viewBox="0 0 760 232" role="img" aria-label="Where the API call lives: clean layers">
+<rect x="0.5" y="0.5" width="759" height="231" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">Where the API call lives: clean layers</text>
+<rect x="24.0" y="96.0" width="80.0" height="48.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="64.0" y="124.5" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#1c1c1a" text-anchor="middle">UI</text>
+<rect x="134.0" y="96.0" width="140.0" height="48.0" rx="8" fill="#fdf2d3" stroke="#cf8d00" stroke-width="1.5"/>
+<text x="204.0" y="124.5" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#1c1c1a" text-anchor="middle">BLoC / ViewModel</text>
+<rect x="304.0" y="96.0" width="120.0" height="48.0" rx="8" fill="#ebe8fb" stroke="#6250d6" stroke-width="1.5"/>
+<text x="364.0" y="124.5" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#1c1c1a" text-anchor="middle">Repository</text>
+<rect x="468.0" y="62.0" width="152.0" height="48.0" rx="8" fill="#fdeadf" stroke="#e0602c" stroke-width="1.5"/>
+<text x="544.0" y="82.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Remote data source</text>
+<text x="544.0" y="98.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">Dio</text>
+<rect x="468.0" y="130.0" width="152.0" height="48.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="544.0" y="150.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Local data source</text>
+<text x="544.0" y="166.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">Drift</text>
+<rect x="650.0" y="62.0" width="88.0" height="48.0" rx="8" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="694.0" y="90.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">REST API</text>
+<rect x="650.0" y="130.0" width="88.0" height="48.0" rx="8" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="694.0" y="158.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">SQLite</text>
+<line x1="104.0" y1="120.0" x2="128.0" y2="120.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="134.0,120.0 125.5,124.1 125.5,115.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="274.0" y1="120.0" x2="298.0" y2="120.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="304.0,120.0 295.5,124.1 295.5,115.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="424.0" y1="110.0" x2="462.5" y2="92.5" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="468.0,90.0 462.0,97.2 458.6,89.8" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="424.0" y1="130.0" x2="462.5" y2="147.5" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="468.0,150.0 458.6,150.2 462.0,142.8" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="620.0" y1="86.0" x2="644.0" y2="86.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="650.0,86.0 641.5,90.1 641.5,81.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="620.0" y1="154.0" x2="644.0" y2="154.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="650.0,154.0 641.5,158.1 641.5,149.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="380.0" y="212.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#52514e" text-anchor="middle">The repository decides: local database first, network in the background.</text>
+</svg>

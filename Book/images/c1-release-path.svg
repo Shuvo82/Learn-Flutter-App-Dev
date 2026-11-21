@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="246" viewBox="0 0 760 246" role="img" aria-label="Release management: the whole path of one version">
+<rect x="0.5" y="0.5" width="759" height="245" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">Release management: the whole path of one version</text>
+<rect x="28.0" y="62.0" width="128.0" height="48.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="92.0" y="90.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Code freeze</text>
+<line x1="156.0" y1="86.0" x2="166.0" y2="86.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="172.0,86.0 163.5,90.1 163.5,81.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="172.0" y="62.0" width="128.0" height="48.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="236.0" y="90.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Version bump</text>
+<line x1="300.0" y1="86.0" x2="310.0" y2="86.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="316.0,86.0 307.5,90.1 307.5,81.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="316.0" y="62.0" width="128.0" height="48.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="380.0" y="90.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Release build</text>
+<line x1="444.0" y1="86.0" x2="454.0" y2="86.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="460.0,86.0 451.5,90.1 451.5,81.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="460.0" y="62.0" width="128.0" height="48.0" rx="8" fill="#fdf2d3" stroke="#cf8d00" stroke-width="1.5"/>
+<text x="524.0" y="90.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Sign</text>
+<line x1="588.0" y1="86.0" x2="598.0" y2="86.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="604.0,86.0 595.5,90.1 595.5,81.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="604.0" y="62.0" width="128.0" height="48.0" rx="8" fill="#fdf2d3" stroke="#cf8d00" stroke-width="1.5"/>
+<text x="668.0" y="82.6" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Test</text>
+<text x="668.0" y="98.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">internal / beta</text>
+<line x1="668.0" y1="110.0" x2="668.0" y2="144.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="668.0,150.0 663.9,141.5 672.1,141.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="604.0" y="150.0" width="128.0" height="48.0" rx="8" fill="#ebe8fb" stroke="#6250d6" stroke-width="1.5"/>
+<text x="668.0" y="170.6" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Store listing +</text>
+<text x="668.0" y="186.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">policy forms</text>
+<line x1="604.0" y1="174.0" x2="594.0" y2="174.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="588.0,174.0 596.5,169.9 596.5,178.1" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="460.0" y="150.0" width="128.0" height="48.0" rx="8" fill="#ebe8fb" stroke="#6250d6" stroke-width="1.5"/>
+<text x="524.0" y="170.6" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Submit for</text>
+<text x="524.0" y="186.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">review</text>
+<line x1="460.0" y1="174.0" x2="450.0" y2="174.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="444.0,174.0 452.5,169.9 452.5,178.1" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="316.0" y="150.0" width="128.0" height="48.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="380.0" y="178.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Staged rollout</text>
+<line x1="316.0" y1="174.0" x2="306.0" y2="174.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="300.0,174.0 308.5,169.9 308.5,178.1" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="172.0" y="150.0" width="128.0" height="48.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="236.0" y="170.6" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Monitor crashes</text>
+<text x="236.0" y="186.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">and reviews</text>
+<line x1="172.0" y1="174.0" x2="162.0" y2="174.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="156.0,174.0 164.5,169.9 164.5,178.1" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="28.0" y="150.0" width="128.0" height="48.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="92.0" y="178.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">100% of users</text>
+<text x="28.0" y="224.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">then: the next release, or a hotfix</text>
+</svg>

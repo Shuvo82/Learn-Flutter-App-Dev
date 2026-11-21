@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="338" viewBox="0 0 760 338" role="img" aria-label="Git Flow: branches for a team that releases to the stores">
+<rect x="0.5" y="0.5" width="759" height="337" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">Git Flow: branches for a team that releases to the stores</text>
+<text x="24.0" y="90.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="700" fill="#1c1c1a" text-anchor="start">main</text>
+<line x1="124.0" y1="86.0" x2="736.0" y2="86.0" stroke="#e7e5df" stroke-width="1" stroke-linecap="round"/>
+<text x="24.0" y="140.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="700" fill="#1c1c1a" text-anchor="start">hotfix/*</text>
+<line x1="124.0" y1="136.0" x2="736.0" y2="136.0" stroke="#e7e5df" stroke-width="1" stroke-linecap="round"/>
+<text x="24.0" y="190.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="700" fill="#1c1c1a" text-anchor="start">release/*</text>
+<line x1="124.0" y1="186.0" x2="736.0" y2="186.0" stroke="#e7e5df" stroke-width="1" stroke-linecap="round"/>
+<text x="24.0" y="240.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="700" fill="#1c1c1a" text-anchor="start">develop</text>
+<line x1="124.0" y1="236.0" x2="736.0" y2="236.0" stroke="#e7e5df" stroke-width="1" stroke-linecap="round"/>
+<text x="24.0" y="290.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="700" fill="#1c1c1a" text-anchor="start">feature/*</text>
+<line x1="124.0" y1="286.0" x2="736.0" y2="286.0" stroke="#e7e5df" stroke-width="1" stroke-linecap="round"/>
+<line x1="150.0" y1="86.0" x2="340.0" y2="86.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="340.0" y1="86.0" x2="650.0" y2="86.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="190.0" y1="236.0" x2="360.0" y2="236.0" stroke="#6250d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="360.0" y1="236.0" x2="430.0" y2="236.0" stroke="#6250d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="430.0" y1="236.0" x2="490.0" y2="236.0" stroke="#6250d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="490.0" y1="236.0" x2="704.0" y2="236.0" stroke="#6250d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="150.0" y1="86.0" x2="190.0" y2="236.0" stroke="#6250d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="190.0" y1="236.0" x2="240.0" y2="286.0" stroke="#16996a" stroke-width="2" stroke-linecap="round"/>
+<line x1="240.0" y1="286.0" x2="300.0" y2="286.0" stroke="#16996a" stroke-width="2" stroke-linecap="round"/>
+<line x1="300.0" y1="286.0" x2="360.0" y2="236.0" stroke="#16996a" stroke-width="2" stroke-linecap="round"/>
+<line x1="150.0" y1="86.0" x2="260.0" y2="136.0" stroke="#d93f3e" stroke-width="2" stroke-linecap="round"/>
+<line x1="260.0" y1="136.0" x2="340.0" y2="86.0" stroke="#d93f3e" stroke-width="2" stroke-linecap="round"/>
+<line x1="260.0" y1="136.0" x2="430.0" y2="236.0" stroke="#d93f3e" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 4"/>
+<line x1="490.0" y1="236.0" x2="540.0" y2="186.0" stroke="#cf8d00" stroke-width="2" stroke-linecap="round"/>
+<line x1="540.0" y1="186.0" x2="600.0" y2="186.0" stroke="#cf8d00" stroke-width="2" stroke-linecap="round"/>
+<line x1="600.0" y1="186.0" x2="650.0" y2="86.0" stroke="#cf8d00" stroke-width="2" stroke-linecap="round"/>
+<line x1="600.0" y1="186.0" x2="704.0" y2="236.0" stroke="#cf8d00" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 4"/>
+<circle cx="150.0" cy="86.0" r="6.0" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="340.0" cy="86.0" r="6.0" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="650.0" cy="86.0" r="6.0" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="190.0" cy="236.0" r="6.0" fill="#6250d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="360.0" cy="236.0" r="6.0" fill="#6250d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="430.0" cy="236.0" r="6.0" fill="#6250d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="490.0" cy="236.0" r="6.0" fill="#6250d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="704.0" cy="236.0" r="6.0" fill="#6250d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="240.0" cy="286.0" r="6.0" fill="#16996a" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="300.0" cy="286.0" r="6.0" fill="#16996a" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="260.0" cy="136.0" r="6.0" fill="#d93f3e" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="540.0" cy="186.0" r="6.0" fill="#cf8d00" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="600.0" cy="186.0" r="6.0" fill="#cf8d00" stroke="#fcfcfb" stroke-width="2"/>
+<text x="150.0" y="72.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="11" font-weight="700" fill="#1c1c1a" text-anchor="middle">v1.4.0</text>
+<text x="340.0" y="72.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="11" font-weight="700" fill="#1c1c1a" text-anchor="middle">v1.4.1</text>
+<text x="650.0" y="72.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="11" font-weight="700" fill="#1c1c1a" text-anchor="middle">v1.5.0</text>
+<text x="242.0" y="154.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#52514e" text-anchor="end">urgent fix</text>
+<text x="570.0" y="206.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#52514e" text-anchor="middle">bug fixes only</text>
+<text x="270.0" y="310.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#52514e" text-anchor="middle">pull request + review + CI</text>
+<text x="580.0" y="310.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#52514e" text-anchor="middle">dashed line = merged back into develop</text>
+</svg>

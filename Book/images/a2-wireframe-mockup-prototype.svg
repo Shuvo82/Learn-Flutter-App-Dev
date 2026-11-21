@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="344" viewBox="0 0 760 344" role="img" aria-label="Wireframe, mockup, prototype">
+<rect x="0.5" y="0.5" width="759" height="343" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">Wireframe, mockup, prototype</text>
+<rect x="50.0" y="62.0" width="140.0" height="212.0" rx="14" fill="#ffffff" stroke="#55544f" stroke-width="2"/>
+<rect x="62.0" y="80.0" width="116.0" height="18.0" rx="0" fill="#e4e2dc" stroke="none" stroke-width="1.5"/>
+<rect x="62.0" y="108.0" width="116.0" height="62.0" rx="0" fill="none" stroke="#9a9892" stroke-width="1.2"/>
+<line x1="62.0" y1="108.0" x2="178.0" y2="170.0" stroke="#9a9892" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="178.0" y1="108.0" x2="62.0" y2="170.0" stroke="#9a9892" stroke-width="1.2" stroke-linecap="round"/>
+<rect x="62.0" y="182.0" width="92.8" height="7.0" rx="3" fill="#d6d4cd" stroke="none" stroke-width="1.5"/>
+<rect x="62.0" y="196.0" width="69.6" height="7.0" rx="3" fill="#d6d4cd" stroke="none" stroke-width="1.5"/>
+<rect x="62.0" y="228.0" width="116.0" height="26.0" rx="6" fill="none" stroke="#9a9892" stroke-width="1.2"/>
+<rect x="258.0" y="62.0" width="140.0" height="212.0" rx="14" fill="#ffffff" stroke="#55544f" stroke-width="2"/>
+<rect x="270.0" y="80.0" width="116.0" height="18.0" rx="3" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<rect x="270.0" y="108.0" width="116.0" height="62.0" rx="4" fill="#cfe3fa" stroke="none" stroke-width="1.5"/>
+<polygon points="280.0,162.0 316.4,126.0 341.9,148.0 357.0,136.0 378.0,162.0" fill="#8fbcf0" stroke="none" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="270.0" y="182.0" width="92.8" height="7.0" rx="3" fill="#c9c7c0" stroke="none" stroke-width="1.5"/>
+<rect x="270.0" y="196.0" width="69.6" height="7.0" rx="3" fill="#c9c7c0" stroke="none" stroke-width="1.5"/>
+<rect x="270.0" y="228.0" width="116.0" height="26.0" rx="6" fill="#16996a" stroke="none" stroke-width="1.5"/>
+<text x="328.0" y="245.5" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#ffffff" text-anchor="middle">Save</text>
+<rect x="466.0" y="62.0" width="124.0" height="212.0" rx="14" fill="#ffffff" stroke="#55544f" stroke-width="2"/>
+<rect x="478.0" y="80.0" width="100.0" height="18.0" rx="3" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<rect x="478.0" y="108.0" width="100.0" height="62.0" rx="4" fill="#cfe3fa" stroke="none" stroke-width="1.5"/>
+<polygon points="488.0,162.0 518.0,126.0 540.0,148.0 553.0,136.0 570.0,162.0" fill="#8fbcf0" stroke="none" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="478.0" y="182.0" width="80.0" height="7.0" rx="3" fill="#c9c7c0" stroke="none" stroke-width="1.5"/>
+<rect x="478.0" y="196.0" width="60.0" height="7.0" rx="3" fill="#c9c7c0" stroke="none" stroke-width="1.5"/>
+<rect x="478.0" y="228.0" width="100.0" height="26.0" rx="6" fill="#16996a" stroke="none" stroke-width="1.5"/>
+<text x="528.0" y="245.5" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#ffffff" text-anchor="middle">Save</text>
+<rect x="626.0" y="62.0" width="110.0" height="212.0" rx="14" fill="#ffffff" stroke="#55544f" stroke-width="2"/>
+<rect x="638.0" y="80.0" width="86.0" height="18.0" rx="3" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<circle cx="681.0" cy="148.0" r="22.0" fill="#e1f5ec" stroke="#16996a" stroke-width="2"/>
+<polyline points="671.0,148.0 678.0,155.0 692.0,141.0" fill="none" stroke="#16996a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="681.0" y="192.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="middle">Saved</text>
+<circle cx="528.0" cy="241.0" r="15.0" fill="none" stroke="#e0602c" stroke-width="2.5"/>
+<line x1="546.0" y1="241.0" x2="619.2" y2="185.6" stroke="#e0602c" stroke-width="2" stroke-linecap="round"/>
+<polygon points="624.0,182.0 619.7,190.4 614.8,183.9" fill="#e0602c" stroke="#e0602c" stroke-width="1" stroke-linejoin="round"/>
+<text x="612.0" y="260.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">tap</text>
+<text x="120.0" y="300.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#1c1c1a" text-anchor="middle">Wireframe</text>
+<text x="120.0" y="320.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">what goes where, no colour</text>
+<text x="328.0" y="300.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#1c1c1a" text-anchor="middle">Mockup</text>
+<text x="328.0" y="320.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">the final look, a static picture</text>
+<text x="600.0" y="300.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#1c1c1a" text-anchor="middle">Prototype</text>
+<text x="600.0" y="320.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">clickable, shows the flow</text>
+</svg>

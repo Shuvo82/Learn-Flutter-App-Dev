@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="244" viewBox="0 0 760 244" role="img" aria-label="Exponential backoff: the wait doubles after each failure">
+<rect x="0.5" y="0.5" width="759" height="243" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">Exponential backoff: the wait doubles after each failure</text>
+<text x="24.0" y="51.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52514e" text-anchor="start">Seconds to wait before each retry, plus a small random jitter</text>
+<line x1="70.0" y1="196.0" x2="690.0" y2="196.0" stroke="#b9b7b0" stroke-width="1" stroke-linecap="round"/>
+<path d="M118.0 196.0 V192.4 Q118.0 188.8 121.6 188.8 H138.4 Q142.0 188.8 142.0 192.4 V196.0 Z" fill="#2a78d6"/>
+<text x="130.0" y="181.8" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="middle">1 s</text>
+<text x="130.0" y="214.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">Retry 1</text>
+<path d="M243.0 196.0 V185.5 Q243.0 181.5 247.0 181.5 H263.0 Q267.0 181.5 267.0 185.5 V196.0 Z" fill="#2a78d6"/>
+<text x="255.0" y="174.5" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="middle">2 s</text>
+<text x="255.0" y="214.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">Retry 2</text>
+<path d="M368.0 196.0 V171.0 Q368.0 167.0 372.0 167.0 H388.0 Q392.0 167.0 392.0 171.0 V196.0 Z" fill="#2a78d6"/>
+<text x="380.0" y="160.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="middle">4 s</text>
+<text x="380.0" y="214.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">Retry 3</text>
+<path d="M493.0 196.0 V142.0 Q493.0 138.0 497.0 138.0 H513.0 Q517.0 138.0 517.0 142.0 V196.0 Z" fill="#2a78d6"/>
+<text x="505.0" y="131.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="middle">8 s</text>
+<text x="505.0" y="214.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">Retry 4</text>
+<path d="M618.0 196.0 V84.0 Q618.0 80.0 622.0 80.0 H638.0 Q642.0 80.0 642.0 84.0 V196.0 Z" fill="#2a78d6"/>
+<text x="630.0" y="73.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="middle">16 s</text>
+<text x="630.0" y="214.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">Retry 5</text>
+<text x="380.0" y="234.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">A weak network or a busy server is not flooded with requests.</text>
+</svg>

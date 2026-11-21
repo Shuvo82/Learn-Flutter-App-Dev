@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="768" viewBox="0 0 760 768" role="img" aria-label="Login with OAuth 2.0 Authorization Code + PKCE">
+<rect x="0.5" y="0.5" width="759" height="767" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">Login with OAuth 2.0 Authorization Code + PKCE</text>
+<text x="24.0" y="51.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52514e" text-anchor="start">Green = the PKCE secret  ·  blue = normal login  ·  orange = using the token</text>
+<line x1="90.0" y1="112.0" x2="90.0" y2="680.0" stroke="#b9b7b0" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="5 4"/>
+<rect x="15.0" y="66.0" width="150.0" height="46.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="90.0" y="85.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Flutter app</text>
+<text x="90.0" y="101.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#52514e" text-anchor="middle">(public client)</text>
+<line x1="290.0" y1="112.0" x2="290.0" y2="680.0" stroke="#b9b7b0" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="5 4"/>
+<rect x="215.0" y="66.0" width="150.0" height="46.0" rx="8" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="290.0" y="85.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">System browser</text>
+<text x="290.0" y="101.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#52514e" text-anchor="middle">(Custom Tab)</text>
+<line x1="490.0" y1="112.0" x2="490.0" y2="680.0" stroke="#b9b7b0" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="5 4"/>
+<rect x="415.0" y="66.0" width="150.0" height="46.0" rx="8" fill="#fdf2d3" stroke="#cf8d00" stroke-width="1.5"/>
+<text x="490.0" y="85.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Keycloak</text>
+<text x="490.0" y="101.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#52514e" text-anchor="middle">(login server)</text>
+<line x1="680.0" y1="112.0" x2="680.0" y2="680.0" stroke="#b9b7b0" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="5 4"/>
+<rect x="605.0" y="66.0" width="150.0" height="46.0" rx="8" fill="#fdeadf" stroke="#e0602c" stroke-width="1.5"/>
+<text x="680.0" y="85.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Backend API</text>
+<text x="680.0" y="101.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#52514e" text-anchor="middle">(Django)</text>
+<rect x="16.0" y="126.0" width="262.0" height="58.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.4"/>
+<circle cx="32.0" cy="142.0" r="8.5" fill="#16996a" stroke="none" stroke-width="1.5"/>
+<text x="32.0" y="146.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+<text x="47.0" y="146.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#1c1c1a" text-anchor="start">Make a secret pair</text>
+<text x="47.0" y="163.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="10.5" font-weight="400" fill="#1c1c1a" text-anchor="start">code_verifier  = random secret</text>
+<text x="47.0" y="177.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="10.5" font-weight="400" fill="#1c1c1a" text-anchor="start">code_challenge = SHA256(verifier)</text>
+<line x1="24.0" y1="204.0" x2="736.0" y2="204.0" stroke="#d9d7d0" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="5 4"/>
+<rect x="258.7" y="194.0" width="242.5" height="20.0" rx="0" fill="#fcfcfb" stroke="none" stroke-width="1.5"/>
+<rect x="262.7" y="193.0" width="234.5" height="22.5" rx="11.25" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.2"/>
+<text x="380.0" y="208.3" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">the user logs in (in the browser)</text>
+<line x1="90.0" y1="244.0" x2="284.0" y2="244.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="290.0,244.0 281.5,248.1 281.5,239.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="94.3" y="223.0" width="191.5" height="17.0" rx="0" fill="#fcfcfb" stroke="none" stroke-width="1.5"/>
+<circle cx="106.3" cy="232.0" r="8.5" fill="#16996a" stroke="none" stroke-width="1.5"/>
+<text x="106.3" y="236.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+<text x="201.0" y="236.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">open /auth + code_challenge</text>
+<line x1="290.0" y1="274.0" x2="484.0" y2="274.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="5 4"/>
+<polygon points="490.0,274.0 481.5,278.1 481.5,269.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="329.2" y="253.0" width="121.6" height="17.0" rx="0" fill="#fcfcfb" stroke="none" stroke-width="1.5"/>
+<text x="390.0" y="266.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">show the login page</text>
+<line x1="290.0" y1="306.0" x2="484.0" y2="306.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="490.0,306.0 481.5,310.1 481.5,301.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="297.3" y="285.0" width="185.5" height="17.0" rx="0" fill="#fcfcfb" stroke="none" stroke-width="1.5"/>
+<circle cx="309.3" cy="294.0" r="8.5" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="309.3" y="298.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+<text x="401.0" y="298.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">user types password (+OTP)</text>
+<line x1="490.0" y1="342.0" x2="96.0" y2="342.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="5 4"/>
+<polygon points="90.0,342.0 98.5,337.9 98.5,346.1" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="170.3" y="321.0" width="239.3" height="17.0" rx="0" fill="#fcfcfb" stroke="none" stroke-width="1.5"/>
+<circle cx="182.3" cy="330.0" r="8.5" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="182.3" y="334.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+<text x="301.0" y="334.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">redirect: myapp://callback?code=XYZ</text>
+<line x1="24.0" y1="366.0" x2="736.0" y2="366.0" stroke="#d9d7d0" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="5 4"/>
+<rect x="287.7" y="356.0" width="184.6" height="20.0" rx="0" fill="#fcfcfb" stroke="none" stroke-width="1.5"/>
+<rect x="291.7" y="355.0" width="176.6" height="22.5" rx="11.25" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.2"/>
+<text x="380.0" y="370.3" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">swap the code for tokens</text>
+<line x1="90.0" y1="406.0" x2="484.0" y2="406.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="490.0,406.0 481.5,410.1 481.5,401.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="176.3" y="385.0" width="227.3" height="17.0" rx="0" fill="#fcfcfb" stroke="none" stroke-width="1.5"/>
+<circle cx="188.3" cy="394.0" r="8.5" fill="#16996a" stroke="none" stroke-width="1.5"/>
+<text x="188.3" y="398.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+<text x="301.0" y="398.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">POST /token: code + code_verifier</text>
+<rect x="360.0" y="420.0" width="260.0" height="58.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.4"/>
+<circle cx="376.0" cy="436.0" r="8.5" fill="#16996a" stroke="none" stroke-width="1.5"/>
+<text x="376.0" y="440.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">6</text>
+<text x="391.0" y="440.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#1c1c1a" text-anchor="start">Keycloak checks</text>
+<text x="391.0" y="457.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="10.5" font-weight="400" fill="#1c1c1a" text-anchor="start">SHA256(code_verifier)</text>
+<text x="391.0" y="471.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="10.5" font-weight="400" fill="#1c1c1a" text-anchor="start">  == saved code_challenge ?</text>
+<line x1="490.0" y1="512.0" x2="96.0" y2="512.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="5 4"/>
+<polygon points="90.0,512.0 98.5,507.9 98.5,516.1" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="184.3" y="491.0" width="211.3" height="17.0" rx="0" fill="#fcfcfb" stroke="none" stroke-width="1.5"/>
+<text x="290.0" y="504.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">match: access + refresh + ID token</text>
+<rect x="16.0" y="526.0" width="262.0" height="44.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.4"/>
+<circle cx="32.0" cy="542.0" r="8.5" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="32.0" y="546.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">7</text>
+<text x="47.0" y="546.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#1c1c1a" text-anchor="start">Save tokens securely</text>
+<text x="47.0" y="563.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="10.5" font-weight="400" fill="#1c1c1a" text-anchor="start">Keystore / Keychain</text>
+<line x1="24.0" y1="590.0" x2="736.0" y2="590.0" stroke="#d9d7d0" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="5 4"/>
+<rect x="323.1" y="580.0" width="113.7" height="20.0" rx="0" fill="#fcfcfb" stroke="none" stroke-width="1.5"/>
+<rect x="327.1" y="579.0" width="105.7" height="22.5" rx="11.25" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.2"/>
+<text x="380.0" y="594.3" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">use the token</text>
+<line x1="90.0" y1="630.0" x2="674.0" y2="630.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="680.0,630.0 671.5,634.1 671.5,625.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="265.4" y="609.0" width="239.3" height="17.0" rx="0" fill="#fcfcfb" stroke="none" stroke-width="1.5"/>
+<circle cx="277.4" cy="618.0" r="8.5" fill="#e0602c" stroke="none" stroke-width="1.5"/>
+<text x="277.4" y="622.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">8</text>
+<text x="396.0" y="622.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">GET /visits + Bearer &lt;access_token&gt;</text>
+<line x1="680.0" y1="664.0" x2="96.0" y2="664.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="5 4"/>
+<polygon points="90.0,664.0 98.5,659.9 98.5,668.1" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="234.5" y="643.0" width="301.0" height="17.0" rx="0" fill="#fcfcfb" stroke="none" stroke-width="1.5"/>
+<text x="385.0" y="656.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">200 OK + data   (401 = token expired, refresh it)</text>
+<rect x="10.0" y="694.0" width="740.0" height="62.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.4"/>
+<circle cx="32.0" cy="725.0" r="11.0" fill="#16996a" stroke="none" stroke-width="1.5"/>
+<polyline points="26.5,725.0 30.5,729.5 37.5,720.5" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="54.0" y="717.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="start">Why PKCE? A bad app may steal the code at step 4. But it does not have the</text>
+<text x="54.0" y="735.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="start">code_verifier (it never left the phone), so step 6 fails. No verifier = no tokens.</text>
+</svg>

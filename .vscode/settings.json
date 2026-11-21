@@ -1,0 +1,6 @@
+{
+  // Book look for the Markdown preview (Ctrl+Shift+V). The stylesheet is .vscode/book.css.
+  "markdown.styles": [".vscode/book.css"],
+  "markdown.preview.breaks": false,
+  "markdown.preview.scrollEditorWithPreview": true
+}

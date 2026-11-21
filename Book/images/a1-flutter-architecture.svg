@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="330" viewBox="0 0 760 330" role="img" aria-label="Flutter&#x27;s three layers">
+<rect x="0.5" y="0.5" width="759" height="329" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">Flutter&#x27;s three layers</text>
+<rect x="200.0" y="58.0" width="420.0" height="62.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="410.0" y="84.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Framework (Dart)</text>
+<text x="410.0" y="102.6" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.0" font-weight="400" fill="#52514e" text-anchor="middle">widgets · rendering · animation · gestures</text>
+<rect x="200.0" y="132.0" width="420.0" height="62.0" rx="8" fill="#ebe8fb" stroke="#6250d6" stroke-width="1.5"/>
+<text x="410.0" y="158.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Engine (C++)</text>
+<text x="410.0" y="176.6" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.0" font-weight="400" fill="#52514e" text-anchor="middle">Impeller / Skia graphics · Dart runtime · text layout</text>
+<rect x="200.0" y="206.0" width="420.0" height="62.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="410.0" y="232.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Embedder (one per platform)</text>
+<text x="410.0" y="250.6" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.0" font-weight="400" fill="#52514e" text-anchor="middle">Android (Kotlin/Java) · iOS (Swift/Obj-C)</text>
+<rect x="200.0" y="280.0" width="420.0" height="32.0" rx="8" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="410.0" y="300.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">Operating system and device</text>
+<text x="170.0" y="93.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#52514e" text-anchor="end">You write code here</text>
+<line x1="176.0" y1="89.0" x2="190.0" y2="89.0" stroke="#52514e" stroke-width="1.3" stroke-linecap="round"/>
+<polygon points="196.0,89.0 187.5,93.1 187.5,84.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="170.0" y="167.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#52514e" text-anchor="end">Draws the pixels</text>
+<line x1="176.0" y1="163.0" x2="190.0" y2="163.0" stroke="#52514e" stroke-width="1.3" stroke-linecap="round"/>
+<polygon points="196.0,163.0 187.5,167.1 187.5,158.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="170.0" y="241.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#52514e" text-anchor="end">Talks to the OS</text>
+<line x1="176.0" y1="237.0" x2="190.0" y2="237.0" stroke="#52514e" stroke-width="1.3" stroke-linecap="round"/>
+<polygon points="196.0,237.0 187.5,241.1 187.5,232.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+</svg>

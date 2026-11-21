@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="298" viewBox="0 0 760 298" role="img" aria-label="Three ways to build a mobile app">
+<rect x="0.5" y="0.5" width="759" height="297" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">Three ways to build a mobile app</text>
+<text x="24.0" y="51.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52514e" text-anchor="start">What sits between your code and the screen</text>
+<text x="140.0" y="84.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#1c1c1a" text-anchor="middle">Native</text>
+<rect x="30.0" y="96.0" width="220.0" height="38.0" rx="8" fill="#ffffff" stroke="#b3b1aa" stroke-width="1.5"/>
+<text x="140.0" y="119.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">Kotlin / Swift code</text>
+<line x1="140.0" y1="134.0" x2="140.0" y2="144.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="140.0,150.0 135.9,141.5 144.1,141.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="30.0" y="150.0" width="220.0" height="52.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="140.0" y="180.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Platform UI widgets</text>
+<line x1="140.0" y1="202.0" x2="140.0" y2="212.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="140.0,218.0 135.9,209.5 144.1,209.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="30.0" y="218.0" width="220.0" height="30.0" rx="8" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="140.0" y="237.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">Android / iOS</text>
+<text x="140.0" y="268.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">best performance</text>
+<text x="140.0" y="282.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">two codebases, two teams</text>
+<text x="380.0" y="84.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#1c1c1a" text-anchor="middle">Cross-platform (Flutter)</text>
+<rect x="270.0" y="96.0" width="220.0" height="38.0" rx="8" fill="#ffffff" stroke="#b3b1aa" stroke-width="1.5"/>
+<text x="380.0" y="119.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">Dart code, one codebase</text>
+<line x1="380.0" y1="134.0" x2="380.0" y2="144.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="380.0,150.0 375.9,141.5 384.1,141.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="270.0" y="150.0" width="220.0" height="52.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="380.0" y="172.6" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Flutter engine draws</text>
+<text x="380.0" y="188.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">every pixel itself</text>
+<line x1="380.0" y1="202.0" x2="380.0" y2="212.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="380.0,218.0 375.9,209.5 384.1,209.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="270.0" y="218.0" width="220.0" height="30.0" rx="8" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="380.0" y="237.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">Android / iOS</text>
+<text x="380.0" y="268.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">near-native speed</text>
+<text x="380.0" y="282.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">one codebase, one team</text>
+<text x="620.0" y="84.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#1c1c1a" text-anchor="middle">Hybrid (WebView)</text>
+<rect x="510.0" y="96.0" width="220.0" height="38.0" rx="8" fill="#ffffff" stroke="#b3b1aa" stroke-width="1.5"/>
+<text x="620.0" y="119.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">HTML / CSS / JavaScript</text>
+<line x1="620.0" y1="134.0" x2="620.0" y2="144.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="620.0,150.0 615.9,141.5 624.1,141.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="510.0" y="150.0" width="220.0" height="52.0" rx="8" fill="#fdeadf" stroke="#e0602c" stroke-width="1.5"/>
+<text x="620.0" y="172.6" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">WebView: a browser</text>
+<text x="620.0" y="188.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">inside the app</text>
+<line x1="620.0" y1="202.0" x2="620.0" y2="212.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="620.0,218.0 615.9,209.5 624.1,209.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="510.0" y="218.0" width="220.0" height="30.0" rx="8" fill="#f1f0ec" stroke="#8a8984" stroke-width="1.5"/>
+<text x="620.0" y="237.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#1c1c1a" text-anchor="middle">Android / iOS</text>
+<text x="620.0" y="268.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">lowest performance</text>
+<text x="620.0" y="282.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">cheapest to build</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="286" viewBox="0 0 760 286" role="img" aria-label="The frame budget: 16.67 ms per frame at 60 fps">
+<rect x="0.5" y="0.5" width="759" height="285" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">The frame budget: 16.67 ms per frame at 60 fps</text>
+<text x="24.0" y="51.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52514e" text-anchor="start">Example frame times. A frame that takes longer is dropped, and the user sees jank.</text>
+<line x1="70.0" y1="236.0" x2="734.0" y2="236.0" stroke="#b9b7b0" stroke-width="1" stroke-linecap="round"/>
+<text x="62.0" y="240.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#7a7974" text-anchor="end">0</text>
+<line x1="70.0" y1="198.5" x2="734.0" y2="198.5" stroke="#e7e5df" stroke-width="1" stroke-linecap="round"/>
+<text x="62.0" y="202.5" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#7a7974" text-anchor="end">10</text>
+<line x1="70.0" y1="161.0" x2="734.0" y2="161.0" stroke="#e7e5df" stroke-width="1" stroke-linecap="round"/>
+<text x="62.0" y="165.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#7a7974" text-anchor="end">20</text>
+<line x1="70.0" y1="123.5" x2="734.0" y2="123.5" stroke="#e7e5df" stroke-width="1" stroke-linecap="round"/>
+<text x="62.0" y="127.5" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#7a7974" text-anchor="end">30</text>
+<line x1="70.0" y1="86.0" x2="734.0" y2="86.0" stroke="#e7e5df" stroke-width="1" stroke-linecap="round"/>
+<text x="62.0" y="90.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#7a7974" text-anchor="end">40 ms</text>
+<path d="M93.0 236.0 V206.2 Q93.0 202.2 97.0 202.2 H111.0 Q115.0 202.2 115.0 206.2 V236.0 Z" fill="#2a78d6"/>
+<path d="M146.0 236.0 V198.8 Q146.0 194.8 150.0 194.8 H164.0 Q168.0 194.8 168.0 198.8 V236.0 Z" fill="#2a78d6"/>
+<path d="M199.0 236.0 V210.0 Q199.0 206.0 203.0 206.0 H217.0 Q221.0 206.0 221.0 210.0 V236.0 Z" fill="#2a78d6"/>
+<path d="M252.0 236.0 V195.0 Q252.0 191.0 256.0 191.0 H270.0 Q274.0 191.0 274.0 195.0 V236.0 Z" fill="#2a78d6"/>
+<path d="M305.0 236.0 V202.5 Q305.0 198.5 309.0 198.5 H323.0 Q327.0 198.5 327.0 202.5 V236.0 Z" fill="#2a78d6"/>
+<path d="M358.0 236.0 V135.0 Q358.0 131.0 362.0 131.0 H376.0 Q380.0 131.0 380.0 135.0 V236.0 Z" fill="#d93f3e"/>
+<text x="369.0" y="123.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">jank: 28 ms</text>
+<path d="M411.0 236.0 V206.2 Q411.0 202.2 415.0 202.2 H429.0 Q433.0 202.2 433.0 206.2 V236.0 Z" fill="#2a78d6"/>
+<path d="M464.0 236.0 V191.2 Q464.0 187.2 468.0 187.2 H482.0 Q486.0 187.2 486.0 191.2 V236.0 Z" fill="#2a78d6"/>
+<path d="M517.0 236.0 V198.8 Q517.0 194.8 521.0 194.8 H535.0 Q539.0 194.8 539.0 198.8 V236.0 Z" fill="#2a78d6"/>
+<path d="M570.0 236.0 V108.8 Q570.0 104.8 574.0 104.8 H588.0 Q592.0 104.8 592.0 108.8 V236.0 Z" fill="#d93f3e"/>
+<text x="581.0" y="96.8" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">jank: 35 ms</text>
+<path d="M623.0 236.0 V202.5 Q623.0 198.5 627.0 198.5 H641.0 Q645.0 198.5 645.0 202.5 V236.0 Z" fill="#2a78d6"/>
+<path d="M676.0 236.0 V195.0 Q676.0 191.0 680.0 191.0 H694.0 Q698.0 191.0 698.0 195.0 V236.0 Z" fill="#2a78d6"/>
+<line x1="70.0" y1="173.5" x2="734.0" y2="173.5" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<text x="734.0" y="167.5" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#1c1c1a" text-anchor="end">budget 16.67 ms</text>
+<text x="402.0" y="258.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#7a7974" text-anchor="middle">frames, in order</text>
+<rect x="250.0" y="266.0" width="11.0" height="11.0" rx="3" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="267.0" y="276.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">frame on time</text>
+<rect x="400.0" y="266.0" width="11.0" height="11.0" rx="3" fill="#d93f3e" stroke="none" stroke-width="1.5"/>
+<text x="417.0" y="276.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start">missed frame (jank)</text>
+</svg>

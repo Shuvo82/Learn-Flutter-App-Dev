@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="322" viewBox="0 0 760 322" role="img" aria-label="The three trees behind every Flutter screen">
+<rect x="0.5" y="0.5" width="759" height="321" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">The three trees behind every Flutter screen</text>
+<text x="125.0" y="76.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#1c1c1a" text-anchor="middle">Widget tree</text>
+<rect x="30.0" y="90.0" width="190.0" height="36.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="125.0" y="112.2" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="middle">Padding</text>
+<line x1="125.0" y1="126.0" x2="125.0" y2="140.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="125.0,146.0 120.9,137.5 129.1,137.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="30.0" y="146.0" width="190.0" height="36.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="125.0" y="168.2" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="middle">Row</text>
+<line x1="125.0" y1="182.0" x2="125.0" y2="196.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="125.0,202.0 120.9,193.5 129.1,193.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="30.0" y="202.0" width="190.0" height="36.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="125.0" y="224.2" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="middle">Text</text>
+<text x="125.0" y="262.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">configuration</text>
+<text x="125.0" y="276.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">immutable, cheap</text>
+<text x="125.0" y="291.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">rebuilt often</text>
+<text x="380.0" y="76.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#1c1c1a" text-anchor="middle">Element tree</text>
+<rect x="285.0" y="90.0" width="190.0" height="36.0" rx="8" fill="#fdf2d3" stroke="#cf8d00" stroke-width="1.5"/>
+<text x="380.0" y="112.2" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="middle">Element</text>
+<line x1="380.0" y1="126.0" x2="380.0" y2="140.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="380.0,146.0 375.9,137.5 384.1,137.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="285.0" y="146.0" width="190.0" height="36.0" rx="8" fill="#fdf2d3" stroke="#cf8d00" stroke-width="1.5"/>
+<text x="380.0" y="168.2" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="middle">Element</text>
+<line x1="380.0" y1="182.0" x2="380.0" y2="196.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="380.0,202.0 375.9,193.5 384.1,193.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="285.0" y="202.0" width="190.0" height="36.0" rx="8" fill="#fdf2d3" stroke="#cf8d00" stroke-width="1.5"/>
+<text x="380.0" y="224.2" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="middle">Element</text>
+<text x="380.0" y="262.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">the live instance, holds State</text>
+<text x="380.0" y="276.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">= BuildContext</text>
+<text x="380.0" y="291.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">long-lived</text>
+<text x="635.0" y="76.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#1c1c1a" text-anchor="middle">RenderObject tree</text>
+<rect x="540.0" y="90.0" width="190.0" height="36.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="635.0" y="112.2" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="middle">RenderPadding</text>
+<line x1="635.0" y1="126.0" x2="635.0" y2="140.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="635.0,146.0 630.9,137.5 639.1,137.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="540.0" y="146.0" width="190.0" height="36.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="635.0" y="168.2" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="middle">RenderFlex</text>
+<line x1="635.0" y1="182.0" x2="635.0" y2="196.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="635.0,202.0 630.9,193.5 639.1,193.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="540.0" y="202.0" width="190.0" height="36.0" rx="8" fill="#e1f5ec" stroke="#16996a" stroke-width="1.5"/>
+<text x="635.0" y="224.2" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="600" fill="#1c1c1a" text-anchor="middle">RenderParagraph</text>
+<text x="635.0" y="262.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">layout and paint</text>
+<text x="635.0" y="276.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">expensive</text>
+<text x="635.0" y="291.9" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">long-lived, reused</text>
+<line x1="220.0" y1="108.0" x2="279.0" y2="108.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="5 4"/>
+<polygon points="285.0,108.0 276.5,112.1 276.5,103.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="252.5" y="102.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">creates</text>
+<line x1="475.0" y1="108.0" x2="534.0" y2="108.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="5 4"/>
+<polygon points="540.0,108.0 531.5,112.1 531.5,103.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="507.5" y="102.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">owns</text>
+<line x1="220.0" y1="164.0" x2="279.0" y2="164.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="5 4"/>
+<polygon points="285.0,164.0 276.5,168.1 276.5,159.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="475.0" y1="164.0" x2="534.0" y2="164.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="5 4"/>
+<polygon points="540.0,164.0 531.5,168.1 531.5,159.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="220.0" y1="220.0" x2="279.0" y2="220.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="5 4"/>
+<polygon points="285.0,220.0 276.5,224.1 276.5,215.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="475.0" y1="220.0" x2="534.0" y2="220.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="5 4"/>
+<polygon points="540.0,220.0 531.5,224.1 531.5,215.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="372" viewBox="0 0 760 372" role="img" aria-label="Scrum in one picture">
+<rect x="0.5" y="0.5" width="759" height="371" rx="12" fill="#fcfcfb" stroke="#d9d7d0"/>
+<text x="24.0" y="32.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a" text-anchor="start">Scrum in one picture</text>
+<text x="24.0" y="51.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52514e" text-anchor="start">Events in blue · artifacts in violet · roles at the bottom</text>
+<rect x="24.0" y="104.0" width="120.0" height="72.0" rx="8" fill="#ebe8fb" stroke="#6250d6" stroke-width="1.5"/>
+<text x="84.0" y="128.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Product</text>
+<text x="84.0" y="144.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Backlog</text>
+<text x="84.0" y="160.5" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">ordered wish list</text>
+<rect x="178.0" y="118.0" width="110.0" height="44.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="233.0" y="136.6" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Sprint</text>
+<text x="233.0" y="152.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Planning</text>
+<rect x="322.0" y="104.0" width="120.0" height="72.0" rx="8" fill="#ebe8fb" stroke="#6250d6" stroke-width="1.5"/>
+<text x="382.0" y="128.4" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Sprint</text>
+<text x="382.0" y="144.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Backlog</text>
+<text x="382.0" y="160.5" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">items for this sprint</text>
+<line x1="144.0" y1="140.0" x2="172.0" y2="140.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="178.0,140.0 169.5,144.1 169.5,135.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="288.0" y1="140.0" x2="316.0" y2="140.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="322.0,140.0 313.5,144.1 313.5,135.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<circle cx="540.0" cy="140.0" r="60.0" fill="#e6f0fc" stroke="#2a78d6" stroke-width="2.5"/>
+<text x="540.0" y="138.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1c1c1a" text-anchor="middle">SPRINT</text>
+<text x="540.0" y="156.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">1 to 4 weeks</text>
+<circle cx="596.0" cy="82.0" r="30.0" fill="#ffffff" stroke="#2a78d6" stroke-width="2"/>
+<text x="596.0" y="80.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#1c1c1a" text-anchor="middle">Daily</text>
+<text x="596.0" y="93.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#52514e" text-anchor="middle">15 min</text>
+<line x1="442.0" y1="140.0" x2="474.0" y2="140.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="480.0,140.0 471.5,144.1 471.5,135.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="640.0" y="110.0" width="100.0" height="60.0" rx="8" fill="#ebe8fb" stroke="#6250d6" stroke-width="1.5"/>
+<text x="690.0" y="136.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Increment</text>
+<text x="690.0" y="152.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">working product</text>
+<line x1="600.0" y1="140.0" x2="634.0" y2="140.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="640.0,140.0 631.5,144.1 631.5,135.9" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="594.0" y="232.0" width="146.0" height="46.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="667.0" y="251.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Sprint Review</text>
+<text x="667.0" y="267.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">demo the product</text>
+<rect x="384.0" y="232.0" width="170.0" height="46.0" rx="8" fill="#e6f0fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="469.0" y="251.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Sprint Retrospective</text>
+<text x="469.0" y="267.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">improve the process</text>
+<line x1="690.0" y1="170.0" x2="690.0" y2="226.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="690.0,232.0 685.9,223.5 694.1,223.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<line x1="594.0" y1="255.0" x2="560.0" y2="255.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="554.0,255.0 562.5,250.9 562.5,259.1" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<polyline points="384.0,255.0 233.0,255.0 233.0,168.0" fill="none" stroke="#52514e" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="233.0,162.0 237.1,170.5 228.9,170.5" fill="#52514e" stroke="#52514e" stroke-width="1" stroke-linejoin="round"/>
+<text x="306.0" y="272.0" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="middle">next sprint</text>
+<rect x="24.0" y="306.0" width="232.0" height="48.0" rx="8" fill="#ffffff" stroke="#b3b1aa" stroke-width="1.5"/>
+<text x="140.0" y="326.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Product Owner</text>
+<text x="140.0" y="342.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">decides what to build, and the order</text>
+<rect x="264.0" y="306.0" width="232.0" height="48.0" rx="8" fill="#ffffff" stroke="#b3b1aa" stroke-width="1.5"/>
+<text x="380.0" y="326.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Scrum Master</text>
+<text x="380.0" y="342.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">guards the process, removes blockers</text>
+<rect x="504.0" y="306.0" width="232.0" height="48.0" rx="8" fill="#ffffff" stroke="#b3b1aa" stroke-width="1.5"/>
+<text x="620.0" y="326.2" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1c1c1a" text-anchor="middle">Developers</text>
+<text x="620.0" y="342.7" font-family="'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="400" fill="#52514e" text-anchor="middle">build the increment</text>
+</svg>
