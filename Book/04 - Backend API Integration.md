@@ -19,6 +19,18 @@ Three parts: **REST APIs** (sections 1–4), **JSON and XML** (section 5), **thi
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** In the restaurant story below, the waiter also tells you **whose fault** a failed order is. The first digit of the status code does the same:
+
+| Daily life | In the app |
+|---|---|
+| "Here is your tea" | 2xx: success |
+| "We don't serve that" or "show your table card first" | 4xx: your request is wrong |
+| "The kitchen is on fire" | 5xx: the server failed |
+
+</div>
+
 <div class="box story">
 
 **Example scenario.** Imagine a restaurant.
@@ -137,6 +149,12 @@ Doing it twice gives the same result as doing it once. Pressing a lift button tw
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** A **library**. Every book has a shelf address (the URL), and the same few actions work on all of them: read it (GET), donate a new one (POST), replace it (PUT), remove it (DELETE). The librarian does not remember you (stateless), so you show your card (the token) every time.
+
+</div>
+
 <div class="box story">
 
 **Example scenario.** Imagine the visits of a field officer.
@@ -190,6 +208,19 @@ Doing it twice gives the same result as doing it once. Pressing a lift button tw
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.**
+
+| Daily life | In the app |
+|---|---|
+| A set menu with fixed plates | REST: fixed responses per URL |
+| A buffet: take exactly what you want on one plate | GraphQL: ask for exactly the fields you need |
+| A strict government form in a fixed format | SOAP: strict XML |
+| The intercom between kitchen staff: fast, not for customers | gRPC: fast binary, mostly server to server |
+
+</div>
+
 |             | REST                    | SOAP                                                                                          | GraphQL                               | gRPC                        |
 | ----------- | ----------------------- | --------------------------------------------------------------------------------------------- | ------------------------------------- | --------------------------- |
 | Kind        | Architectural style     | Protocol                                                                                      | Query language                        | RPC framework               |
@@ -205,6 +236,12 @@ Doing it twice gives the same result as doing it once. Pressing a lift button tw
 <div class="box def">
 
 **In simple words.** Calling an API is three jobs: **send** the request with the token, **turn** the JSON answer into Dart objects, and **handle** everything that can go wrong. Good code keeps these jobs in their own layers.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.** A **post office counter** has three clerks with one job each: one packs and addresses the parcel (sends the request with the token), one opens and translates the reply (JSON → Dart objects), and one handles problems (wrong address, office closed, no reply). If one clerk does all three jobs, mistakes hide.
 
 </div>
 
@@ -279,6 +316,12 @@ class VisitApi {
 <div class="box def">
 
 **Definition.** **JSON** and **XML** are two text formats for sending data between systems. **JSON** uses keys and values in curly brackets. **XML** uses opening and closing tags.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.** The same information in two styles. JSON is a short form with labelled boxes: `name: Rahima`. XML is a formal letter that opens and closes each item: `<name>Rahima</name>`. Both carry the same facts; XML just uses more paper.
 
 </div>
 
@@ -380,6 +423,12 @@ Because older systems still speak it. Banks, mobile financial services and many 
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** An **architect's plan** shared by the builder and the electrician. Because both agreed where the wires go, they can work **at the same time**. A backend that renames a field without telling you is a builder who moves a wall without updating the plan.
+
+</div>
+
 - **OpenAPI / Swagger:** a machine-readable description of every endpoint, its parameters and its responses.
 - **Postman:** test endpoints by hand, share collections, run a mock server before the backend is ready.
 - **API-first:** mobile and backend agree on the contract first, then build in parallel.
@@ -390,6 +439,18 @@ Because older systems still speak it. Banks, mobile financial services and many 
 <div class="box def">
 
 **Definition.** An **SDK** (Software Development Kit) is ready-made code from another company that you add to your app to use their service: maps, payments, push notifications.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.**
+
+| Daily life | In the app |
+|---|---|
+| A restaurant's menu: what you may order and how | API |
+| A ready meal kit: ingredients and steps packed for you | SDK |
+| You cook less, but you accept their ingredients | The SDK adds size, permissions and updates you do not control |
 
 </div>
 

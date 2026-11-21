@@ -55,6 +55,12 @@ Four verbs: **monitor**, **troubleshoot**, **refactor**, **maintain backward com
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** **Hospital triage**: treat the patients in the worst danger, and the most of them, first. Fix the crash that hits the most users first, not the one you happened to see.
+
+</div>
+
 <div class="box story">
 
 **Example scenario.** Imagine you open Crashlytics on Monday and see this:
@@ -108,6 +114,12 @@ Affected: 14 users · Android 9 · app 1.4.2
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** **Severity** is how bad the injury is; **priority** is how soon the doctor sees it. A spelling mistake in the app name on the store page: low severity, high priority. A crash in a hidden old screen that nobody uses: high severity, low priority.
+
+</div>
+
 <div class="box story">
 
 **Example scenario.** Imagine two bugs arrive on the same morning.
@@ -154,6 +166,12 @@ Affected: 14 users · Android 9 · app 1.4.2
 <div class="box def">
 
 **In simple words.** Troubleshooting is detective work with a fixed order. First **make the bug happen** on your own device. Only then look for the cause. A bug you cannot reproduce, you cannot be sure you fixed.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.** A **mechanic** first hears the strange noise himself (reproduce), then checks one part at a time (isolate), fixes it, and goes for a test drive (verify). A mechanic who never heard the noise cannot know it is gone.
 
 </div>
 
@@ -265,6 +283,12 @@ A full rewrite takes months with no releases, and the old code contains years of
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** A new **phone charger** that still works with the old cable, or comes with an adapter. A new bus route opens, but the old route keeps running until everyone has switched (API versioning).
+
+</div>
+
 <div class="box story">
 
 **Example scenario.** Imagine you release version 2.0 on Monday. Now think of three users.
@@ -347,6 +371,12 @@ A user upgrades the app and already has a local database, cached files and saved
 <div class="box def">
 
 **In simple words.** Things will go wrong after a release. These are the safety tools that keep a problem small.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.** A house has a **circuit breaker for each room**. If one room sparks, you switch off that room, not the whole house: a feature flag or a halted rollout keeps the problem small.
 
 </div>
 

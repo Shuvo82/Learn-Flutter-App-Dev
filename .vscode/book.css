@@ -268,6 +268,7 @@ blockquote p:last-child {
 .box.you   { --bx: #3f8f2f; --bg: #eaf5e4; }
 .box.exam  { --bx: #8a6d1c; --bg: #f7f0d8; }
 .box.check { --bx: #7d7464; --bg: #f4efe3; }
+.box.like  { --bx: #b5487a; --bg: #fbecf3; }
 
 .box.rule {
   font-size: 1.04em;

@@ -11,7 +11,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import lib  # noqa: E402
 
-PARTS = ['part_a', 'part_b', 'part_c', 'part_d', 'part_f']
+PARTS = ['part_a', 'part_b', 'part_c', 'part_d', 'part_f', 'part_n']
 
 
 def main():

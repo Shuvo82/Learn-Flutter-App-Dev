@@ -23,6 +23,12 @@ Three parts: **offline storage** (sections 1–3), **local caching** (section 4)
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** A village shop keeps its own **notebook (khata)**. Every sale is written down at once, even when the bank is closed. At the end of the day the owner goes to the bank and settles (sync). An online-only app is a shop that phones the bank before every sale. When the line is down, nothing can be sold.
+
+</div>
+
 <div class="box story">
 
 **Example scenario.** Imagine a field officer visiting a village where the mobile network comes and goes.
@@ -67,6 +73,19 @@ No. A cache only keeps a copy of server data for **reading**. An offline-first a
 <div class="box def">
 
 **In simple words.** There are five common ways to store data on the phone. Two questions sort them: is it **SQL** (tables with relations) or **NoSQL** (objects or key-value)? And is it for **Android**, **iOS** or **Flutter**?
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.**
+
+| Daily life | In the app |
+|---|---|
+| A cupboard of labelled drawers with an index card | SQL database (SQLite, Room, Drift) |
+| A row of jars, each with a label | Key-value store (Hive, SharedPreferences) |
+| Whole boxes put on shelves as they are | Object database (Realm, Isar) |
+| A locked safe for the house keys | Secure storage (Keystore, Keychain) |
 
 </div>
 
@@ -188,6 +207,12 @@ final lang = box.get('language', defaultValue: 'en');
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** Renovating a house **while the family lives in it**. You add a room (a new column) without throwing out the furniture (the data). The renovations are numbered and done **in order**, so a house that missed two renovations gets both, one after the other.
+
+</div>
+
 <div class="box story">
 
 **Example scenario.** Imagine version 1 of your app is on 500 phones. Each phone has a `visits` table.
@@ -212,6 +237,18 @@ When a new app version changes the tables, existing users already have the old d
 <div class="box def">
 
 **Definition.** **Caching** is keeping a local copy of data that came from the server, so the app can show it again quickly, even with no network.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.** A **water bottle in the fridge** instead of walking to the tube well every time. Water left too long goes stale, so you have a rule: "use within one day" (TTL).
+
+| Daily life | In the app |
+|---|---|
+| Check the fridge first | Cache-first |
+| Go to the well; use the fridge only if the well is closed | Network-first |
+| Drink from the fridge now and send someone to refill it | Stale-while-revalidate |
 
 </div>
 
@@ -258,6 +295,12 @@ Also: cache **images** on disk (`cached_network_image`), download thumbnails ins
 <div class="box def">
 
 **Definition.** The **outbox** is a table on the phone that works like a "to send" tray. Every change the user makes is written to the real table **and** to the outbox. The sync engine later sends the outbox to the server, one item at a time.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.** The **outgoing-letters tray** in an office. You finish a letter and drop it in the tray; you do not wait for the postman. When he comes, he takes the letters in order. If the post office is closed, they wait safely in the tray. Each letter has a number, so none is sent twice (the idempotency key).
 
 </div>
 
@@ -369,6 +412,12 @@ sync():
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** The OS is a **building manager** who lets cleaners in only at set times to save electricity. You ask: "please let my worker in when there is network and the phone is charging" (WorkManager constraints). The manager decides the exact time, not you.
+
+</div>
+
 <div class="box story">
 
 **Example scenario.** Imagine the officer saves five visits, then locks the phone and puts it in her bag.
@@ -412,6 +461,19 @@ Because of Android's battery savers, **Doze** and **App Standby**. When the phon
 <div class="box def">
 
 **Definition.** A **sync conflict** happens when the same record was changed in two places since the last sync, for example on the phone and on the server.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.** Two clerks update the **same passbook** on two counters. When the copies meet, whose entry wins?
+
+| Daily life | In the app |
+|---|---|
+| Whoever came to the counter last | Last-write-wins |
+| The head office copy always wins | Server-wins |
+| Combine the changes line by line | Field-level merge |
+| Call the manager to decide | Ask the user |
 
 </div>
 
@@ -481,6 +543,12 @@ Because of Android's battery savers, **Doze** and **App Standby**. When the phon
 
 ## 8. Deletes
 
+<div class="box like">
+
+**Like in daily life.** In a register you **strike through** a wrong line instead of tearing out the page. If you tear it out, someone copying from an old register writes it back in. The strike-through (a *tombstone*) tells every copy: "this was deleted on purpose".
+
+</div>
+
 <div class="box story">
 
 **Example scenario.** Imagine the officer deletes a wrong visit while offline.
@@ -503,6 +571,12 @@ If the app hard-deletes a row offline, the server never learns about it, and the
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** A **courier** with a bad road. The courier waits a fixed time at each door, then moves on (timeout). After a failed delivery, they try again later, and wait longer each time (exponential backoff). The tracking number stops the same parcel being delivered twice (idempotency key).
+
+</div>
+
 - **Timeouts** on every request; treat a timeout as "unknown result" and rely on idempotency.
 - **Connectivity check:** `connectivity_plus` <mark>tells the type of connection, but not that the internet works</mark>. Confirm with a real request.
 - **Resume** interrupted uploads instead of starting again.
@@ -517,6 +591,12 @@ If the app hard-deletes a row offline, the server never learns about it, and the
 <div class="box def">
 
 **In simple words.** You cannot wait for a real village with no signal to find bugs. You create the bad conditions yourself: airplane mode, a killed app, a slow network, two phones editing the same record.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.** A **fire drill**: you practise the fire before a real one comes. Switch off the network yourself, kill the app in the middle of a sync, and see if any data is lost.
 
 </div>
 

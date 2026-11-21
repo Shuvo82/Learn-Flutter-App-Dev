@@ -180,6 +180,18 @@ It is the padlock trick in reverse. You lock a fingerprint (hash) of the documen
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.**
+
+| Daily life | In the app |
+|---|---|
+| A **cloakroom ticket**: the hotel keeps your coat and a list; the ticket is only a number | Session: the server keeps a list of who is logged in |
+| A **stamped cinema ticket**: the gate checks the stamp, no list needed | Token: the server checks the signature |
+| Cancelling is easy with the list; a stamped ticket is valid until its time ends | Logout is easy with sessions; tokens need a short expiry |
+
+</div>
+
 | | Session (cookie) | Token (JWT) |
 |---|---|---|
 | State | Server stores the session | <mark>**Stateless**: the token carries the data</mark> |
@@ -435,6 +447,12 @@ When a user taps **Sign in with Google**, OAuth 2.0 and OIDC work **together in 
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** A **wristband at a fair**: you pay once at the gate, then go on every ride without paying again. Cutting the band at the exit is single logout.
+
+</div>
+
 <div class="box story">
 
 **Example scenario.** Imagine an NGO field officer on Monday morning.
@@ -470,6 +488,12 @@ When a user taps **Sign in with Google**, OAuth 2.0 and OIDC work **together in 
 **Definition.** **Keycloak** is a free, open-source login server. It stores the users, shows the login page, checks passwords and OTPs, and issues the tokens. Your apps do not build their own login. They send the user to Keycloak.
 
 **Its purpose** is to give an organisation SSO on its **own servers**.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.** The **central security office** of an office park. Every company in the park sends visitors to the same office for the ID check and the pass, instead of each building hiring its own guard.
 
 </div>
 
@@ -613,6 +637,18 @@ After a few wrong tries the system stops the prompt. The app then offers the dev
 <div class="box def">
 
 **In simple words.** Data is in danger in two places: while it **travels** on the network (*in transit*) and while it **sits** on the phone (*at rest*). HTTPS protects the first. This section is about the second.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.**
+
+| Daily life | In the app |
+|---|---|
+| Money on the road travels in an **armoured van** | Data in transit: HTTPS/TLS |
+| Money at home goes in a **locker**, not a drawer | Data at rest: Keystore/Keychain, encrypted database |
+| Cash left in an open drawer | Tokens in plain SharedPreferences |
 
 </div>
 

@@ -113,6 +113,12 @@ Debug mode is slow on purpose: it carries extra checks and uses JIT. An emulator
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** When one bulb fails, you change **that bulb**, not the wiring of the whole house: rebuild only the small widget that changed. A restaurant cooks only the dishes that were **ordered**, not the whole menu: `ListView.builder` builds only the rows on screen.
+
+</div>
+
 <div class="box story">
 
 **Example scenario.** Imagine a list of 1,000 borrowers.
@@ -238,6 +244,12 @@ class _FormState extends State<VisitForm> {
 <div class="box def">
 
 **In simple words.** The battery is drained by the things that use power: the screen, the GPS, the network radio and the processor. An app saves battery by using them **less often** and **for a shorter time**.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.** The phone's battery is a **fuel tank**. GPS is the car's air conditioner: the biggest drain, so use it only when needed. The network radio is a motorbike that stays hot for a while after each trip: **one trip with ten letters** costs far less than ten trips. Doze is the building switching off the lifts at night and running them only in short windows.
 
 </div>
 
@@ -406,6 +418,12 @@ So: use **WorkManager** with a network constraint, make sync **idempotent**, ret
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** **Bazar shopping.** Make one trip with a full list instead of going back for each item (batching). Bring home only what you need (pagination, compression). Check the fridge before you go (cache, ETag: "not changed, use what you have").
+
+</div>
+
 Gzip responses · paginate · delta sync (only changes) · cache with ETag · thumbnails first · debounce search (wait ~300 ms after typing stops) · cancel requests for closed screens · reuse connections (HTTP keep-alive / HTTP/2).
 
 ## 7. App size and start-up time
@@ -413,6 +431,12 @@ Gzip responses · paginate · delta sync (only changes) · cache with ETag · th
 <div class="box def">
 
 **In simple words.** Two first impressions: how big the download is, and how long the user waits after tapping the icon. A **cold start** is the slowest: the app is not in memory, so Android must create it from nothing.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.** Opening a shop in the **morning** (cold start: unlock, lights, arrange everything) takes longer than reopening after **lunch** (warm start). Open the front counter first and arrange the back shelves later (lazy loading). A heavy suitcase (a big app) costs more to carry, and users pay for the download.
 
 </div>
 
@@ -428,6 +452,12 @@ Gzip responses · paginate · delta sync (only changes) · cache with ETag · th
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** A public road must work for the **old rickshaw**, not only for the new car. Test on the weakest phone your field officers really carry.
+
+</div>
+
 - <mark>**Fragmentation:**</mark> many Android manufacturers, screen sizes, RAM sizes (2 GB phones are common in the field) and OS versions.
 - Set a sensible **`minSdkVersion`** / iOS deployment target from real user data.
 - Test matrix: one low-end, one mid-range and one new device; oldest and newest supported OS; small and large screens. Use emulators, real devices and <mark>**Firebase Test Lab**</mark>.
@@ -440,6 +470,12 @@ Gzip responses · paginate · delta sync (only changes) · cache with ETag · th
 <div class="box def">
 
 **In simple words.** Never guess what is slow. Each tool below answers one question. In an exam answer, name the tool together with what it finds.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.** A **doctor does not guess**. A thermometer, an X-ray and a blood test each answer one question. In the same way, the frame chart, the memory view and the network view each answer one question about the app. Measure first, then fix.
 
 </div>
 

@@ -19,6 +19,12 @@ Four ideas: **requirements and wireframes**, **responsive layout**, **Material D
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** **UI** is a shop's signboard, shelves and colours. **UX** is how easily you find the rice, pay and leave. A beautiful shop with a confusing layout has good UI and bad UX.
+
+</div>
+
 <div class="box story">
 
 **Example scenario.** Imagine building a house.
@@ -65,6 +71,12 @@ Four ideas: **requirements and wireframes**, **responsive layout**, **Material D
 <div class="box def">
 
 **Definition.** **Material Design** is Google's rule book for how Android apps should look and behave. The **Human Interface Guidelines (HIG)** are Apple's rule book for iOS. Users learn these rules from every other app on their phone, so an app that follows them feels familiar.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.** Like **driving rules**: in Bangladesh you drive on the left; in the USA on the right. Both are fine, but a driver who mixes them causes accidents. Android users expect Material habits, iPhone users expect Apple habits (back gesture, where buttons sit).
 
 </div>
 
@@ -163,6 +175,12 @@ No. One codebase is enough. Flutter gives two widget sets (`Material` and `Cuper
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** A parent gives a child pocket money: "spend **at most** 100 taka" (constraints go down). The child comes back: "I spent 60" (size goes up). The parent decides **where** the child sits at the table (parent sets position). The child never chooses its own seat.
+
+</div>
+
 <div class="box story">
 
 **Example scenario.** Imagine a conversation between a parent widget and its child.
@@ -214,6 +232,17 @@ A parent gives its child min/max width and height. The child chooses a size insi
 <div class="box def">
 
 **Definition.** A **responsive** layout stretches and rearranges to fit the space, like water taking the shape of a glass. An **adaptive** app chooses a **different layout** for a different device.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.**
+
+| Daily life | In the app |
+|---|---|
+| A stretchy T-shirt that fits many body sizes | Responsive (the same layout stretches) |
+| A shop that gives you S, M or L | Adaptive (a different layout per device) |
 
 </div>
 
@@ -297,6 +326,12 @@ Typical **breakpoints**: <mark>under 600 = phone (compact), 600–839 = small ta
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** A theme is a **school uniform rule**. Change the colour once in the rule book and every student's uniform changes. Hard-coded colours are like painting each student by hand: change one, and you must find all of them.
+
+</div>
+
 ```dart
 MaterialApp(
   theme: ThemeData(
@@ -315,6 +350,12 @@ MaterialApp(
 <div class="box def">
 
 **In simple words.** A form is where data enters the system. If wrong data gets in here, every report built on it is wrong. So the form itself must stop mistakes.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.** A bank **deposit slip** has a box for each digit, and the cashier checks it at the counter. Catching a wrong account number at the counter is cheap; finding the money in the wrong account next month is not. Validate at entry, not later.
 
 </div>
 
@@ -346,6 +387,12 @@ MaterialApp(
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** Like a **ramp and a lift** in a building: built for wheelchairs, used by everyone with heavy bags. Big buttons help a user with poor eyesight, and also an officer typing in a bumpy rickshaw. Screen-reader labels are the Braille on the lift buttons.
+
+</div>
+
 - **Touch targets** at least 48 dp (Android) / 44 pt (iOS).
 - <mark>**Colour contrast** at least **4.5 : 1** for normal text (WCAG AA)</mark>. Do not use colour as the only signal; add an icon or text.
 - **Screen readers**: <mark>TalkBack (Android), VoiceOver (iOS)</mark>. Add labels with `Semantics(label: ...)` and `tooltip` on icon buttons.
@@ -356,6 +403,17 @@ MaterialApp(
 <div class="box def">
 
 **Definition.** **Internationalisation (i18n)** is preparing the code so that no text is fixed inside it. **Localisation (l10n)** is adding one language, for example Bangla. *(i18n = "i", 18 letters, "n".)*
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.**
+
+| Daily life | In the app |
+|---|---|
+| A restaurant menu designed with spaces so it can be printed in any language | Internationalisation (i18n): no fixed text in the code |
+| Printing the Bangla edition of that menu | Localisation (l10n): adding one language |
 
 </div>
 
@@ -414,6 +472,17 @@ Points: Bangla digits and dates through `intl` (`NumberFormat('#,##,###', 'bn')`
 <div class="box def">
 
 **In simple words.** An **implicit** animation is automatic: you give a new value and Flutter animates to it. An **explicit** animation is manual: you hold a controller and drive it yourself.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.**
+
+| Daily life | In the app |
+|---|---|
+| Automatic gear: you say "go to 60" and the car handles it | Implicit animation (`AnimatedContainer`) |
+| Manual gear: you work the clutch yourself, more control, more work | Explicit animation (`AnimationController`) |
 
 </div>
 

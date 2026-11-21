@@ -77,6 +77,12 @@ This chapter also carries the **software engineering theory** that written exams
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** Build the house **room by room**. The family moves into the first room and tells you what they want next. The waterfall way hands over the whole house after two years, and only then do you learn the kitchen is in the wrong place.
+
+</div>
+
 <div class="box story">
 
 **Example scenario.** Imagine the NGO asks for a field visit app.
@@ -122,6 +128,20 @@ This chapter also carries the **software engineering theory** that written exams
 <div class="box def">
 
 **Definition.** **Scrum** is the most common way to do Agile. The team works in fixed periods called **sprints** (usually two weeks). At the end of every sprint there is a working, usable piece of the product.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.** A family plans its **week of meals**:
+
+| Daily life | In the app |
+|---|---|
+| Choosing this week's dishes from the wish list | Sprint planning |
+| A two-minute morning check in the kitchen | Daily Scrum |
+| Tasting what was cooked this week | Sprint review |
+| "How can we cook better next week?" | Retrospective |
+| The person who orders the wish list | Product Owner |
 
 </div>
 
@@ -227,6 +247,12 @@ The **Review** looks at the **product**: "here is what we built", shown to peopl
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** A customer says: "I need a house for five people with a garden" (the business need, BRD). The architect turns it into room sizes and wiring (what the system must do, SRS).
+
+</div>
+
 <div class="box story">
 
 **Example scenario.** Imagine the NGO wants field officers to report visits from their phones.
@@ -269,6 +295,17 @@ Order: <mark>**BRD → SRS → design/architecture → development → testing �
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.**
+
+| Daily life | In the app |
+|---|---|
+| A menu showing what each kind of customer can order | Use case diagram (who can do what) |
+| A comic strip: who says what to whom, in time order | Sequence diagram |
+
+</div>
+
 <mark>**UML** (Unified Modeling Language)</mark> is a standard set of diagrams for describing software.
 
 | Diagram | Group | Shows |
@@ -303,6 +340,12 @@ Also: <mark>**ERD** (database tables and relations)</mark>, **flowchart**, <mark
 <div class="box def">
 
 **Definition.** **Technical documentation** is the written knowledge about the app that lives next to the code: how to build it, how it is structured and how it talks to the backend.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.** The **wiring diagram and the manual** you leave in the house for the next owner, so they do not have to break the walls to find the cables.
 
 </div>
 
@@ -370,6 +413,12 @@ Uses: impact analysis when the backend changes an endpoint, onboarding, test pla
 <div class="box def">
 
 **In simple words.** A mobile developer stands in the middle of four teams. From each team you **receive** something, and to each team you **give** something back.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.** A **waiter** stands between the customers, the kitchen, the cashier and the manager. Each gives the waiter something and expects something back. The mobile developer stands between design, backend, QA and the business in the same way.
 
 </div>
 

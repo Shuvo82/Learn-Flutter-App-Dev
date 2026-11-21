@@ -45,6 +45,18 @@ Without structure, UI code, business rules and database calls sit in one file. S
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.**
+
+| Daily life | In the app |
+|---|---|
+| A receptionist passes requests between the visitor and the office | Controller (MVC) |
+| A manager tells the display exactly what to show | Presenter (MVP): talks to the view |
+| A notice board: it posts the latest news, and whoever wants it reads it | ViewModel (MVVM): exposes data, does not know the view |
+
+</div>
+
 <div class="box story">
 
 **Example scenario.** Imagine a TV news programme.
@@ -231,6 +243,12 @@ A **Cubit** is the simple form: the UI calls a **method** (`cubit.load()`) and t
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** Roads with different rules. A **highway with strict lanes** (BLoC) is slow to build but safe for many drivers. A **village lane** (`setState`, GetX) is quick to use but gets chaotic with many vehicles. Provider and Riverpod sit in between.
+
+</div>
+
 | | Provider | BLoC | GetX |
 |---|---|---|---|
 | Core idea | `ChangeNotifier` + `notifyListeners()` | Events → States through Streams | Reactive `Rx` variables + `Obx` |
@@ -247,6 +265,12 @@ A **Cubit** is the simple form: the UI calls a **method** (`cubit.load()`) and t
 <div class="box def">
 
 **Definition.** **Clean Architecture** arranges the whole app in layers, like rings. The **business rules** are in the centre. The **screens** and the **database** are on the outside. The one rule: **code may depend only on a layer closer to the centre**.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.** A **phone and its charger plugs**. The phone (the business rules) stays the same in every country; you change only the plug (the UI, the database, the API). The plug depends on the phone's shape, never the other way round.
 
 </div>
 
@@ -363,6 +387,20 @@ class VisitRepositoryImpl implements VisitRepository {                   // data
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.**
+
+| Daily life | In the app |
+|---|---|
+| One president at a time | Singleton |
+| A tailor who gives you the right size from your measurements | Factory |
+| Subscribing to a channel and getting a bell for each new video | Observer (streams) |
+| A travel plug adapter | Adapter |
+| A librarian who fetches a book from the shelf or another branch | Repository |
+
+</div>
+
 | Pattern | Idea | Mobile example |
 |---|---|---|
 | **Singleton** | Only one instance | Database connection, Dio client |
@@ -381,6 +419,12 @@ Three groups: <mark>**creational** (Singleton, Factory, Builder), **structural**
 <div class="box def">
 
 **In simple words.** Almost every job advert asks for this. *Maintainable* means another developer can understand and change the code next year. *Testable* means each piece can be checked alone.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.** A **labelled toolbox** versus a junk drawer: anyone can find and change a tool. Car parts that can be **tested on a bench** one by one: that is testable code.
 
 </div>
 
@@ -439,6 +483,12 @@ Also: <mark>**golden tests** compare a widget's rendered image with a saved refe
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** A **cooking test**: lay out the ingredients (Arrange), cook (Act), taste (Assert).
+
+</div>
+
 Pattern: <mark>**AAA = Arrange, Act, Assert** (also called Given–When–Then)</mark>.
 
 ```dart
@@ -488,6 +538,12 @@ A stand-in, like a **crash-test dummy**. You do not put a real person in the car
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** A **flight simulator** for one screen: you press the real buttons and read the real dials, but nothing leaves the ground.
+
+</div>
+
 ```dart
 testWidgets('shows an error when member name is empty', (tester) async {
   await tester.pumpWidget(const MaterialApp(home: VisitForm()));   // build the widget
@@ -533,6 +589,12 @@ testWidgets('shows an error when member name is empty', (tester) async {
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** The **full dress rehearsal** on the real stage, with every actor, from the first scene to the last.
+
+</div>
+
 Run the real app on a device and drive a full flow (login → create visit → see it in the list). Uses the `integration_test` package with the same `WidgetTester` API. Good for testing offline/online sync flows. Slow, so keep them few and run them in CI on emulators or Firebase Test Lab.
 
 ## 13. What to test, coverage, TDD
@@ -540,6 +602,12 @@ Run the real app on a device and drive a full flow (login → create visit → s
 <div class="box def">
 
 **In simple words.** You cannot test everything, so test what would hurt most if it broke: calculations, validation rules, state logic and sync. **TDD** turns the order around: write the test first, then the code.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.** TDD is writing the **marking scheme before the answer**: you know what "correct" means before you start. Coverage is the share of the syllabus you studied. 100% coverage does not mean you understood it; it only means you looked at every page.
 
 </div>
 

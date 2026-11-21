@@ -19,6 +19,12 @@ Sections 1–7 cover Flutter and Dart. Sections 8–10 (platform channels, nativ
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** A tailor can make **two** shirts, one cut for each brother (native: two codebases, perfect fit, double the work). Or one good pattern that fits both (cross-platform: Flutter). Or a **photo** of a shirt in a frame (hybrid: a website inside an app). It looks like a shirt, but it does not feel like one.
+
+</div>
+
 <div class="box story">
 
 **Example scenario.** Imagine the NGO wants one field app that works on Android phones and on iPhones.
@@ -88,6 +94,18 @@ No. A Flutter app still lives inside a normal Android project and a normal iOS p
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** Most apps borrow the furniture of the house they live in: Android's buttons on Android, Apple's on iPhone. Flutter is a painter who brings **their own canvas and paint** and draws every button themselves. So the picture looks the same in any house.
+
+| Daily life | In the app |
+|---|---|
+| The painter | The engine (draws every pixel) |
+| The hook that hangs the canvas on this wall | The embedder (Android or iOS) |
+| The painting instructions | Your Dart code |
+
+</div>
+
 ![Flutter's three layers](images/ch01-flutter-architecture.svg)
 
 ![The layers of Flutter, from the official documentation](images/web/flutter-layercake.png)<br>*The same three layers in the official picture. Each layer only talks to the layer below it. Source: Flutter documentation.*
@@ -139,6 +157,18 @@ Flutter draws a picture of the button itself, following the Material Design rule
 <div class="box def">
 
 **In simple words.** Dart is the language of Flutter. Three ideas matter most for the exam: **null safety** (the compiler stops you using a value that may be null), **`final` vs `const`**, and **asynchronous code** (next heading).
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.**
+
+| Daily life | In the app |
+|---|---|
+| Your name written on the exam paper when you sit down: set once, then fixed | `final` (set at run time, once) |
+| Text printed on the paper before the exam day | `const` (fixed when the app is compiled) |
+| A form that will not accept an empty required box | Null safety |
 
 </div>
 
@@ -264,6 +294,12 @@ Future<List<Visit>> fetchVisits() async {
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** A widget is a **recipe card**, not the cake. To change the cake you write a new card; the kitchen compares the two cards and changes only what is different. Writing cards is cheap, so Flutter can write new ones many times a second.
+
+</div>
+
 <div class="box story">
 
 **Example scenario.** Imagine a "Field Visit" form.
@@ -336,6 +372,12 @@ Because a widget is only a cheap description. The expensive objects, the **eleme
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** Think of a shopkeeper's day. The shop is open (**resumed**). The shutter is half down while he takes a phone call (**inactive / paused**). The shop is closed for the night (**detached**). A careful shopkeeper writes up the cash book **before** the shutter goes down. Your app saves the draft at that moment.
+
+</div>
+
 `AppLifecycleState`, observed with `WidgetsBindingObserver` or `AppLifecycleListener`:
 
 | State | Meaning |
@@ -353,6 +395,12 @@ Use: lock the app or clear sensitive screens on `paused`, refresh data or check 
 <div class="box def">
 
 **In simple words.** *State* is any data that can change while the app runs. *State management* is the answer to one question: **when the data changes, which part of the screen must rebuild, and how does it find out?**
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.** State is the **score on a cricket scoreboard**. When a run is scored, someone must update the board, and the crowd must see it. `setState` is a scorer changing a small board next to him. Shared state (BLoC, Provider) is the big stadium screen that everyone watches.
 
 </div>
 
@@ -384,6 +432,12 @@ Use: lock the app or clear sensitive screens on `paused`, refresh data or check 
 **Definition.** A **platform channel** is a named pipe between your Dart code and the native code (Kotlin or Swift) in the same app. Dart sends a message through the pipe, native code does the work, and the answer comes back.
 
 **Its purpose** is to use something that Flutter has no plugin for.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.** A platform channel is the **window between a shop and its back store**. The shopkeeper (Dart) passes a slip through: "2 kg rice" (method name and arguments). The storekeeper (Kotlin or Swift) fetches it and passes the answer back. Each window has a **name**, so the slip goes to the right store. A `MethodChannel` is one question and one answer; an `EventChannel` is a radio that keeps sending (for example GPS updates).
 
 </div>
 
@@ -460,6 +514,19 @@ Rules: <mark>the channel **name must match** on both sides</mark>; calls are **a
 <div class="box def">
 
 **In simple words.** An Android app is made of four kinds of building blocks. The most important is the **Activity**: one screen. Android creates, pauses and destroys an Activity as the user moves around, and it calls a method on your Activity at each step. Those methods are the **Activity lifecycle**.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.** An **Activity** is one room in a house, and Android is a landlord who switches off the lights in rooms you are not using (**pause, stop**) and may even clear a room to save space (**destroy**). So you put your things away before you leave a room: save state in `onPause`.
+
+| Daily life | In the app |
+|---|---|
+| The front room where customers stand | Activity (one screen) |
+| A worker in the back doing a long job | Service |
+| The doorbell | BroadcastReceiver ("battery low", "network back") |
+| A shared notice board other houses can read | ContentProvider |
 
 </div>
 
@@ -578,6 +645,17 @@ class VisitViewModel(private val repo: VisitRepository) : ViewModel() {
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.**
+
+| Daily life | In the app |
+|---|---|
+| A library counts who holds a book; when nobody does, it goes back on the shelf | ARC (automatic reference counting) |
+| Two friends each wait for the other to return the book first, so it never comes back | A retain cycle (memory leak); a `weak` reference breaks it |
+
+</div>
+
 <div class="box story">
 
 **Example scenario 1: struct or class.** Imagine you give a friend your notes.
@@ -665,6 +743,12 @@ guard let user = currentUser else { return }    // early exit
 <div class="box def">
 
 **In simple words.** Building "per specifications and coding standards" means two things: build **what the documents say**, and write code **the way the team has agreed**.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.** Building a house: you follow the **architect's drawing** (the specification: *what* to build) and the **building code** that every builder agreed on (the coding standards: *how* to build it). The house can be right and still fail inspection if it ignores the code.
 
 </div>
 

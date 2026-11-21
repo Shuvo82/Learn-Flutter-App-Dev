@@ -19,6 +19,12 @@ Probability questions look scary, but almost all of them use **five ideas**: cou
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** The **weather forecast**: "70% chance of rain" is 0.7 on the 0-to-1 scale. 0 means it can never happen; 1 means it surely will.
+
+</div>
+
 ![The probability scale: every probability is between 0 and 1](images/ch13-probability-scale.svg)
 
 <div class="box story">
@@ -254,6 +260,17 @@ Each outcome has the same chance, like the faces of a fair die or the cards of a
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.**
+
+| Daily life | In the app |
+|---|---|
+| The code of a lock: 1-2-3 is not 3-2-1 | Permutation: order matters |
+| A fruit salad: apple + mango = mango + apple | Combination: order does not matter |
+
+</div>
+
 ![Permutation or combination? Choose 2 letters from A, B, C](images/ch13-perm-vs-comb.svg)
 
 <div class="box story">
@@ -326,6 +343,12 @@ Ask: "If I swap two chosen items, do I get a **different** result?" **Yes** → 
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** Tasting sweets from a box: if you **put it back**, the box is the same for the next pick (with replacement). If you **eat it**, the box has one fewer sweet (without replacement), so the next chance changes.
+
+</div>
+
 <div class="box story">
 
 **Example scenario.** Imagine a bag with **5 red and 3 green** balls (8 in all). You draw 2 balls.
@@ -386,6 +409,12 @@ Ask: "If I swap two chosen items, do I get a **different** result?" **Yes** → 
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** Count the students who play cricket **or** football. Those who play both were counted twice, once in each list, so subtract them once.
+
+</div>
+
 ![The OR rule: add, then subtract the overlap](images/ch13-or-rule.svg)
 
 <div class="box story">
@@ -441,6 +470,12 @@ Ask: "If I swap two chosen items, do I get a **different** result?" **Yes** → 
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** You need a free rickshaw **and** no rain. Both must happen, so the chances multiply, and the result is always smaller than either one. If eating the first sweet changes the box, the second chance is worked out **after** the first (dependent).
+
+</div>
+
 ![A tree diagram: two balls drawn without replacement](images/ch13-tree-diagram.svg)
 
 <div class="box story">
@@ -492,6 +527,12 @@ Ask: "If I swap two chosen items, do I get a **different** result?" **Yes** → 
 **Definition.** **P(A | B)**, said "A given B", is the chance of A **when we already know that B happened**. The sample space shrinks to B.
 
 **P(A | B) = P(A and B) ÷ P(B)**
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.** "What is the chance a student is a girl, **given** that she wears glasses?" Look **only** at the students with glasses and count the girls among them. The group you look at shrinks to what you already know.
 
 </div>
 
@@ -559,6 +600,12 @@ Because real bugs are **rare** (2%). Among 1,000 builds, only 20 are bad and the
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** "Will **at least one** of three buses come?" is many cases. "Will **none** come?" is just one case. So work out the chance of none and take it away from 1.
+
+</div>
+
 <div class="box story">
 
 **Example scenario.** Imagine a field app sends a sync request on a weak network. Each try **fails with probability 0.2**, and the tries are independent. The app tries up to 3 times.
@@ -612,6 +659,12 @@ Because real bugs are **rare** (2%). Among 1,000 builds, only 20 are bad and the
 **Definition.**
 - **Expected value (E)** is the **long-run average** result: E = Σ (value × its probability).
 - **Odds in favour** of an event = favourable : unfavourable. If the odds in favour are **a : b**, then **P = a ÷ (a + b)**.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.** A tea stall's **average daily takings** over a year: no single day earns exactly that, but over many days it is what you get. That is the expected value.
 
 </div>
 

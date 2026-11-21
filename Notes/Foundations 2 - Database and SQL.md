@@ -7,6 +7,18 @@ PostgreSQL is a common backend database, and you use **SQLite/Drift** on mobile,
 # Part 1 — Database Concepts
 
 ## 1.1 Basic terms
+
+<div class="box like">
+
+**Like in daily life.**
+
+| Daily life | In the app |
+|---|---|
+| An attendance register | A table |
+| One student's line | A row (record, tuple) |
+| The "Name" column | A column (attribute) |
+
+</div>
 - **Database**: an organized collection of related data.
 - **DBMS** (Database Management System): software to create, store, query and manage databases (PostgreSQL, MySQL, Oracle, SQLite).
 - **RDBMS**: a DBMS that stores data in **tables (relations)** of rows and columns, linked by keys.
@@ -16,6 +28,19 @@ PostgreSQL is a common backend database, and you use **SQLite/Drift** on mobile,
 **Advantages of a DBMS over file systems:** less **redundancy**, **data integrity** (constraints), **security** (access control), **concurrent access**, **backup & recovery**, **data independence**.
 
 ## 1.2 Keys (very common question)
+
+<div class="box like">
+
+**Like in daily life.**
+
+| Daily life | In the app |
+|---|---|
+| National ID number: one per person, never empty | Primary key |
+| ID, passport number, phone: any could identify you | Candidate keys |
+| Your NID written on a loan form to point to you | Foreign key |
+| Roll number + class together (roll alone repeats across classes) | Composite key |
+
+</div>
 | Key | Meaning | Example (`students(student_id, nid, email, name, dept_id)`) |
 |---|---|---|
 | **Super key** | Any set of columns that **uniquely** identifies a row | `{student_id}`, `{student_id, name}`, `{nid}` |
@@ -29,6 +54,12 @@ PostgreSQL is a common backend database, and you use **SQLite/Drift** on mobile,
 *Mobile link:* in an offline-first app you use **UUID** surrogate keys so device-created rows never clash with server rows.
 
 ## 1.3 ER Model (Entity–Relationship)
+
+<div class="box like">
+
+**Like in daily life.** Drawing who is who **before** building: members (entities), their details (attributes), and the links between them, like "a member takes many loans" (relationships, 1-to-many).
+
+</div>
 - **Entity**: a real-world object (Student, Member, Loan) → becomes a **table**.
 - **Attribute**: a property of an entity → becomes a **column**. Types: simple, composite (address → road, city), **multivalued** (phones), **derived** (age from DOB), **key** attribute.
 - **Relationship**: an association between entities (Student *enrolls in* Course).
@@ -43,6 +74,12 @@ PostgreSQL is a common backend database, and you use **SQLite/Drift** on mobile,
 - **1:1** → FK on either side (with UNIQUE).
 
 ## 1.4 Normalization (asked in almost every exam)
+
+<div class="box like">
+
+**Like in daily life.** A messy notebook where the branch address is written again on every member's line. Change the address and you must fix 500 lines, and you will miss some. Normalisation keeps **each fact in one place** and points to it.
+
+</div>
 **Goal:** reduce **redundancy** and remove **anomalies**:
 - **Insertion anomaly**: you can't add data without other unrelated data (can't add a new course until a student enrolls).
 - **Update anomaly**: the same data is stored in many rows, so updating it in one place leaves inconsistency.
@@ -86,6 +123,19 @@ Key = `(order_id, product_id)`.
 # Part 2 — SQL
 
 ## 2.1 SQL command categories
+
+<div class="box like">
+
+**Like in daily life.**
+
+| Daily life | In the app |
+|---|---|
+| Building the cupboard and its drawers | DDL (`CREATE`, `ALTER`, `DROP`) |
+| Putting things in, changing and taking them out | DML (`INSERT`, `UPDATE`, `DELETE`) |
+| Giving or taking away the keys | DCL (`GRANT`, `REVOKE`) |
+| "Save" or "undo" a set of changes | TCL (`COMMIT`, `ROLLBACK`) |
+
+</div>
 | Category | Full form | Commands |
 |---|---|---|
 | **DDL** | Data Definition Language | `CREATE`, `ALTER`, `DROP`, `TRUNCATE`, `RENAME` |
@@ -95,6 +145,18 @@ Key = `(order_id, product_id)`.
 | **TCL** | Transaction Control Language | `COMMIT`, `ROLLBACK`, `SAVEPOINT` |
 
 ## 2.2 DELETE vs TRUNCATE vs DROP
+
+<div class="box like">
+
+**Like in daily life.**
+
+| Daily life | In the app |
+|---|---|
+| Tear out some pages, one by one, with a note of each | `DELETE` (can use `WHERE`, can roll back) |
+| Rip out every page at once, keep the empty notebook | `TRUNCATE` |
+| Throw away the whole notebook | `DROP` |
+
+</div>
 | | DELETE | TRUNCATE | DROP |
 |---|---|---|---|
 | Type | DML | DDL | DDL |
@@ -105,6 +167,12 @@ Key = `(order_id, product_id)`.
 | Triggers fire | Yes | No | No |
 
 ## 2.3 Creating tables with constraints
+
+<div class="box like">
+
+**Like in daily life.** Rules printed on a form: "this box must not be empty" (`NOT NULL`), "no two people may write the same NID" (`UNIQUE`), "age must be over 18" (`CHECK`).
+
+</div>
 ```sql
 CREATE TABLE departments (
   dept_id   SERIAL PRIMARY KEY,
@@ -141,6 +209,12 @@ SELECT DISTINCT dept_id FROM employees;   -- unique values
 ```
 
 ## 2.5 Aggregates + GROUP BY + HAVING
+
+<div class="box like">
+
+**Like in daily life.** Sorting exam papers **into piles by class** (`GROUP BY`), then counting each pile (`COUNT`). `WHERE` throws away papers **before** making piles; `HAVING` throws away whole piles **after** counting.
+
+</div>
 Aggregate functions: `COUNT()`, `SUM()`, `AVG()`, `MIN()`, `MAX()`.
 ```sql
 SELECT dept_id, COUNT(*) AS total, AVG(salary) AS avg_sal
@@ -156,6 +230,18 @@ ORDER BY avg_sal DESC;
 - `COUNT(*)` counts all rows; `COUNT(col)` skips NULLs.
 
 ## 2.6 JOINs (draw the Venn diagrams in the exam)
+
+<div class="box like">
+
+**Like in daily life.**
+
+| Daily life | In the app |
+|---|---|
+| Only the students who are in **both** the cricket and the football list | `INNER JOIN` |
+| Every student in the class list, with their club if they have one | `LEFT JOIN` |
+| Everyone from both lists | `FULL JOIN` |
+
+</div>
 ```
 employees: (1,Rahim,d1) (2,Karim,d2) (3,Salma,NULL)
 departments: (d1,IT) (d2,HR) (d3,Finance)
@@ -187,6 +273,12 @@ LEFT JOIN employees m ON e.manager_id = m.emp_id;
 ```
 
 ## 2.7 Subqueries
+
+<div class="box like">
+
+**Like in daily life.** A **question inside a question**: "who earns more than the average?" First you work out the average (the inner query), then you compare with it (the outer query).
+
+</div>
 ```sql
 -- Employees earning above the company average
 SELECT name, salary FROM employees
@@ -222,6 +314,12 @@ SELECT name, salary FROM (
 ```
 
 ## 2.9 Window functions (basics)
+
+<div class="box like">
+
+**Like in daily life.** A **class rank** written next to each student's mark: every row stays, and each one gets an extra number computed from the rows around it. `GROUP BY` would squash the rows; a window function keeps them.
+
+</div>
 Calculate across rows **without collapsing** them (unlike GROUP BY).
 ```sql
 SELECT name, dept_id, salary,
@@ -252,6 +350,19 @@ FROM employees;
 # Part 3 — Transactions, Indexes, Views & More
 
 ## 3.1 Transactions & ACID
+
+<div class="box like">
+
+**Like in daily life.** Sending money with mobile money: the amount leaves your account **and** reaches the shop, or neither happens. Never half. That all-or-nothing is a transaction.
+
+| Daily life | In the app |
+|---|---|
+| All or nothing | Atomicity |
+| The total money in the system is still correct | Consistency |
+| Two payments at once do not mix | Isolation |
+| Once "sent" is shown, a power cut does not undo it | Durability |
+
+</div>
 A **transaction** is a group of operations executed as **one logical unit**.
 ```sql
 BEGIN;
@@ -267,6 +378,12 @@ COMMIT;            -- or ROLLBACK; if anything failed
 **Transaction states:** Active → Partially committed → Committed / Failed → Aborted.
 
 ## 3.2 Concurrency problems & isolation levels
+
+<div class="box like">
+
+**Like in daily life.** Two clerks working on the same passbook at the same moment. A **dirty read** is reading a line the other clerk has not finished writing yet; a **phantom read** is new lines appearing between two of your counts. Isolation levels decide how strictly the clerks must wait for each other.
+
+</div>
 | Problem | What happens |
 |---|---|
 | **Dirty read** | Reading data **not yet committed** by another transaction (it may roll back) |
@@ -287,6 +404,12 @@ Higher isolation means **more correct but slower** (more locking).
 **Locks:** **shared (read)** lock = many readers; **exclusive (write)** lock = one writer. **Deadlock** = two transactions each wait for a lock the other holds; the DB detects it and aborts one.
 
 ## 3.3 Indexes
+
+<div class="box like">
+
+**Like in daily life.** The **index at the back of a book**: instead of reading every page (a full scan), you look up the word and go to the page. But every new page means updating the index, so writes get a little slower.
+
+</div>
 An **index** is a data structure (usually a **B-tree** / B+ tree) that speeds up **searching**, like a book's index.
 ```sql
 CREATE INDEX idx_emp_dept ON employees(dept_id);
@@ -299,6 +422,18 @@ CREATE UNIQUE INDEX idx_emp_email ON employees(email);
 - `EXPLAIN ANALYZE <query>` (PostgreSQL) shows whether an index was used.
 
 ## 3.4 Views, stored procedures, triggers
+
+<div class="box like">
+
+**Like in daily life.**
+
+| Daily life | In the app |
+|---|---|
+| A saved filter on a spreadsheet: a stored question, not new data | View |
+| A recipe the kitchen keeps and runs on request | Stored procedure |
+| A motion-sensor light: switches on by itself when something happens | Trigger |
+
+</div>
 - **View**: a **virtual table** from a saved SELECT. Uses: simplify complex queries, **security** (show only some columns).
   `CREATE VIEW it_staff AS SELECT name, email FROM employees WHERE dept_id = 1;`
   **Materialized view** = stores the result physically; refresh it periodically (good for **dashboards**).
@@ -306,6 +441,17 @@ CREATE UNIQUE INDEX idx_emp_email ON employees(email);
 - **Trigger**: code that runs **automatically** on `INSERT/UPDATE/DELETE` (e.g. write an **audit log** row whenever a loan is updated).
 
 ## 3.5 SQL vs NoSQL
+
+<div class="box like">
+
+**Like in daily life.**
+
+| Daily life | In the app |
+|---|---|
+| A filing cabinet with fixed forms and cross-references | SQL: fixed tables, relations, JOINs |
+| A box of folders where each folder can hold different papers | NoSQL: flexible documents, key-value |
+
+</div>
 | SQL (Relational) | NoSQL |
 |---|---|
 | Tables with a **fixed schema** | Flexible / schema-less |

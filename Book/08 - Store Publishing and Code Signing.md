@@ -19,6 +19,12 @@ Publishing is mostly clicks in Play Console and App Store Connect, but interview
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** **Publishing a book**: write it, print it, proof-read it, approve it, send it to the shops, read the reviews. An app release goes through the same steps: build, sign, test, publish, watch.
+
+</div>
+
 ![Release management: the whole path of one version](images/ch08-release-path.svg)
 
 **Release management** means planning, building, testing, approving, publishing and monitoring each version in a controlled, repeatable way, with a record of what changed (release notes, Git tag).
@@ -28,6 +34,17 @@ Publishing is mostly clicks in Play Console and App Store Connect, but interview
 <div class="box def">
 
 **Definition.** Every app version has **two numbers**. One is for **people**, such as `1.4.2`. The other is for the **store's computer**, such as `37`, and it must go up with every upload.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.**
+
+| Daily life | In the app |
+|---|---|
+| "2nd edition" on the cover, for readers | `versionName` / Version: `1.4.2` |
+| The printer's run number, always higher than the last | `versionCode` / Build: `37` |
 
 </div>
 
@@ -110,6 +127,17 @@ Unsigned apps cannot be installed from the stores.
 <div class="box def">
 
 **In simple words.** On Android, the signature is made with a private key that lives in a file called a **keystore**. With **Play App Signing** there are two keys: you sign with an **upload key**, and Google signs the final app with the **app signing key**.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.**
+
+| Daily life | In the app |
+|---|---|
+| You seal the parcel with your own staff stamp. Lose it, and the office issues a new one | Upload key: yours, can be reset |
+| The courier adds its official seal, kept in its own safe | App signing key: kept by Google |
 
 </div>
 
@@ -270,6 +298,12 @@ An **AAB** (Android App Bundle). It is a publishing package, not an installable 
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** A **building inspector** fails the building if he cannot get in (no demo login), if its declared use does not match what is inside (privacy answers), or if it has things it does not need (extra permissions).
+
+</div>
+
 | Reason | Avoid by |
 |---|---|
 | Crashes, bugs, broken links, placeholder content | Test the release build on real devices |
@@ -291,6 +325,12 @@ An **AAB** (Android App Bundle). It is a publishing package, not an installable 
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** A **staff canteen** next to a public restaurant: the same food, but only employees get in. Private store channels do the same for an organisation's app.
+
+</div>
+
 Many of an organisation's apps are for its own staff, not the public.
 
 | Method | Use |
@@ -305,6 +345,12 @@ Many of an organisation's apps are for its own staff, not the public.
 <div class="box def">
 
 **Definition.** **App Store Optimization (ASO)** is the work of making an app easier to **find** in the store and more likely to be **installed** once it is found.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.** A **shop sign and window display**. The sign helps people find you (title, keywords). The window makes them walk in (icon, screenshots, rating).
 
 </div>
 
@@ -347,6 +393,12 @@ Two groups: <mark>**on-metadata** factors you control directly (text, icon, scre
 </div>
 
 ## 10. After release
+
+<div class="box like">
+
+**Like in daily life.** Try a new recipe on **a few customers** before you add it to the whole menu (staged rollout). If they complain, stop serving it (halt the rollout). A feature flag is a switch that turns off one dish without closing the restaurant.
+
+</div>
 
 <div class="box story">
 

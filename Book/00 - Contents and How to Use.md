@@ -42,11 +42,17 @@
 
 ## How each topic is taught
 
-Every topic follows the same path, so you first **understand** it and then **memorise** it. Each step has its own colour.
+Every topic follows the same path, so you first **understand** it and then **use** it. Each step has its own colour.
 
 <div class="box def">
 
 **Definition.** One or two plain sentences: what the thing is and what it is for.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.** The same idea shown through something simple you already know, such as a tea stall, a post office or a phone book, and compared with the app side by side. If you understand the everyday version, you can rebuild the technical one.
 
 </div>
 
@@ -113,7 +119,7 @@ The answers are hidden like this until you click.
 
 **<mark>Highlights</mark>:** the lines to learn by heart are highlighted: full forms, one-line definitions, the key point in each "X vs Y" difference, numbers (16.67 ms, 48 dp, 15 minutes, USD 25/99) and rule-style sentences. For a quick revision, read only the **Remember** boxes and the highlights.
 
-**Pictures:** the book has two kinds. The 73 drawn diagrams and charts in [images](images/) use only boxes, arrows and labels, so you can redraw them by hand in the exam. The 42 pictures in [images/web](images/web/) come from official documentation (Android, Flutter, Dart, Firebase, GitHub, MDN) and a few well-known sources. Each has its source written under it, and [images/web/SOURCES.md](images/web/SOURCES.md) lists them all.
+**Pictures:** the book has two kinds. The 75 drawn diagrams and charts in [images](images/) use only boxes, arrows and labels, so you can redraw them by hand in the exam. The 42 pictures in [images/web](images/web/) come from official documentation (Android, Flutter, Dart, Firebase, GitHub, MDN) and a few well-known sources. Each has its source written under it, and [images/web/SOURCES.md](images/web/SOURCES.md) lists them all.
 
 ## How to study a chapter (about 2–3 hours)
 

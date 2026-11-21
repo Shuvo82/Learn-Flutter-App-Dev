@@ -65,6 +65,12 @@ Usually **Continuous Delivery**. The stores review every release and developers 
 
 ## 2. A mobile CI/CD pipeline
 
+<div class="box like">
+
+**Like in daily life.** A **car wash line**: each station does one job (soap, rinse, dry). If one station fails, the car stops there and does not come out half-washed. A pipeline stops at the first failed step.
+
+</div>
+
 <div class="box story">
 
 **Example scenario.** Imagine you finish a small bug fix on Tuesday afternoon.
@@ -96,6 +102,12 @@ Usually **Continuous Delivery**. The stores review every release and developers 
 <div class="box def">
 
 **In simple words.** Three of the four tools are **CI services**: they watch your repository and give you a machine to run steps on (GitHub Actions, GitLab CI/CD, Bitrise). The fourth, **Fastlane**, is different: it is a helper that knows how to **sign and upload** mobile apps.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.** The CI service is the **workshop** with the machines. Fastlane is a skilled helper who knows the stores' paperwork (signing, screenshots, uploading). The workshop hires the helper. They are not competitors.
 
 </div>
 
@@ -226,6 +238,12 @@ build_android:
 
 ## 5. Mobile-specific problems and how the pipeline solves them
 
+<div class="box like">
+
+**Like in daily life.** You do not hide the house key **under the doormat** (in the repository). You keep it in a bank locker, and the workshop collects it only for the job (CI secrets).
+
+</div>
+
 <div class="box story">
 
 **Example scenario.** Imagine the pipeline must sign the Android app. Signing needs the keystore file and its password.
@@ -253,6 +271,19 @@ build_android:
 <div class="box def">
 
 **Definition.** **Git** is a version control system: it remembers every change to the code, who made it and why, and lets several people work at the same time without overwriting each other.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.**
+
+| Daily life | In the app |
+|---|---|
+| "Track changes" with the full history of a document | Git |
+| A photocopy you edit on your own | A branch |
+| Putting your edits back into the master copy | A merge |
+| Two people changed the same sentence | A merge conflict |
 
 </div>
 

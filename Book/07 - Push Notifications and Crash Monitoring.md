@@ -19,6 +19,17 @@ Two halves: **push notifications** (sections 1–7) and **crash and performance 
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.**
+
+| Daily life | In the app |
+|---|---|
+| A letter brought by the postman, from outside | Push notification (sent by a server) |
+| An alarm clock you set yourself | Local notification (created by the app) |
+
+</div>
+
 <div class="box story">
 
 **Example scenario.** Imagine a post office.
@@ -51,6 +62,12 @@ Why the OS runs this: one shared, battery-efficient connection per phone (Google
 </div>
 
 ## 2. How a push notification travels (learn this)
+
+<div class="box like">
+
+**Like in daily life.** When you move into a house, you register your **address** with the post office (the FCM token). Your office gives a letter and that address to the post office (FCM or APNs), and the post office delivers it. Your office never learns the road. Reinstall the app and it is a new house, so a new address.
+
+</div>
 
 <div class="box story">
 
@@ -117,6 +134,17 @@ No, and it should not. Sending needs the project's **server key**. If that key w
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.**
+
+| Daily life | In the app |
+|---|---|
+| A permanent company seal | `.p8` key: never expires (recommended) |
+| A trade licence you must renew every year | `.p12` certificate: forget to renew and pushes stop |
+
+</div>
+
 - Needs a paid **Apple Developer account** and the **Push Notifications capability** on the App ID.
 - Server authentication, two options:
 
@@ -136,6 +164,17 @@ No, and it should not. Sending needs the project's **server key**. If that key w
 <div class="box def">
 
 **Definition.** A **notification message** has a title and a body, and the **system** shows it for you. A **data message** has only your own key-value data, and **your code** decides what to do with it.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.**
+
+| Daily life | In the app |
+|---|---|
+| The guard pins a notice on the board for you | Notification message: the system shows it |
+| A sealed envelope handed to you; you decide what to do | Data message: your code handles it |
 
 </div>
 
@@ -167,6 +206,12 @@ A message can carry both. <mark>**Silent push**</mark> (iOS `content-available: 
 <div class="box def">
 
 **In simple words.** The app can be in three states when a message arrives: **open on screen**, **in the background**, or **fully closed**. Each state has its own Flutter callback.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.** A phone call arrives while you are **in the room** (foreground: you answer at once), **in another room** (background: you hear the ring and come when you tap), or **asleep** (terminated: you wake up and read the message that woke you, `getInitialMessage`).
 
 </div>
 
@@ -219,12 +264,24 @@ No. When the app is in the **foreground**, the system does not show a notificati
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.** Asking before you put flyers in someone's **letterbox**. Channels are separate letterboxes, one for bills and one for advertisements, and the user can close the advertisement box without missing the bills.
+
+</div>
+
 - <mark>**Android 13+ (API 33):** the `POST_NOTIFICATIONS` **runtime permission** is required.</mark>
 - <mark>**Android 8+ (API 26):** every notification belongs to a **notification channel**</mark>; the user controls sound and importance per channel.
 - **iOS:** permission prompt; enable *Push Notifications* and *Background Modes → Remote notifications* in Xcode.
 - **Token lifecycle:** the token changes on reinstall, restore, or clearing data. Listen to `onTokenRefresh`. <mark>**Delete the token from the server on logout.**</mark> The server removes tokens that FCM reports as unregistered.
 
 ## 7. Good practice
+
+<div class="box like">
+
+**Like in daily life.** A shop that sends SMS: send only what the customer needs, and never write private details on a **postcard** that anyone can read. The lock screen is that postcard.
+
+</div>
 
 <div class="box story">
 
@@ -254,6 +311,12 @@ No. When the app is in the **foreground**, the system does not show a notificati
 **Definition.** **Crash monitoring** means the app itself reports its errors to a dashboard, with the device model, the OS version and the exact line of code.
 
 **Its purpose** is that you learn about a problem from the tool, not from an angry user.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.** An aeroplane's **black box** and a car's warning lights tell you what broke without waiting for a passenger to complain. Crash monitoring does the same for the app.
 
 </div>
 
@@ -390,6 +453,17 @@ For the NGO, which holds sensitive financial data and may prefer its own infrast
 
 </div>
 
+<div class="box like">
+
+**Like in daily life.**
+
+| Daily life | In the app |
+|---|---|
+| A fire alarm: rings when something breaks | Crash reporting |
+| A speedometer and fuel gauge: show how well it is running | Performance monitoring (APM) |
+
+</div>
+
 | Tool | Tracks |
 |---|---|
 | **Firebase Performance Monitoring** | App start time, slow and frozen frames per screen, HTTP request time and success rate, **custom traces** (for example "sync duration") |
@@ -403,6 +477,12 @@ For the NGO, which holds sensitive financial data and may prefer its own infrast
 <div class="box def">
 
 **In simple words.** Monitoring is a loop, not a single step. Every release goes through the same six steps.
+
+</div>
+
+<div class="box like">
+
+**Like in daily life.** A **doctor's follow-up after an operation**: check, treat the worst problem, check again. Monitoring after every release is the same loop.
 
 </div>
 
